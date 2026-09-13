@@ -1,0 +1,27 @@
+{
+  "prize_name": "Lorentz Medal",
+  "awarding_org": "Royal Netherlands Academy of Arts and Sciences (KNAW)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Netherlands",
+  "funder_origin_name": "Royal Netherlands Academy of Arts and Sciences (KNAW)",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "Netherlands",
+  "funder_current_name": "Royal Netherlands Academy of Arts and Sciences (KNAW)",
+  "funder_current_type": "Society",
+  "funder_current_country": "Netherlands",
+  "funder_changed": false,
+  "funding_share_basis": "There is no cash purse: the award consists solely of a silver-gilt medal, struck and presented by the KNAW, so 100% of the award's cost falls on the Academy in both states. The KNAW's own pages state the medal was 'instituted by the Royal Netherlands Academy of Arts and Sciences in 1925' on the fiftieth anniversary of Lorentz's doctorate; we found no documented outside donor, bequest, or public subscription endowing it, and the current regulations (adopted 18 October 2021) name only the Academy as instituting, judging, and conferring body. The Leiden 'Lorentz Fonds' referenced in archival material relates to the Lorentz Chair and Instituut-Lorentz at Leiden University, not to the medal; the Leiden Institute of Physics only co-hosts the award ceremony.",
+  "money_note": "No prize money at any point in the prize's history — the award is a silver-gilt medal alone, paid for by the KNAW from its own science-funds budget, awarded once every four years since its institution in 1925 (first awarded 1927).",
+  "status_note": "Continuously awarded under the same name; the quadrennial cadence means most calendar years have no laureate. Recent medals: 2014 Michael Berry, 2018 Juan Maldacena, 2022 Daan Frenkel, 2026 Charles Kane (ceremony held 11 December 2025 in Leiden). Nominations for the next round open 1 January 2030.",
+  "sources": [
+    "https://www.knaw.nl/en/funds-and-prizes/lorentz-medal",
+    "https://www.knaw.nl/en/regulations-funds-and-prizes/regulations-lorentz-medal",
+    "https://www.universiteitleiden.nl/en/news/2025/09/lion-symposium-11-dec-2025",
+    "https://nl.wikipedia.org/wiki/Lorentzmedaille",
+    "https://en.wikipedia.org/wiki/Lorentz_Medal"
+  ],
+  "evidence_quote": "The Lorentz Medal was instituted by the Royal Netherlands Academy of Arts and Sciences in 1925 in honour of the physicist Hendrik Antoon Lorentz... The silver-gilt medal is awarded once every four years.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Society for both the awarding org and both funding states, following the protocol's rule that national academies count as societies; a coder could instead call the funder Government, since the KNAW is state-chartered and financed largely from the Dutch Ministry of Education, Culture and Science budget. The origin coding is Society rather than Philanthropy because, despite the prize being founded at a jubilee celebration, no donor, bequest, or subscription fund appears in the KNAW's own account of the medal's institution — the Academy instituted and has always borne the cost of the medal itself."
+}

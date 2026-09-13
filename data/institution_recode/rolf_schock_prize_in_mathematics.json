@@ -1,0 +1,27 @@
+{
+  "prize_name": "Rolf Schock Prize in Mathematics",
+  "awarding_org": "Royal Swedish Academy of Sciences (Kungliga Vetenskapsakademien)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Rolf Schock bequest / Rolf Schock Foundation (Schockstiftelsen)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Rolf Schock Foundation (Schockstiftelsen)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse comes from the estate of philosopher and artist Rolf Schock (d. 1986), who willed half his fortune to fund four prizes; the ring-fenced Rolf Schock Foundation, formed 1987-88, has invested and paid out that endowment ever since, so the single funder exceeds 50% in both the origin and current states. The Royal Swedish Academy of Sciences selects and confers the mathematics laureate but contributes no money.",
+  "money_note": "The 2026 purse is SEK 600,000 per prize area (SEK 2.4 million across the four prizes), paid from the Schock Foundation's management of the Schock bequest; the mathematics prize has been awarded since 1993 and is currently given every second year (2024, 2026).",
+  "status_note": "",
+  "sources": [
+    "https://www.kva.se/en/prizes/rolf-schock-prizes/",
+    "https://www.kva.se/en/prizes/rolf-schock-prizes/about-the-rolf-schock-prizes/",
+    "https://www.kva.se/en/news/the-schock-prizes-reward-innovative-jazz-and-research-on-geometric-flows/",
+    "https://en.wikipedia.org/wiki/Rolf_Schock_Prizes",
+    "https://mathshistory.st-andrews.ac.uk/Honours/Schock/"
+  ],
+  "evidence_quote": "Upon his death in 1986, Rolf Schock left behind a considerable fortune. In his will, he stipulated that half of his estate should be used to fund four prizes... The Schock Foundation administers the donated funds.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "KVA states that the Schock Foundation 'formally decides the laureates' while the Academy reviews and proposes them, so a coder could name the Rolf Schock Foundation (Philanthropy) as the awarding organization. I coded the Royal Swedish Academy of Sciences because it runs the selection committee, announces the mathematics laureate, and confers the prize, with the foundation acting as the financial trustee."
+}

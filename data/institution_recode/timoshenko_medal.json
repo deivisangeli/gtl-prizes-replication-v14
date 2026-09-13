@@ -1,0 +1,28 @@
+{
+  "prize_name": "Timoshenko Medal",
+  "awarding_org": "American Society of Mechanical Engineers (ASME)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "American Society of Mechanical Engineers (ASME), Applied Mechanics Division",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United States",
+  "funder_current_name": "ASME Foundation (endowment fund of the American Society of Mechanical Engineers)",
+  "funder_current_type": "Society",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The medal was instituted in 1957 by ASME's own Applied Mechanics Division; no external donor, bequest, or corporate sponsor is named on the ASME prize page, in the ASME Honors & Awards program book, or in the Society's award-establishment policy. Today the purse is paid 100% out of the award's endowment held and drawn on by the ASME Foundation, ASME's in-house charitable/fundraising arm ('The Honors and Awards Program is funded through the ASME Foundation by individual awards and endowment funds, not through member dues'), so >50% of the purse comes from ASME/its foundation in both states. The shift of the endowment into the ASME Foundation vehicle is an administrative change within the same society, not a handover to a new funder.",
+  "money_note": "Current award is a bronze medal, certificate, a USD 2,500 honorarium and a USD 750 travel allowance (USD 3,250 total), paid from the medal's endowment via the ASME Foundation; ASME policy requires a minimum endowment per society-wide award funded by donations to the Foundation.",
+  "status_note": "",
+  "sources": [
+    "https://www.asme.org/about-asme/honors-awards/achievement-awards/timoshenko-medal",
+    "https://www.asme.org/wwwasmeorg/media/resourcefiles/aboutasme/honors%20awards/asme-honors-awards-program.pdf",
+    "https://www.asme.org/getmedia/1c165000-b9f1-45f8-8ff7-e52fc6a400b1/p-3-2-establishment-of-new-asme-society-awards.pdf",
+    "https://www.asmefoundation.org/programs/careers-that-matter/awards-and-honors/",
+    "https://www.asmefoundation.org/history/",
+    "https://en.wikipedia.org/wiki/Timoshenko_Medal"
+  ],
+  "evidence_quote": "The Honors and Awards Program is funded through the ASME Foundation by individual awards and endowment funds, not through member dues.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "The purse is disbursed by the ASME Foundation, a separately incorporated 501(c)(3), so a coder could call the current funder 'Philanthropy'. We code it 'Society' because the Foundation is ASME's own fundraising and endowment arm rather than an independent donor vehicle, and the medal was instituted and financed by ASME's Applied Mechanics Division with no identified outside benefactor. No prize-specific donor record was located, so the origin coding rests on ASME's statement that the Division instituted the award."
+}

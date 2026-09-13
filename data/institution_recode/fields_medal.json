@@ -1,0 +1,28 @@
+{
+  "prize_name": "Fields Medal",
+  "awarding_org": "International Mathematical Union",
+  "awarding_org_type": "International",
+  "awarding_org_country": "Germany",
+  "funder_origin_name": "J.C. Fields bequest (trust at the University of Toronto)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Canada",
+  "funder_current_name": "J.C. Fields trust at the University of Toronto",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Canada",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is CAD 15,000 per medalist (about CAD 60,000 per four-medal cycle). The IMU states on every Fields Medal page that the medals and cash prizes are funded by the trust J.C. Fields established at the University of Toronto, which 'has been supplemented periodically, but is still significantly underfunded': the 2018 shortfall was covered by the University of Toronto and the Fields Institute, the 2022 shortfall by the Heidelberg Laureate Forum Foundation/Klaus Tschira Stiftung, and the 2026 shortfall by the Fields Institute. Because the IMU consistently describes the Fields trust as the funding base and the others as supplements to it, the ring-fenced 1932 bequest is coded as supplying more than 50%; no source quantifies the split, so the shares are inferred rather than measured.",
+  "money_note": "CAD 15,000 per medalist since 2006, paid from the trust created by J.C. Fields's 1932 bequest and held at the University of Toronto, with per-cycle top-ups (Fields Institute in 2018 and 2026; Klaus Tschira Stiftung/Heidelberg Laureate Forum Foundation in 2022).",
+  "status_note": "Continuity is intact; the medal is awarded only every four years at the International Congress of Mathematicians, so intervening years are blank by design, not lapses. Recent award years: 2014 (Seoul), 2018 (Rio de Janeiro), 2022 (Helsinki), 2026 (Philadelphia).",
+  "sources": [
+    "https://www.mathunion.org/imu-awards/fields-medal",
+    "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026",
+    "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2022",
+    "https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2018",
+    "https://www.mathunion.org/organization/imu-secretariat",
+    "https://en.wikipedia.org/wiki/Fields_Medal"
+  ],
+  "evidence_quote": "The medals and cash prizes are funded by a trust established by J.C. Fields at the University of Toronto, which has been supplemented periodically, but is still significantly underfunded.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Three calls. (1) The IMU is a federation of national mathematical organizations, hence International, but its Secretariat has been permanently seated in Berlin since 2011, so the country is recorded as Germany rather than 'International'. (2) The purse comes from a named, ring-fenced bequest that is custodied and administered by the University of Toronto; following the tie-breaker for historical bequests still paid by a demonstrable earmarked endowment, it is coded Philanthropy (Canada) for both origin and today, though a coder emphasizing the current custodian - the IMU itself calls the base 'the prize funds from the University of Toronto' - could reasonably code the current funder University (Canada). (3) Because the trust is 'significantly underfunded' and each cycle requires a top-up from the Fields Institute, the University of Toronto, or the Klaus Tschira Stiftung, a coder could call current funding Mixed; we kept the trust as majority funder because the IMU frames the outside money as a supplement to the trust, but no source gives the actual shares."
+}

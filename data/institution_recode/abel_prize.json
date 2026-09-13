@@ -1,0 +1,28 @@
+{
+  "prize_name": "Abel Prize",
+  "awarding_org": "Norwegian Academy of Science and Letters",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Norway",
+  "funder_origin_name": "Norwegian government (Niels Henrik Abel Memorial Fund, NOK 200 million endowment provided by the state in 2001-2002)",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Norway",
+  "funder_current_name": "Norwegian government (Ministry of Education and Research, grant over the annual national budget)",
+  "funder_current_type": "Government",
+  "funder_current_country": "Norway",
+  "funder_changed": false,
+  "funding_share_basis": "The purse has been 100% Norwegian state money in both states, so the >50% rule is satisfied by a single funder throughout; only the vehicle changed. At founding, Prime Minister Jens Stoltenberg announced (23 August 2001) that the government would establish an Abel Fund of NOK 200 million, approved by the Storting and set up 1 January 2002, whose income financed the NOK 6 million prize first awarded in 2003. Today the fund no longer pays: the statutes state the prize is financed through the national budget by a grant from the Ministry of Education and Research to the Academy, which also covers ceremony and outreach costs (operations money excluded from the purse test). No private, corporate, or society co-funding of the purse was found.",
+  "money_note": "Current purse is NOK 7.5 million (raised from NOK 6 million in 2019), paid by the Norwegian state - originally out of the state-endowed Niels Henrik Abel Memorial Fund (2003 onward) and now as a direct grant from the Ministry of Education and Research through the annual national budget.",
+  "status_note": "",
+  "sources": [
+    "https://abelprize.no/page/about-abel-prize",
+    "https://abelprize.no/page/faq-frequently-asked-questions",
+    "https://abelprize.no/page/history-abel-prize",
+    "https://abelprize.no/node/67",
+    "https://abelprize.no/article/2026/gerd-faltings-awarded-2026-abel-prize",
+    "https://en.wikipedia.org/wiki/Abel_Prize"
+  ],
+  "evidence_quote": "The Abel Prize is financed through the national budget by means of a grant from the Ministry of Education and Research to the Norwegian Academy of Science and Letters.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The Academy (a Society) selects laureates and confers the prize but does so explicitly 'on behalf of the Norwegian government' and reports annually to the Ministry, so a coder could set awarding_org_type to Government; I coded the conferring body as Society and the funder as Government, matching the protocol's own Abel Prize example. Coding the origin funder as Philanthropy because an endowed fund paid the early purses would also be defensible, but the endowment was itself a state appropriation, so Government applies in both states and funder_changed is false despite the change of vehicle."
+}

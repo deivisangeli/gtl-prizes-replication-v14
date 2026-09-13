@@ -1,0 +1,29 @@
+{
+  "prize_name": "Crafoord Prize in Mathematics",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Anna-Greta and Holger Crafoord Fund (Anna-Greta och Holger Crafoords fond), Royal Swedish Academy of Sciences",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Anna-Greta and Holger Crafoord Fund (Royal Swedish Academy of Sciences), with the Crafoord Foundation (Crafoordska stiftelsen), Lund",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The purse comes from the Anna-Greta and Holger Crafoord Fund, a ring-fenced named endowment created by Anna-Greta and Holger Crafoord's 1980 donation to the Royal Swedish Academy of Sciences (~SEK 180M at the time); it is the sole source of the prize money, so >50% (in practice ~100%) is donor philanthropy in both states. The Crafoord Foundation in Lund, endowed by the same family in 1980 (market value SEK 3.8bn at end-2019), is the Academy's named partner in running the prize and supplements the Fund with grants, but it is the same donor family's philanthropy and not a separate funder type. The Academy selects laureates and administers the award but does not pay the purse from its own general funds.",
+  "money_note": "SEK 8 million from 2026 (SEK 6 million through 2025 — Claire Voisin received SEK 6M in 2024), paid per prize (mathematics and astronomy each receive the full sum since 2012), out of the Anna-Greta and Holger Crafoord Fund at the Royal Swedish Academy of Sciences.",
+  "status_note": "Not an annual prize: mathematics is awarded once per four-year rotation (mathematics/astronomy, polyarthritis, geosciences, biosciences). Mathematics years: 1982, 1988, 1994, 2001, 2008, 2012, 2016, 2020, 2024 (next 2028). Before 2012 mathematics and astronomy alternated within the shared slot, giving irregular ~6-7 year gaps; since 2012 the two are awarded as separate simultaneous prizes every fourth year. Winner lists should show no award in the intervening years rather than missing data.",
+  "sources": [
+    "https://www.crafoordprize.se/about-the-prize/the-crafoord-prize/",
+    "https://www.kva.se/en/prizes/crafoord-prize/about-the-crafoord-prize/",
+    "https://www.kva.se/en/scholarship/anna-greta-and-holger-crafoord-fund/",
+    "https://www.kva.se/en/news/this-years-crafoord-laureates-can-see-inside-stars-and-describe-geometric-shapes/",
+    "https://www.crafoord.se/en/the-crafoord-foundation/",
+    "https://www.crafoord.se/en/the-crafoord-foundation/the-founder-holger-crafoord/",
+    "https://en.wikipedia.org/wiki/Crafoord_Prize"
+  ],
+  "evidence_quote": "Anna-Greta and Holger Crafoord's Fund was established in 1980 by a donation to the Royal Swedish Academy of Sciences from Anna-Greta and Holger Crafoord. The Crafoord Prize is awarded in partnership between the Royal Swedish Academy of Sciences and the Crafoord Foundation in Lund, Sweden.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The prize is awarded \"in partnership\" between the Academy and the Crafoord Foundation, so a coder could set the awarding org to the Foundation (Philanthropy); we code the Academy (Society) because it alone selects the laureates and holds the Fund. On funding, the named Crafoord endowment demonstrably pays the purse, so we keep Philanthropy rather than coding the Academy (Society) as today's funder; the Crafoord wealth came from Gambro AB, but both the Fund and Crafoordska stiftelsen are family donor vehicles, not company vehicles, so Philanthropy rather than Corporate."
+}

@@ -1,0 +1,28 @@
+{
+  "prize_name": "Frontiers of Knowledge Award in Economics Finance and Management",
+  "awarding_org": "BBVA Foundation (Fundación BBVA)",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Spain",
+  "funder_origin_name": "BBVA Foundation (Fundación BBVA)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Spain",
+  "funder_current_name": "BBVA Foundation (Fundación BBVA)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Spain",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is EUR 400,000 per category, paid entirely (100%, well above the >50% threshold) by the BBVA Foundation, the corporate foundation of Banco Bilbao Vizcaya Argentaria, from the awards' creation in 2008 through the current (17th/18th) editions. The only other institution involved, the Spanish National Research Council (CSIC), contributes jury and evaluation-panel expertise but no prize money. The BBVA Foundation does not publish a breakdown of whether the money comes from a ring-fenced endowment or from the bank's annual budget line, but the payer of record is unchanged.",
+  "money_note": "EUR 400,000 per category (plus a diploma and a commemorative artwork by Blanca Muñoz), paid by the BBVA Foundation since the awards were established in 2008; the amount has been unchanged since inception.",
+  "status_note": "",
+  "sources": [
+    "https://www.frontiersofknowledgeawards-fbbva.es/",
+    "https://www.bbva.com/en/science-technology/frontiers-of-knowledge-disciplines/",
+    "https://www.bbva.com/en/economy-and-finance/blanchard-gali-and-woodford-win-frontiers-of-knowledge-award-for-economics/",
+    "https://www.fbbva.es/en/about-the-foundation/",
+    "https://cepr.org/about/news/olivier-blanchard-jordi-gali-and-michael-woodford-awarded-seventeenth-edition-bbva",
+    "https://en.wikipedia.org/wiki/BBVA_Foundation_Frontiers_of_Knowledge_Award"
+  ],
+  "evidence_quote": "The BBVA Foundation Frontiers of Knowledge Awards consist of 400,000 euros, a diploma and a commemorative artwork in each of their eight categories.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Corporate because the BBVA Foundation is the corporate foundation of the single bank BBVA and is funded by it; the alternative is Philanthropy, since the foundation is a legally separate entity. A second ambiguity is the awarding body: the BBVA Foundation runs the awards \"in partnership with\" the Spanish National Research Council (CSIC), a public agency that co-appoints the evaluation support panels, so a coder could treat the award as jointly Government-administered. CSIC supplies expertise only and no purse money, so the BBVA Foundation is coded as both awarder and funder. Seat is Bilbao with a Madrid office, both in Spain, so country is unaffected."
+}

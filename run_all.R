@@ -1,41 +1,38 @@
 # ==============================================================================
-# run_all.R — Master script for "The Missing Nobels" replication package
+# run_all.R -- the one command that reproduces every table, macro file and
+# figure of "The Missing Nobels" from the data in data/.
 #
-# Usage: Rscript run_all.R
+#   Rscript run_all.R
 #
-# Sources all code/*.R scripts in numeric order. Each runs in an isolated
-# environment to prevent variable leakage between scripts.
+# Deletes output/ and runs every script in code/ in numeric order, each in a
+# fresh R or Python process, stopping at the first failure. Python scripts use
+# the interpreter named by the PYTHON environment variable (default: python3,
+# or python on Windows).
 # ==============================================================================
 
-cat("=== The Missing Nobels — Replication Package ===\n\n")
+if (!file.exists("_helpers.R")) stop("run_all.R must be executed from the repository root directory.")
 
-# Ensure we are in the repo root
-if (!file.exists("_helpers.R")) {
-  stop("run_all.R must be executed from the repository root directory.")
-}
+python <- Sys.getenv("PYTHON", unset = if (.Platform$OS.type == "windows") "python" else "python3")
+rscript <- file.path(R.home("bin"), "Rscript")
 
-# Create output directories if they don't exist
-dir.create("output/tables",  recursive = TRUE, showWarnings = FALSE)
-dir.create("output/figures", recursive = TRUE, showWarnings = FALSE)
+unlink("output", recursive = TRUE)
+dir.create("output")
 
-scripts <- list.files("code", pattern = "^\\d+_.*\\.R$", full.names = TRUE)
-scripts <- sort(scripts)
-
-cat(sprintf("Found %d scripts to run.\n\n", length(scripts)))
-
+scripts <- sort(list.files("code", pattern = "^\\d+_.*\\.(R|py)$", full.names = TRUE))
+cat(sprintf("=== The Missing Nobels: running %d scripts ===\n\n", length(scripts)))
 t0 <- Sys.time()
-
 for (s in scripts) {
-  cat(sprintf("Running %s ... ", basename(s)))
+  cat(sprintf("%-32s ", basename(s)))
   t1 <- Sys.time()
-  tryCatch({
-    source(s, local = new.env(parent = globalenv()))
-    elapsed <- round(difftime(Sys.time(), t1, units = "secs"), 1)
-    cat(sprintf("done (%.1fs)\n", elapsed))
-  }, error = function(e) {
-    cat(sprintf("FAILED\n  Error: %s\n", conditionMessage(e)))
-  })
+  cmd <- if (grepl("\\.py$", s)) python else rscript
+  args <- s   # the project .Rprofile activates renv in each R child process
+  log <- tempfile(fileext = ".log")
+  status <- system2(cmd, args, stdout = log, stderr = log)
+  if (status != 0) {
+    cat("FAILED\n\n"); cat(readLines(log, warn = FALSE), sep = "\n")
+    stop(sprintf("%s failed (exit status %d)", basename(s), status))
+  }
+  cat(sprintf("done (%.0fs)\n", as.numeric(difftime(Sys.time(), t1, units = "secs"))))
 }
-
-total <- round(difftime(Sys.time(), t0, units = "secs"), 1)
-cat(sprintf("\n=== All scripts completed in %.1f seconds ===\n", total))
+cat(sprintf("\n=== All scripts completed in %.0f seconds ===\n",
+            as.numeric(difftime(Sys.time(), t0, units = "secs"))))

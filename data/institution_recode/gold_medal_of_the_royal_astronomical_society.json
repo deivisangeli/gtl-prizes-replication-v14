@@ -1,0 +1,29 @@
+{
+  "prize_name": "Gold Medal of the Royal Astronomical Society",
+  "awarding_org": "Royal Astronomical Society",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United Kingdom",
+  "funder_origin_name": "Royal Astronomical Society",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United Kingdom",
+  "funder_current_name": "Royal Astronomical Society",
+  "funder_current_type": "Society",
+  "funder_current_country": "United Kingdom",
+  "funder_changed": false,
+  "funding_share_basis": "There is no cash purse: the award is a struck gold medal, paid for entirely (100%, so the >50% rule is trivially satisfied) by the Society from its own general funds (subscriptions, publications income, investments). No donor or benefactor is associated with the medal at origin: the Astronomical Society of London (chartered as the Royal Astronomical Society in 1831) instituted the medal itself and awarded the first two in 1824, and neither the RAS awards pages nor the medal's history name an endowment. The contrast is explicit on the RAS awards list, which credits donors where they exist (e.g., the Fowler Award 'established in 2004 through the generosity of Mrs Rosemary Fowler') but records nothing of the kind for the Gold Medal. The awarding body's rename from Astronomical Society of London to Royal Astronomical Society is not a change of funder.",
+  "money_note": "No monetary prize; the RAS strikes and confers a gold medal, funded from its own resources, as it has since 1824.",
+  "status_note": "Continuous since 1824 under the same name. Since 1964 two Gold Medals are awarded each year, one in astronomy (A) and one in geophysics (G), so a normal year yields two recognition events rather than one; the RAS lists them separately as 'Gold Medal (A)' and 'Gold Medal (G)'. Silver medals were also given in 1824 and 1827 but that practice was abandoned.",
+  "sources": [
+    "https://ras.ac.uk/awards-and-grants/awards/gold-medal-a",
+    "https://www.ras.ac.uk/awards-and-grants/awards",
+    "https://ras.ac.uk/about-the-ras",
+    "https://ras.ac.uk/news-and-press/news/winners-2026-ras-awards-revealed",
+    "https://en.wikipedia.org/wiki/Gold_Medal_of_the_Royal_Astronomical_Society",
+    "https://www.skyatnightmagazine.com/space-science/royal-astronomical-society-history",
+    "https://www.britannica.com/topic/Gold-Medal-of-the-Royal-Astronomical-Society"
+  ],
+  "evidence_quote": "The Gold Medal is the highest award in the Society's gift, and the Byelaws leave the Council complete freedom as to the grounds on which it is awarded.",
+  "confidence": "high",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

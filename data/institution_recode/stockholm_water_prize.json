@@ -1,0 +1,30 @@
+{
+  "prize_name": "Stockholm Water Prize",
+  "awarding_org": "Stockholm Water Foundation (in cooperation with the Royal Swedish Academy of Sciences)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Stockholm Water Foundation (endowed by the City of Stockholm, the Stockholm Water Festival Foundation and private-sector 'Founder' companies)",
+  "funder_origin_type": "Mixed",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Stockholm Water Foundation, financed by the City of Stockholm's endowment via Förmånsstiftelsen (FMS) and by the corporate Founding Partners (Ålandsbanken, Bacardi, Fujitsu, Poul Due Jensen/Grundfos Foundation, Water Environment Federation, Xylem)",
+  "funder_current_type": "Mixed",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The purse (SEK 1 million) is paid by the Stockholm Water Foundation, which has been financed from two streams since inception: the City of Stockholm (a founding party in 1990, and donor of SEK 50m in 2008 plus a further SEK 50m in 2014 to Förmånsstiftelsen, a foundation created 'to ensure the long-term financial security of the Stockholm Water Prize') and a rotating roster of corporate 'Founders' (2014: Bacardi, Borealis & Borouge, DuPont, ERV, Fujitsu, Grundfos, HP, Kemira, KPMG Sweden, Ragn-Sells, Scandic, SAS, SJ, Snecma/Safran, Xylem, Ålandsbanken; 2025-26: Ålandsbanken, Bacardi, Fujitsu, PDJ/Grundfos Foundation, WEF, Xylem). No published breakdown shows either stream above 50% of the purse, so both states are coded Mixed; the Royal Swedish Academy of Sciences and the Water Environment Federation give in-kind/committee support rather than the purse.",
+  "money_note": "Current purse is SEK 1,000,000 plus an Orrefors crystal sculpture (quoted as USD 150,000 in 2014 press material), paid by the Stockholm Water Foundation out of its City of Stockholm endowment and corporate Founding Partner contributions.",
+  "status_note": "",
+  "sources": [
+    "https://stockholmwaterfoundation.org/stockholm-water-prize/",
+    "https://stockholmwaterfoundation.org/about-swf/",
+    "https://stockholmwaterfoundation.org/stockholm-water-prize/history-of-the-prize",
+    "https://stockholmwaterfoundation.org/news/professor-gunter-bloschl-awarded-2025-stockholm-water-prize",
+    "https://stockholmwaterfoundation.org/news/global-water-governance-pioneer-professor-kaveh-madani-receives-the-2026-stockholm-water-prize/",
+    "https://www.kva.se/en/prizes/stockholm-water-prize/about-stockholm-water-prize/",
+    "https://siwi.org/wp-content/uploads/2014/03/2014-SWP-press-release-new.pdf",
+    "https://en.wikipedia.org/wiki/Stockholm_Water_Prize"
+  ],
+  "evidence_quote": "Initially founded by the Stockholm Water Foundation ... the Stockholm Water Prize is additionally supported by the Royal Swedish Academy of Sciences, International Water Association, Water Environment Federation and the City of Stockholm.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Two calls. (1) The awarding body, Stiftelsen Stockholm Water Foundation, was set up in 1990 by the City of Stockholm together with the Water Festival Foundation and private companies, so a coder could call it Government; I code it Philanthropy because it is a legally independent Swedish foundation that has governed itself since 2008 and confers the prize with the Royal Swedish Academy of Sciences. (2) Funding is coded Mixed in both states because the municipal endowment (SEK 100m to FMS, explicitly to secure this prize) and the corporate Founding Partners both bankroll it with no published share split; a coder favouring the endowment would code Government, one favouring the sponsor roster Corporate. funder_current_country is given as Sweden (seat of SWF and of the City of Stockholm endowment) although several Founding Partners are foreign (Denmark, Finland, Japan, United States)."
+}

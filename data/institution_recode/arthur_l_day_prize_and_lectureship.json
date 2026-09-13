@@ -1,0 +1,24 @@
+{
+  "prize_name": "Arthur L. Day Prize and Lectureship",
+  "awarding_org": "National Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Arthur L. Day Bequest (bequest of geophysicist Arthur Louis Day)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Arthur L. Day Bequest (administered by the National Academy of Sciences)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse comes from one source in both states: the ring-fenced Arthur L. Day Bequest, left to the National Academy of Sciences by geophysicist Arthur Louis Day (NAS vice president 1933-1941), which endowed the prize first awarded in 1972. The NAS award page still attributes both the cash prize and the lecture funds to that named bequest for the most recent (2026) cycle, so the >50% test is met by the bequest at origin and today; no co-funder, corporate sponsor, or government appropriation appears in any source. NAS supplies administration and selection only, which does not count toward the purse.",
+  "money_note": "USD 50,000 prize plus funds from the Arthur L. Day Bequest to deliver a series of Day Lectures; awarded roughly triennially since 1972 and paid from the same bequest throughout (most recent award 2026, Roland Burgmann).",
+  "status_note": "",
+  "sources": [
+    "https://www.nasonline.org/award/arthur-l-day-prize-and-lectureship/",
+    "https://en.wikipedia.org/wiki/Arthur_L._Day_Prize_and_Lectureship"
+  ],
+  "evidence_quote": "The recipient is awarded a $50,000 prize and funds from the Arthur L. Day Bequest to present a series of Day Lectures.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Because the bequest is held and managed by NAS, a coder could record the current funder as the National Academy of Sciences (Society). We keep Philanthropy for both states since NAS names the Arthur L. Day Bequest as the ring-fenced source of the current purse rather than pooling it into general funds."
+}

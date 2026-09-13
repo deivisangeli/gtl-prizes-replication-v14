@@ -1,0 +1,29 @@
+{
+  "prize_name": "Wolf Prize in Agriculture",
+  "awarding_org": "Wolf Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Israel",
+  "funder_origin_name": "Wolf Foundation (endowment donated by Ricardo Subirana y Lobo Wolf and Francisca Wolf)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Israel",
+  "funder_current_name": "Wolf Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Israel",
+  "funder_changed": false,
+  "funding_share_basis": "The purse comes entirely (100%, well above the >50% threshold) from investment income on the Wolf Foundation's private endowment, given by the Wolf family: the Foundation began operating in 1976 with an initial endowment of USD 10 million from Ricardo and Francisca Wolf, and annual investment income pays the prizes, scholarships and operating costs. No corporate or state co-sponsor of the purse was found; the Israeli state's role is statutory/ceremonial (the Foundation operates under the Wolf Foundation Law 1975, the Minister of Education chairs its Council, the State Comptroller audits it, and the ceremony is held at the Knesset), not financial.",
+  "money_note": "Each Wolf Prize, including Agriculture, is a diploma, a gold Medal of Honor and USD 100,000, paid from the Wolf Foundation's endowment income and shared among up to three laureates.",
+  "status_note": "",
+  "sources": [
+    "https://wolffund.org.il/about-wolf-foundation/",
+    "https://wolffund.org.il/the-wolf-prize/",
+    "https://wolffund.org.il/category/field/agriculture/",
+    "https://wolffund.org.il/ricardo-wolf/",
+    "https://en.wikipedia.org/wiki/Wolf_Foundation",
+    "https://en.wikipedia.org/wiki/Wolf_Prize",
+    "https://en.wikipedia.org/wiki/Wolf_Prize_in_Agriculture"
+  ],
+  "evidence_quote": "Founded in 1975 with an endowment from the Wolf family, the Foundation's major donors were Dr. Ricardo Subirana Y Lobo Wolf and his wife, Francisca.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the Wolf Foundation Government (or Mixed): it was created by an act of the Knesset, the Wolf Foundation Law 1975, the Minister of Education serves as chairman of its Council, the State Comptroller oversees it, and prizes are handed out at a Knesset ceremony. We code Philanthropy because the entire purse derives from the private Wolf family endowment and the Foundation holds private not-for-profit status in Israel; the state supplies legal framework and ceremony, not money."
+}

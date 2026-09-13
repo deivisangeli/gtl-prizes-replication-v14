@@ -1,0 +1,29 @@
+{
+  "prize_name": "Marconi Prize",
+  "awarding_org": "The Marconi Society",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "The Marconi Society (founded 1974 as the Guglielmo Marconi International Fellowship Foundation)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Marconi Society",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The same donor-founded US charitable foundation has paid the purse from its own pooled funds since 1975; no handover ever occurred. The underlying money is deliberately diversified corporate philanthropy: founder Gioia Marconi Braga raised the original fund in $50k-$100k tranches from AT&T, IBM, Sony, Ericsson, General Electric, Olivetti, ITT, RCA and Hewlett-Packard, and declined IBM's offer to fund the award entirely so that no one company could control it. Today the purse comes from the same mix - annual contributions and awards-gala sponsorship from many ICT firms plus income on a small endowment (990-PF assets ~USD 1.3M in FY2023, far too small to cover USD 100k alone). No single corporate donor exceeds 50% of the purse in either state, so the paying entity, the foundation itself, is the funder.",
+  "money_note": "Current purse is a USD 100,000 honorarium plus a commissioned sculpture, paid by the Marconi Society; the award began in 1975 as a fellowship and the six-figure cash component dates from around 2000.",
+  "status_note": "Continuously awarded since 1975 and still active (2026: Robert Calderbank); recipients are styled 'Marconi Fellows' and the award is sometimes called the Marconi International Fellowship, so winner lists may appear under that name. Distinct from the unrelated Marconi Prize of the Fondazione Guglielmo Marconi (Bologna, Italy) and from the IEEE Marconi Prize Paper Award - check for cross-contamination in winner data.",
+  "sources": [
+    "https://marconisociety.org/marconi-prize/",
+    "https://marconisociety.org/history/",
+    "https://marconisociety.org/magazine/a-tribute-to-my-mother-gioia-marconi-braga-founder-of-the-marconi-society/",
+    "https://marconisociety.org/2025-awards-gala-sponsorship/",
+    "https://projects.propublica.org/nonprofits/organizations/133959217",
+    "https://en.wikipedia.org/wiki/Marconi_Prize",
+    "https://en.wikipedia.org/wiki/Marconi_Society"
+  ],
+  "evidence_quote": "IBM even offered to fund the entire award in perpetuity, but my mother declined. She didn't want to be controlled by any one company. Instead, she gathered $50,000 here and $100,000 there from all the great companies of the day.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Coded Philanthropy at both states rather than Society (despite the name, the awarding body is a donor-founded charitable foundation that files a 990-PF, not a membership body of scholars) and rather than Mixed/Corporate. A defensible alternative is to look through the foundation to its donors, which would make the origin funder Mixed (many corporations, none above 50%) and arguably Mixed today as well; we code the foundation because it holds, pools and pays the purse and no single corporate donor is close to majority in either period. Confidence is medium on the current no-single-donor-above-50% claim, since Schedule B contributor detail is not public."
+}

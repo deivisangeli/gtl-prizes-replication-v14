@@ -15,9 +15,20 @@ prizeList <- prizeList %>%
                           TRUE ~ 3),
          pcaRatingNormRound = round(pcaRatingNorm, 1))
 
+# Put the survey rating on the same scale as the other four indicators. The *Std
+# columns of cleanPrizeList.xlsx are centered and scaled with the mean and
+# population SD of the PCA fitting sample (the 76 complete cases); RatingNorm
+# (observed rating, imputed where missing) is not.
+pcaCols <- c("Rating", "lnPageViews", "lnAge", "lnMoneyPerPrize", "lnNewsMentions")
+fitRating <- prizeList$Rating[complete.cases(prizeList[, pcaCols])]
+stopifnot(length(fitRating) == 76)
+ratingMean <- mean(fitRating)
+ratingSD <- sqrt(mean((fitRating - ratingMean)^2))
+prizeList$RatingStd <- (prizeList$RatingNorm - ratingMean) / ratingSD
+
 calculateNewRanking <- function(df, w) {
-  df$newRating <- w[1] * df$pageViewsNorm + w[2] * df$RatingNorm +
-    w[3] * df$lnAgeNorm + w[4] * df$lnMoneyNorm + w[5] * df$lnNewsMentionsNorm
+  df$newRating <- w[1] * df$lnPageViewsStd + w[2] * df$RatingStd +
+    w[3] * df$lnAgeStd + w[4] * df$lnMoneyPerPrizeStd + w[5] * df$lnNewsMentionsStd
 
   df <- df[order(df$newRating, decreasing = TRUE), ]
   df$newRank <- 1:nrow(df)
@@ -102,18 +113,29 @@ table <- stargazer(forTable, type = "latex",
                    title = "List of Selected Prizes")
 
 table <- gsub("\\textbackslash &", "\\&", table, fixed = TRUE)
-table <- gsub("\\begin{tabular}", "{ \\small \\begin{longtable}", table, fixed = TRUE)
-table <- gsub("\\end{tabular}", "\\end{longtable} ", table, fixed = TRUE)
+# Until 2026-09-03 the longtable was wrapped in a "{ ... }" group whose closing brace was
+# never written, leaving an unbalanced "{" that made the paper fail with "Missing } inserted".
+# \small stays scoped to the table; \begingroup/\endgroup sit on the same lines as the delimiters.
+table <- gsub("\\begin{tabular}", "\\begingroup\\small \\begin{longtable}", table, fixed = TRUE)
+table <- gsub("\\end{tabular}", "\\end{longtable}\\endgroup", table, fixed = TRUE)
 table <- gsub("ccc}",
               "ccc} \\caption{Robustness Exercise -- Distribution of Prize Ranking under Random Weighting} \\label{mainRankingRobustness}",
               table, fixed = TRUE)
 table <- gsub("{@{\\extracolsep{5pt}} ccccc}", "{lcccc}", table, fixed = TRUE)
 table <- table[-c(1, 2, 3, 4, 5, 6, length(table))]
 
-table[length(table) + 2] <-
-  paste("\\noindent \\footnotesize \\textit{Note}: This table shows statistics about the distribution of rank and tier for our list of 99 most prestigious prizes in 1,000 simulations using random weights.",
+# Blank line, then the note (writing straight to length + 2 left a literal "NA" line).
+table[length(table) + 1] <- ""
+table[length(table) + 1] <-
+  paste("\\noindent \\footnotesize \\textit{Note}: This table shows statistics about the distribution of rank and tier for our list of 99 most prestigious prizes in 1,000 simulations using random weights over the five indicators, each centered and scaled with the PCA fitting sample.",
         "The original ranking is shown in the PCA Rank column. The P5, P50, and P95 columns show the 5th, 50th, and 95th percentiles of the simulated ranks.",
-        "The PCA Tier column shows the original tier. The \\% in right Tier column shows how often the simulated rank coincides with the original tier.",
+        "The PCA Tier column shows the original tier. The \\% in right Tier column shows how often the simulated tier coincides with the original tier.",
         sep = " ")
 
-writeLines(table, file.path(table_dir, "prizeRankRobustnessTable.tex"))
+write_tex(table, file.path(table_dir, "prizeRankRobustnessTable.tex"))
+
+# The two shares the paper quotes (prizes keeping their tier in over 50% / 90% of
+# the simulations)
+write_tex(c(mac("robustStableFifty",  sprintf("%.0f", 100 * mean(prizeList$`Freq. in right Tier` > 50))),
+            mac("robustStableNinety", sprintf("%.0f", 100 * mean(prizeList$`Freq. in right Tier` > 90)))),
+          file.path(table_dir, "robustness_macros.tex"))

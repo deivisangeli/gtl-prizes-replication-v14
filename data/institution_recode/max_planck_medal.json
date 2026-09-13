@@ -1,0 +1,29 @@
+{
+  "prize_name": "Max Planck Medal",
+  "awarding_org": "Deutsche Physikalische Gesellschaft (German Physical Society, DPG)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Germany",
+  "funder_origin_name": "Private individuals, learned societies and companies subscribing to the 1929 appeal by Born, Einstein, von Laue, Schroedinger and Sommerfeld",
+  "funder_origin_type": "Mixed",
+  "funder_origin_country": "Germany",
+  "funder_current_name": "Deutsche Physikalische Gesellschaft (German Physical Society, DPG)",
+  "funder_current_type": "Society",
+  "funder_current_country": "Germany",
+  "funder_changed": true,
+  "funding_share_basis": "The award carries no cash purse: what the winner receives is a gold medal with Planck's portrait plus a hand-written parchment certificate, so the 'purse' is the cost of striking the medal and producing the certificate. Origin (1929): a subscription campaign - DPG states the medal was 'gestiftet ... von Personen, Gesellschaften und Firmen' responding to the Born/Einstein/von Laue/Schroedinger/Sommerfeld appeal, i.e. private individuals (Philanthropy), scientific societies (Society) and firms (Corporate), all German, with no identified donor above 50% - hence Mixed. Today: the DPG's prize page, the 2019/2024 Satzung der Max-Planck-Medaille, and the annual DPG prize call name no donor, sponsor or ring-fenced fund for this medal, and no Dotierung. The contrast within the same DPG pages is explicit - the Walter-Schottky-Preis page states that 'Die Infineon Technologies AG und die Robert Bosch GmbH sind Patenfirmen des Preises und spenden das Preisgeld zu gleichen Teilen (je 5.000 Euro)', and the Gaede-Preis is stated to be administered by the Gaede-Stiftung, while the Max-Planck-Medaille has no such attribution. The 1929 fund was Reichsmark-denominated and held by the pre-war DPG, which was dissolved by the Allies after 1945 and reconstituted from regional societies from 1946; Reichsmark assets were in any case largely extinguished by the 1948 currency reform, and no Max-Planck-Medaillen fund appears in DPG annual reports. On the balance of evidence essentially 100% of what is handed over today is paid from the DPG's own general funds (member dues and society income), not from 1929 donor money - so more than half of today's award is new money.",
+  "money_note": "No cash prize at any point: the award is a gold medal bearing Planck's portrait and a hand-written parchment certificate, produced and paid for today by the DPG out of its own funds; the 1929 subscription fund is not identified as an active endowment financing the award.",
+  "status_note": "",
+  "sources": [
+    "https://www.dpg-physik.de/auszeichnungen/dpg-preise/max-planck-medaille",
+    "https://www.dpg-physik.de/auszeichnungen/dpg-preise",
+    "https://www.dpg-physik.de/veroeffentlichungen/aktuell/2026/ausschreibung-fuer-dpg-preise-2027",
+    "https://www.dpg-physik.de/ueber-uns/profil-und-selbstverstaendnis/jahresberichte/pdf/dpg-jahresbericht_2005.pdf",
+    "https://www.dpg-physik.de/ueber-uns/profil-und-selbstverstaendnis/chronik/",
+    "https://en.wikipedia.org/wiki/Max_Planck_Medal",
+    "https://de.wikipedia.org/wiki/Max-Planck-Medaille"
+  ],
+  "evidence_quote": "Gestiftet wurde die Max-Planck-Medaille 1929 von Personen, Gesellschaften und Firmen aufgrund eines Aufrufes von Max Born, Albert Einstein, Max von Laue, Erwin Schroedinger und Arnold Sommerfeld zum 70. Geburtstag von Max Planck.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "No source states in so many words who pays for the medal today; we infer DPG general funds from the absence of any named donor or endowment in the prize statutes and annual call (unlike the Schottky and Gaede prizes, whose current funders DPG names explicitly) and from the destruction of the 1929 Reichsmark fund by the DPG's post-war dissolution and the 1948 currency reform. A coder who assumed the 1929 endowment still finances the medal would code funder_current as Mixed/Philanthropy and funder_changed false; origin could also be read as pure Philanthropy if the 'Gesellschaften und Firmen' contributions are treated as minor."
+}

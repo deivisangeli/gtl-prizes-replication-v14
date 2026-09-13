@@ -1,0 +1,29 @@
+{
+  "prize_name": "Gruber Prize in Genetics",
+  "awarding_org": "The Gruber Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "The Peter and Patricia Gruber Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Gruber Foundation (endowment contributed by Peter and Patricia Gruber; a Yale University supporting organization)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a single unrestricted USD 500,000 cash award, paid 100% out of the Gruber endowment. From the prize's creation (2000; first Genetics Prize 2001) it was paid by the private Peter and Patricia Gruber Foundation. In 2011 the Grubers moved the philanthropy to Yale, incorporating The Gruber Foundation as a 509(a)(3) Type 1 supporting organization 'operated, supervised, or controlled by Yale University' and funding it with 'a landmark contribution from philanthropists Peter and Patricia Gruber.' Yale supplies governance and administration, not the purse: the Foundation files as its own entity (2016 revenue USD 4.68M, expenses USD 3.29M) and pays the three USD 500,000 prizes plus the Gruber Science Fellowships from that donor-supplied endowment, so >50% of the purse comes from the Gruber money in both states. The change was of vehicle, not of funder.",
+  "money_note": "Unrestricted USD 500,000 cash award plus a gold medal/laureate pin, unchanged in nominal terms, paid annually by The Gruber Foundation out of its Gruber-donated endowment (2026 Genetics Prize announced).",
+  "status_note": "",
+  "sources": [
+    "https://gruber.yale.edu/foundation",
+    "https://gruber.yale.edu/genetics",
+    "https://gruber.yale.edu/press/yale-and-patricia-and-peter-gruber-announce-establishment-gruber-foundation-yale",
+    "https://news.yale.edu/2011/05/16/yale-and-patricia-and-peter-gruber-announce-establishment-gruber-foundation-yale",
+    "https://news.yale.edu/2017/05/17/gruber-foundation-awards-15-million-prizes-three-top-scientists",
+    "https://en.wikipedia.org/wiki/Gruber_Foundation",
+    "https://en.wikipedia.org/wiki/Gruber_Prize_in_Genetics"
+  ],
+  "evidence_quote": "The Gruber Foundation is funded by a landmark contribution from philanthropists Peter and Patricia Gruber... a 509(a)(3) Type 1 supporting organization operated, supervised, or controlled by Yale University.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Because The Gruber Foundation is legally controlled by Yale and seated at Yale, a coder could code today's awarding org and funder as University. We keep Philanthropy for both states under the >50% rule: the purse is paid from an endowment supplied entirely by the Gruber donors and held by a separately incorporated donor-named foundation, with Yale contributing control and administration rather than prize money. Country is United States either way."
+}

@@ -1,0 +1,31 @@
+{
+  "prize_name": "Gruber Prize in Cosmology",
+  "awarding_org": "The Gruber Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Peter and Patricia Gruber Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Gruber Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the USD 500,000 purse comes from the Gruber endowment in both states. At origin (foundation incorporated 1993 in California as the Peter Gruber Foundation; prize program launched with the 2000 Cosmology Prize) the purse was paid from Peter and Patricia Gruber's private philanthropic funds. In 2011 the endowment was transferred into The Gruber Foundation, a separate 501(c)(3) with its own EIN (45-1540594) that is a 509(a)(3) Type 1 supporting organization of Yale University; it holds ~USD 230M in assets and its FY2024 Form 990 reports USD 2,000,000 paid out in prizes from its own funds, separately from USD 4.2M in grants it made to Yale. Yale supervises the foundation but does not supply the purse, so the >50% test still points to the Gruber endowment (Philanthropy), not the university. The International Astronomical Union has cosponsored the Cosmology Prize since 2001 but contributes nomination and selection input, not money.",
+  "money_note": "Unrestricted USD 500,000 cash award plus a gold medal, awarded annually and paid entirely from the Gruber endowment; the endowment's legal vehicle moved from the California-based Peter and Patricia Gruber Foundation to The Gruber Foundation at Yale in 2011, with no change in who funds the purse.",
+  "status_note": "",
+  "sources": [
+    "https://gruber.yale.edu/cosmology",
+    "https://gruber.yale.edu/foundation",
+    "https://gruber.yale.edu/history",
+    "https://gruber.yale.edu/press/yale-and-patricia-and-peter-gruber-announce-establishment-gruber-foundation-yale",
+    "https://news.yale.edu/2011/05/16/yale-and-patricia-and-peter-gruber-announce-establishment-gruber-foundation-yale",
+    "https://philanthropy.org/990/report/451540594/gruber-foundation",
+    "https://www.guidestar.org/profile/45-1540594",
+    "https://en.wikipedia.org/wiki/Gruber_Prize_in_Cosmology",
+    "https://en.wikipedia.org/wiki/Gruber_Foundation"
+  ],
+  "evidence_quote": "The Gruber Foundation is a 509(a)(3) Type 1 supporting organization operated, supervised, or controlled by Yale University and incorporated in 2011 under the 501(c)(3) section of U.S. Corporate Law.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Because The Gruber Foundation has been a Yale-supervised supporting organization seated in New Haven since 2011, a coder could record the current funder (and awarding body) as University. I kept Philanthropy for both states: the foundation is a separately incorporated charity holding the Grubers' endowment, pays the USD 500,000 purse from its own assets, and grants money to Yale rather than receiving it. A further alternative for the awarding body is International, since the IAU has cosponsored the prize since 2001 and nominates the Selection Advisory Board, but the IAU neither funds nor confers the award."
+}

@@ -1,0 +1,29 @@
+{
+  "prize_name": "ICTP Ramanujan Prize",
+  "awarding_org": "Abdus Salam International Centre for Theoretical Physics (ICTP), jointly with the International Mathematical Union (IMU)",
+  "awarding_org_type": "International",
+  "awarding_org_country": "Italy",
+  "funder_origin_name": "Niels Henrik Abel Memorial Fund",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Norway",
+  "funder_current_name": "Abdus Salam International Centre for Theoretical Physics (ICTP) and International Mathematical Union (IMU)",
+  "funder_current_type": "Mixed",
+  "funder_current_country": "Mixed",
+  "funder_changed": true,
+  "funding_share_basis": "Applying the >50% test to the money: none of today's purse is the money that founded the prize. At founding (2005) the cash award was supplied by the Niels Henrik Abel Memorial Fund, the Norwegian state endowment (NOK 200m appropriated by the Norwegian government in 2002 and administered by the Norwegian Academy of Science and Letters); ICTP's and IMU's contributions at founding were administration, selection and the winner's travel, which the purse rule excludes. The Abel Fund's participation ended in 2012, so that money supplies 0% of the purse today. ICTP and IMU jointly funded the 2013 award; India's Department of Science and Technology (DST) then paid the USD 15,000 purse from 2014 (prize renamed DST-ICTP-IMU Ramanujan Prize) until 2022/23; since the 2024 cycle the purse (cut to USD 10,000) comes from ICTP and IMU, the two bodies that now jointly administer and fund the prize. No source publishes the ICTP/IMU split of today's USD 10,000, and the two sit in different countries (ICTP in Trieste, Italy; IMU secretariat in Berlin, Germany), so the current funder type and country are coded Mixed. Whatever the split, both components are new money relative to the Abel Fund, so funder_changed is true regardless.",
+  "money_note": "Purse is USD 10,000 today, paid by ICTP and IMU since the 2024 cycle; it was USD 15,000 while the Niels Henrik Abel Memorial Fund (2005-2012) and then India's DST (2014-2022/23) financed it.",
+  "status_note": "Renamed DST-ICTP-IMU Ramanujan Prize while DST funded it (2014-2022); no award was made in 2023; awarded again from 2024 as the ICTP-IMU Ramanujan Prize with the purse reduced to USD 10,000 (2025 prize to Claudio Munoz). ICTP's own page describes DST funding as running 2014-2023, which conflicts with IMU's 2014-2022 plus a skipped 2023 - treat 2023 as a non-award year.",
+  "sources": [
+    "https://www.ictp.it/prize/ramanujan-prize",
+    "https://www.ictp.it/opportunity/call-nominations-ictp-imu-ramanujan-prize",
+    "https://www.ictp.it/news/2025/10/ramanujan-prize-2025-announced",
+    "https://www.mathunion.org/imu-awards/other-prizes",
+    "https://www.mathunion.org/node/15999",
+    "https://www.indiascienceandtechnology.gov.in/nurturing-minds/s-and-t-awards/international/dst-ictp-ramanujan-prize-mathematics",
+    "https://en.wikipedia.org/wiki/ICTP_Ramanujan_Prize"
+  ],
+  "evidence_quote": "The participation of the Abel Fund ended in 2012; the 2013 Prize was jointly funded and administered by the ICTP and the IMU. ... No award was made in 2023. Since 2024 the Prize has again been jointly administered by the ICTP and the IMU.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Three calls. (1) Current funder: sources say ICTP and IMU jointly fund/administer the prize but publish no share of the USD 10,000, so type and country are coded Mixed (Italy + Germany); coding ICTP alone (International, Italy) is defensible since the purse was cut by a third when DST left, consistent with ICTP absorbing it. (2) ICTP is a UNESCO Category 1 institute governed by IAEA, UNESCO and Italy, coded International with Italy as its permanent seat in Trieste; Government/Italy is an alternative. (3) The Niels Henrik Abel Memorial Fund is a Norwegian state endowment administered by the Norwegian Academy of Science and Letters, so Society/Norway is defensible; the skill's own example treats Abel money as Government, which is why Government/Norway was chosen. None of these alters funder_changed, which is true under the money test because no part of today's purse is Abel Fund money."
+}

@@ -1,6 +1,6 @@
 # ==============================================================================
 # 03_scatterplots.R
-# Generates: Figures 1-3, S1 (cum_prize_time.png, scatter_time_views.png,
+# Generates: Figures 2a-c and S1 (cum_prize_time.png, scatter_time_rating.png,
 #            scatter_moneyprize_time_linear_fit.png, scatter_money_views.png)
 # ==============================================================================
 source("_helpers.R")
@@ -43,10 +43,12 @@ base_prizes <- prizeList %>%
   filter(`Award Name` != "A. M. Turing Award") %>%
   select(`Award Name`, first_awarded, moneyPerYear)
 
+# Increments to the cumulative purse: 250k in 2007, then the 750k that lifts it
+# to the current 1M in 2013
 turing_increments <- tibble(
   `Award Name`  = "A. M. Turing Award",
   first_awarded = c(1966, 2007, 2013),
-  moneyPerYear  = c(0, 250000, 1000000)
+  moneyPerYear  = c(0, 250000, 750000)
 )
 
 prize_adj <- bind_rows(base_prizes, turing_increments) %>%
@@ -103,17 +105,20 @@ plot2 <- ggplot(prize_adj, aes(x = first_awarded)) +
   annotate("text", x = 1940, y = 175, label = "Cumulative Prize Money per Year",
            angle = 10, hjust = 0, vjust = 0.5, size = 3, color = "#8B0000")
 
-ggsave(file.path(figure_dir, "cum_prize_time.png"), plot2, width = 6, height = 3.5, dpi = 1080)
+save_figure("cum_prize_time.png", plot2, width = 6, height = 3.5, dpi = 1080)
 
 ################################################################################
-# Figure 1b: Prize Age vs Online Visibility
+# Figure 2b: Prize Age vs Survey Rating
 ################################################################################
 
-p_time_views <- ggplot(prizeList, aes(x = first_awarded, y = ln10PageViews)) +
+rated <- prizeList %>% filter(!is.na(Rating))
+
+p_time_rating <- ggplot(rated, aes(x = first_awarded, y = Rating)) +
   geom_point(shape = 21, size = 2, fill = "blue", alpha = 0.5) +
   geom_smooth(method = "lm", se = FALSE, color = "#CBC3E3", size = 0.5, alpha = 0.2) +
   geom_label_repel(
-    data = labels_without_zero_views,
+    data = rated %>% filter(`Award Name` %in% prizes_to_label_view,
+                            `Award Name` != "Breakthrough Prize in Fundamental Physics"),
     aes(label = `Award Name`),
     box.padding = 0.2, point.padding = 0.3, min.segment.length = 0,
     force = 15, force_pull = 0, max.overlaps = Inf, direction = "both",
@@ -121,30 +126,35 @@ p_time_views <- ggplot(prizeList, aes(x = first_awarded, y = ln10PageViews)) +
     position = position_dodge(width = 0.9),
     fill = scales::alpha("white", 0.7), label.size = NA, size = 2.5
   ) +
+  # Breakthrough Prize placed manually: label left of dot with explicit connector
+  annotate("segment", x = 1983, xend = 2011, y = 0.62, yend = 0.555,
+           color = "grey50", size = 0.5, alpha = 0.6) +
+  geom_text(
+    data = data.frame(x = 1983, y = 0.62, label = "Breakthrough Prize in Fundamental Physics"),
+    aes(x = x, y = y, label = label),
+    size = 2.5, hjust = 1, inherit.aes = FALSE
+  ) +
   geom_hline(yintercept = 0, color = "black", linetype = "solid", size = 0.05) +
   scale_x_continuous(
     limits = c(min(prizeList$first_awarded), max(prizeList$first_awarded)),
     breaks = c(1731, min(prizeList$first_awarded), seq(1800, 2000, by = 100))
   ) +
-  scale_y_continuous(
-    name = "Daily Page Views (Log Scale)",
-    breaks = c(0, 1, 2, 3), labels = c("0", "10", "100", "1000")
-  ) +
+  scale_y_continuous(name = "Survey Rating (Relative to Nobel)") +
   labs(title = "", x = "Year First Awarded") +
   theme_minimal() +
   theme(
     axis.text.x = element_text(),
     panel.background = element_rect(fill = "white", color = NA),
-    plot.background = element_rect(fill = "white", color = NA),
+    plot.background  = element_rect(fill = "white", color = NA),
     panel.grid.minor.x = element_blank(),
     panel.grid.major.x = element_blank(),
     panel.grid.minor.y = element_blank(),
     panel.grid.major.y = element_line(color = "black", size = 0.1)
   ) +
-  annotate("text", x = 1800, y = 1.3, label = "Linear Fit",
-           hjust = 0, vjust = 0.5, size = 2.5, color = "#CBC3E3", angle = -2)
+  annotate("text", x = 1800, y = 0.3, label = "Linear Fit",
+           hjust = 0, vjust = 0.5, size = 2.5, color = "#CBC3E3", angle = 0)
 
-ggsave(file.path(figure_dir, "scatter_time_views.png"), p_time_views, width = 6, height = 3.5, dpi = 1080)
+save_figure("scatter_time_rating.png", p_time_rating, width = 6, height = 3.5, dpi = 1080)
 
 ################################################################################
 # Figure 1c: Prize money per winner over time
@@ -181,7 +191,7 @@ plot_linear <- ggplot(prizeList, aes(x = first_awarded)) +
   annotate("text", x = 1830, y = 200000, label = "Linear Fit",
            hjust = 0, vjust = 0.5, size = 2.5, color = "#CBC3E3", angle = 0)
 
-ggsave(file.path(figure_dir, "scatter_moneyprize_time_linear_fit.png"), plot_linear, width = 6, height = 3.5, dpi = 1080)
+save_figure("scatter_moneyprize_time_linear_fit.png", plot_linear, width = 6, height = 3.5, dpi = 1080)
 
 ################################################################################
 # Figure 1d: Money vs Online Visibility
@@ -218,4 +228,4 @@ p_money_views <- ggplot(prizeList %>% filter(ln10PageViews > 0),
   annotate("text", x = 2000000, y = 1.9, label = "Linear Fit",
            hjust = 0, vjust = 0.5, size = 2.5, color = "#CBC3E3", angle = 5)
 
-ggsave(file.path(figure_dir, "scatter_money_views.png"), p_money_views, width = 6, height = 3.5, dpi = 1080)
+save_figure("scatter_money_views.png", p_money_views, width = 6, height = 3.5, dpi = 1080)

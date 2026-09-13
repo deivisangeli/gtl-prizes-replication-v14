@@ -1,0 +1,32 @@
+{
+  "prize_name": "Bruce Medal",
+  "awarding_org": "Astronomical Society of the Pacific",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Catherine Wolfe Bruce (Bruce Medal Fund)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Astronomical Society of the Pacific",
+  "funder_current_type": "Society",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "There is no cash purse: what the winner receives is a struck gold medal, so the 'money' being tested is the cost of making and engraving it. At origin that cost was 100% Bruce money - her 1898 gift of USD 2,750, of which USD 250 paid for the dies and the interest on the remaining USD 2,500 ('the capital of this fund is not to be impaired') paid for the medal and engraving each year. Applying the >50% test to today's money: the Bruce corpus was fixed in nominal 1898 dollars and its income was spent in every award year, so even allowing for interest reinvested in the roughly 18 non-award years it can throw off only on the order of a hundred to a few hundred dollars a year, far short of the cost of a modern gold medal at present gold prices. The remainder - the large majority - is met from the ASP's own general resources (FY2024 revenue USD 2.44M: 80.5% contributions, 12.0% program services, 4.8% investment income). No ring-fenced Bruce fund survives in the record: neither the ASP award page, the awards index, the 2024 ASP Annual Report awards page, nor the ASP Form 990 names any award-specific fund, and Schedule D reports a single pooled endowment (FY end-of-year balance USD 1,656,704, 89.9% permanent) whose stated purpose is generic investment objectives for 'Endowment Funds', 'Operating Funds' and 'Board Reserves'. The exact split is nowhere published, so this is an inference from the fixed nominal size of the 1898 corpus against the present cost of a gold medal.",
+  "money_note": "No cash prize: the honor is a gold medal. Its cost was originally met from the interest on the USD 2,500 Bruce Medal Fund (1898); today the ASP, a US nonprofit society, covers most of it from its own funds, with no separately disclosed Bruce endowment.",
+  "status_note": "Continuously awarded under the same name since 1898 and still active (2026 nominations open, deadline extended to 15 April 2026). One recent gap: no medal in 2020 (COVID-19); recent recipients are 2021 Bruce Elmegreen, 2022 Ellen Zweibel, 2023 Marcia Rieke, 2024 Chryssa Kouveliotou, 2025 Gary Ferland. The ASP awards index misdates the founding as 1889 (the ASP's own founding year); the medal was endowed in 1897-98 and first awarded 1898.",
+  "sources": [
+    "https://astrosociety.org/who-we-are/awards/catherine-wolfe-bruce-gold-medal.html",
+    "https://astrosociety.org/who-we-are/awards/awards.html",
+    "https://astrosociety.org/who-we-are/awards/about-the-asp-awards.html",
+    "https://www.aspannualreport.org/2024-asp-awards",
+    "https://iopscience.iop.org/article/10.1086/121193/pdf",
+    "https://phys-astro.sonoma.edu/sites/phys-astro/files/brucemedalhistory.pdf",
+    "https://phys-astro.sonoma.edu/bruce-medalists",
+    "https://projects.propublica.org/nonprofits/full_text/202502259349303205/IRS990ScheduleD",
+    "https://projects.propublica.org/nonprofits/organizations/940294860",
+    "https://en.wikipedia.org/wiki/Bruce_Medal"
+  ],
+  "evidence_quote": "Of the $2750, $250 went for making dies, and the interest on the remainder was to pay for the gold medal and its engraving each year.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "The ASP publishes no split, so the >50%-of-the-money test rests on inference: a corpus fixed at USD 2,500 in 1898 nominal dollars cannot fund a gold medal in 2026, and no ring-fenced Bruce fund appears in the ASP's 990 or annual report, so most of what the winner receives must now be the society's money (funder_changed true). A reasonable coder could instead read the 1898 statute's 'unexpended interest is to be added to the capital' as having grown the Bruce capital inside the ASP's pooled permanent endowment and still covering the medal, which would make this an endowment wound down into a budget line - same money, funder_changed false, current funder Philanthropy."
+}

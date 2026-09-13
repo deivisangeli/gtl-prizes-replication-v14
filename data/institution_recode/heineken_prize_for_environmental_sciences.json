@@ -1,0 +1,33 @@
+{
+  "prize_name": "Heineken Prize for Environmental Sciences",
+  "awarding_org": "Alfred Heineken Fondsen Foundation (Stichting Alfred Heineken Fondsen)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Netherlands",
+  "funder_origin_name": "Alfred Heineken Fondsen Foundation (Stichting Alfred Heineken Fondsen)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Netherlands",
+  "funder_current_name": "Alfred Heineken Fondsen Foundation (Stichting Alfred Heineken Fondsen)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Netherlands",
+  "funder_changed": false,
+  "funding_share_basis": "The Alfred Heineken Fondsen Foundation supplies 100% of the purse and has done so since this category was created in 1990 by Alfred H. Heineken, using capital the foundation had accumulated by the late 1980s (the same vehicle that had funded the 1964 Dr H.P. Heineken Prize for Biochemistry and Biophysics and the 1988/1989 Art and Medicine categories). KNAW ran the nomination and selection from 1964 until it severed ties in July 2023 but never contributed purse money; the Dr A.H. Heineken Foundation for Art funds only the separate art prize. No other funder found.",
+  "money_note": "Purse is an unrestricted USD 250,000 plus an oak-tree trophy, paid entirely by the Alfred Heineken Fondsen Foundation; it was USD 150,000 before the 2014 fiftieth-anniversary increase to USD 200,000 and stands at USD 250,000 today.",
+  "status_note": "Two things are off. (1) Awarding body changed: the Royal Netherlands Academy of Arts and Sciences (KNAW) handled nomination and selection from 1964 until 20 July 2023, when it severed ties with the Heineken Prizes over Heineken N.V.'s continued operations in Russia after the invasion of Ukraine. From the 2024 cycle the Alfred Heineken Fondsen Foundation administers the prizes itself, appointing its own independent juries and advised by a Scientific Advisory Council (chaired by Robbert Dijkgraaf); the official jury page states KNAW 'no longer has a guiding role in the jury process.' All laureates through 2022 were therefore selected by KNAW. (2) Award gap: awarded biennially in even years 1990-2022 (last laureate Carl Folke, 2022), then no 2024 or 2026 edition; the official site states the next Dr A.H. Heineken Prize for Environmental Sciences will be awarded in 2027, with the jury still being composed. Last year awarded under this name: 2022.",
+  "sources": [
+    "https://www.heinekenprizes.org/heineken-prizes/dr-a-h-heineken-prize-for-environmental-sciences/",
+    "https://www.heinekenprizes.org/portfolio_category/lol-hp-environnmental-sciences/",
+    "https://www.heinekenprizes.org/heineken-prizes/",
+    "https://www.heinekenprizes.org/jury/",
+    "https://www.heinekenprizes.org/scientific-advisory-council/",
+    "https://www.heinekenprizes.org/alfred-heineken/",
+    "https://www.heinekenprizes.org/anbis-foundations/",
+    "https://www.knaw.nl/en/awards/awards/heinekenprizes/heinekenprijs-voor-de-milieuwetenschappen",
+    "https://www.voxweb.nl/en/knaw-to-sever-ties-with-heineken-awards-due-to-activities-in-russia",
+    "https://nltimes.nl/2023/07/20/dutch-academy-science-art-splits-heineken-continued-activities-russia",
+    "https://en.wikipedia.org/wiki/Heineken_Prizes"
+  ],
+  "evidence_quote": "The Royal Netherlands Academy of Arts and Sciences (KNAW), which has been involved from the start of the prizes in 1964, no longer has a guiding role in the jury process.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Philanthropy rather than Corporate: the Alfred Heineken Fondsen Foundation is a Dutch stichting with ANBI charitable status, built from Alfred Heineken's personal capital and chaired by Charlene de Carvalho-Heineken, legally separate from Heineken N.V.; a coder could call it Corporate given the family's brewery ownership and the brand name on the prize. The awarding org is coded as the foundation because it has administered the prizes with its own juries since KNAW's July 2023 withdrawal; a coder scoring the historical record (all laureates through 2022 selected by KNAW) could code the awarding org as KNAW (Society, Netherlands)."
+}

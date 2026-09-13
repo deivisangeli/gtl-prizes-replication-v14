@@ -1,0 +1,261 @@
+field,year,n_pool,threshold
+Agricultural and Biological Sciences,2015,1882,6543
+Agricultural and Biological Sciences,2016,1883,7080
+Agricultural and Biological Sciences,2017,1882,7609
+Agricultural and Biological Sciences,2018,1882,8201
+Agricultural and Biological Sciences,2019,1882,8885
+Agricultural and Biological Sciences,2020,1883,9756
+Agricultural and Biological Sciences,2021,1882,10748
+Agricultural and Biological Sciences,2022,1882,11654
+Agricultural and Biological Sciences,2023,1882,12674
+Agricultural and Biological Sciences,2024,1882,13745
+Arts and Humanities,2015,758,3412
+Arts and Humanities,2016,758,3679
+Arts and Humanities,2017,758,3944
+Arts and Humanities,2018,758,4243
+Arts and Humanities,2019,758,4652
+Arts and Humanities,2020,758,5081
+Arts and Humanities,2021,758,5452
+Arts and Humanities,2022,759,5785
+Arts and Humanities,2023,758,6123
+Arts and Humanities,2024,758,6437
+"Biochemistry, Genetics and Molecular Biology",2015,1729,19223
+"Biochemistry, Genetics and Molecular Biology",2016,1729,20390
+"Biochemistry, Genetics and Molecular Biology",2017,1729,21797
+"Biochemistry, Genetics and Molecular Biology",2018,1729,23105
+"Biochemistry, Genetics and Molecular Biology",2019,1729,24520
+"Biochemistry, Genetics and Molecular Biology",2020,1729,26209
+"Biochemistry, Genetics and Molecular Biology",2021,1729,28218
+"Biochemistry, Genetics and Molecular Biology",2022,1729,30112
+"Biochemistry, Genetics and Molecular Biology",2023,1729,32155
+"Biochemistry, Genetics and Molecular Biology",2024,1729,34181
+"Business, Management and Accounting",2015,677,7630
+"Business, Management and Accounting",2016,677,8396
+"Business, Management and Accounting",2017,677,9144
+"Business, Management and Accounting",2018,677,9890
+"Business, Management and Accounting",2019,677,10743
+"Business, Management and Accounting",2020,677,11701
+"Business, Management and Accounting",2021,677,12700
+"Business, Management and Accounting",2022,677,13571
+"Business, Management and Accounting",2023,677,14702
+"Business, Management and Accounting",2024,677,15767
+Chemical Engineering,2015,83,7381
+Chemical Engineering,2016,83,8291
+Chemical Engineering,2017,83,8910
+Chemical Engineering,2018,83,9448
+Chemical Engineering,2019,83,10011
+Chemical Engineering,2020,83,11036
+Chemical Engineering,2021,83,11897
+Chemical Engineering,2022,83,12795
+Chemical Engineering,2023,83,13832
+Chemical Engineering,2024,83,15061
+Chemistry,2015,581,12715
+Chemistry,2016,581,13418
+Chemistry,2017,581,14207
+Chemistry,2018,581,15156
+Chemistry,2019,581,16135
+Chemistry,2020,581,17150
+Chemistry,2021,581,18407
+Chemistry,2022,581,19308
+Chemistry,2023,581,20457
+Chemistry,2024,581,21796
+Computer Science,2015,1518,8936
+Computer Science,2016,1518,9649
+Computer Science,2017,1518,10540
+Computer Science,2018,1518,11542
+Computer Science,2019,1518,12813
+Computer Science,2020,1518,14079
+Computer Science,2021,1518,15515
+Computer Science,2022,1518,16877
+Computer Science,2023,1518,18349
+Computer Science,2024,1518,19988
+Decision Sciences,2015,134,10825
+Decision Sciences,2016,134,11829
+Decision Sciences,2017,134,12760
+Decision Sciences,2018,134,13741
+Decision Sciences,2019,134,14758
+Decision Sciences,2020,134,16192
+Decision Sciences,2021,134,18033
+Decision Sciences,2022,134,19761
+Decision Sciences,2023,134,21934
+Decision Sciences,2024,134,23729
+Dentistry,2015,183,6664
+Dentistry,2016,183,7222
+Dentistry,2017,183,7846
+Dentistry,2018,183,8486
+Dentistry,2019,183,9120
+Dentistry,2020,183,9981
+Dentistry,2021,183,10965
+Dentistry,2022,183,11989
+Dentistry,2023,183,13040
+Dentistry,2024,183,14196
+Earth and Planetary Sciences,2015,439,12045
+Earth and Planetary Sciences,2016,439,13009
+Earth and Planetary Sciences,2017,439,14086
+Earth and Planetary Sciences,2018,439,15243
+Earth and Planetary Sciences,2019,439,16410
+Earth and Planetary Sciences,2020,439,17795
+Earth and Planetary Sciences,2021,439,19279
+Earth and Planetary Sciences,2022,439,20815
+Earth and Planetary Sciences,2023,439,22389
+Earth and Planetary Sciences,2024,439,23793
+"Economics, Econometrics and Finance",2015,404,13513
+"Economics, Econometrics and Finance",2016,404,14483
+"Economics, Econometrics and Finance",2017,404,15489
+"Economics, Econometrics and Finance",2018,404,16468
+"Economics, Econometrics and Finance",2019,404,17522
+"Economics, Econometrics and Finance",2020,404,18530
+"Economics, Econometrics and Finance",2021,404,19697
+"Economics, Econometrics and Finance",2022,404,20739
+"Economics, Econometrics and Finance",2023,404,22226
+"Economics, Econometrics and Finance",2024,405,23730
+Energy,2015,132,9393
+Energy,2016,132,10631
+Energy,2017,132,12020
+Energy,2018,132,13780
+Energy,2019,132,15700
+Energy,2020,132,17926
+Energy,2021,132,21246
+Energy,2022,132,24426
+Energy,2023,132,27956
+Energy,2024,132,31667
+Engineering,2015,3337,6736
+Engineering,2016,3335,7413
+Engineering,2017,3335,8190
+Engineering,2018,3336,9098
+Engineering,2019,3335,10045
+Engineering,2020,3335,11195
+Engineering,2021,3335,12553
+Engineering,2022,3335,13937
+Engineering,2023,3335,15405
+Engineering,2024,3335,17087
+Environmental Science,2015,1074,10339
+Environmental Science,2016,1074,11299
+Environmental Science,2017,1074,12336
+Environmental Science,2018,1074,13464
+Environmental Science,2019,1074,14880
+Environmental Science,2020,1074,16402
+Environmental Science,2021,1074,18388
+Environmental Science,2022,1074,20242
+Environmental Science,2023,1074,22125
+Environmental Science,2024,1074,24088
+Health Professions,2015,584,5271
+Health Professions,2016,584,5760
+Health Professions,2017,584,6284
+Health Professions,2018,584,6846
+Health Professions,2019,584,7442
+Health Professions,2020,584,8247
+Health Professions,2021,584,9201
+Health Professions,2022,584,10105
+Health Professions,2023,584,10947
+Health Professions,2024,584,11881
+Immunology and Microbiology,2015,223,25467
+Immunology and Microbiology,2016,223,27181
+Immunology and Microbiology,2017,223,28950
+Immunology and Microbiology,2018,223,29898
+Immunology and Microbiology,2019,223,31289
+Immunology and Microbiology,2020,223,33020
+Immunology and Microbiology,2021,223,35562
+Immunology and Microbiology,2022,223,37718
+Immunology and Microbiology,2023,223,39495
+Immunology and Microbiology,2024,223,41676
+Materials Science,2015,635,15207
+Materials Science,2016,635,16863
+Materials Science,2017,635,18589
+Materials Science,2018,635,20307
+Materials Science,2019,635,22203
+Materials Science,2020,635,24586
+Materials Science,2021,635,26891
+Materials Science,2022,635,29413
+Materials Science,2023,635,31845
+Materials Science,2024,635,34343
+Mathematics,2015,161,17986
+Mathematics,2016,161,19148
+Mathematics,2017,161,20459
+Mathematics,2018,161,21464
+Mathematics,2019,161,22682
+Mathematics,2020,161,24232
+Mathematics,2021,161,26010
+Mathematics,2022,161,27522
+Mathematics,2023,161,29033
+Mathematics,2024,161,30424
+Medicine,2015,6184,14367
+Medicine,2016,6183,15485
+Medicine,2017,6183,16628
+Medicine,2018,6183,17800
+Medicine,2019,6183,19043
+Medicine,2020,6183,20614
+Medicine,2021,6184,22313
+Medicine,2022,6183,23948
+Medicine,2023,6184,25616
+Medicine,2024,6183,27224
+Neuroscience,2015,303,25837
+Neuroscience,2016,303,27550
+Neuroscience,2017,303,29055
+Neuroscience,2018,303,31124
+Neuroscience,2019,303,33182
+Neuroscience,2020,303,35326
+Neuroscience,2021,303,37684
+Neuroscience,2022,303,39870
+Neuroscience,2023,303,41747
+Neuroscience,2024,303,43877
+Nursing,2015,53,10321
+Nursing,2016,53,11012
+Nursing,2017,53,11637
+Nursing,2018,53,12538
+Nursing,2019,53,13670
+Nursing,2020,53,14800
+Nursing,2021,53,15998
+Nursing,2022,53,17399
+Nursing,2023,53,18722
+Nursing,2024,53,20230
+"Pharmacology, Toxicology and Pharmaceutics",2015,46,12669
+"Pharmacology, Toxicology and Pharmaceutics",2016,46,13065
+"Pharmacology, Toxicology and Pharmaceutics",2017,46,14327
+"Pharmacology, Toxicology and Pharmaceutics",2018,46,15088
+"Pharmacology, Toxicology and Pharmaceutics",2019,46,16233
+"Pharmacology, Toxicology and Pharmaceutics",2020,46,17239
+"Pharmacology, Toxicology and Pharmaceutics",2021,46,18587
+"Pharmacology, Toxicology and Pharmaceutics",2022,46,20130
+"Pharmacology, Toxicology and Pharmaceutics",2023,46,21972
+"Pharmacology, Toxicology and Pharmaceutics",2024,46,22616
+Physics and Astronomy,2015,743,15902
+Physics and Astronomy,2016,743,16922
+Physics and Astronomy,2017,743,17854
+Physics and Astronomy,2018,743,18887
+Physics and Astronomy,2019,743,20049
+Physics and Astronomy,2020,743,21285
+Physics and Astronomy,2021,743,22449
+Physics and Astronomy,2022,743,23787
+Physics and Astronomy,2023,743,25137
+Physics and Astronomy,2024,743,26646
+Psychology,2015,488,16722
+Psychology,2016,487,18057
+Psychology,2017,487,19548
+Psychology,2018,487,20892
+Psychology,2019,487,22167
+Psychology,2020,487,24042
+Psychology,2021,487,26131
+Psychology,2022,487,27984
+Psychology,2023,487,30146
+Psychology,2024,487,31760
+Social Sciences,2015,2413,5204
+Social Sciences,2016,2413,5651
+Social Sciences,2017,2412,6127
+Social Sciences,2018,2412,6615
+Social Sciences,2019,2412,7195
+Social Sciences,2020,2414,7902
+Social Sciences,2021,2412,8624
+Social Sciences,2022,2413,9320
+Social Sciences,2023,2412,9954
+Social Sciences,2024,2412,10668
+Veterinary,2015,22,6693
+Veterinary,2016,22,7391
+Veterinary,2017,22,8080
+Veterinary,2018,22,8710
+Veterinary,2019,22,9776
+Veterinary,2020,22,10663
+Veterinary,2021,22,11723
+Veterinary,2022,22,12531
+Veterinary,2023,22,13502
+Veterinary,2024,22,14229

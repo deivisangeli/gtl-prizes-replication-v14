@@ -1,0 +1,261 @@
+field,year,n_pool,threshold
+Agricultural and Biological Sciences,2015,1000,8693
+Agricultural and Biological Sciences,2016,1000,9409
+Agricultural and Biological Sciences,2017,1000,10144
+Agricultural and Biological Sciences,2018,1001,10913
+Agricultural and Biological Sciences,2019,1000,11778
+Agricultural and Biological Sciences,2020,1000,12827
+Agricultural and Biological Sciences,2021,1000,13990
+Agricultural and Biological Sciences,2022,1000,15289
+Agricultural and Biological Sciences,2023,1000,16562
+Agricultural and Biological Sciences,2024,1000,17865
+Arts and Humanities,2015,1001,2868
+Arts and Humanities,2016,1000,3107
+Arts and Humanities,2017,1000,3327
+Arts and Humanities,2018,1000,3608
+Arts and Humanities,2019,1002,3944
+Arts and Humanities,2020,1001,4291
+Arts and Humanities,2021,1000,4625
+Arts and Humanities,2022,1000,4897
+Arts and Humanities,2023,1000,5195
+Arts and Humanities,2024,1001,5497
+"Biochemistry, Genetics and Molecular Biology",2015,1000,24757
+"Biochemistry, Genetics and Molecular Biology",2016,1000,26336
+"Biochemistry, Genetics and Molecular Biology",2017,1000,27983
+"Biochemistry, Genetics and Molecular Biology",2018,1000,29741
+"Biochemistry, Genetics and Molecular Biology",2019,1000,31536
+"Biochemistry, Genetics and Molecular Biology",2020,1000,34007
+"Biochemistry, Genetics and Molecular Biology",2021,1000,36540
+"Biochemistry, Genetics and Molecular Biology",2022,1000,39194
+"Biochemistry, Genetics and Molecular Biology",2023,1000,41876
+"Biochemistry, Genetics and Molecular Biology",2024,1000,44869
+"Business, Management and Accounting",2015,1000,5835
+"Business, Management and Accounting",2016,1000,6446
+"Business, Management and Accounting",2017,1000,7048
+"Business, Management and Accounting",2018,1000,7629
+"Business, Management and Accounting",2019,1000,8323
+"Business, Management and Accounting",2020,1000,9087
+"Business, Management and Accounting",2021,1000,9929
+"Business, Management and Accounting",2022,1000,10800
+"Business, Management and Accounting",2023,1000,11678
+"Business, Management and Accounting",2024,1000,12601
+Chemical Engineering,2015,1000,1475
+Chemical Engineering,2016,1000,1641
+Chemical Engineering,2017,1000,1809
+Chemical Engineering,2018,1000,2001
+Chemical Engineering,2019,1000,2204
+Chemical Engineering,2020,1001,2456
+Chemical Engineering,2021,1000,2769
+Chemical Engineering,2022,1001,3039
+Chemical Engineering,2023,1000,3364
+Chemical Engineering,2024,1000,3678
+Chemistry,2015,1000,9688
+Chemistry,2016,1000,10300
+Chemistry,2017,1000,10917
+Chemistry,2018,1000,11547
+Chemistry,2019,1000,12243
+Chemistry,2020,1000,12951
+Chemistry,2021,1000,13675
+Chemistry,2022,1000,14527
+Chemistry,2023,1000,15412
+Chemistry,2024,1000,16272
+Computer Science,2015,1000,11212
+Computer Science,2016,1000,12156
+Computer Science,2017,1000,13119
+Computer Science,2018,1000,14372
+Computer Science,2019,1000,15834
+Computer Science,2020,1000,17686
+Computer Science,2021,1000,19731
+Computer Science,2022,1000,21413
+Computer Science,2023,1000,23314
+Computer Science,2024,1000,25557
+Decision Sciences,2015,1001,2380
+Decision Sciences,2016,1001,2624
+Decision Sciences,2017,1000,2912
+Decision Sciences,2018,1001,3170
+Decision Sciences,2019,1000,3478
+Decision Sciences,2020,1000,3832
+Decision Sciences,2021,1000,4272
+Decision Sciences,2022,1000,4701
+Decision Sciences,2023,1000,5165
+Decision Sciences,2024,1000,5581
+Dentistry,2015,1001,2693
+Dentistry,2016,1000,2945
+Dentistry,2017,1000,3192
+Dentistry,2018,1000,3453
+Dentistry,2019,1000,3748
+Dentistry,2020,1000,4118
+Dentistry,2021,1000,4540
+Dentistry,2022,1000,4967
+Dentistry,2023,1000,5417
+Dentistry,2024,1000,5927
+Earth and Planetary Sciences,2015,1000,8528
+Earth and Planetary Sciences,2016,1000,9223
+Earth and Planetary Sciences,2017,1000,9991
+Earth and Planetary Sciences,2018,1000,10804
+Earth and Planetary Sciences,2019,1000,11637
+Earth and Planetary Sciences,2020,1000,12682
+Earth and Planetary Sciences,2021,1000,13807
+Earth and Planetary Sciences,2022,1000,14951
+Earth and Planetary Sciences,2023,1000,16088
+Earth and Planetary Sciences,2024,1000,17318
+"Economics, Econometrics and Finance",2015,1000,7234
+"Economics, Econometrics and Finance",2016,1000,7792
+"Economics, Econometrics and Finance",2017,1000,8408
+"Economics, Econometrics and Finance",2018,1000,8960
+"Economics, Econometrics and Finance",2019,1000,9640
+"Economics, Econometrics and Finance",2020,1000,10432
+"Economics, Econometrics and Finance",2021,1000,11278
+"Economics, Econometrics and Finance",2022,1000,12033
+"Economics, Econometrics and Finance",2023,1000,12899
+"Economics, Econometrics and Finance",2024,1000,13696
+Energy,2015,1001,2398
+Energy,2016,1000,2832
+Energy,2017,1000,3389
+Energy,2018,1000,4003
+Energy,2019,1000,4812
+Energy,2020,1000,5695
+Energy,2021,1000,6851
+Energy,2022,1000,8108
+Energy,2023,1000,9447
+Energy,2024,1000,10896
+Engineering,2015,1000,11896
+Engineering,2016,1000,13146
+Engineering,2017,1000,14501
+Engineering,2018,1000,16157
+Engineering,2019,1000,17822
+Engineering,2020,1000,19977
+Engineering,2021,1000,22116
+Engineering,2022,1000,24424
+Engineering,2023,1000,26926
+Engineering,2024,1000,29683
+Environmental Science,2015,1000,10719
+Environmental Science,2016,1000,11717
+Environmental Science,2017,1000,12815
+Environmental Science,2018,1000,13968
+Environmental Science,2019,1000,15353
+Environmental Science,2020,1000,16926
+Environmental Science,2021,1001,18929
+Environmental Science,2022,1000,20807
+Environmental Science,2023,1000,22691
+Environmental Science,2024,1000,24842
+Health Professions,2015,1000,3668
+Health Professions,2016,1000,4013
+Health Professions,2017,1000,4430
+Health Professions,2018,1000,4828
+Health Professions,2019,1000,5301
+Health Professions,2020,1000,5866
+Health Professions,2021,1002,6553
+Health Professions,2022,1000,7192
+Health Professions,2023,1000,7802
+Health Professions,2024,1002,8423
+Immunology and Microbiology,2015,1000,11885
+Immunology and Microbiology,2016,1000,12510
+Immunology and Microbiology,2017,1000,13228
+Immunology and Microbiology,2018,1000,13929
+Immunology and Microbiology,2019,1000,14691
+Immunology and Microbiology,2020,1000,15642
+Immunology and Microbiology,2021,1000,16565
+Immunology and Microbiology,2022,1000,17414
+Immunology and Microbiology,2023,1000,18348
+Immunology and Microbiology,2024,1000,19356
+Materials Science,2015,1000,12219
+Materials Science,2016,1000,13533
+Materials Science,2017,1000,14873
+Materials Science,2018,1000,16269
+Materials Science,2019,1000,17736
+Materials Science,2020,1000,19468
+Materials Science,2021,1000,21396
+Materials Science,2022,1000,23590
+Materials Science,2023,1000,25629
+Materials Science,2024,1000,28184
+Mathematics,2015,1000,5686
+Mathematics,2016,1000,6080
+Mathematics,2017,1001,6514
+Mathematics,2018,1000,6927
+Mathematics,2019,1000,7368
+Mathematics,2020,1000,7953
+Mathematics,2021,1000,8506
+Mathematics,2022,1001,8969
+Mathematics,2023,1000,9411
+Mathematics,2024,1000,9846
+Medicine,2015,1000,30139
+Medicine,2016,1000,32317
+Medicine,2017,1000,34688
+Medicine,2018,1000,37093
+Medicine,2019,1000,39661
+Medicine,2020,1000,42776
+Medicine,2021,1000,46239
+Medicine,2022,1000,49366
+Medicine,2023,1000,52568
+Medicine,2024,1000,55775
+Neuroscience,2015,1000,14431
+Neuroscience,2016,1001,15324
+Neuroscience,2017,1000,16280
+Neuroscience,2018,1000,17312
+Neuroscience,2019,1000,18316
+Neuroscience,2020,1000,19602
+Neuroscience,2021,1000,20973
+Neuroscience,2022,1000,22383
+Neuroscience,2023,1000,23584
+Neuroscience,2024,1000,24889
+Nursing,2015,1002,1922
+Nursing,2016,1000,2079
+Nursing,2017,1000,2249
+Nursing,2018,1000,2441
+Nursing,2019,1000,2639
+Nursing,2020,1000,2892
+Nursing,2021,1000,3181
+Nursing,2022,1002,3508
+Nursing,2023,1000,3864
+Nursing,2024,1000,4232
+"Pharmacology, Toxicology and Pharmaceutics",2015,1000,1884
+"Pharmacology, Toxicology and Pharmaceutics",2016,1000,2067
+"Pharmacology, Toxicology and Pharmaceutics",2017,1000,2265
+"Pharmacology, Toxicology and Pharmaceutics",2018,1000,2428
+"Pharmacology, Toxicology and Pharmaceutics",2019,1000,2643
+"Pharmacology, Toxicology and Pharmaceutics",2020,1000,2915
+"Pharmacology, Toxicology and Pharmaceutics",2021,1000,3237
+"Pharmacology, Toxicology and Pharmaceutics",2022,1000,3535
+"Pharmacology, Toxicology and Pharmaceutics",2023,1000,3840
+"Pharmacology, Toxicology and Pharmaceutics",2024,1001,4207
+Physics and Astronomy,2015,1000,13847
+Physics and Astronomy,2016,1000,14741
+Physics and Astronomy,2017,1000,15629
+Physics and Astronomy,2018,1000,16521
+Physics and Astronomy,2019,1000,17481
+Physics and Astronomy,2020,1000,18411
+Physics and Astronomy,2021,1000,19615
+Physics and Astronomy,2022,1000,20759
+Physics and Astronomy,2023,1000,21841
+Physics and Astronomy,2024,1000,22929
+Psychology,2015,1000,10868
+Psychology,2016,1000,11829
+Psychology,2017,1000,12845
+Psychology,2018,1000,13934
+Psychology,2019,1000,15094
+Psychology,2020,1000,16509
+Psychology,2021,1000,17831
+Psychology,2022,1000,19121
+Psychology,2023,1000,20367
+Psychology,2024,1000,21672
+Social Sciences,2015,1000,8803
+Social Sciences,2016,1000,9572
+Social Sciences,2017,1000,10370
+Social Sciences,2018,1000,11149
+Social Sciences,2019,1000,12115
+Social Sciences,2020,1001,13104
+Social Sciences,2021,1001,14159
+Social Sciences,2022,1000,15173
+Social Sciences,2023,1000,16237
+Social Sciences,2024,1000,17302
+Veterinary,2015,1003,947
+Veterinary,2016,1000,1031
+Veterinary,2017,1000,1132
+Veterinary,2018,1000,1213
+Veterinary,2019,1000,1304
+Veterinary,2020,1002,1421
+Veterinary,2021,1000,1547
+Veterinary,2022,1000,1670
+Veterinary,2023,1000,1806
+Veterinary,2024,1000,1949

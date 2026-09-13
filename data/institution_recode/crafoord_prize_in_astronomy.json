@@ -1,0 +1,29 @@
+{
+  "prize_name": "Crafoord Prize in Astronomy",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Anna-Greta and Holger Crafoord (1980 donation to the Royal Swedish Academy of Sciences establishing the Anna-Greta and Holger Crafoord Fund)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Anna-Greta and Holger Crafoord Fund (ring-fenced donation fund held and managed by the Royal Swedish Academy of Sciences), supplemented by grants from the Crafoord Foundation (Crafoordska stiftelsen), Lund",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The 1980 gift went to the Academy, not to the Crafoord Foundation: 'Anna-Greta and Holger Crafoord's Fund was established in 1980 by a donation to the Royal Swedish Academy of Sciences from Anna-Greta and Holger Crafoord', with further donations later; the fund now stands at about SEK 180 million and is administered by the Academy. Today the purse is paid from two Crafoord-family philanthropic sources - the Academy-held Crafoord Fund and top-up grants from the Crafoord Foundation in Lund ('Prissumman och forskningsanslagen finansieras dels genom donationer av Anna-Greta och Holger Crafoord, dels genom bidrag fran Crafoordska stiftelsen'). Neither party publishes the split; the SEK 180m named endowment (which also funds Swedish research grants, SEK 2.17m allocated in 2026) plausibly supplies the majority, so I code the Academy-held Crafoord Fund as the >50% funder, with the Crafoord Foundation as the minority contributor. Both components are private Crafoord money, so the type is Philanthropy under either split.",
+  "money_note": "Purse is SEK 8 million as of 2026, per prize (the astronomy prize is announced alongside a separate mathematics prize of the same size in the years those two fields come up); the most recent astronomy award, 2024, carried SEK 6 million. Paid from the Academy-held Anna-Greta and Holger Crafoord Fund plus grants from the Crafoord Foundation, an arrangement unchanged since the prize began in 1982.",
+  "status_note": "Not an annual prize: the Crafoord Prize rotates over a four-year cycle (mathematics and astronomy; polyarthritis; geosciences; biosciences). Astronomy was awarded in 1985, 1991, 1997, 2005, 2008, and - since mathematics and astronomy began being awarded in the same year in 2012 - in 2012, 2016, 2020, and 2024 (most recent under this name); the next astronomy award is expected in 2028. Gap years are not suspensions.",
+  "sources": [
+    "https://www.crafoordprize.se/about-the-prize/the-crafoord-prize/",
+    "https://www.kva.se/en/prizes/crafoord-prize/about-the-crafoord-prize/",
+    "https://www.crafoord.se/crafoordpriset/om-crafoordpriset/",
+    "https://www.crafoord.se/en/the-crafoord-foundation/",
+    "https://www.kva.se/en/scholarship/anna-greta-and-holger-crafoord-fund/",
+    "https://www.kva.se/en/news/this-years-crafoord-laureates-can-see-inside-stars-and-describe-geometric-shapes/",
+    "https://en.wikipedia.org/wiki/Crafoord_Prize"
+  ],
+  "evidence_quote": "Anna-Greta and Holger Crafoord's Fund was established in 1980 by a donation to the Royal Swedish Academy of Sciences from Anna-Greta and Holger Crafoord.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Two alternatives are defensible. (1) Because the prize purse draws on both the Academy-held Crafoord Fund and grants from the Crafoord Foundation with no published shares, a coder applying the >50% rule strictly could set funder_current_type to Mixed; I keep Philanthropy because both components are private Crafoord donations of the same type and the SEK 180m named endowment most likely dominates. (2) Since the Academy owns and manages the fund, a coder could name the Academy itself (Society) as today's funder; I keep Philanthropy because the money sits in a named, ring-fenced donor fund dedicated to this prize rather than in Academy general funds. Awarding org is also a judgment call: the prize is formally awarded 'in partnership' with the Crafoord Foundation, but the Academy selects the laureates."
+}

@@ -1,0 +1,29 @@
+{
+  "prize_name": "Eni Award",
+  "awarding_org": "Eni S.p.A.",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Italy",
+  "funder_origin_name": "Eni S.p.A.",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Italy",
+  "funder_current_name": "Eni S.p.A.",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Italy",
+  "funder_changed": false,
+  "funding_share_basis": "Eni S.p.A. pays 100% of the purse: the official announcements state the prize consists of a plaque, an indivisible sum of EUR 200,000, and travel/board provided directly by Eni; there is no co-sponsor, no endowment and no public money. The predecessor Premio Eni Italgas (1987-2007) was funded by Italgas S.p.A., wholly owned by Eni since 1967 ('la societa e controllata interamente dall'Eni'), with the scientific secretariat hosted by the Eni-linked Fondazione Eni Enrico Mattei, so the purse has been Corporate/Italy under either reading of the founding date.",
+  "money_note": "Each of the three main prizes (Advanced Environmental Solutions, Energy Transition, Energy Frontiers) is an indivisible EUR 200,000 plus travel and lodging paid directly by Eni; Young Researcher of the Year and Young Talents from Africa prizes are EUR 25,000 each; funded entirely by Eni S.p.A. since 2008 (predecessor Premio Eni Italgas purse was EUR 120,000 in its 2006 XIX edition).",
+  "status_note": "The Eni Award is a 2008 refounding, not a simple rename. Its predecessor, the Premio Eni Italgas (originally Premio Italgas), was instituted in 1987 for the 150th anniversary of Italgas's founding, administered by the Comitato Promotore del Premio Eni Italgas with the scientific secretariat at Fondazione Eni Enrico Mattei in Milan, awarded in Turin, and last run as the XIX edition (2006 call, conferred March 2007). Eni announced the new award in July 2007 under its Technological Master Plan; it 'extends and replaces' the Eni-Italgas Prize, and Eni counts editions from scratch (2008 = 1st, 2025 = 17th). Because the name, awarding body, category structure and purse all changed, we treat 2008 as the origin year; the money stayed within the Eni group throughout, so no funder handover occurred.",
+  "sources": [
+    "https://www.eni.com/en-IT/strategic-vision/innovation/eni-award.html",
+    "https://www.eni.com/content/dam/enicom/documents/eng/visione/innovation/eni-award/eni-award-2026/energy-frontiers/Eni-Award-2026-Official-Announcement-Energy-Frontiers.pdf",
+    "https://www.eni.com/en-IT/media/press-release/2025/10/eni-award-2025.html",
+    "https://www.unibo.it/en/events/event/@@allegato_evento/47def1b8-93a4-4524-a4f6-91e9b3ad894a/bandoscienzaeambientexixedizionepremio.pdf",
+    "https://ifrf.net/ifrf-blog/eni-italgas-prize-for-energy-and-environment/",
+    "https://www.italgas.it/en/about-us/our-story/timeline/",
+    "https://en.wikipedia.org/wiki/ENI_award"
+  ],
+  "evidence_quote": "Il Premio Eni Italgas fu istituito nel 1987 in occasione del 150 anniversario della fondazione della Societa... La societa e controllata interamente dall'Eni.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder treating the Eni Award as continuous with the 1987 Premio Eni Italgas would name the origin funder 'Italgas S.p.A.' instead of 'Eni S.p.A.'; we chose 2008 as the refounding because the name, awarding body, categories, edition count and purse were all reset. Either way the origin funder is Corporate/Italy inside the Eni group, so funder_changed is false."
+}

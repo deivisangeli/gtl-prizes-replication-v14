@@ -1,0 +1,27 @@
+{
+  "prize_name": "Warren Alpert Foundation Prize",
+  "awarding_org": "Harvard Medical School",
+  "awarding_org_type": "University",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Warren Alpert Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Warren Alpert Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The official prize site states the prize is 'funded by the Warren Alpert Foundation' and 'administered by Harvard Medical School', so 100% of the purse comes from the Foundation (a private philanthropy in Providence, Rhode Island, funded solely by the Warren Alpert Estate). Harvard Medical School contributes administration, the selection committee chair (its Dean) and the annual symposium, but no purse money; no other funder was found.",
+  "money_note": "Current purse is USD 500,000 (raised from USD 250,000 around 2012-2015), paid by the Warren Alpert Foundation, which has awarded nearly USD 9 million to 86 individuals since 1987.",
+  "status_note": "",
+  "sources": [
+    "https://www.warrenalpert.org/prize/",
+    "https://www.warrenalpert.org/about-us/",
+    "https://www.warrenalpertfoundation.org/warren-alpert-prize/",
+    "https://www.warrenalpert.org/news/2025-warren-alpert-foundation-prize-awardees-announced/",
+    "https://en.wikipedia.org/wiki/Warren_Alpert_Foundation_Prize"
+  ],
+  "evidence_quote": "The Warren Alpert Foundation does not solicit funds. It is a private, philanthropic effort funded solely by The Warren Alpert Estate.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Awarding body is split: the official site says the prize is administered by Harvard Medical School (University, United States) whose Dean chairs the selection committee and which hosts the award symposium, while the committee is nominally the Foundation's and the prize carries the Foundation's name. A reasonable coder could instead record the Warren Alpert Foundation (Philanthropy); we chose HMS because it is the stated administering body, and both options are United States so the country coding is unaffected."
+}

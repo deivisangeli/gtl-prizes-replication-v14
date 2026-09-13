@@ -1,0 +1,33 @@
+{
+  "prize_name": "Canada Gairdner International Award",
+  "awarding_org": "Gairdner Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Canada",
+  "funder_origin_name": "James A. Gairdner (Gairdner family endowment)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Canada",
+  "funder_current_name": "Government of Canada (Canadian Institutes of Health Research)",
+  "funder_current_type": "Government",
+  "funder_current_country": "Canada",
+  "funder_changed": true,
+  "funding_share_basis": "Origin (first awards 1959): 100% of the purse came from income on James A. Gairdner's 1957 gift of CAD 500,000, the only capital behind the awards until 2008; no public money. Today the >50% test applied to the money itself: the purse is paid from income on a single pooled portfolio (CAD 55.6M at 31 Dec 2025) whose components the audited statements track separately, and the federal share dominates. The Government of Canada's fund (CAD 20M in 2008 'for the purpose of supporting and enhancing the Gairdner International Awards Program' plus CAD 10M in 2024 'for the purposes of increasing the value of the five Canada Gairdner International Awards') stood at CAD 38,600,499, i.e. 69% of the portfolio, against CAD 11,195,540 of Foundation net assets (20%) that carry the original family endowment plus accumulated surpluses, CAD 2.77M of Alberta funding restricted to outreach, and CAD 2.45M of deferred contributions. On income: of CAD 4,154,869 net investment income in 2025, CAD 2,926,709 (70%) accrued to the federal fund and CAD 916,641 (22%) to the Foundation's own funds. On spending: federal grant funding recognized as revenue in 2025 was CAD 1,638,080, exceeding the Foundation's entire awards expense of CAD 1,550,000 (5 International at CAD 250,000 = CAD 1.25M, plus the Global Health and two Momentum awards), while the Foundation's own investment income recognized in revenue (CAD 916,641) also has to cover operations. The 2024 federal CAD 10M is directly and solely responsible for raising this award from CAD 100,000 to CAD 250,000, so 60% of each laureate's cheque is new federal money by construction. We count the federal endowment as government money, not foundation money: it is carried as a liability ('Federal government funding'), not net assets, capital cannot be spent beyond a CAD 3M revolving draw, income is recognized as 'Federal government grant funding' revenue, and the balance is repayable on termination — the Foundation is a conduit. Non-purse money (Alberta CAD 2M outreach fund, a CIHR Research in Priority Areas grant, Quebec and Ontario contributions, Krembil Foundation presenting sponsorship, universities, hospitals, corporate sponsors, table sales; CAD 1.65M of 2025 non-government revenue) funds outreach, events and operations and does not count. Family-funded 1959-2008; majority federally funded from 2009, when the awards were renamed 'Canada Gairdner'.",
+  "money_note": "Five awards annually, CAD 250,000 each since 2025 (up from CAD 100,000 set in 2008), paid from income on the Government of Canada's CIHR endowment — CAD 20M in 2008 plus CAD 10M received in late 2024 specifically to fund the increase — administered by the Gairdner Foundation.",
+  "status_note": "Awarded as the 'Gairdner Foundation International Award' from 1959; renamed 'Canada Gairdner International Award' commencing 2009 after the 2008 federal endowment (the Foundation's audited statements still call the programme the 'Gairdner International Awards Program'). Continuously awarded and active.",
+  "sources": [
+    "https://www.gairdner.org/award/canada-gairdner-international-award",
+    "https://www.gairdner.org/who-we-are/our-history",
+    "https://www.gairdner.org/who-we-are/our-annual-reports",
+    "https://www.gairdner.org/docs/default-source/annual-reports/annual-reports/gairdner-foundation-annual-report-2025---english.pdf",
+    "https://www.gairdner.org/docs/default-source/annual-reports/annual-reports/2023-gairdner-foundation-annual-report_en.pdf",
+    "https://www.gairdner.org/resource-hub/government-of-canada-commits--10-million-in-support-for-canada-gairdner-awards",
+    "https://www.gairdner.org/resource-hub/government-of-canada-invests-in-the-gairdner-awards",
+    "https://www.gairdner.org/who-we-are/our-sponsors",
+    "https://cihr-irsc.gc.ca/e/53894.html",
+    "https://en.wikipedia.org/wiki/Gairdner_Foundation",
+    "https://en.wikipedia.org/wiki/Canada_Gairdner_International_Award"
+  ],
+  "evidence_quote": "The Foundation received a $20,000,000 grant from the federal government in 2008 for the purpose of supporting and enhancing the Gairdner International Awards Program. In 2024, the Foundation received an additional $10,000,000 grant ... for the purposes of increasing the value of the five Canada Gairdner International Awards.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The alternative is Philanthropy for the current funder, on the grounds that the Gairdner Foundation is an independent Canadian charity that holds and invests the fund, selects laureates and writes the cheques. We code Government because the audited statements treat the CAD 30M as restricted federal funding held as a liability and recognized as federal grant revenue, earmarked by name to this award programme, its income alone exceeds the Foundation's total awards expense, and the 2024 CAD 10M is what set the current CAD 250,000 purse — per the tie-breaker that a state agency paying the purse is Government even when a private foundation administers the award. Note the sibling: the federal earmark names the International Awards specifically, so the Global Health award may defensibly code differently."
+}

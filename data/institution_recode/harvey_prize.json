@@ -1,0 +1,29 @@
+{
+  "prize_name": "Harvey Prize",
+  "awarding_org": "Technion – Israel Institute of Technology",
+  "awarding_org_type": "University",
+  "awarding_org_country": "Israel",
+  "funder_origin_name": "Lena P. Harvey Foundation (Leo M. Harvey family), via a 1971 gift to the American Technion Society",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Harvey Prize endowment fund established by Leo M. Harvey / Lena P. Harvey Foundation, with continuing Harvey family and American Technion Society support",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is two annual awards of USD 75,000 each, paid in full (>50%) from the dedicated Harvey fund created by the Lena P. Harvey Foundation's September 1971 donation to the American Technion Society; the Technion administers and confers the prize but the official prize site and Technion's own Hebrew announcements describe a named, ring-fenced prize fund ('קרן הפרס') established by Leo M. Harvey that makes the awards, continued 'in perpetuity' with support from the Harvey family. No evidence of Technion general-fund financing or of any second funder was found.",
+  "money_note": "Two prizes of USD 75,000 each are awarded annually, paid from the Harvey endowment originating in the Lena P. Harvey Foundation's 1971 gift to the American Technion Society; the funding arrangement has not changed hands since 1971.",
+  "status_note": "",
+  "sources": [
+    "https://harveypz.net.technion.ac.il/",
+    "https://harveypz.net.technion.ac.il/conditions-of-the-prize/",
+    "https://harveypz.net.technion.ac.il/mr-harvey/",
+    "https://harveypz.net.technion.ac.il/the-american-technion-society/",
+    "https://www.technion.ac.il/blog/%D7%94%D7%98%D7%9B%D7%A0%D7%99%D7%95%D7%9F-%D7%94%D7%9B%D7%A8%D7%99%D7%96-%D7%A2%D7%9C-%D7%96%D7%95%D7%9B%D7%99-%D7%A4%D7%A8%D7%A1-%D7%94%D7%90%D7%A8%D7%95%D7%95%D7%99/",
+    "https://www.eurekalert.org/news-releases/1068537",
+    "https://en.wikipedia.org/wiki/Harvey_Prize"
+  ],
+  "evidence_quote": "The Harvey Prize is derived from a donation made by the Lena P. Harvey Foundation to the American Technion Society in September 1971. Two awards of $75,000 each are made annually.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "No published financial statement shows whether the Harvey fund is still segregated on Technion's books, so a coder could treat today's purse as Technion money (University, Israel). We keep Philanthropy/United States because the prize site and Technion's Hebrew releases refer to a named Harvey prize fund awarding the prizes 'in perpetuity' with continuing Harvey family support, and no source indicates the gift was pooled into general university funds."
+}

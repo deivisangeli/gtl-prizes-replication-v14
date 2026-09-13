@@ -1,0 +1,32 @@
+{
+  "prize_name": "Louisa Gross Horwitz Prize",
+  "awarding_org": "Columbia University (Columbia University Irving Medical Center, Vagelos College of Physicians and Surgeons)",
+  "awarding_org_type": "University",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Bequest of S. Gross Horwitz",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Columbia University (holding and administering the Horwitz bequest)",
+  "funder_current_type": "University",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a single undisclosed honorarium and the only money ever identified as paying it is the testamentary bequest of S. Gross Horwitz, which created the prize at Columbia University in 1967. Applying the >50% test to the money: no sponsor, co-funder, or later gift appears anywhere in Columbia's prize pages (about, history, nominate), the Vagelos College prize-lecture page, the CUIMC award announcements for 2024 and 2025, or the Columbia Health Sciences Library finding aid for the Horwitz Prize committee records; every source describes the prize as established by, and continuing under, that one bequest. Columbia's medical school states that its named prizes are 'endowed by generous gifts from donors,' consistent with the bequest principal still supplying the honorarium. There is no evidence of the fund having been exhausted or topped up from Columbia's general budget, so more than half of today's purse is coded as the original Horwitz money and funder_changed is false. Columbia does not publish the honorarium amount or the fund's size, so the share cannot be verified numerically.",
+  "money_note": "The prize is an undisclosed honorarium plus a citation, divided among co-recipients when awarded to a group; it has been paid out of the S. Gross Horwitz bequest held by Columbia University since the first award in 1967, with no publicly reported change of funder or purse.",
+  "status_note": "",
+  "sources": [
+    "https://www.cuimc.columbia.edu/research/louisa-gross-horwitz-prize",
+    "https://www.cuimc.columbia.edu/research/louisa-gross-horwitz-prize/history",
+    "https://www.cuimc.columbia.edu/research/louisa-gross-horwitz-prize/nominate",
+    "https://www.cuimc.columbia.edu/news/2025-horwitz-prize-awarded-muscular-dystrophy-research",
+    "https://www.cuimc.columbia.edu/news/2024-horwitz-prize",
+    "https://www.vagelos.columbia.edu/about-us/message-dean/deans-lecture-series/louisa-gross-horwitz-prize-lecture",
+    "https://www.vagelos.columbia.edu/education/student-resources/office-student-affairs/annual-events/class-day",
+    "https://www.library-archives.cumc.columbia.edu/sites/default/files/finding-aids/Horwitz_Prize_Records_web_version_1.pdf",
+    "https://distinguishedawards.hms.harvard.edu/awards/louisa-gross-horwitz-prize-biology-or-biochemistry",
+    "https://en.wikipedia.org/wiki/Louisa_Gross_Horwitz_Prize"
+  ],
+  "evidence_quote": "The Louisa Gross Horwitz Prize was established under the will of the late S. Gross Horwitz through a bequest to Columbia University.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Columbia publishes neither the honorarium amount nor the size or performance of the Horwitz fund, so the >50% money test cannot be verified numerically; a coder could read the absence of any named, ring-fenced Horwitz endowment in current materials as evidence that the bequest has been pooled into university funds and that Columbia now pays most of the purse (funder_changed true). We code false because no source identifies any money other than the bequest as ever having funded this prize, and the protocol treats a donor's fund merely absorbed into a new vehicle as the same money. The current funder is coded University rather than Philanthropy for the same reason as before: Columbia legally owns and administers the bequest and presents the prize as awarded by Columbia, never naming a separate Horwitz fund as payer."
+}

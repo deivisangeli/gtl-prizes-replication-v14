@@ -1,0 +1,28 @@
+{
+  "prize_name": "Shaw Prize in Life Science and Medicine",
+  "awarding_org": "The Shaw Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Hong Kong",
+  "funder_origin_name": "The Shaw Prize Foundation (endowed by Run Run Shaw)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Hong Kong",
+  "funder_current_name": "The Shaw Prize Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Hong Kong",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is paid entirely (100%) by The Shaw Prize Foundation Limited, the Hong Kong charitable company incorporated in November 2002 under the auspices of the film magnate and philanthropist Run Run Shaw and endowed from his private wealth; the official site states the prize was 'established under the auspices of Mr Run Run Shaw in November 2002' and is 'managed and administered by The Shaw Prize Foundation based in Hong Kong'. No government, corporate, or university co-funder appears in any source; the Foundation is legally separate from Shaw's other vehicles (The Shaw Foundation Hong Kong, 1973; Sir Run Run Shaw Charitable Trust, 1995), which do not fund the prize. Shaw died in 2014 but the endowed Foundation has continued to pay the purse unchanged.",
+  "money_note": "Each of the three (from 2026, four) annual Shaw Prizes carries a gold medal, a certificate, and USD 1.2 million, paid by The Shaw Prize Foundation; the award was USD 1 million from the first presentation in 2004 through 2015 and was raised to USD 1.2 million from the 2016 cycle.",
+  "status_note": "",
+  "sources": [
+    "https://www.shawprize.org/en/about/overview",
+    "https://web.archive.org/web/2022id_/https://www.shawprize.org/en/shaw.php?tmp=1&twoid=1",
+    "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine",
+    "https://www.prnewswire.com/news-releases/announcement-of-the-shaw-laureates-2025-302465701.html",
+    "https://www.hklaureateforum.org/en/shaw-prize",
+    "https://en.wikipedia.org/wiki/Shaw_Prize"
+  ],
+  "evidence_quote": "The Shaw Prize, established under the auspices of Mr Run Run Shaw in November 2002, is managed and administered by The Shaw Prize Foundation based in Hong Kong.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Country is coded as Hong Kong, the Foundation's legal seat and registered charity jurisdiction (Shaw House, Tseung Kwan O); a coder using sovereign states only would record China. Type is Philanthropy rather than Corporate: although Run Run Shaw's fortune came from Shaw Brothers and TVB, the Foundation is a personal-bequest charity with no operating-company identity or corporate sponsorship."
+}

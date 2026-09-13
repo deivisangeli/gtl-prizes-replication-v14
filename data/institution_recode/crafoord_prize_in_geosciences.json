@@ -1,0 +1,30 @@
+{
+  "prize_name": "Crafoord Prize in Geosciences",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Anna-Greta and Holger Crafoord's Fund (1980 Crafoord donation to the Royal Swedish Academy of Sciences)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Anna-Greta and Holger Crafoord's Fund (Royal Swedish Academy of Sciences) with contributions from the Crafoord Foundation, Lund",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The 1980 donation went to the Royal Swedish Academy of Sciences, which holds it as the ring-fenced Anna-Greta and Holger Crafoord's Fund (approx. SEK 180 million today; further Crafoord donations added later). The Crafoord Foundation states the purse and the research grants are financed \"partly through donations from Anna-Greta and Holger Crafoord, partly through contributions from the Crafoord Foundation\" (Crafoordska stiftelsen, Lund, founded 1980 by Holger Crafoord, capital SEK 5.3bn at end-2024); neither side publishes its share, but both are private Crafoord philanthropic vehicles, so the >50% majority is Philanthropy/Sweden in either state and no handover ever occurred.",
+  "money_note": "Purse is SEK 8 million (2026 award, geosciences, to Veerabhadran Ramanathan), up from SEK 6 million in 2020; paid from the Academy-held Anna-Greta and Holger Crafoord's Fund together with contributions from the Crafoord Foundation in Lund.",
+  "status_note": "Continuously awarded since 1982, but geosciences comes up only in the four-field rotation (mathematics/astronomy, polyarthritis, geosciences, biosciences): geoscience prizes were given in 1983, 1986, 1992, 1995, 1998, 2002, 2006, 2010, 2014, 2018, 2022 and 2026, so gaps in a geosciences winner list are by design, not missing data.",
+  "sources": [
+    "https://www.crafoordprize.se/about-the-prize/the-crafoord-prize/",
+    "https://www.kva.se/en/prizes/crafoord-prize/about-the-crafoord-prize/",
+    "https://www.kva.se/en/scholarship/anna-greta-and-holger-crafoord-fund/",
+    "https://www.crafoord.se/crafoordpriset/om-crafoordpriset/",
+    "https://www.crafoord.se/crafoordpriset-2026/",
+    "https://www.crafoord.se/crafoordska-stiftelsen/det-har-ar-crafoordska-stiftelsen/",
+    "https://sv.wikipedia.org/wiki/Crafoordpriset",
+    "https://en.wikipedia.org/wiki/Crafoord_Prize"
+  ],
+  "evidence_quote": "\"Prissumman och forskningsanslagen finansieras dels genom donationer av Anna-Greta och Holger Crafoord, dels genom bidrag fran Crafoordska stiftelsen.\" (\"Kungliga Vetenskapsakademien mottog 1980 en forsta donation fran makarna Crafoord.\")",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two judgment calls. (1) Awarding body: the prize is formally awarded \"in partnership between the Royal Swedish Academy of Sciences and the Crafoord Foundation in Lund\", so a coder could name the Crafoord Foundation (Philanthropy); I chose the Academy because it selects the laureates and confers the prize. (2) Current funder: the endowment paying the purse is held and administered by the Academy, so it could be coded Society, but it is a named, ring-fenced Crafoord fund topped up by the separate Crafoord Foundation, so the protocol's bequest tie-breaker gives Philanthropy. The Crafoord Foundation's capital originated in Gambro shares Holger Crafoord donated personally, since sold, so it is a donor vehicle (Philanthropy), not Corporate."
+}

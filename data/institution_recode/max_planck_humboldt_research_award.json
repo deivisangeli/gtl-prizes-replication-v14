@@ -1,0 +1,26 @@
+{
+  "prize_name": "Max Planck-Humboldt Research Award",
+  "awarding_org": "Max Planck Society (Max-Planck-Gesellschaft) and Alexander von Humboldt Foundation (jointly)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Germany",
+  "funder_origin_name": "German Federal Ministry of Education and Research (BMBF)",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Germany",
+  "funder_current_name": "German Federal Ministry of Research, Technology and Space (BMFTR, successor to the BMBF)",
+  "funder_current_type": "Government",
+  "funder_current_country": "Germany",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is EUR 1.5 million for a five-year research collaboration in Germany plus EUR 80,000 personal award money (Max Planck-Humboldt Medals carry EUR 60,000). Both the Max Planck Society and the Humboldt Foundation state the award is financed by the federal research ministry, so the German federal budget supplies well over 50% at both the 2017-18 founding (BMBF) and today (BMFTR, the BMBF renamed in 2025); the same was true of the predecessor Max Planck Research Award (2004-2016), which the ministry also financed, so there was no financing reset at the refounding. One Humboldt Foundation programme page adds the Max Planck Society as a co-financier alongside the ministry without giving shares; no source attributes a majority share to the Society, and both organizations are themselves overwhelmingly financed from federal and state budgets.",
+  "money_note": "Current purse EUR 1.5 million in research funds plus EUR 80,000 personal prize money (medals EUR 60,000), paid by the German federal research ministry (BMBF, renamed BMFTR in 2025) since the award's first cycle in 2018.",
+  "status_note": "The award was created in 2017 and first conferred in 2018, replacing the Max Planck Research Award (awarded 2004-2016/2018 to two researchers a year by the same two organizations); winner lists before 2018 belong to the predecessor award, not to the name we use. Eligibility is capped at 15 years past the doctorate, making this one of only three early/mid-career prizes in our list.",
+  "sources": [
+    "https://www.mpg.de/awards/max-planck-humboldt-research-award",
+    "https://www.mpg.de/11417525/max-planck-society-and-humboldt-foundation-to-present-new-joint-research-award",
+    "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/max-planck-humboldt-research-award",
+    "https://www.humboldt-foundation.de/en/explore/newsroom/dossier-max-planck-humboldt-research-award"
+  ],
+  "evidence_quote": "The Max Planck Society and the Alexander von Humboldt Foundation jointly award the Max Planck-Humboldt Research Award on an annual basis. ... It is being financed by the Federal Ministry of Education and Research.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two co-awarding bodies, both seated in Germany, so the country is unambiguous but the type is not: I coded Society because the Max-Planck-Gesellschaft is a registered non-profit research association (e.V.) with elected Scientific Members, akin to a national academy, and it leads the nomination process. A coder could instead pick Philanthropy (the Humboldt partner is legally a foundation) or Government, since both bodies are financed almost entirely from federal and state budgets. On funding, one Humboldt programme page names the Max Planck Society alongside the ministry as financier; I still coded Government rather than Mixed because every other official statement, including the founding press release and the dossier, attributes the EUR 1.5M purse to the federal ministry alone."
+}

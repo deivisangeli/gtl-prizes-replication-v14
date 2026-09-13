@@ -1,0 +1,29 @@
+{
+  "prize_name": "Wollaston Medal",
+  "awarding_org": "Geological Society of London",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United Kingdom",
+  "funder_origin_name": "William Hyde Wollaston bequest (Wollaston Donation Fund, GBP 1,000 in Consols, 1828)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United Kingdom",
+  "funder_current_name": "Donor-restricted award funds held on trust by the Geological Society of London (reported in aggregate as 'Other Restricted Income Funds')",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United Kingdom",
+  "funder_changed": false,
+  "funding_share_basis": "There is no cash purse: the Wollaston Medal is a palladium medal only (the separate early-career Wollaston Fund award carries GBP 500), so the money tested is the cost of striking and conferring the medal. ORIGIN: in 1828, two weeks before his death, William Hyde Wollaston transferred GBP 1,000 in Consols to the Society in trust, the dividends to be spent on the award; the Council spent the first year's income on the die for a medal bearing his head, first awarded to William Smith in 1831 - 100% private bequest money. TODAY, applying the >50% test to the money: the Society's audited 2024 accounts show award money is paid from RESTRICTED funds, which the same accounts define as 'held under specific trusts in charity law that limit how those funds might be spent' - that is, donor money still bound by its donors' terms, not the Society's own general funds. Note 27 names three larger restricted funds (Henry Woods GBP 243,849; Alan and Charlotte Welch GBP 267,626; Peter Fookes GBP 83,831) and then a pooled category, 'Other Restricted Income Funds' (GBP 355,739 at year end, each individual balance under GBP 100,000), of which it states: 'The main purpose of these funds is the financing of awards and medals.' Expenditure from that pooled category was GBP 121,862 in 2024, and the Society's only two endowment funds (note 28) are Fermor and Robert Scott, neither award-related. So the medals are financed out of the historic donor bequests, of which Wollaston's is one, rather than out of Society general funds, and the original money still supplies more than half of what it costs to confer this medal: funder_changed is false. The accounts do not name a Wollaston fund individually, so its survival inside the pooled category is inferred from the category's stated purpose rather than stated outright.",
+  "money_note": "No monetary purse: the award is a palladium medal only. Its cost is met from the Geological Society's pooled donor-restricted award funds, which descend from historic bequests including Wollaston's 1828 GBP 1,000 trust; the separate early-career Wollaston Fund award carries GBP 500.",
+  "status_note": "",
+  "sources": [
+    "https://www.geolsoc.org.uk/about-us/society-awards/wollaston-medal/",
+    "https://www.geolsoc.org.uk/about-us/society-awards/",
+    "https://www.geolsoc.org.uk/about-us/society-awards/wollaston-fund/",
+    "https://www.geolsoc.org.uk/media/3h5pv1bf/gsl-2024-annual-report-and-financial-statements-2024.pdf",
+    "https://www.geolsoc.org.uk/media/v4rgbhfh/awards-medals-and-funds-booklet-2024-rev.pdf",
+    "https://www.geolsoc.org.uk/news/geological-society-announces-recipients-of-2026-medals-awards-and-funds/",
+    "https://en.wikipedia.org/wiki/Wollaston_Medal"
+  ],
+  "evidence_quote": "In addition to the two larger funds described above, the Society has a number of other Restricted Income Funds, each with individual balances of less than 100,000 as at the end of the financial year. The main purpose of these funds is the financing of awards and medals.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "The Society's accounts report the small award funds only in aggregate and never name a Wollaston fund, so a coder could conclude the 1828 bequest has been absorbed and that the Society now bears the medal's cost from its own resources - which would make the current funder Society and funder_changed true, the coding this file previously carried. I code Philanthropy and false because the money financing awards and medals is reported as restricted, i.e. still held on the donors' trusts rather than pooled into general funds, and the protocol's tie-breaker sends the pooled-into-GENERAL-funds case to Society, not the pooled-into-restricted-funds case. A second call: with no cash purse, the 'money' being tested is only the medal's striking cost, so the test is unavoidably coarse here."
+}

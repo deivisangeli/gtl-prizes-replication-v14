@@ -1,0 +1,33 @@
+{
+  "prize_name": "Millennium Technology Prize",
+  "awarding_org": "Technology Academy Finland (Tekniikan Akatemia -saatio sr)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Finland",
+  "funder_origin_name": "Finnish Ministry of Economic Affairs and Employment",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Finland",
+  "funder_current_name": "Technology Academy Finland (Tekniikan Akatemia -saatio sr)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Finland",
+  "funder_changed": true,
+  "funding_share_basis": "The purse is a single EUR 1 million payment per biennial cycle, so the >50% money test is effectively all-or-nothing. From the first award in 2004 through the 2022 cycle the Finnish state paid 100% of that purse: TAF's own notice states the prize 'has been paid biennially from the budget of the Ministry of Economic Affairs and Employment since the first Millennium Technology Prize was awarded in 2004', with TAF and its partners covering only operating costs, which do not count under this protocol. The June 2023 Government Programme ended that appropriation; TAF's board resolved to fund the 2024 purse 'with other public or private funding' and, failing that, out of its own foundation capital, and Finnish coverage reports it was prepared to draw down that capital to guarantee the million euros. The 2024 purse (B. Jayant Baliga, October 2024) and the announced 2027 purse are therefore paid from money TAF raised or holds, not from the founding state appropriation, so 100% of today's purse is new money and funder_changed is true. There is no endowment or ring-fenced fund from the original state source still paying any part of it. No other funder is on record as contributing to the purse: TAF's partners (Nokia, KONE, Aalto and other Finnish universities, Sitra) and Business Finland, named 'strategic partner' in January 2026, are described in every source as cooperation, promotion and operating support, with no stated share of the prize money.",
+  "money_note": "EUR 1 million, awarded biennially; paid in full from the Finnish Ministry of Economic Affairs and Employment budget 2004-2022, and from Technology Academy Finland's own raised funds and foundation capital from the 2024 award onward.",
+  "status_note": "Prize is continuous under the same name but its financing was nearly terminated: the June 2023 Finnish Government Programme proposed discontinuing it and cut the state appropriation. TAF funded the 2024 round itself (awarded 30 October 2024 to B. Jayant Baliga) and the cycle then slipped, with the next award due May/June 2027 rather than 2026.",
+  "sources": [
+    "https://millenniumprize.org/",
+    "https://millenniumprize.org/prize/story/",
+    "https://millenniumprize.org/about-us/in-english/",
+    "https://millenniumprize.org/about-us/suomeksi/",
+    "https://millenniumprize.org/news-articles/news/changes-in-the-funding-of-the-millennium-technology-prize/",
+    "https://millenniumprize.org/news-articles/news/business-finland-becomes-strategic-partner-of-millennium-technology-prize/",
+    "https://millenniumprize.org/news-articles/news/the-2027-millennium-technology-prize-gathered-nominations-from-all-around-the-world/",
+    "https://www.uusiteknologia.fi/2023/06/20/ensi-vuoden-millennium-palkinto-sai-rahoituksen/",
+    "https://www.tieteessatapahtuu.fi/kategoriat/uutinen/hallitusohjelma-esittaa-millennium-teknologiapalkinnon-lakkauttamista-tekniikan",
+    "https://en.wikipedia.org/wiki/Millennium_Technology_Prize",
+    "https://en.wikipedia.org/wiki/Technology_Academy_Finland"
+  ],
+  "evidence_quote": "The prize has been paid biennially from the budget of the Ministry of Economic Affairs and Employment since the first Millennium Technology Prize was awarded in 2004. ... Future prizes will be covered with other public or private funding.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "funder_changed is well evidenced (the state appropriation that paid 100% of the purse through 2022 was cut, and TAF paid the 2024 purse), but the identity of the current funder is not: no source names who supplied the 2024 money beyond TAF itself, so Mixed is defensible given TAF's tripartite industry/state/university partner base, and Government would be defensible if any of the 2024 money came from a residual public source. We code Philanthropy because TAF is a legally independent Helsinki foundation and the only body on record as paying the purse."
+}

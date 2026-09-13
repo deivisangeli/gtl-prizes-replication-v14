@@ -1,0 +1,27 @@
+{
+  "prize_name": "Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel",
+  "awarding_org": "Royal Swedish Academy of Sciences (Kungliga Vetenskapsakademien)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Sveriges Riksbank (Swedish central bank)",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Sveriges Riksbank (Swedish central bank)",
+  "funder_current_type": "Government",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "Sveriges Riksbank, Sweden's central bank, has supplied 100% of the purse since the prize was created in 1968: it made a founding donation to the Nobel Foundation on its 300th anniversary and continues to pay the annual prize amount (plus the Nobel Foundation's administrative costs for the award). The Nobel Foundation and the Royal Swedish Academy of Sciences administer and adjudicate the prize but do not fund it; per the coding rule, a central bank paying the purse is coded Government.",
+  "money_note": "Purse is 11 million SEK (2025), the same as each Nobel Prize, paid by Sveriges Riksbank; shared if there are multiple laureates.",
+  "status_note": "",
+  "sources": [
+    "https://www.nobelprize.org/prizes/economic-sciences/",
+    "https://www.riksbank.se/en-gb/about-the-riksbank/the-tasks-of-the-riksbank/research/economics-prize/",
+    "https://www.kva.se/en/prizes/prize-in-economic-sciences/",
+    "https://www.nobelprize.org/prizes/economic-sciences/2025/press-release/",
+    "https://en.wikipedia.org/wiki/Nobel_Memorial_Prize_in_Economic_Sciences"
+  ],
+  "evidence_quote": "The Royal Swedish Academy of Sciences appoints the prize-winner(s) according to the same principles as for the Nobel Prizes... The prize amount is also the same as for the Nobel Prizes, 11 million, and is paid by the Riksbank.",
+  "confidence": "high",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

@@ -1,0 +1,27 @@
+{
+  "prize_name": "James Craig Watson Medal",
+  "awarding_org": "National Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "James Craig Watson bequest (J.C. Watson Fund), held in trust by the National Academy of Sciences",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "J.C. Watson Fund endowment, administered by the National Academy of Sciences",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "Watson's will (dated 1874; estate settled after his 1880 death) left the residue of his estate to NAS as a named perpetual fund whose income is restricted to 'the promotion of Astronomical Science' — the fund paid the first astronomy grant in 1883 and the first Watson medal in 1886/87. No other donor or sponsor is named anywhere for this medal, so the ring-fenced Watson endowment supplies 100% of the purse under the >50% rule; the restricted-purpose fund (medal plus research grants) maps directly onto today's USD 25,000 prize plus USD 50,000 research support. NAS invests and administers the fund but is not itself the donor.",
+  "money_note": "USD 25,000 personal prize plus USD 50,000 to support the recipient's research, plus a gold-plated bronze medal, paid from the income of the perpetual J.C. Watson Fund created by Watson's bequest and managed by NAS.",
+  "status_note": "Awarded irregularly rather than annually: NAS now states it is presented every two years, but historically the interval ran 1-4 years with long gaps (e.g., 1936-1948, 1965-1969). Most recent award 2026 (Jonas Zmuidzinas); prior awards 2024, 2022, 2020, 2018.",
+  "sources": [
+    "https://www.nasonline.org/award/james-craig-watson-medal/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK221928/",
+    "https://www.ncbi.nlm.nih.gov/books/NBK221937/",
+    "https://en.wikipedia.org/wiki/James_Craig_Watson_Medal",
+    "https://www.nasonline.org/awards/all-awards/"
+  ],
+  "evidence_quote": "\"all the rest, residue and remainder of my real and personal estate to the National Academy of Sciences...to be aggregated, kept and invested as a perpetual fund the income from which shall be expended by said Academy for the promotion of Astronomical Science.\"",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "The current NAS award page says only that the medal 'was established by NAS Member ... James Craig Watson' and never names the Watson Fund or states which account pays today's USD 75,000, so a coder could reasonably code the current funder as Society (NAS general funds) if the 1880 endowment no longer covers the purse. We code Philanthropy because the bequest created a named, purpose-restricted perpetual fund that NAS holds in trust and has drawn on for astronomy medals and grants since the 1880s, with no evidence of any replacement or supplementary funder. Watson was Canadian-born but the estate and trust are US; funder_country is United States."
+}

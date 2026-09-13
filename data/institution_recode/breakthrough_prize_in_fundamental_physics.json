@@ -1,0 +1,33 @@
+{
+  "prize_name": "Breakthrough Prize in Fundamental Physics",
+  "awarding_org": "Breakthrough Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Milner Foundation (Yuri and Julia Milner), via the Fundamental Physics Prize Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Personal foundations of Sergey Brin, Priscilla Chan and Mark Zuckerberg, Julia and Yuri Milner, and Anne Wojcicki, pooled through the Breakthrough Prize Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "The purse is USD 3 million. At founding (July 2012) Yuri and Julia Milner's foundation supplied 100% of it: the Milner Foundation created the Fundamental Physics Prize Foundation and paid the nine inaugural prizes (about USD 27 million) alone. From the 2013 relaunch the money is pooled: the official sponsor line for the 2026 cycle is 'founded by Sergey Brin, Priscilla Chan and Mark Zuckerberg, Julia and Yuri Milner, and Anne Wojcicki and have been sponsored by foundations established by them' — four donor families, of which Milner is one (Jack Ma and Cathy Zhang joined c. 2016 and Tencent's Ma Huateng was named a founding sponsor in Dec 2017, but both appear only on the Life Sciences sponsor line, not in the 2026 all-prize announcement). Applying the >50% test to the money: no donor-level or prize-level share is published — the prize site gives none, and the Breakthrough Prize Foundation's 990-PF filings (EIN 46-0677985; contributions of USD 25.4M for FY ending May 2025, USD 60.3M FY2024, USD 98.7M FY2023, USD 48.3M FY2022) report only aggregate contributions with no public donor breakdown, so the exact split cannot be established. The best-supported reading is that more than half of today's purse is money from sources other than the original Milner funding: the purse is paid out of current commingled contributions from four co-equal donor families (not from a Milner endowment laid down in 2012 — the 2012 outlay was spent on the 2012 prizes), and Milner is one contributor among four with no evidence of a majority share. Coded funder_changed = true on that basis, with judgment_call set because the split is undocumented.",
+  "money_note": "USD 3 million purse, unchanged since 2012; paid at the outset entirely by the Milner Foundation and, since the 2013 Breakthrough Prize relaunch, out of pooled current contributions from four founding families' personal foundations disbursed by the US 501(c)(3) Breakthrough Prize Foundation.",
+  "status_note": "Renamed: founded July 2012 as the Fundamental Physics Prize (Fundamental Physics Prize Foundation) and renamed the Breakthrough Prize in Fundamental Physics when folded into the Breakthrough Prize family in 2013; awarded continuously since, most recently to the 2026 laureates (Muon g-2 collaborations, announced 18 April 2026). The separately announced, irregular Special Breakthrough Prize in Fundamental Physics is a distinct award and should not be pooled with the annual prize.",
+  "sources": [
+    "https://breakthroughprize.org/About",
+    "https://breakthroughprize.org/Prize/1",
+    "https://breakthroughprize.org/News/98",
+    "https://breakthroughprize.org/News/12",
+    "https://breakthroughprize.org/Yuri_Milner",
+    "https://breakthroughprize.org/Prizes/2",
+    "https://en.wikipedia.org/wiki/Breakthrough_Prize",
+    "https://en.wikipedia.org/wiki/Breakthrough_Prize_in_Fundamental_Physics",
+    "https://projects.propublica.org/nonprofits/organizations/460677985",
+    "https://projects.propublica.org/nonprofits/api/v2/organizations/460677985.json",
+    "https://www.prnewswire.com/news-releases/breakthrough-prize-announces-2026-laureates-302746555.html"
+  ],
+  "evidence_quote": "The Breakthrough Prizes were founded by Sergey Brin, Priscilla Chan and Mark Zuckerberg, Julia and Yuri Milner, and Anne Wojcicki and have been sponsored by foundations established by them.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "The donor split behind the USD 3 million purse is not published, so the >50% money test cannot be settled from evidence. We read today's purse as majority new money (three families joined Milner in 2013 and the purse is paid from pooled current contributions), giving funder_changed = true and a Mixed current funder; a coder who credited the prize page's line that the physics prize 'was founded in 2012 by Yuri Milner' and assumed Milner still bankrolls this particular prize would name the Milner Foundation as current funder and set funder_changed = false. Country is United States in both states because the paying entity is the US-registered Breakthrough Prize Foundation and the sponsors' giving vehicles are US-established; Mixed was considered because Yuri Milner has been resident in Israel since about 2021, but the money is disbursed by the US foundation, so a single country is recorded. 2026-09-09: current type recoded Mixed -> Philanthropy; the >50% rule is applied to the type of source, and every donor is a personal foundation (fix_mixed_by_type.py)."
+}

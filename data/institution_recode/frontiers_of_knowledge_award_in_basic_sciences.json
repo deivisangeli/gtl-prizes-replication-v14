@@ -1,0 +1,30 @@
+{
+  "prize_name": "Frontiers of Knowledge Award in Basic Sciences",
+  "awarding_org": "BBVA Foundation (Fundacion BBVA)",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Spain",
+  "funder_origin_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Spain",
+  "funder_current_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Spain",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is EUR 400,000 per category, paid in full (100%) by the BBVA Foundation, the corporate foundation of the BBVA banking group, from the awards' creation in 2008 (first conferred 2009) through the 18th edition (2026). The Spanish National Research Council (CSIC) co-organizes the awards but contributes only expertise and governance, not money: it proposes each jury's chair and, jointly with the Foundation, appoints the technical evaluation support committees; no source shows any CSIC financial contribution to the purse. The Foundation does not publish a breakdown of endowment income versus annual contributions from BBVA, but either channel traces to the same single bank, so the >50% test yields BBVA/Corporate in both states regardless.",
+  "money_note": "EUR 400,000 per category plus a diploma and a commemorative artwork, paid by the BBVA Foundation since the awards were established in 2008; the amount has been unchanged since inception.",
+  "status_note": "",
+  "sources": [
+    "https://www.frontiersofknowledgeawards-fbbva.es/",
+    "https://www.premiosfronterasdelconocimiento.es/sobre-los-premios/",
+    "https://www.premiosfronterasdelconocimiento.es/informacion-y-bases/",
+    "https://www.fbbva.es/en/about-the-foundation/",
+    "https://www.fbbva.es/en/conditions/",
+    "https://www.fbbva.es/en/multimedia/live-18th-frontiers-of-knowledge-awards-ceremony/",
+    "https://www.csic.es/es/actualidad-del-csic/avelino-corma-premio-fronteras-del-conocimiento-de-la-fundacion-bbva",
+    "https://en.wikipedia.org/wiki/BBVA_Foundation_Frontiers_of_Knowledge_Award"
+  ],
+  "evidence_quote": "The BBVA Foundation expresses the corporate social responsibility of the BBVA Group, particularly its commitment to the advancement of the societies where it does business.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Coded Corporate for both states because the BBVA Foundation is BBVA Group's corporate social responsibility vehicle and its money originates with the single bank BBVA; the alternative is Philanthropy, since the Foundation is a legally separate Spanish foundation and does not disclose whether the purse comes from its own dotacion or from annual bank contributions, which is why confidence is medium. A second ambiguity is the awarding body: CSIC, a public agency, co-designates the juries and evaluation panels, so a coder could call the award jointly Government-administered; the BBVA Foundation establishes, confers, and pays for it, so it is coded as the awarding organization. Seat is Bilbao with a Madrid office, both in Spain, so country is unaffected."
+}

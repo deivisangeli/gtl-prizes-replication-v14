@@ -1,0 +1,32 @@
+{
+  "prize_name": "A. M. Turing Award",
+  "awarding_org": "Association for Computing Machinery (ACM)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Association for Computing Machinery (ACM)",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Google, Inc.",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "The purse is a single cash prize to the laureate(s), currently USD 1,000,000. Applying the >50% test to the money: 100% of today's purse is supplied by Google, which has been the sole funder since the 2014 award; ACM contributes 0% of the cash. From 1966 to 2001 ACM paid the purse entirely from its own funds (USD 25,000 by the late 1990s, no named external sponsor); ACM's 2007 release states 'Intel has funded ACM's Turing Award since 2002' (Intel alone USD 100,000, 2002-2006; Intel and Google jointly USD 250,000, 2007-2013, shares undisclosed). So none of the original ACM money remains in today's purse - all of it is new corporate money - and the coding is true under either reading of the origin funder, since Google is neither ACM nor Intel. The 2025 award (announced March 2026) still carries the same Google-funded USD 1,000,000.",
+  "money_note": "Current purse USD 1,000,000, paid entirely by Google since the 2014 award (announced November 2014, quadrupling the USD 250,000 Intel-plus-Google purse of 2007-2013); still Google-funded for the 2025 award announced March 2026.",
+  "status_note": "",
+  "sources": [
+    "https://amturing.acm.org/",
+    "https://awards.acm.org/turing",
+    "https://awards.acm.org/xpages/sponsors",
+    "https://www.acm.org/media-center/2026/march/turing-award-2025",
+    "https://www.acm.org/media-center/2014/november/acms-turing-award-prize-raised-to-usd1-million",
+    "https://www.acm.org/media-center/2007/july/acms-turing-award-prize-raised-to-usd250000",
+    "https://www.acm.org/binaries/content/assets/awards/about-the-acm-a.m.-turing-award-fact-sheet.pdf",
+    "https://www.ams.org/notices/200307/comm-turing.pdf",
+    "https://cacm.acm.org/news/180411-acm-google-increase-turing-award-prize-to-1-million/fulltext",
+    "https://en.wikipedia.org/wiki/Turing_Award"
+  ],
+  "evidence_quote": "\"The ACM A.M. Turing Award carries a $1 million prize, with financial support provided by Google, Inc.\"; \"Intel has funded ACM's Turing Award since 2002.\" (ACM, 2007)",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Origin funding is inferred rather than documented in a 1966 source: ACM states corporate funding started with Intel in 2002 and the pre-2002 USD 25,000 purse carried no named sponsor, so ACM's own funds is the residual coding; a coder treating Intel's 2002 takeover as a refounding would code the origin funder as Intel (Corporate, United States). The funder_changed=true coding is unaffected by that choice, since Google funds 100% of today's purse either way."
+}

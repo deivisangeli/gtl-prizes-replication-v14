@@ -1,0 +1,32 @@
+{
+  "prize_name": "Benjamin Franklin Medal in Chemistry",
+  "awarding_org": "The Franklin Institute",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Named endowed medal funds of individual Franklin Institute benefactors (Elliott Cresson Fund 1848, Edward Longstreth Fund 1890, Howard N. Potts Fund 1906, The Franklin Fund 1914, Francis J. Clamer Fund 1943 and other bequests pooled at the 1998 reorganization)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Benjamin Franklin Medalists' Fund at The Franklin Institute, established 2017 by The Morel Family Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "The purse is a USD 10,000 honorarium plus a 14-karat gold medal. The Franklin Institute's 2026 Awards Convocation Book states in its 'Awards Endowments' section that 'The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees', and separately thanks the donors of 21 legacy named funds (Cresson 1848, Longstreth 1890, Potts 1906, The Franklin Fund 1914, Clamer 1943, Bower 1988, etc.) as funds that 'support the Bower Awards and the Benjamin Franklin Medals' generally. The honorarium - the purse - is therefore attributed to money given in 2017 by a private family foundation, not to the 19th- and 20th-century bequests that endowed the predecessor medals, so more than half of today's purse is new money. The Institute publishes no dollar split between the Medalists' Fund and the legacy funds, so the share is established by the explicit attribution of the honoraria rather than by figures. Ceremony money (Bank of America as presenting sponsor, KPMG and Marsha and Jeffrey Perelman as Awards Week sponsors, associate sponsors including the Morel Family Foundation) underwrites the dinner and Institute education programs and is excluded as operations; the 'laureate sponsors' named in the programme are Committee on Science and the Arts members who present the nomination case, not funders.",
+  "money_note": "USD 10,000 honorarium plus a 14-karat gold medal, paid since 2017 from the Benjamin Franklin Medalists' Fund endowed by The Morel Family Foundation (Doylestown, Pennsylvania); same amount for the 2026 cycle.",
+  "status_note": "The name has been in use only since 1998, when the Institute reorganized 25 separately endowed awards under the Benjamin Franklin Medals umbrella; chemistry-relevant predecessors (Franklin Medal, last awarded 1997; Elliott Cresson Medal; Howard N. Potts Medal) were discontinued, so pre-1998 laureates appear under those older names. The medal is active: 2026 award to Geoffrey W. Coates (Cornell), ceremony 30 April 2026.",
+  "sources": [
+    "https://fi.edu/sites/default/files/2026-04/2026_Awards_Convocation_Book_Interactive.pdf",
+    "https://fi.edu/en/awards/about",
+    "https://fi.edu/en/awards",
+    "https://fi.edu/en/awards/franklin-institute-awards-class-2026",
+    "https://www.morelfoundation.org/about",
+    "https://www.causeiq.com/organizations/morel-family-foundation,475521535/",
+    "https://en.wikipedia.org/wiki/Franklin_Institute_Awards",
+    "https://en.wikipedia.org/wiki/Elliott_Cresson_Medal",
+    "https://en.wikipedia.org/wiki/Howard_N._Potts_Medal",
+    "https://projects.propublica.org/nonprofits/organizations/231370501"
+  ],
+  "evidence_quote": "The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The Institute publishes no dollar split, and the same page also credits the 21 legacy bequest funds with supporting the Benjamin Franklin Medals, so a coder could read the historic endowments as still carrying most of the honorarium and set funder_changed false; we followed the explicit statement that the 2017 Morel fund 'provides honoraria'. Awarding_org_type Society (1824 membership institute whose Committee on Science and the Arts selects laureates) is also arguable against Philanthropy, since the body is today primarily a donor-funded science museum."
+}

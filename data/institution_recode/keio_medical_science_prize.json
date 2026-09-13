@@ -1,0 +1,27 @@
+{
+  "prize_name": "Keio Medical Science Prize",
+  "awarding_org": "Keio University (Keio University Medical Science Fund)",
+  "awarding_org_type": "University",
+  "awarding_org_country": "Japan",
+  "funder_origin_name": "Dr. Mitsunada Sakaguchi (donation establishing the Keio University Medical Science Fund)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Japan",
+  "funder_current_name": "Keio University Medical Science Fund (Sakaguchi endowment)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Japan",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse (10 million yen to each of two laureates) comes from one source: the 7-billion-yen endowment given by alumnus Dr. Mitsunada Sakaguchi (5bn yen in fall 1994, 2bn more in July 1999), which Keio constituted on 1 April 1995 as the named, ring-fenced Keio University Medical Science Fund. Keio identifies that Fund, not the university's general budget, as the payer: the Fund lists the Prize as one of its five initiatives, runs the Fund Office that receives nominations, and has its own Board of Directors (chaired ex officio by Keio's president). No other funder or sponsor is named at any point, so the >50% test resolves to the Sakaguchi endowment in both states.",
+  "money_note": "Two laureates per year, each receiving a certificate, a medal and 10 million yen, paid from the Sakaguchi-endowed Keio University Medical Science Fund; the purse has been the Fund's responsibility since the first award in 1996 with no sponsor change.",
+  "status_note": "",
+  "sources": [
+    "https://www.ms-fund.keio.ac.jp/en/",
+    "https://www.ms-fund.keio.ac.jp/en/prize/",
+    "https://www.ms-fund.keio.ac.jp/en/news/image/8af1041d9a38441cd89bd2d30510565bbe7df6d4.pdf",
+    "https://www.ms-fund.keio.ac.jp/en/prize/the-2025-keio-medical-science-prize-awardees.html",
+    "https://en.wikipedia.org/wiki/Keio_Medical_Science_Prize"
+  ],
+  "evidence_quote": "In Fall 1994, Dr. Mitsunada Sakaguchi... donated five billion yen to Keio University, with the expressed desire that it be used to commend outstanding researchers... Keio launched the Keio University Medical Science Fund on April 1, 1995.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The alternative is University (pass 1's coding), on the ground that the Fund has no separate legal personality, sits inside Keio, and Keio's president chairs its board. We code Philanthropy under the protocol's tie-breaker: the money is one private donor's gift held as a named, ring-fenced endowment that Keio itself identifies as the prize's paying vehicle (its own name, office, board and initiative list), which is the Nemmers-at-Northwestern case rather than a university paying a prize from general funds. The awarding organization remains Keio University (University, Japan)."
+}

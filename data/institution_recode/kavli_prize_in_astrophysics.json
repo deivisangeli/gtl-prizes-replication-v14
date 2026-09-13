@@ -1,0 +1,28 @@
+{
+  "prize_name": "Kavli Prize in Astrophysics",
+  "awarding_org": "The Norwegian Academy of Science and Letters",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Norway",
+  "funder_origin_name": "The Kavli Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Kavli Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is USD 1,000,000 per field, and The Kavli Foundation (Los Angeles, USA), endowed by Fred Kavli, has supplied 100% of it plus the gold medals since the prize was established in 2005 (first awarded 2008) through the 2026 cycle. The Norwegian Academy of Science and Letters selects and confers the prize and the Norwegian Ministry of Education and Research funds the Academy's administration and hosts the award banquet, but neither contributes to the purse, so under the >50%-of-purse rule both states code to the Kavli Foundation.",
+  "money_note": "USD 1,000,000 shared by the laureates in each field, paid entirely by The Kavli Foundation (United States); unchanged in nominal terms from the first award in 2008 through 2026.",
+  "status_note": "Awarded biennially in even-numbered years (2008, 2010, ..., 2024, 2026); nominations open in the summer of each odd year. No award exists for odd years, so gaps in odd years are expected rather than missing data.",
+  "sources": [
+    "https://www.kavliprize.org/about",
+    "https://www.kavliprize.org/",
+    "https://www.kavliprize.org/prizes/astrophysics/2026",
+    "https://www.kavlifoundation.org/news/the-kavli-prize-2026",
+    "https://www.kavlifoundation.org/the-kavli-prize",
+    "https://en.wikipedia.org/wiki/Kavli_Prize"
+  ],
+  "evidence_quote": "The Kavli Foundation provides the award money and gold medals to The Kavli Prize Laureates, and promotes the laureates and their science.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The prize is a three-way partnership, so a coder could record the funder as the Norwegian Ministry of Education and Research (Government, Norway) or as Mixed. I coded both origin and current funder as The Kavli Foundation because the >50% rule counts only the prize purse, which the Foundation pays in full; the Ministry's money covers administration and the banquet, which the protocol excludes."
+}

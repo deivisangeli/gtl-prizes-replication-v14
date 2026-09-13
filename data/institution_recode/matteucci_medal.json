@@ -1,0 +1,31 @@
+{
+  "prize_name": "Matteucci Medal",
+  "awarding_org": "Accademia Nazionale delle Scienze detta dei XL",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Italy",
+  "funder_origin_name": "Carlo Matteucci (personal donation to the Societa Italiana delle Scienze, accepted under Royal Decree of 10 July 1870)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Italy",
+  "funder_current_name": "Accademia Nazionale delle Scienze detta dei XL (general funds)",
+  "funder_current_type": "Society",
+  "funder_current_country": "Italy",
+  "funder_changed": true,
+  "funding_share_basis": "There is no cash purse - the award is a medal - so the purse is the cost of striking and conferring it, and the Academy's published audited accounts settle who pays that today. The Bilancio Consuntivo 2025 shows total assets of EUR 106,846.52 made up entirely of bank liquidity (Banca Fideuram EUR 106,756.02), zero investments or securities, no restricted, named or ring-fenced fund of any kind, and net patrimony of only EUR 902.55; income of EUR 327,866.11 is 95% Italian state operating grants (MiC and MIUR, EUR 311,107.12) with no endowment or investment-income line at all. The medal is booked as an ordinary operating expense ('Costi per pubblicazioni e medaglie - Medaglie e Diplomi' EUR 911.79 in 2025; 'Medaglie' EUR 600.00 budgeted for all three medals in the Bilancio di Previsione 2026, which also confirms the Matteucci Medal will be conferred again). No surviving Matteucci endowment appears anywhere in the accounts, so approximately 0% of today's award is paid by Carlo Matteucci's 1870 donation and essentially 100% by the Academy's own current general funds - hence funder_changed = true under the >50% money test. At origin the money was Matteucci's own: the Royal Decree of 10 July 1870 authorised the Societa Italiana delle Scienze to accept his donation for the constitution of the prize (Philanthropy, Italy).",
+  "money_note": "No cash purse; the award is a medal only, costing the Academy under EUR 1,000 a year for all three of its medals combined (EUR 911.79 booked in 2025, EUR 600.00 budgeted for 2026), paid from the Academy's general funds, which are themselves about 95% Italian Ministry of Culture and MIUR operating grants.",
+  "status_note": "Awarded irregularly: annual from 1868 to 1932, then suspended, with awards resuming in 1956 and further gaps (1957-1974, 2007-2015). It has been awarded every year since 2016 under the same name - 2021 Amos Maritan, 2022 Jocelyn Bell Burnell, 2023 Francesco De Martini, 2024 Helen Quinn, 2025 Francesca Matteucci - so the prize is active.",
+  "sources": [
+    "https://www.accademiaxl.it/attivita/medaglie/",
+    "https://www.accademiaxl.it/en/activities/medals/",
+    "https://www.accademiaxl.it/accademia/amministrazione-trasparente/",
+    "https://www.accademiaxl.it/wp-content/uploads/2026/06/Bilancio-consuntivo_2025.pdf",
+    "https://www.accademiaxl.it/wp-content/uploads/2026/01/BILANCIO-DI-PREVISIONE-2026.pdf",
+    "https://www.accademiaxl.it/wp-content/uploads/2025/05/Bilancio-consuntivo_2024.pdf",
+    "https://www.accademiaxl.it/accademia/storia/",
+    "https://it.wikipedia.org/wiki/Medaglia_Matteucci",
+    "https://en.wikipedia.org/wiki/Matteucci_Medal"
+  ],
+  "evidence_quote": "ENTRATE 327.866,11 - Contributi pubblici 311.107,12 ... Costi per pubblicazioni e medaglie 8.769,59 - Medaglie e Diplomi 911,79 (Bilancio Consuntivo 2025, Accademia Nazionale delle Scienze detta dei XL)",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two defensible alternatives. (a) The current funder could be coded Government/Italy, since about 95% of the Academy's income is Ministry of Culture and MIUR grants; I coded Society because the protocol codes national academies as Society, the state money is an untied general operating contribution rather than an earmarked purse, and administration money does not count toward the purse. (b) The Academy never states in words that the Matteucci fund is exhausted, so a coder could set funder_changed = false by assuming the 1870 endowment survives; I set it true because the Academy's complete audited balance sheet shows no investments and no restricted fund at all, which leaves nothing of the original donation to pay today's award."
+}

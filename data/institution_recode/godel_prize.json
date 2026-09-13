@@ -1,0 +1,29 @@
+{
+  "prize_name": "Godel Prize",
+  "awarding_org": "ACM Special Interest Group on Algorithms and Computation Theory (ACM SIGACT), jointly with the European Association for Theoretical Computer Science (EATCS)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "ACM SIGACT and EATCS, joint sponsors",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "Mixed",
+  "funder_current_name": "ACM SIGACT and EATCS, joint sponsors",
+  "funder_current_type": "Society",
+  "funder_current_country": "Mixed",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is USD 5,000, paid out of the two sponsoring societies' own general funds. The component funders sit in two countries - ACM SIGACT in the United States and EATCS in Belgium (an international non-profit association, AISBL, whose registered office is in the Brussels-Capital Region per Article 2 of its Articles of Association) - and neither the SIGACT prize page, the SIGACT annual reports, the EATCS prize page, nor the annual calls for nominations state any split, so no source establishes that either sponsor supplies more than 50% of the purse; the country is therefore coded Mixed rather than joined into a two-country string. Every other marker of the arrangement is symmetric (three committee members appointed by each of the SIGACT Chair and the EATCS President, chairmanship alternating, presentation alternating between ACM STOC and EATCS ICALP), consistent with a roughly 50/50 share. On the money test for field 11: the same two societies' own funds have paid the purse continuously since the prize was founded in 1993, no external donor or endowment has ever been involved, and no sponsor has been added or dropped, so none of today's purse is new money and funder_changed is false.",
+  "money_note": "Current purse USD 5,000, paid jointly by ACM SIGACT (United States) and EATCS (Belgium) from their own funds with no stated split; the same joint-sponsorship arrangement has financed the prize since its founding in 1993 and no external donor is named.",
+  "status_note": "",
+  "sources": [
+    "https://www.sigact.org/prizes/g%C3%B6del.html",
+    "https://www.sigact.org/Prizes/g%C3%B6del/oldrules.html",
+    "https://www.sigact.org/reports/SIGACTANNUALREPORT2020-2.pdf",
+    "https://eatcs.org/index.php/goedel-prize",
+    "https://eatcs.org/images/statutes/LastDraftJuly(ENG).pdf",
+    "https://www.acm.org/media-center/2021/june/sigact-knuth-godel-prizes-2021",
+    "https://en.wikipedia.org/wiki/G%C3%B6del_Prize"
+  ],
+  "evidence_quote": "The Godel Prize for outstanding papers in the area of theoretical computer science is sponsored jointly by the European Association for Theoretical Computer Science (EATCS) and the Special Interest Group on Algorithms and Computation Theory of the Association for Computing Machinery (ACM SIGACT).",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Funder country is coded Mixed because no source establishes that either sponsor supplies more than half of the USD 5,000 purse; an alternative coding of United States (anchoring on ACM SIGACT, which hosts the canonical rules page, issues the press releases, and whose currency denominates the purse) is defensible but rests on administrative salience rather than any stated funding share. The awarding organization is still anchored on the United States for those same administrative reasons, though Belgium (EATCS's registered office) is an equally defensible seat. Type is Society, not International, because neither body is a federation of national organizations - both are individual-membership societies. 2026-09-09: both states recoded Mixed -> Society; the >50% rule is applied to the type of source, and both sponsors are learned societies (fix_mixed_by_type.py)."
+}

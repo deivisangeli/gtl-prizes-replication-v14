@@ -1,0 +1,30 @@
+{
+  "prize_name": "InBev-Baillet Latour Health Prize",
+  "awarding_org": "Baillet Latour Fund (Fonds Baillet Latour; named InBev-Baillet Latour Fund 2005-2015)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Belgium",
+  "funder_origin_name": "Artois-Baillet Latour Foundation, endowed by Count Alfred de Baillet Latour",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Belgium",
+  "funder_current_name": "Baillet Latour Fund",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Belgium",
+  "funder_changed": false,
+  "funding_share_basis": "The entire EUR 250,000 purse was paid out of the Fund's own endowment throughout the prize's life (1979-2020); the Fund is the private non-profit created in 1974 by Count Alfred de Baillet Latour with a personal endowment, renamed with its brewery partner's name (Artois 1974-1995, Interbrew 1995-2005, InBev 2005-2015) before dropping the corporate prefix in 2015/2016. No other body contributed to the purse: F.R.S.-FNRS and FWO only give administrative support to the scientific committee and run the call, and the Belgian royal family only presents the award.",
+  "money_note": "EUR 250,000, paid by the Baillet Latour Fund; awarded biennially from 1979 and annually from 2000 until the last edition in 2020.",
+  "status_note": "Prize renamed over time: Artois-Baillet Latour Health Prize (1979-1995), Interbrew-Baillet Latour Health Prize (1995-2005), InBev-Baillet Latour Health Prize (2005-2015), Baillet Latour Health Prize (2016-2020). It was last awarded in 2020 and replaced from 2022 by the Baillet Latour Biomedical Award (EUR 1M over 5 years for early-career researchers in Belgium), so the prize under the name we use ended in 2015 and the award itself ended in 2020.",
+  "sources": [
+    "https://fondsbailletlatour.com/fr/sante",
+    "https://fondsbailletlatour.com/fr/fonds",
+    "https://www.frs-fnrs.be/docs/Prix/FRS-FNRS_Historical_Baillet_Latour_health_prize.pdf",
+    "https://www.blba.be/",
+    "https://www.fwo.be/en/news/calls/baillet-latour-health-prize-2020/",
+    "https://en.wikipedia.org/wiki/InBev-Baillet_Latour_Fund",
+    "https://fr.wikipedia.org/wiki/Fondation_Artois-Baillet_Latour",
+    "https://www.coleurope.eu/news/inbev-baillet-latour-fund-becomes-baillet-latour-fund"
+  ],
+  "evidence_quote": "The ARTOIS-BAILLET LATOUR Foundation was established on the 1st of March 1974 at the initiative of Count Alfred de BAILLET LATOUR, Director of the ARTOIS Breweries, who presented it with a considerable endowment.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call this Corporate, since the Fund carried the brewer's name (Artois/Interbrew/InBev) for its first four decades and the Baillet Latour family's wealth is tied to AB InBev. We code Philanthropy because the Fund is a legally independent Belgian non-profit endowed personally by Count Alfred de Baillet Latour in 1974, not by the company, and it dropped the corporate prefix in 2015; the awarding-org seat is Brussels, Belgium, with F.R.S.-FNRS/FWO providing only administrative support."
+}

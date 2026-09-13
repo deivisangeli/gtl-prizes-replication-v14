@@ -8,8 +8,6 @@ source("_helpers.R")
 prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
   filter(!is.na(`Award Name`))
 
-lm_robust(lnPageViews ~ lnAge + lnMoneyPerPrize, data = prizeList)
-
 ################################################################################
 # Table 1: Most Prestigious Prizes, by Field
 ################################################################################
@@ -53,8 +51,11 @@ table <- stargazer(forTable,
                    title = "List of Selected Prizes")
 
 table <- gsub("\\textbackslash &", "\\&", table, fixed = TRUE)
-table <- gsub("\\begin{tabular}", "{ \\begin{longtable}", table, fixed = TRUE)
-table <- gsub("\\end{tabular}", "\\end{longtable} ", table, fixed = TRUE)
+# Until 2026-09-03 the longtable was wrapped in a "{ ... }" group whose closing brace was
+# never written, leaving an unbalanced "{" that made the paper fail with "Missing } inserted".
+# The group served no purpose here.
+table <- gsub("\\begin{tabular}", "\\begin{longtable}", table, fixed = TRUE)
+table <- gsub("\\end{tabular}", "\\end{longtable}", table, fixed = TRUE)
 table <- gsub("ccc}",
               "ccc} \\caption{Most Prestigious Prizes, by Field} \\label{listOfPrizes}", table, fixed = TRUE)
 table <- gsub("{@{\\extracolsep{5pt}} ccccc}", "{lcccc}", table, fixed = TRUE)
@@ -73,7 +74,7 @@ table[length(table) + 2] <-
 table[length(table) - 1] <- ""
 table <- gsub("ccccc", "lcccc", table)
 
-writeLines(table, file.path(table_dir, "selectedPrizes.tex"))
+write_tex(table, file.path(table_dir, "selectedPrizes.tex"))
 
 ################################################################################
 # Table 2: Summary Statistics
@@ -119,7 +120,7 @@ summaryStatsTable[length(summaryStatsTable)] <-
 
 summaryStatsTable <- c(summaryStatsTable, "\\end{table}")
 
-cat(summaryStatsTable, file = file.path(table_dir, "summaryStats.tex"), sep = "\n")
+write_tex(summaryStatsTable, file.path(table_dir, "summaryStats.tex"))
 
 ################################################################################
 # Table S1: Selected Early Career Prizes
@@ -142,8 +143,10 @@ ECtable <- stargazer(forTable,
                      summary = FALSE, digits = 1, type = "latex", rownames = FALSE,
                      title = "List of Selected Early Career Prizes")
 
-ECtable <- gsub("\\begin{tabular}", "{ \\small \\begin{longtable}", ECtable, fixed = TRUE)
-ECtable <- gsub("\\end{tabular}", "\\end{longtable} ", ECtable, fixed = TRUE)
+# \small stays scoped to the table; \begingroup/\endgroup sit on the same lines as the longtable
+# delimiters so they cannot be lost separately (see the note on the main table above).
+ECtable <- gsub("\\begin{tabular}", "\\begingroup\\small \\begin{longtable}", ECtable, fixed = TRUE)
+ECtable <- gsub("\\end{tabular}", "\\end{longtable}\\endgroup", ECtable, fixed = TRUE)
 ECtable <- gsub("cc}",
                 "cc} \\caption{Selected Early Career Prizes, Ranked} \\label{listOfECPrizes}", ECtable, fixed = TRUE)
 ECtable <- gsub("{@{\\extracolsep{5pt}} ccc}", "{lcc}", ECtable, fixed = TRUE)
@@ -157,4 +160,4 @@ ECtable[length(ECtable) + 2] <- paste(
   sep = " ")
 ECtable[length(ECtable) - 1] <- ""
 
-cat(ECtable, file = file.path(table_dir, "selectedECPrizes.tex"), sep = "\n")
+write_tex(ECtable, file.path(table_dir, "selectedECPrizes.tex"))

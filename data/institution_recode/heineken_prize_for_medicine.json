@@ -1,0 +1,31 @@
+{
+  "prize_name": "Heineken Prize for Medicine",
+  "awarding_org": "Alfred Heineken Fondsen Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Netherlands",
+  "funder_origin_name": "Alfred Heineken Fondsen Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Netherlands",
+  "funder_current_name": "Alfred Heineken Fondsen Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Netherlands",
+  "funder_changed": false,
+  "funding_share_basis": "The Alfred Heineken Fondsen Foundation supplies 100% of the purse and has done so since Alfred Heineken established this category in 1989; the official prize page states the cash prize is 'funded by the Alfred Heineken Fondsen Foundation', and the Legacy page describes Heineken setting up foundations funded by his own regular donations and investment returns, which had accumulated enough capital by the late 1980s to pay biennial prizes. KNAW appointed the juries and ran the selection until 2023 but never paid the purse, so the July 2023 split changed the awarding organization, not the funding; no other funder appears in any source.",
+  "money_note": "Biennial prize established 1989; unrestricted cash prize of USD 250,000 plus an Asclepius trophy per the official Heineken Prizes site (the KNAW page still lists USD 200,000), paid throughout by the Alfred Heineken Fondsen Foundation.",
+  "status_note": "Awarding organization changed in 2023: KNAW, which had appointed the juries and run nomination and selection since the Heineken Prizes began in 1964, announced in July 2023 that it was severing ties over Heineken N.V.'s continued operations in Russia, and took no part from the 2024 cycle onward. The Alfred Heineken Fondsen Foundation now administers the prizes itself — its Board appoints independent juries and retains formal responsibility for decisions and appointments, advised since March 2026 by a Scientific Advisory Council (chaired by Robbert Dijkgraaf) it established. Separately, this category has an award gap: last awarded 2022 (Vishva M. Dixit), the Board decided not to award it in 2024, and the official page states it 'will be presented again in 2027', so the 2026 cycle is also skipped. The other Heineken Prizes continued on schedule. Note that some official pages (e.g. Legacy) still carry pre-2023 text describing juries as appointed by KNAW.",
+  "sources": [
+    "https://www.heinekenprizes.org/heineken-prizes/dr-a-h-heineken-prize-for-medicine/",
+    "https://www.heinekenprizes.org/legacy/",
+    "https://www.heinekenprizes.org/list-of-laureates/",
+    "https://www.heinekenprizes.org/nomination-and-selection/",
+    "https://www.heinekenprizes.org/2026/03/17/scientific-advisory-council-established-for-the-heineken-prizes/",
+    "https://www.knaw.nl/en/awards/awards/heinekenprizes/heinekenprijs-voor-de-geneeskunde",
+    "https://www.knaw.nl/en/awards/awards/heinekenprizes",
+    "https://nltimes.nl/2023/07/20/dutch-academy-science-art-splits-heineken-continued-activities-russia",
+    "https://www.voxweb.nl/en/knaw-to-sever-ties-with-heineken-awards-due-to-activities-in-russia"
+  ],
+  "evidence_quote": "The Alfred Heineken Fondsen Foundation has established a Scientific Advisory Council (SAC) for the Heineken Prizes ... The Board retains formal responsibility for decisions and appointments.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Awarding org was previously codeable as KNAW (Society, Netherlands), and the paper's prize data predate the split; we code the current administrator, the Alfred Heineken Fondsen Foundation (Philanthropy), because KNAW has had no role in nomination or selection since the 2024 cycle and the Foundation's own Board now appoints the juries. The funder could alternatively be coded Corporate given the Heineken brewing name and Alfred Heineken's role as company chairman — and the KNAW split was itself triggered by the brewer's conduct — but the official Legacy page states he personally established and endowed the foundations from his own donations and investment income, with no evidence of brewery money, so Philanthropy fits for both origin and today."
+}

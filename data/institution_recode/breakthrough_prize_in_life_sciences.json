@@ -1,0 +1,30 @@
+{
+  "prize_name": "Breakthrough Prize in Life Sciences",
+  "awarding_org": "Breakthrough Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Personal foundations of Sergey Brin and Anne Wojcicki, Mark Zuckerberg and Priscilla Chan, and Yuri and Julia Milner (Breakthrough Prize in Life Sciences Foundation)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Personal foundations of Sergey Brin, Priscilla Chan and Mark Zuckerberg, Yuri and Julia Milner, and Anne Wojcicki (Breakthrough Prize Foundation)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is USD 3 million per prize, paid out of the founders' personal foundations pooled in the Breakthrough Prize Foundation; no single foundation supplies >50%, so both states are Mixed. At founding (Feb 2013) three sponsor groups - Brin & Wojcicki, Zuckerberg & Chan, and Yuri Milner - jointly committed 5 prizes of USD 3M each (roughly a third apiece, so no majority funder). The set of contributors then grew: Jack Ma and Cathy Zhang joined as founding sponsors in September 2013, taking the prize count to six, and Ma Huateng (Pony Ma) of Tencent joined as a founding sponsor in December 2017; the prize's own page still credits sponsorship to foundations of Brin, Chan and Zuckerberg, Ma Huateng, Jack Ma, the Milners and Wojcicki, while the current 2026 boilerplate names only the original founders' foundations. The original sponsors have paid throughout and the funder type never changed, so this is composition drift within one Mixed philanthropic pool rather than a handover.",
+  "money_note": "USD 3 million per laureate award, unchanged since the first prizes in 2013 (up to six awards per year), paid by the founders' personal foundations through the Breakthrough Prize Foundation.",
+  "status_note": "",
+  "sources": [
+    "https://breakthroughprize.org/About",
+    "https://breakthroughprize.org/Prize/2",
+    "https://breakthroughprize.org/News/12",
+    "https://breakthroughprize.org/News/40",
+    "https://breakthroughprize.org/News/98",
+    "https://www.prnewswire.com/news-releases/jack-ma-and-cathy-zhang-join-breakthrough-prize-in-life-sciences-founding-sponsors-bringing-the-total-number-of-annual-3-million-prizes-to-six-225452512.html",
+    "https://en.wikipedia.org/wiki/Breakthrough_Prize",
+    "https://en.wikipedia.org/wiki/Breakthrough_Prize_in_Life_Sciences"
+  ],
+  "evidence_quote": "Founding sponsors of the Breakthrough Prize include Sergey Brin and Anne Wojcicki, Mark Zuckerberg and Priscilla Chan, and Yuri Milner, who collectively have agreed to establish 5 annual prizes, US$3 million each, going forward.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Individual shares of the purse are not disclosed, so Mixed rests on the arithmetic of several co-equal sponsor groups rather than an explicit split; a coder could instead name Yuri Milner (originator of the Breakthrough family of prizes) as the anchor funder, or code Corporate given the donors' Google, Meta, 23andMe, Alibaba and Tencent wealth. I code Mixed and Philanthropy because the official pages attribute sponsorship to several personal foundations, not to any company. funder_changed is also arguable: the roster of contributing foundations grew in 2013 and 2017 and the two Chinese sponsors have dropped out of the current boilerplate, but the founding sponsors still pay and the type is unchanged, so I treat it as composition drift, not a handover. 2026-09-09: both states recoded Mixed -> Philanthropy; the >50% rule is applied to the type of source, and every donor is a personal foundation (fix_mixed_by_type.py)."
+}

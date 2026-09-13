@@ -72,8 +72,10 @@ for (tc in tier_configs) {
   results <- results[results$size > 0, ]
   results$density <- results$yearlyRE / results$size * 1000
 
-  p <- make_density_plot(results, "1,000 VS academics", 1000, total_vs)
+  p <- make_density_plot(results, "1,000 research academics", 1000, total_vs,
+                         ylab = "Award density (yearly recognitions/1,000 research academics)",
+                         xlab = "Field size (% of research academics)")
 
   fname <- sprintf("prizesDensityByVS_finest_%s.pdf", tc$suffix)
-  ggsave(file.path(figure_dir, fname), p, width = 10, height = 5)
+  save_figure(fname, p, width = 10, height = 5)
 }

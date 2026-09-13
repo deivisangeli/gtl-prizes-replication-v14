@@ -1,0 +1,27 @@
+{
+  "prize_name": "Wolf Prize in Chemistry",
+  "awarding_org": "Wolf Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Israel",
+  "funder_origin_name": "Wolf Foundation (endowment donated by Ricardo Subirana y Lobo Wolf and Francisca Wolf)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Israel",
+  "funder_current_name": "Wolf Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Israel",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is paid entirely (100%) out of the Wolf Foundation's own endowment, established in 1975-76 with a USD 10 million gift from Ricardo Wolf and his wife Francisca; no other funder contributes to the prize money. The Israeli state supplies no purse money: its role is statutory and supervisory only (the Foundation operates under the Wolf Foundation Law-1975, the Minister of Education chairs the Foundation Council, and the State Comptroller audits the Foundation), and trustees, council, juries and auditor serve on a voluntary basis.",
+  "money_note": "Each Wolf Prize, including Chemistry, carries USD 100,000 plus a diploma and Medal of Honor, paid from the Wolf Foundation endowment; the prize has been awarded since 1978 and the amount is shared when there are co-laureates.",
+  "status_note": "",
+  "sources": [
+    "https://wolffund.org.il/the-wolf-prize/",
+    "https://wolffund.org.il/about-wolf-foundation/",
+    "https://wolffund.org.il/category/leadership/",
+    "https://en.wikipedia.org/wiki/Wolf_Foundation",
+    "https://en.wikipedia.org/wiki/Wolf_Prize_in_Chemistry"
+  ],
+  "evidence_quote": "Founded in 1975 with an endowment from the Wolf family, the Foundation's major donors were Dr. Ricardo Subirana Y Lobo Wolf and his wife, Francisca.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could plausibly call the Wolf Foundation Government, since it was constituted by an act of the Knesset (Wolf Foundation Law-1975), its Council is chaired ex officio by Israel's Minister of Education, and the State Comptroller audits it. We code Philanthropy because the corpus is a private family endowment and no public appropriation pays the purse; the statutory framework governs oversight, not financing."
+}

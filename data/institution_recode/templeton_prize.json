@@ -1,0 +1,30 @@
+{
+  "prize_name": "Templeton Prize",
+  "awarding_org": "John Templeton Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Sir John Templeton (personal funds)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Bahamas",
+  "funder_current_name": "John Templeton Foundation, Templeton World Charity Foundation and Templeton Religion Trust (jointly)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Mixed",
+  "funder_changed": false,
+  "funding_share_basis": "At founding there was no foundation: the Prize was 'established, funded and administered by John Templeton starting in 1972' out of his personal fortune, so the origin funder is the individual donor and the country is where he and his money were seated - Nassau, Bahamas, where he had lived since the late 1960s (Lyford Cay), where his investment business was run and where he died. He had renounced US citizenship in 1964 and held dual Bahamian-British nationality, so citizenship does not settle the country; residence does. Today the official FAQ states that 'Three Templeton philanthropies founded by Sir John Templeton jointly support the Prize. These organizations comprise the John Templeton Foundation, based outside of Philadelphia in the United States; The Templeton World Charity Foundation in the Bahamas; and the Templeton Religion Trust, also in the Bahamas.' No split is published, so no component clears 50% on the evidence and the component funders sit in two different countries (United States, Bahamas): the country is therefore coded Mixed. The type is not Mixed because all three components are private Templeton philanthropies. Applying the >50% test to the money itself, all three bodies were created and endowed by Sir John Templeton from the same personal estate (John Templeton Foundation 1987, Templeton Religion Trust chartered 1984, Templeton World Charity Foundation 1996), so the purse is still paid out of the founder's own money moved into philanthropic vehicles, not new money from an outside source: funder_changed is false.",
+  "money_note": "Currently GBP 1.1 million (level set in 2019), deliberately pegged above the Nobel Prize; jointly supported by the three Templeton philanthropies and administered by the John Templeton Foundation, which paid it from Sir John Templeton's personal funds from 1972 until his philanthropies took over.",
+  "status_note": "The award was originally the 'Templeton Prize for Progress in Religion' (later 'for Progress Toward Research or Discoveries about Spiritual Realities') and is now simply the Templeton Prize; its criteria were broadened in 2020 toward science. It has been awarded continuously since 1973 (2026 laureate: Simon Conway Morris).",
+  "sources": [
+    "https://www.templetonprize.org/about-the-organizers/",
+    "https://www.templetonprize.org/templeton-prize-history/faq/",
+    "https://www.templetonprize.org/templeton-prize-history/",
+    "https://www.templetonprize.org/sir-john-templeton/",
+    "https://www.templetonworldcharity.org/about-us/our-founder",
+    "https://templetonreligiontrust.org/about-us/",
+    "https://en.wikipedia.org/wiki/Templeton_Prize",
+    "https://en.wikipedia.org/wiki/John_Templeton"
+  ],
+  "evidence_quote": "Three Templeton philanthropies founded by Sir John Templeton jointly support the Prize... the John Templeton Foundation, based outside of Philadelphia in the United States; The Templeton World Charity Foundation in the Bahamas; and the Templeton Religion Trust, also in the Bahamas.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Origin country: the counter-consideration is that the 1972 purse was denominated in pounds sterling and first presented at London's Guildhall in 1973 by Prince Philip, and Templeton was a naturalized British citizen knighted in 1987 - which would support United Kingdom - while his birth and the source of his fortune would support United States; we code Bahamas because the protocol seats an individual donor where the donor and the funds were legally resident, and he had lived and held his money in Nassau since the late 1960s. Current country: the John Templeton Foundation is the Prize's primary administrator, largest component and registered office, so United States is the alternative, but with no published split between the three co-funders and two of them seated in the Bahamas the protocol requires Mixed."
+}

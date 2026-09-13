@@ -1,0 +1,31 @@
+{
+  "prize_name": "Crafoord Prize in Polyarthritis",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Anna-Greta and Holger Crafoord (1980 donation creating the Anna-Greta and Holger Crafoord Fund at the Royal Swedish Academy of Sciences)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Anna-Greta and Holger Crafoord Fund (held by the Royal Swedish Academy of Sciences), with grants from Crafoordska stiftelsen (Crafoord Foundation), Lund",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The purse comes from the ring-fenced Anna-Greta and Holger Crafoord Fund, created by the couple's 1980 donation to the Academy and now about SEK 180 million, supplemented by grants from Crafoordska stiftelsen; the Crafoord Foundation states that 'the prize money and research grants are financed partly through donations from Anna-Greta and Holger Crafoord and partly through grants from Crafoordska stiftelsen' but publishes no split, so the majority share cannot be pinned to one of the two. Both are Crafoord family private philanthropy seated in Sweden, so the >50% test yields Philanthropy/Sweden either way, in both the origin and the current state.",
+  "money_note": "Polyarthritis purse was SEK 6 million (about USD 0.6m) through the 2025 award, raised to SEK 8 million (about USD 0.9m) from 2026; paid from the Crafoord fund held by the Academy plus grants from Crafoordska stiftelsen throughout.",
+  "status_note": "Awarded irregularly: polyarthritis was for decades given only when a special committee judged that substantial progress in the field had been made, so despite the prize starting in 1982 the first polyarthritis award was 2000, followed by 2004, 2009, 2013, 2017, 2021 and 2025 (the 2021 laureate's lectures were held in 2022 because of COVID-19). From 2024 the category entered the regular four-year rotation (mathematics/astronomy, polyarthritis, geosciences, biosciences), so the next award is expected in 2029. Last awarded 2025 under this name.",
+  "sources": [
+    "https://www.kva.se/en/prizes/crafoord-prize/about-the-crafoord-prize/",
+    "https://www.kva.se/en/prizes/crafoord-prize/",
+    "https://www.kva.se/en/scholarship/anna-greta-and-holger-crafoord-fund/",
+    "https://www.crafoordprize.se/polyarthritis/",
+    "https://www.crafoordprize.se/news/the-crafoord-prize-2000/",
+    "https://www.crafoord.se/crafoordpriset/om-crafoordpriset/",
+    "https://www.crafoord.se/crafoordpriset/",
+    "https://en.wikipedia.org/wiki/Crafoord_Prize",
+    "https://sv.wikipedia.org/wiki/Crafoordpriset"
+  ],
+  "evidence_quote": "Prissumman och forskningsanslagen finansieras dels genom donationer av Anna-Greta och Holger Crafoord, dels genom bidrag fran Crafoordska stiftelsen. [Anna-Greta och Holger Crafoords fond uppgar idag till cirka 180 miljoner kronor.]",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two codings are defensible. (i) Because the endowment is held and administered by the Academy, the current funder could be coded Society; we kept Philanthropy because the fund is a named, ring-fenced Crafoord donation and Crafoordska stiftelsen adds explicit grants, so private money demonstrably pays the purse. (ii) With no published split between the fund and the Foundation's grants, a coder applying the >50% rule strictly could record Mixed; we did not, because both components are Swedish private philanthropy and the type is identical either way. The Crafoord fortune came from the dialysis company Gambro, so Corporate is arguable, but Crafoordska stiftelsen is a legally independent, diversified family foundation (assets about SEK 4.4bn) with no operating-company tie today."
+}

@@ -151,4 +151,4 @@ prizesPerDocTable <- gsub("\\end{table}",
                           paste0(note_text, "\n\\end{table}"),
                           prizesPerDocTable, fixed = TRUE)
 
-writeLines(prizesPerDocTable, con = file.path(table_dir, "prizesByField.tex"))
+write_tex(prizesPerDocTable, file.path(table_dir, "prizesByField.tex"))

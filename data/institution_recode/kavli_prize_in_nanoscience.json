@@ -1,0 +1,26 @@
+{
+  "prize_name": "Kavli Prize in Nanoscience",
+  "awarding_org": "Norwegian Academy of Science and Letters",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Norway",
+  "funder_origin_name": "The Kavli Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Kavli Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is USD 1,000,000 per field (plus gold medal and scroll). The Kavli Foundation (Los Angeles, US) has supplied 100% of the purse and medals since the first award in 2008, satisfying the >50% rule at both origin and today. The Norwegian Ministry of Education and Research pays only administration: it funds the Norwegian Academy of Science and Letters and hosts the prize banquet, which is operations money and excluded from the purse test. No change of funder at any point.",
+  "money_note": "USD 1,000,000 per field, paid in full by The Kavli Foundation since the prize's first award in 2008 and unchanged through the 2026 cycle.",
+  "status_note": "Continuity is clean: awarded biennially in even years since 2008 under the same name, most recently in 2026. No rename, merger, suspension, or missed cycle.",
+  "sources": [
+    "https://www.kavliprize.org/about",
+    "https://www.kavliprize.org/prizes/nanoscience",
+    "https://www.kavlifoundation.org/news/the-kavli-prize-2026",
+    "https://en.wikipedia.org/wiki/Kavli_Prize"
+  ],
+  "evidence_quote": "The Kavli Foundation \"provides the award money and gold medals to The Kavli Prize Laureates\"; the Norwegian Ministry of Education and Research \"hosts The Kavli Prize Banquet and provides funding to The Norwegian Academy of Science and Letters.\"",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The official site splits the roles: the US Kavli Foundation pays the purse while the Norwegian Ministry of Education and Research funds the Academy's administration and banquet. Applying the >50%-of-purse rule, the funder is the Kavli Foundation (Philanthropy, United States) in both states; a coder counting the state's operational subsidy could instead code Mixed or Government/Norway. The awarding body is coded Society under the national-academy rule despite its state support."
+}

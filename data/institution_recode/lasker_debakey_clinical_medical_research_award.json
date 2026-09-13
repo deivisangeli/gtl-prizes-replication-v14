@@ -1,0 +1,29 @@
+{
+  "prize_name": "Lasker-DeBakey Clinical Medical Research Award",
+  "awarding_org": "Albert and Mary Lasker Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Albert and Mary Lasker Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Albert and Mary Lasker Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a single USD 250,000 honorarium per award category, paid entirely (100% > 50%) by the Albert and Mary Lasker Foundation, the private foundation Albert and Mary Lasker endowed in 1942. The only administrative change is that from 1946 to 1960 the clinical/medical research awards were conferred through the American Public Health Association, which ran the selection but did not supply the money; the Foundation took over selection in 1960 and has awarded annually since 1962, so the funder is unchanged from origin to today.",
+  "money_note": "Current honorarium USD 250,000 per category, paid by the Albert and Mary Lasker Foundation (New York); the Foundation has funded the awards since their creation in 1945.",
+  "status_note": "Renamed the Lasker-DeBakey Clinical Medical Research Award in 2008 in honor of Michael E. DeBakey (previously the Albert Lasker Clinical Medical Research Award). No Lasker Awards were given in 2020 because of the COVID-19 pandemic; 2020 nominations were rolled over to the 2021 jury. Most recently awarded in 2025.",
+  "sources": [
+    "https://laskerfoundation.org/awards/about-the-awards/",
+    "https://laskerfoundation.org/awards/",
+    "https://laskerfoundation.org/the-2020-lasker-awards/",
+    "https://laskerfoundation.org/wp-content/uploads/2025/09/2025-lasker-award-press-release-f.pdf",
+    "https://findingaids.library.columbia.edu/archives/cul-4077415_aspace_f0e87b5c9e8c1b14be2e51785a9e3307",
+    "https://en.wikipedia.org/wiki/Lasker_Award",
+    "https://en.wikipedia.org/wiki/Lasker%E2%80%93DeBakey_Clinical_Medical_Research_Award"
+  ],
+  "evidence_quote": "The Lasker Awards program was created in 1945 by Albert and Mary Lasker ... The awards carry an honorarium of $250,000 for each category.",
+  "confidence": "high",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

@@ -1,0 +1,27 @@
+{
+  "prize_name": "Isaac Newton Medal",
+  "awarding_org": "Institute of Physics",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United Kingdom",
+  "funder_origin_name": "Institute of Physics",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United Kingdom",
+  "funder_current_name": "Institute of Physics",
+  "funder_current_type": "Society",
+  "funder_current_country": "United Kingdom",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a cash prize accompanying a gold medal and certificate. The medal was created by the IOP itself in October 2007 as one of ten new honours launched in its 2008 awards refresh, with no founding donor, bequest or corporate sponsor named in the announcement or on any IOP page; the IOP (a UK registered charity and learned/professional society) has paid 100% of the purse from its own funds at both origin and today. No other funder appears at any share.",
+  "money_note": "Currently GBP 1,000 plus a gold medal and certificate, paid by the Institute of Physics; the inaugural 2008 award carried GBP 2,000, so the cash component was reduced at some point, but the payer never changed.",
+  "status_note": "Continuous annual award since 2008; the IOP renamed it from 'Isaac Newton Medal and Prize' to 'Isaac Newton Medal and Lecture' around 2024 (2023 cycle pages still use 'and Prize'). Same award, same numbering of recipients - no interruption.",
+  "sources": [
+    "https://www.iop.org/about/awards/isaac-newton-medal-and-lecture",
+    "https://www.iop.org/about/awards/isaac-newton-medal-and-lecture/isaac-newton-medal-and-lecture-recipients",
+    "https://www.iop.org/about/awards",
+    "https://physicsworld.com/a/anton-zeilinger-scoops-first-isaac-newton-medal/",
+    "https://en.wikipedia.org/wiki/Isaac_Newton_Medal"
+  ],
+  "evidence_quote": "The Isaac Newton Medal and Lecture is awarded annually for world-leading contributions to physics by an individual of any nationality... This medal comes with a prize of GBP 1,000 and a certificate.",
+  "confidence": "medium",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

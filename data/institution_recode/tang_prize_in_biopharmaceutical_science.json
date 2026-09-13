@@ -1,0 +1,28 @@
+{
+  "prize_name": "Tang Prize in Biopharmaceutical Science",
+  "awarding_org": "Tang Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Taiwan",
+  "funder_origin_name": "Samuel Yen-Liang Yin (Tang Prize Foundation endowment)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Taiwan",
+  "funder_current_name": "Tang Prize Foundation (Samuel Yin endowment)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Taiwan",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse comes from the endowment Samuel Yen-Liang Yin, chairman of Taiwan's Ruentex Group, gave to establish the Tang Prize Foundation in 2012 (reported at about NT$3 billion, roughly US$100 million of his personal wealth); the Foundation has paid 100% of the purse in every cycle since the first awards in 2014. Academia Sinica, Taiwan's state-funded national research institution, organized the nomination and selection committees for the 2014 and 2016 cycles and has held an advisory role since 2017, but contributes no prize money.",
+  "money_note": "Each category carries NT$40 million in cash (approx. US$1.33 million) plus a research grant of up to NT$10 million (approx. US$0.33 million), shared when there are multiple laureates, paid from the Tang Prize Foundation's endowment since the prize's first award in 2014.",
+  "status_note": "",
+  "sources": [
+    "https://www.tang-prize.org/en/origin.php",
+    "https://www.tang-prize.org/en/origin.php?cat=95",
+    "https://www.tang-prize.org/en/origin.php?cat=63",
+    "https://www.tang-prize.org/en/spirit.php?cat=62",
+    "https://www.tang-prize.org/en/spirit.php?cat=64",
+    "https://en.wikipedia.org/wiki/Tang_Prize"
+  ],
+  "evidence_quote": "Dr. Samuel Yen-Liang Yin, chairman of the Ruentex Group and founder of the Tang Prize... In 2012, he decided to set up the Tang Prize Foundation in order to extend his philanthropic work to a broader world through this international academic prize.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Philanthropy because the endowment is a personal donation from Samuel Yin and the Foundation carries no corporate branding or Ruentex funding stream; a coder could instead call it Corporate because Yin's wealth and standing come from the Ruentex Group, or could name Academia Sinica (Government-funded) as awarding org given it ran selection for the 2014 and 2016 cycles, but the Foundation's board approves the winners and confers the prize."
+}

@@ -1,0 +1,27 @@
+{
+  "prize_name": "Nobel Prize in Chemistry",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Nobel Foundation (Alfred Nobel's 1895 bequest)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Nobel Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse comes from the endowment created by Alfred Nobel's 1895 will, which left about 94% of his assets (31 million SEK) to fund the five prizes; the Nobel Foundation, established 1900, has managed that same capital and paid the purse continuously since the first award in 1901. The Royal Swedish Academy of Sciences selects the laureates but contributes no prize money.",
+  "money_note": "Purse is 11 million SEK per prize (shared among up to three laureates), paid from the Nobel Foundation's endowment; raised from 10 to 11 million SEK in 2023.",
+  "status_note": "Continuously awarded since 1901 except in 1916, 1917, 1919, 1924, 1933, 1940, 1941 and 1942 (mainly the two World Wars); name and awarding body unchanged. The purse is adjusted periodically in nominal SEK (e.g., cut from 10M to 8M SEK in 2012 after investment losses, restored to 9M in 2017, 10M in 2020, 11M in 2023), so nominal award amounts are not comparable across years.",
+  "sources": [
+    "https://www.kva.se/en/prizes/nobel-prizes/",
+    "https://www.kva.se/en/news/the-nobel-prize-in-chemistry-2025/",
+    "https://www.nobelprize.org/prizes/chemistry/2025/press-release/",
+    "https://en.wikipedia.org/wiki/Nobel_Prize_in_Chemistry",
+    "https://en.wikipedia.org/wiki/Nobel_Foundation"
+  ],
+  "evidence_quote": "By the terms of Alfred Nobel's will the Nobel Prizes in Physics and Chemistry have been awarded by the Academy since 1901.",
+  "confidence": "high",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

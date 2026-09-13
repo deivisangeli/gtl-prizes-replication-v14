@@ -1,0 +1,27 @@
+{
+  "prize_name": "International Award of Merit in Structural Engineering",
+  "awarding_org": "International Association for Bridge and Structural Engineering (IABSE)",
+  "awarding_org_type": "International",
+  "awarding_org_country": "Switzerland",
+  "funder_origin_name": "International Association for Bridge and Structural Engineering (IABSE)",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "Switzerland",
+  "funder_current_name": "International Association for Bridge and Structural Engineering (IABSE)",
+  "funder_current_type": "Society",
+  "funder_current_country": "Switzerland",
+  "funder_changed": false,
+  "funding_share_basis": "There is no cash purse: the award is an honorific medal/certificate presented at the IABSE Awards ceremony, so 100% of its cost (medal, ceremony) has been borne by IABSE itself since the award was established in 1975 and first presented in 1976. No external donor, endowment, or corporate sponsor is named on the IABSE award page, the IABSE awards overview, or the IABSE British Group page; IABSE finances its activities from membership dues of individual and collective members in ~100 countries organised in National Groups.",
+  "money_note": "No monetary purse documented; the honour consists of a medal/certificate conferred by IABSE at its annual Awards and Gala Dinner, paid for by IABSE out of its own funds.",
+  "status_note": "Name unchanged since establishment (established 1975, first presented 1976). Awarded roughly annually and consistently annual since 1991, but with gaps: it was not conferred in some early years and no award was made in 2016, so winner lists should not assume one recipient every year.",
+  "sources": [
+    "https://iabse.org/Merit",
+    "https://www.iabse.org/awards",
+    "https://iabse.org.uk/iabse-international-awards/",
+    "https://en.wikipedia.org/wiki/International_Award_of_Merit_in_Structural_Engineering",
+    "https://en.wikipedia.org/wiki/International_Association_for_Bridge_and_Structural_Engineering"
+  ],
+  "evidence_quote": "The award was established in 1975 to underline the importance of the work done by engineers, by highlighting examples of particular significance. It will be conferred for outstanding contributions in the field of structural engineering.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "IABSE is a supranational federation of National Groups from ~100 countries, so it is coded International rather than Society; because its legal seat and secretariat are in Zurich, awarding_org_country is recorded as Switzerland rather than 'International'. Funding is coded as IABSE itself for both states since no sponsor is disclosed and the award carries no purse; an alternative coding would leave the funder unspecified. Funder type recoded from International to Society on 2026-09-08: IABSE is a federation of national engineering societies paying the medal from membership dues, and `International` is a geography, not a kind of payer (fix_funder_type_international.py)."
+}

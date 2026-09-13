@@ -1,0 +1,27 @@
+{
+  "prize_name": "Bower Award and Prize for Achievement in Science",
+  "awarding_org": "The Franklin Institute",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Henry Bower bequest",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Henry Bower bequest endowment (held by The Franklin Institute)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse comes from one source: the USD 7.5 million bequest Philadelphia chemical manufacturer Henry Bower left The Franklin Institute in 1988, which created the award in 1990 and still funds it. The Institute's own filings tie the awards purse to that restricted endowment rather than to operating funds — its FY2023 Form 990 (EIN 23-1370501) Schedule D describes endowment funds supporting the awards program \"based upon original donor intent,\" and Schedule I reports a USD 250,000 honorarium for the Bower science prize, matching the advertised purse. No co-funder or sponsor appears, so the ring-fenced Bower endowment supplies >50% (effectively 100%) in both the origin and current states.",
+  "money_note": "USD 250,000 cash prize plus a 14-karat gold medal, unchanged in the 2026 cycle (awarded to David R. Liu), paid from the restricted endowment created by Henry Bower's 1988 bequest; the prize terms, including the single-recipient rule, are set by Bower's will.",
+  "status_note": "",
+  "sources": [
+    "https://fi.edu/en/awards/nominations/bower-award-prize-achievement-science",
+    "https://fi.edu/en/awards/about",
+    "https://fi.edu/en/press-room/press-releases/2025/announcing-2026-franklin-institute-awards",
+    "https://projects.propublica.org/nonprofits/organizations/231370501",
+    "https://en.wikipedia.org/wiki/Bower_Award_and_Prize_for_Achievement_in_Science"
+  ],
+  "evidence_quote": "These two awards were made possible by a $7.5 million bequest in 1988 from Philadelphia chemical manufacturer Henry Bower... The Bower Science Award... carries a cash prize of $250,000.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two calls. (1) Awarding org type: The Franklin Institute began in 1824 as a learned society for the mechanic arts and retains a membership and awards-conferring committee structure, so I coded Society; a coder emphasizing its present-day identity as a nonprofit science museum and education center could code Philanthropy. (2) Current funder: per the historical-bequest tie-breaker I kept Philanthropy rather than Society because the Bower endowment is a named, donor-restricted fund that the Institute's Form 990 links to the awards program \"based upon original donor intent,\" and the reported USD 250,000 honorarium matches the purse — evidence the original fund, not general Institute money, still pays it."
+}

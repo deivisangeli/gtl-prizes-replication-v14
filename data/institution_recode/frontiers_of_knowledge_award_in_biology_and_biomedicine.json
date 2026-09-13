@@ -1,0 +1,29 @@
+{
+  "prize_name": "Frontiers of Knowledge Award in Biology and Biomedicine",
+  "awarding_org": "BBVA Foundation (Fundacion BBVA)",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Spain",
+  "funder_origin_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Spain",
+  "funder_current_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Spain",
+  "funder_changed": false,
+  "funding_share_basis": "The BBVA Foundation has paid 100% of the purse in every edition since the awards were created in 2008; no co-funder exists. The Spanish National Research Council (CSIC) contributes only expertise - it proposes each jury chair and staffs the technical support committees that shortlist candidates - and puts up no money. The Foundation's own money is BBVA's: its 2024 accounts (Miles de Euros) report total income of 26,146, of which 24,216 is 'Ingresos Financieros (Dividendos de las acciones de BBVA)' on its endowment of BBVA shares (total assets 367,593) and 1,928 is direct BBVA support ('Aportaciones de BBVA, sociedad fundadora' 1,742 plus a rent-free BBVA building valued at 186). So the purse is financed mainly by dividends on a BBVA-stock endowment rather than by an annual bank cheque, but under either route the source is the BBVA banking group, and the split (roughly 93% dividends / 7% direct contribution) does not change the Corporate coding.",
+  "money_note": "Purse of EUR 400,000 per category plus a diploma and commemorative artwork, unchanged since 2008 and paid by the BBVA Foundation out of dividends on its BBVA shareholding; the Foundation's 2024 accounts budget 6,777 thousand euros for 'Premios propios' across all its own awards.",
+  "status_note": "Continuously awarded since the first edition (2008); the 17th edition was awarded in 2025 to Drucker, Habener, Holst and Mojsov. The category was originally announced as 'Biomedicine' (e.g., the 2009 award to Coleman and Friedman) and later broadened to 'Biology and Biomedicine', so early winners appear in sources under the shorter label; the prize itself was not interrupted or superseded. A sister category, Development Cooperation, was discontinued after the 10th edition, but that does not affect this one.",
+  "sources": [
+    "https://www.frontiersofknowledgeawards-fbbva.es/about-these-awards/",
+    "https://www.premiosfronterasdelconocimiento.es/sobre-los-premios/",
+    "https://www.premiosfronterasdelconocimiento.es/noticias/premio-fronteras-del-conocimiento-xvii-edicion-biologia-y-biomedicina/",
+    "https://www.fbbva.es/en/about-the-foundation/",
+    "https://www.fbbva.es/wp-content/uploads/2025/07/memoria-fundacionbbva-2024.pdf",
+    "http://www.madrimasd.org/informacionidi/noticias/noticia.asp?id=55724",
+    "https://en.wikipedia.org/wiki/BBVA_Foundation_Frontiers_of_Knowledge_Award"
+  ],
+  "evidence_quote": "Ingresos por actividad propia de entidad: Aportaciones de BBVA, sociedad fundadora: 1.742 ... Ingresos Financieros (Dividendos de las acciones de BBVA) 24.216 (Memoria Anual 2024, Cuenta de Resultados, Miles de Euros).",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the BBVA Foundation Philanthropy, since it is a legally separate private foundation with its own EUR 368m balance sheet whose prize money comes from investment income rather than a yearly corporate grant. I code it Corporate because the entire endowment is BBVA stock, BBVA is named in the accounts as 'sociedad fundadora' and still makes direct contributions and lends the headquarters rent-free, and the Foundation describes itself as the expression of the BBVA Group's corporate social responsibility - identity and funding tied to a single operating company. CSIC's role is jury-side only, so the alternative of coding the awarding side as a BBVA-CSIC (Corporate-Government) hybrid is not supported by any money flow."
+}

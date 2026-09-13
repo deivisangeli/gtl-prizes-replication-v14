@@ -1,0 +1,32 @@
+{
+  "prize_name": "Benjamin Franklin Medal in Electrical Engineering",
+  "awarding_org": "The Franklin Institute",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Pooled pre-1998 benefactor bequests to The Franklin Institute's endowed medal funds (Elliott Cresson Fund 1848, Boyden Premium Fund 1859, Edward Longstreth Fund 1890, Howard N. Potts Fund 1906, The Franklin Fund 1914, Louis E. Levy Fund 1923, George R. Henderson Fund 1924, John Price Wetherill Fund 1925, Stuart Ballantine Fund 1946, Jonathan R. Lax Fund 1997 and others)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Benjamin Franklin Medalists' Fund, established 2017 by The Morel Family Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "The purse is a USD 10,000 honorarium plus a 14-karat gold medal (fi.edu Awards/About: 'Recipients of the Benjamin Franklin Medals receive a $10,000 honorarium and a 14-karat gold medal'). The 2026 Awards Convocation Book's 'Awards Endowments' page assigns the honoraria line to one specific fund: 'The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.' The 21 legacy named funds listed immediately after (Cresson 1848, Boyden 1859, Longstreth 1890, Potts 1906, The Franklin Fund 1914, Levy 1923, Henderson 1924, Wetherill 1925, Clamer 1943, Ballantine 1946, Bower 1988, Lax 1997, etc.) are thanked as funds that 'support the Bower Awards and the Benjamin Franklin Medals' as a program, not as the source of the honoraria. Applying the >50% test to the money, essentially all of the cash a Benjamin Franklin Medalist in Electrical Engineering receives today is 2017 Morel Family Foundation money, not the 19th- and 20th-century bequests that financed the predecessor medals — hence funder_changed = true. Excluded as operations money: the ceremony sponsorship ladder (Bank of America presenting sponsor; KPMG and Marsha and Jeffrey Perelman as Awards Week sponsors; associate sponsors, patrons, benefactors and event partners), which the book itself says 'underwrites the Institute's efforts to make STEM learning accessible', and which is solicited only after laureates are chosen. Also excluded: the per-laureate 'Laureate Sponsors', who are Committee on Science and the Arts members presenting the nomination case (e.g. Bradford A. Jameson, CSA Life Science Cluster Chair), not funders. Note that the Morel Family Foundation appears separately in the associate-sponsor list; that ceremony gift is distinct from, and additional to, the Medalists' Fund.",
+  "money_note": "USD 10,000 honorarium plus a 14-karat gold medal, paid since 2017 out of the Benjamin Franklin Medalists' Fund endowed that year by The Morel Family Foundation; before 2017 the honoraria came from the Institute's older benefactor-endowed medal funds, uniform across the seven medals since the 1998 consolidation.",
+  "status_note": "Active but not conferred every year. Awarded in 2024 (Bob Metcalfe) and 2025 (Kurt Petersen); the 2026 class carries no Benjamin Franklin Medal in Electrical Engineering (the 2026 medals are Chemistry, Civil Engineering, Computer and Cognitive Science, Earth and Environmental Science, Life Science and Physics, plus the NextGen and Bower awards), so the most recent award under this name is 2025. The name itself dates from the 1998 reorganization, when the Institute's 25 older endowed medals (Franklin Medal, Stuart Ballantine Medal, Howard N. Potts Medal, John Price Wetherill Medal, Elliott Cresson Medal and others) were folded into seven field-specific Benjamin Franklin Medals.",
+  "sources": [
+    "https://fi.edu/sites/default/files/2026-04/2026_Awards_Convocation_Book_Interactive.pdf",
+    "https://fi.edu/en/awards/about",
+    "https://fi.edu/en/awards",
+    "https://fi.edu/en/awards/nominations/benjamin-franklin-medals",
+    "https://fi.edu/en/press-room/press-releases/2025/franklin-institute-announces-2025-franklin-institute-laureates",
+    "https://fi.edu/en/press-room/press-releases/2025/announcing-2026-franklin-institute-awards",
+    "https://projects.propublica.org/nonprofits/organizations/231370501/202423139349303407/full",
+    "https://projects.propublica.org/nonprofits/full_text/202423139349303407/IRS990ScheduleD",
+    "https://projects.propublica.org/nonprofits/full_text/202423139349303407/IRS990ScheduleI",
+    "https://en.wikipedia.org/wiki/Franklin_Institute_Awards"
+  ],
+  "evidence_quote": "The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two calls. (1) funder_changed and funder_current: the documented alternative is the Institute's Form 990. The FY2024 Schedule D reports a USD 66.2M endowment, 77.6% of it permanent/donor-restricted, and states that the endowment funds support the Institute's activities including the 'awards program' 'based upon original donor intent' — read alone, that points to funder_changed = false with the current funder being the Institute's donor-restricted legacy endowment (the coding this file previously carried). I reject that reading because the 990 language is a portfolio-level statement covering awards, library, curatorial, museum programs and general operations, and never says the legacy funds pay the honoraria, whereas the 2026 Convocation Book names one fund for the honoraria specifically and dates it to 2017. The specific statement governs the general one, so most of today's purse is new Morel money. This brings the Electrical Engineering medal into line with the chemistry, life science, materials science and engineering, and mechanical engineering codings; on the evidence I read, those four are right and the earlier false coding here was wrong. (2) awarding_org_type: The Franklin Institute is a 1824 member-based learned institute that today operates mainly as a nonprofit science museum, so Philanthropy is defensible; I kept Society because laureates are selected by its volunteer Committee on Science and the Arts and confirmed by the Board of Trustees, the standard learned-society mechanism."
+}

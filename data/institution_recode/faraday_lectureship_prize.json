@@ -1,0 +1,28 @@
+{
+  "prize_name": "Faraday Lectureship Prize",
+  "awarding_org": "Royal Society of Chemistry",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United Kingdom",
+  "funder_origin_name": "Chemical Society (predecessor of the Royal Society of Chemistry)",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United Kingdom",
+  "funder_current_name": "Royal Society of Chemistry (RSC Recognition Fund)",
+  "funder_current_type": "Society",
+  "funder_current_country": "United Kingdom",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is GBP 3,000 plus medal, certificate and a UK lecture tour, paid 100% by the Royal Society of Chemistry out of its pooled RSC Recognition Fund; no external sponsor is named on any RSC page or in the award announcements. At origin the lectureship was instituted in 1867 by the Chemical Society, the RSC's predecessor body, to commemorate its own fellow Michael Faraday, and the associated trust was held and administered by the Society itself; the RSC's published roll of thirty named historical donor bequests folded into the Recognition Fund contains no 1867 Faraday gift (only a later 'Faraday Medal & Lectureship Fund (1971)'), which is evidence against an outside 1867 benefactor. In 2021 the trust's purposes were amended and its remaining monies pooled into the RSC Recognition Fund, so society money has funded the purse throughout; the Chemical Society became part of the RSC in the 1980 merger, a change of corporate vehicle rather than of funder.",
+  "money_note": "Winner currently receives GBP 3,000, a medal and a certificate and delivers a UK lecture tour, paid by the Royal Society of Chemistry from the RSC Recognition Fund since 2021; Wikipedia records the value as GBP 5,000 as of 2009.",
+  "status_note": "Continuous and active: renamed from 'Faraday Lectureship' to 'Faraday Lectureship Prize', and since the RSC's 2022 prize restructure presented as the 'Faraday open prize: Faraday Lectureship Prize'; it also moved from roughly biennial to annual, with recent awards in 2020, 2021, 2022, 2023, 2024 and 2025 (John Plane). The financing changed vehicle in 2021 when the 1867 trust's purposes were amended and its monies merged into the RSC Recognition Fund, but the award itself was not suspended or superseded.",
+  "sources": [
+    "https://www.rsc.org/standards-and-recognition/prizes/research-and-innovation-prizes/faraday-open-prize-faraday-lectureship-prize",
+    "https://www.rsc.org/standards-and-recognition/prizes",
+    "https://www.rsc.org/prizes-funding/prizes/find-a-prize/faraday-division-open-award-faraday-lectureship-prize/previous-winners/",
+    "https://roysocchem.smapply.io/prog/faraday_lectureship_prize/",
+    "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/207890/linked-charities",
+    "https://en.wikipedia.org/wiki/Faraday_Lectureship_Prize"
+  ],
+  "evidence_quote": "The Faraday Lectureship Prize was established in 1867... In 2021, the purposes of this Trust were amended, and remaining monies were combined with other generous bequests and donations to become part of the RSC Recognition Fund.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Origin could be coded Philanthropy if the 1867 fund came from a memorial subscription or bequest by individuals rather than from the Society's own resources; no source we found names any 1867 donor, and the RSC's own list of thirty named historical bequests omits an 1867 Faraday gift, so we code the origin funder as the Chemical Society itself (Society). Current funding is unambiguously the RSC's pooled Recognition Fund (Society)."
+}

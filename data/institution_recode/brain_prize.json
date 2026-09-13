@@ -1,0 +1,29 @@
+{
+  "prize_name": "Brain Prize",
+  "awarding_org": "Lundbeck Foundation (Lundbeckfonden)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Denmark",
+  "funder_origin_name": "Lundbeck Foundation (Lundbeckfonden), via the Grete Lundbeck European Brain Research Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Denmark",
+  "funder_current_name": "Lundbeck Foundation (Lundbeckfonden)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Denmark",
+  "funder_changed": false,
+  "funding_share_basis": "The Lundbeck Foundation has supplied 100% of the purse since the prize was established in 2010 (first awarded 2011); no co-funder was found. At founding the money was channelled through a dedicated vehicle, the charitable Grete Lundbeck European Brain Research Foundation, which conferred the prize through roughly 2016 and was itself created and endowed by the Lundbeck Foundation; from about 2017-2018 onward award announcements name the Lundbeck Foundation directly. That is a change of payment vehicle within the same funder, not a handover, so funder_changed is false.",
+  "money_note": "Current purse is DKK 10 million (approx. EUR 1.3 million) paid annually by the Lundbeck Foundation; the prize was EUR 1 million from 2011 through at least 2018 before being restated in kroner at the higher level.",
+  "status_note": "Renamed: launched as The Grete Lundbeck European Brain Research Prize (awarded 2011 onward) and marketed as The Brain Prize from the start; the Grete Lundbeck name was dropped from official materials by the late 2010s. Also broadened from a European to a global prize. Awarded continuously every year since 2011, so the winner list is unbroken under the name we use.",
+  "sources": [
+    "https://lundbeckfonden.com/apply-grants/the-brain-prize",
+    "https://brainprize.org/",
+    "https://lundbeckfonden.com/files/media/document/2015-english_press_release_27_02_15_final.pdf",
+    "https://lundbeckfonden.com/the-brain-prize/news/four-neuroscientists-receive-the-brain-prize-crucial-research-on-alzheimers",
+    "https://www.sciencemediacentre.org/brain-prize-2018-announcement-of-winners/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3392082/",
+    "https://en.wikipedia.org/wiki/The_Brain_Prize"
+  ],
+  "evidence_quote": "The one million euro Brain Prize is awarded by the independent, charitable Grethe Lundbeck European Brain Research Foundation, The Brain Prize. (2015 press release); The Brain Prize was founded in 2011 by the Lundbeck Foundation. (brainprize.org)",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The Lundbeck Foundation is a Danish enterprise foundation and controlling shareholder of H. Lundbeck A/S (also ALK-Abello and Falck), so a reasonable coder could call it Corporate; the protocol codes enterprise foundations as Philanthropy. A coder could also record the Grete Lundbeck European Brain Research Foundation as a distinct origin funder and set funder_changed true; we treat it as a Lundbeck-endowed vehicle for the same money, so the funder never changed."
+}

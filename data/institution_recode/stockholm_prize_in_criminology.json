@@ -1,0 +1,27 @@
+{
+  "prize_name": "Stockholm Prize in Criminology",
+  "awarding_org": "Stockholm Prize in Criminology Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Consortium of private donors: Jerry Lee Foundation (Jerry Lee Center of Criminology), Torsten Soderberg Foundation, Ragnar Soderberg Foundation, Hitachi Mirai Foundation and the Japanese Correctional Association",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Mixed",
+  "funder_current_name": "Stockholm Prize in Criminology Foundation endowment, capitalised mainly by the Torsten Soderberg Foundation (SEK 20 million) with a SEK 14 million Swedish state grant and a smaller Ragnar Soderberg Foundation gift",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": true,
+  "funding_share_basis": "2006-2011 the SEK 1 million purse was paid pay-as-you-go from annual donations by five private donors - the Jerry Lee Foundation (United States, which pledged annual contributions over a ten-year period), the Torsten and Ragnar Soderberg Foundations (Sweden) and the Hitachi Mirai Foundation and Japanese Correctional Association (Japan); no published split makes any one of them exceed 50%, so the origin country is Mixed while the type is Philanthropy because every origin donor is private. Since 2012 the purse is paid from the endowed Stockholm Prize in Criminology Foundation, whose capital is the Torsten Soderberg Foundation's SEK 16 million gift raised to SEK 20 million, the SEK 14 million state grant voted by the Riksdag on 19 December 2011, and a smaller Ragnar Soderberg gift - so private capital is roughly 60% of the endowment and Torsten Soderberg alone is roughly 55-57%, giving Philanthropy/Sweden today. Applying the >50% test to the money, none of the pre-2012 annual donations survives (it was spent as it came in) and every krona of today's purse comes from capital given in 2011-2012, including a state grant that is entirely new and a Soderberg capital gift of a different order from its earlier annual contributions; the principal origin donor, the Jerry Lee Foundation, contributed no endowment capital, so more than half of today's purse is new money and funder_changed is true.",
+  "money_note": "The purse is at least SEK 1 million per year, shareable between up to two laureates; paid from annual private donations 2006-2011 and from the endowed Stockholm Prize in Criminology Foundation since 2012.",
+  "status_note": "",
+  "sources": [
+    "https://stockholmprizeincriminology.org/the-prize/about-the-prize/",
+    "https://stockholmprizeincriminology.org/the-foundation/about-the-foundation/",
+    "https://criminologysymposium.com/the-prize/the-history-of-the-prize.html",
+    "https://www.su.se/english/about-the-university/prizes-and-academic-ceremonies/the-stockholm-prize-in-criminology",
+    "https://en.wikipedia.org/wiki/Stockholm_Prize_in_Criminology"
+  ],
+  "evidence_quote": "The Torsten Soderberg Foundation initially decided to donate SEK 16 million, increasing its donation to SEK 20 million some years later. ... the Parliament approved ... a government grant of SEK 14 million.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "On funder_changed a coder could code false: the Torsten Soderberg Foundation was one of the original annual donors and now supplies the largest single share of the endowment, so on donor identity the majority of today's purse comes from a source that also funded the prize at origin. I code true because the test is about the money: the pre-2012 donations were consumed, the entire current purse derives from capital raised in 2011-2012, and the two components of that capital are a wholly new state grant and a capital gift far larger than and separate from the earlier annual giving, while the principal origin donor (Jerry Lee) put in no endowment capital. Secondary calls: the awarding body could be read as Government or University (two of five board seats are government-appointed and Stockholm University administers it) rather than the legally independent, majority-privately-capitalised foundation I code; the current funder could be read as Mixed (Philanthropy plus Government) if the unstated Ragnar Soderberg gift pushes Torsten Soderberg below 50%, though private capital exceeds 50% either way; and the origin funder could be read as Jerry Lee Foundation alone (United States) since official sources call it the main early donor, but no source establishes it above 50%, hence the Mixed origin country."
+}

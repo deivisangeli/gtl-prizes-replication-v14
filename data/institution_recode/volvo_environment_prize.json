@@ -1,0 +1,27 @@
+{
+  "prize_name": "Volvo Environment Prize",
+  "awarding_org": "Volvo Environment Prize Foundation",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "AB Volvo (Volvo Group)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Volvo Group (AB Volvo)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The prize is conferred by the independent Volvo Environment Prize Foundation, instituted by AB Volvo in 1988 (first award 1990), but the official site states plainly that the Volvo Group finances the Foundation's work, so 100% of the SEK 1.5 million purse traces to a single corporate source; no other funder is named. The 1999 sale of Volvo Cars to Ford left the prize with AB Volvo/Volvo Group, the same corporate funder throughout, and the foundation's administrative host moved to the Beijer Institute of Ecological Economics in Stockholm without changing who pays.",
+  "money_note": "Current purse is SEK 1.5 million (roughly EUR 135,000 / USD 140,000) plus a diploma and glass sculpture, paid out of Volvo Group financing of the foundation since the prize began in 1990.",
+  "status_note": "",
+  "sources": [
+    "https://www.environment-prize.com/the-prize/about-the-prize/",
+    "https://www.environment-prize.com/about/",
+    "https://www.environment-prize.com/about/organisation/",
+    "https://www.volvogroup.com/en/sustainable-transportation/sustainable-solutions/volvo-environment-prize.html",
+    "https://en.wikipedia.org/wiki/Volvo_Environment_Prize"
+  ],
+  "evidence_quote": "The Volvo Group, a leading manufacturer of vehicles and heavy-duty machines, finances the Foundation's work.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The awarding body calls itself an 'independent foundation' hosted at the Beijer Institute of Ecological Economics (Royal Swedish Academy of Sciences, Stockholm), so a coder could pick Philanthropy or even Society; I coded Corporate because its identity and entire financing are tied to one operating company, Volvo Group, matching the BBVA Foundation rule. Seat is coded as Sweden either way (founded in Gothenburg, now administered from Stockholm)."
+}

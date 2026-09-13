@@ -1,0 +1,29 @@
+{
+  "prize_name": "Gruber Prize in Neuroscience",
+  "awarding_org": "The Gruber Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "The Peter and Patricia Gruber Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Gruber Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse (100%) comes from money given by Peter and Patricia Gruber: the prize was founded in 2004 by their private foundation (est. 1993), and since 2011 it has been paid from the named, ring-fenced Gruber endowment created by their 'landmark contribution' and held by The Gruber Foundation, a 509(a)(3) Type 1 supporting organization controlled by Yale University. Yale administers and controls the vehicle but contributes none of the purse, so the >50% test points to the Gruber endowment (Philanthropy) rather than Yale (University); no other funder was found.",
+  "money_note": "Unrestricted cash award of USD 500,000 plus a gold medal and citation, paid annually from the Gruber endowment; the successor Gruber Foundation at Yale has paid the USD 500,000 purse since 2011.",
+  "status_note": "",
+  "sources": [
+    "https://gruber.yale.edu/neuroscience",
+    "https://gruber.yale.edu/foundation",
+    "https://gruber.yale.edu/foundation-timeline",
+    "https://gruber.yale.edu/press/yale-and-patricia-and-peter-gruber-announce-establishment-gruber-foundation-yale",
+    "https://news.yale.edu/2011/05/16/yale-and-patricia-and-peter-gruber-announce-establishment-gruber-foundation-yale",
+    "https://en.wikipedia.org/wiki/Gruber_Prize_in_Neuroscience",
+    "https://en.wikipedia.org/wiki/Gruber_Foundation"
+  ],
+  "evidence_quote": "The Gruber Foundation is funded by a landmark contribution from philanthropists Peter and Patricia Gruber... [it] will succeed The Peter and Patricia Gruber Foundation, originally established in 1993, and carry on its philanthropic mission.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The current funder could reasonably be coded University, since The Gruber Foundation is a Type 1 supporting organization operated, supervised, or controlled by Yale and its assets sit within Yale's orbit. I code Philanthropy because the purse is paid from a named, ring-fenced endowment supplied entirely by the Gruber family gift, with no Yale money in the award, and laureates are chosen by an independent international advisory board rather than Yale faculty governance. For the same reason funder_changed is false: the 2011 move replaced the payment vehicle, not the donor."
+}

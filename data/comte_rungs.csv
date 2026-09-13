@@ -1,0 +1,26 @@
+field,rung_order,rung_label,placement
+Mathematics,1,Mathematics,Comte
+Physics & Astronomy,2,Astronomy and physics,Comte
+Climate & Ocean Sci.,2,Astronomy and physics,ours
+Geosciences,2,Astronomy and physics,ours
+Chemistry & Chemical Eng.,3,Chemistry,Comte
+Molecular Bio & Genetics,4,Biology,Comte
+Microbiology & Immunology,4,Biology,Comte
+Neuroscience,4,Biology,Comte
+Ecology & Evolution,4,Biology,Comte
+Environmental Science,4,Biology,ours
+Agriculture & Food Sci.,4,Biology,ours
+Medicine,4,Biology,ours
+Public Health,4,Biology,ours
+Computer & Electrical Eng.,5,Engineering,ours
+Computer Science,5,Engineering,ours
+Biomedical Eng.,5,Engineering,ours
+Civil & Env. Eng.,5,Engineering,ours
+Mechanical & Aerospace Eng.,5,Engineering,ours
+Other Engineering,5,Engineering,ours
+Economics,6,Sociology,Comte
+Political Science & Sociology,6,Sociology,Comte
+Anthropology,6,Sociology,Comte
+Other Social Sci.,6,Sociology,Comte
+Psychology,6,Sociology,ours
+Business,6,Sociology,ours

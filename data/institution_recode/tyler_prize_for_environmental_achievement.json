@@ -1,0 +1,29 @@
+{
+  "prize_name": "Tyler Prize for Environmental Achievement",
+  "awarding_org": "University of Southern California",
+  "awarding_org_type": "University",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "John and Alice Tyler (John and Alice Tyler Charitable Trusts)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "John and Alice Tyler Charitable Trusts endowment (administered by the University of Southern California)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse comes entirely (100%, >50% rule trivially satisfied) from the endowment created by the founders' gift: standard prize boilerplate states 'The Prize is endowed by gifts from the John and Alice Tyler Charitable Trusts' while 'The University of Southern California administers the Tyler Prize.' The founding gift was reported at USD 5 million from John (Jack) Tyler in 1973; no other funder was found. Administration moved from Pepperdine University (initial host) to USC, and the prize now sits in USC Dornsife College of Letters, Arts and Sciences, but the money is the same Tyler donor endowment throughout, so this is not a handover.",
+  "money_note": "Laureates receive USD 250,000 and a medallion, paid from the Tyler endowment held/administered at USC; the fund originated in a reported USD 5 million gift from John and Alice Tyler in 1973.",
+  "status_note": "",
+  "sources": [
+    "https://www.tylerprize.org/",
+    "https://www.tylerprize.org/about/about",
+    "https://www.tylerprize.org/about/founders",
+    "https://www.bu.edu/research/2021/05/13/award-nomination-opportunity-the-tyler-prize-for-environmental-achievement/",
+    "https://en.wikipedia.org/wiki/Tyler_Prize_for_Environmental_Achievement",
+    "https://today.usc.edu/tyler-prize-award-ceremony-returns-to-usc/",
+    "http://actperpetualtrust.org/donation-history/"
+  ],
+  "evidence_quote": "The Prize is endowed by gifts from the John and Alice Tyler Charitable Trusts... The University of Southern California administers the Tyler Prize.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The endowed fund is held and administered by USC, so a coder could record the current funder as the University of Southern California (University). We keep Philanthropy because the prize is explicitly described as endowed by the named John and Alice Tyler Charitable Trusts, a ring-fenced donor endowment rather than USC general funds."
+}

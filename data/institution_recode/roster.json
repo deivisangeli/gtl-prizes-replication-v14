@@ -1,0 +1,398 @@
+[
+ {
+  "prize": "A. M. Turing Award",
+  "slug": "a_m_turing_award"
+ },
+ {
+  "prize": "Abel Prize",
+  "slug": "abel_prize"
+ },
+ {
+  "prize": "Albert Einstein World Award of Science",
+  "slug": "albert_einstein_world_award_of_science"
+ },
+ {
+  "prize": "Albert Lasker Basic Medical Research Award",
+  "slug": "albert_lasker_basic_medical_research_award"
+ },
+ {
+  "prize": "Arthur L. Day Prize and Lectureship",
+  "slug": "arthur_l_day_prize_and_lectureship"
+ },
+ {
+  "prize": "Balzan Prize",
+  "slug": "balzan_prize"
+ },
+ {
+  "prize": "Benjamin Franklin Medal in Chemistry",
+  "slug": "benjamin_franklin_medal_in_chemistry"
+ },
+ {
+  "prize": "Benjamin Franklin Medal in Electrical Engineering",
+  "slug": "benjamin_franklin_medal_in_electrical_engineering"
+ },
+ {
+  "prize": "Benjamin Franklin Medal in Life Science",
+  "slug": "benjamin_franklin_medal_in_life_science"
+ },
+ {
+  "prize": "Benjamin Franklin Medal in Materials Science and Engineering",
+  "slug": "benjamin_franklin_medal_in_materials_science_and_engineering"
+ },
+ {
+  "prize": "Benjamin Franklin Medal in Mechanical Engineering",
+  "slug": "benjamin_franklin_medal_in_mechanical_engineering"
+ },
+ {
+  "prize": "Blue Planet Prize",
+  "slug": "blue_planet_prize"
+ },
+ {
+  "prize": "Bower Award and Prize for Achievement in Science",
+  "slug": "bower_award_and_prize_for_achievement_in_science"
+ },
+ {
+  "prize": "Brain Prize",
+  "slug": "brain_prize"
+ },
+ {
+  "prize": "Breakthrough Prize in Fundamental Physics",
+  "slug": "breakthrough_prize_in_fundamental_physics"
+ },
+ {
+  "prize": "Breakthrough Prize in Life Sciences",
+  "slug": "breakthrough_prize_in_life_sciences"
+ },
+ {
+  "prize": "Breakthrough Prize in Mathematics",
+  "slug": "breakthrough_prize_in_mathematics"
+ },
+ {
+  "prize": "Bruce Medal",
+  "slug": "bruce_medal"
+ },
+ {
+  "prize": "Canada Gairdner Global Health Award",
+  "slug": "canada_gairdner_global_health_award"
+ },
+ {
+  "prize": "Canada Gairdner International Award",
+  "slug": "canada_gairdner_international_award"
+ },
+ {
+  "prize": "Charles Stark Draper Prize for Engineering",
+  "slug": "charles_stark_draper_prize_for_engineering"
+ },
+ {
+  "prize": "Copley Medal",
+  "slug": "copley_medal"
+ },
+ {
+  "prize": "Crafoord Prize in Astronomy",
+  "slug": "crafoord_prize_in_astronomy"
+ },
+ {
+  "prize": "Crafoord Prize in Biosciences",
+  "slug": "crafoord_prize_in_biosciences"
+ },
+ {
+  "prize": "Crafoord Prize in Geosciences",
+  "slug": "crafoord_prize_in_geosciences"
+ },
+ {
+  "prize": "Crafoord Prize in Mathematics",
+  "slug": "crafoord_prize_in_mathematics"
+ },
+ {
+  "prize": "Crafoord Prize in Polyarthritis",
+  "slug": "crafoord_prize_in_polyarthritis"
+ },
+ {
+  "prize": "Eni Award",
+  "slug": "eni_award"
+ },
+ {
+  "prize": "Erwin Plein Nemmers Prize in Economics",
+  "slug": "erwin_plein_nemmers_prize_in_economics"
+ },
+ {
+  "prize": "Faraday Lectureship Prize",
+  "slug": "faraday_lectureship_prize"
+ },
+ {
+  "prize": "Fields Medal",
+  "slug": "fields_medal"
+ },
+ {
+  "prize": "Frontiers of Knowledge Award in Basic Sciences",
+  "slug": "frontiers_of_knowledge_award_in_basic_sciences"
+ },
+ {
+  "prize": "Frontiers of Knowledge Award in Biology and Biomedicine",
+  "slug": "frontiers_of_knowledge_award_in_biology_and_biomedicine"
+ },
+ {
+  "prize": "Frontiers of Knowledge Award in Climate Change",
+  "slug": "frontiers_of_knowledge_award_in_climate_change"
+ },
+ {
+  "prize": "Frontiers of Knowledge Award in Ecology and Conservation Biology",
+  "slug": "frontiers_of_knowledge_award_in_ecology_and_conservation_bio"
+ },
+ {
+  "prize": "Frontiers of Knowledge Award in Economics Finance and Management",
+  "slug": "frontiers_of_knowledge_award_in_economics_finance_and_manage"
+ },
+ {
+  "prize": "Godel Prize",
+  "slug": "godel_prize"
+ },
+ {
+  "prize": "Gold Medal of the Royal Astronomical Society",
+  "slug": "gold_medal_of_the_royal_astronomical_society"
+ },
+ {
+  "prize": "Gruber Prize in Cosmology",
+  "slug": "gruber_prize_in_cosmology"
+ },
+ {
+  "prize": "Gruber Prize in Genetics",
+  "slug": "gruber_prize_in_genetics"
+ },
+ {
+  "prize": "Gruber Prize in Neuroscience",
+  "slug": "gruber_prize_in_neuroscience"
+ },
+ {
+  "prize": "Harvey Prize",
+  "slug": "harvey_prize"
+ },
+ {
+  "prize": "Heineken Prize for Biochemistry and Biophysics",
+  "slug": "heineken_prize_for_biochemistry_and_biophysics"
+ },
+ {
+  "prize": "Heineken Prize for Environmental Sciences",
+  "slug": "heineken_prize_for_environmental_sciences"
+ },
+ {
+  "prize": "Heineken Prize for Medicine",
+  "slug": "heineken_prize_for_medicine"
+ },
+ {
+  "prize": "ICTP Ramanujan Prize",
+  "slug": "ictp_ramanujan_prize"
+ },
+ {
+  "prize": "IEEE Medal of Honor",
+  "slug": "ieee_medal_of_honor"
+ },
+ {
+  "prize": "InBev-Baillet Latour Health Prize",
+  "slug": "inbev_baillet_latour_health_prize"
+ },
+ {
+  "prize": "International Award of Merit in Structural Engineering",
+  "slug": "international_award_of_merit_in_structural_engineering"
+ },
+ {
+  "prize": "Isaac Newton Medal",
+  "slug": "isaac_newton_medal"
+ },
+ {
+  "prize": "James Craig Watson Medal",
+  "slug": "james_craig_watson_medal"
+ },
+ {
+  "prize": "Japan Prize",
+  "slug": "japan_prize"
+ },
+ {
+  "prize": "Kavli Prize in Astrophysics",
+  "slug": "kavli_prize_in_astrophysics"
+ },
+ {
+  "prize": "Kavli Prize in Nanoscience",
+  "slug": "kavli_prize_in_nanoscience"
+ },
+ {
+  "prize": "Kavli Prize in Neuroscience",
+  "slug": "kavli_prize_in_neuroscience"
+ },
+ {
+  "prize": "Keio Medical Science Prize",
+  "slug": "keio_medical_science_prize"
+ },
+ {
+  "prize": "King Faisal International Prize in Science",
+  "slug": "king_faisal_international_prize_in_science"
+ },
+ {
+  "prize": "Kyoto Prize in Advanced Technology",
+  "slug": "kyoto_prize_in_advanced_technology"
+ },
+ {
+  "prize": "Kyoto Prize in Basic Sciences",
+  "slug": "kyoto_prize_in_basic_sciences"
+ },
+ {
+  "prize": "Lasker-DeBakey Clinical Medical Research Award",
+  "slug": "lasker_debakey_clinical_medical_research_award"
+ },
+ {
+  "prize": "Lorentz Medal",
+  "slug": "lorentz_medal"
+ },
+ {
+  "prize": "Louisa Gross Horwitz Prize",
+  "slug": "louisa_gross_horwitz_prize"
+ },
+ {
+  "prize": "Marconi Prize",
+  "slug": "marconi_prize"
+ },
+ {
+  "prize": "Maryam Mirzakhani Prize in Mathematics",
+  "slug": "maryam_mirzakhani_prize_in_mathematics"
+ },
+ {
+  "prize": "Matteucci Medal",
+  "slug": "matteucci_medal"
+ },
+ {
+  "prize": "Max Planck-Humboldt Research Award",
+  "slug": "max_planck_humboldt_research_award"
+ },
+ {
+  "prize": "Max Planck Medal",
+  "slug": "max_planck_medal"
+ },
+ {
+  "prize": "Max Planck Research Award",
+  "slug": "max_planck_research_award"
+ },
+ {
+  "prize": "Millennium Technology Prize",
+  "slug": "millennium_technology_prize"
+ },
+ {
+  "prize": "Nobel Prize in Chemistry",
+  "slug": "nobel_prize_in_chemistry"
+ },
+ {
+  "prize": "Nobel Prize in Physics",
+  "slug": "nobel_prize_in_physics"
+ },
+ {
+  "prize": "Nobel Prize in Physiology or Medicine",
+  "slug": "nobel_prize_in_physiology_or_medicine"
+ },
+ {
+  "prize": "Paul Ehrlich and Ludwig Darmstaedter Prize",
+  "slug": "paul_ehrlich_and_ludwig_darmstaedter_prize"
+ },
+ {
+  "prize": "Queen Elizabeth Prize for Engineering",
+  "slug": "queen_elizabeth_prize_for_engineering"
+ },
+ {
+  "prize": "Robert Koch Award",
+  "slug": "robert_koch_award"
+ },
+ {
+  "prize": "Rolf Schock Prize in Mathematics",
+  "slug": "rolf_schock_prize_in_mathematics"
+ },
+ {
+  "prize": "Russ Prize",
+  "slug": "russ_prize"
+ },
+ {
+  "prize": "Shaw Prize in Astronomy",
+  "slug": "shaw_prize_in_astronomy"
+ },
+ {
+  "prize": "Shaw Prize in Life Science and Medicine",
+  "slug": "shaw_prize_in_life_science_and_medicine"
+ },
+ {
+  "prize": "Shaw Prize in Mathematical Sciences",
+  "slug": "shaw_prize_in_mathematical_sciences"
+ },
+ {
+  "prize": "Stein Rokkan Prize for Comparative Social Science Research",
+  "slug": "stein_rokkan_prize_for_comparative_social_science_research"
+ },
+ {
+  "prize": "Stockholm Prize in Criminology",
+  "slug": "stockholm_prize_in_criminology"
+ },
+ {
+  "prize": "Stockholm Water Prize",
+  "slug": "stockholm_water_prize"
+ },
+ {
+  "prize": "Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel",
+  "slug": "sveriges_riksbank_prize_in_economic_sciences_in_memory_of_al"
+ },
+ {
+  "prize": "Tang Prize in Biopharmaceutical Science",
+  "slug": "tang_prize_in_biopharmaceutical_science"
+ },
+ {
+  "prize": "Templeton Prize",
+  "slug": "templeton_prize"
+ },
+ {
+  "prize": "Timoshenko Medal",
+  "slug": "timoshenko_medal"
+ },
+ {
+  "prize": "Tyler Prize for Environmental Achievement",
+  "slug": "tyler_prize_for_environmental_achievement"
+ },
+ {
+  "prize": "Vetlesen Prize",
+  "slug": "vetlesen_prize"
+ },
+ {
+  "prize": "Volvo Environment Prize",
+  "slug": "volvo_environment_prize"
+ },
+ {
+  "prize": "Von Hippel Award",
+  "slug": "von_hippel_award"
+ },
+ {
+  "prize": "Warren Alpert Foundation Prize",
+  "slug": "warren_alpert_foundation_prize"
+ },
+ {
+  "prize": "Wolf Prize in Agriculture",
+  "slug": "wolf_prize_in_agriculture"
+ },
+ {
+  "prize": "Wolf Prize in Chemistry",
+  "slug": "wolf_prize_in_chemistry"
+ },
+ {
+  "prize": "Wolf Prize in Mathematics",
+  "slug": "wolf_prize_in_mathematics"
+ },
+ {
+  "prize": "Wolf Prize in Medicine",
+  "slug": "wolf_prize_in_medicine"
+ },
+ {
+  "prize": "Wolf Prize in Physics",
+  "slug": "wolf_prize_in_physics"
+ },
+ {
+  "prize": "Wollaston Medal",
+  "slug": "wollaston_medal"
+ },
+ {
+  "prize": "World Food Prize",
+  "slug": "world_food_prize"
+ }
+]

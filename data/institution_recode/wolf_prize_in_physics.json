@@ -1,0 +1,27 @@
+{
+  "prize_name": "Wolf Prize in Physics",
+  "awarding_org": "Wolf Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Israel",
+  "funder_origin_name": "Wolf Foundation (endowment donated by Ricardo Subirana y Lobo Wolf and Francisca Subirana-Wolf)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Israel",
+  "funder_current_name": "Wolf Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Israel",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse comes from investment income on the Wolf Foundation's own endowment, established in 1975-76 with roughly USD 10 million donated by Ricardo Wolf and his wife Francisca; the official site states the Foundation was 'Founded in 1975 with an endowment from the Wolf family' and no co-sponsor, corporate partner, or government appropriation for the purse is identified in any source. The Israeli state's involvement is governance and audit only (the Wolf Foundation Law-1975 makes the Minister of Education chairman of the Council and the State Comptroller the auditor), which is administration rather than purse money, so the >50% rule points to Philanthropy in both states.",
+  "money_note": "Each Wolf Prize, including Physics, carries a diploma, a Medal of Honor, and USD 100,000, paid from the Wolf Foundation's endowment income; the prize has been awarded annually since 1978 and the 2025 Physics prize went to Jainendra K. Jain, Mordehai Heiblum, and James P. Eisenstein.",
+  "status_note": "",
+  "sources": [
+    "https://wolffund.org.il/the-wolf-prize/",
+    "https://wolffund.org.il/about-wolf-foundation/",
+    "https://en.wikipedia.org/wiki/Wolf_Foundation",
+    "https://en.wikipedia.org/wiki/Wolf_Prize_in_Physics",
+    "https://erc.europa.eu/news-events/news/two-erc-grantees-among-2025-wolf-prize-winners-physics-and-agriculture"
+  ],
+  "evidence_quote": "Founded in 1975 with an endowment from the Wolf family, the Foundation's major donors were Dr. Ricardo Subirana Y Lobo Wolf and his wife, Francisca.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the Wolf Foundation Government (or Mixed) because it was constituted by the Israeli 'Wolf Foundation Law-1975', the Minister of Education and Culture serves ex officio as chairman of its Council, and the State Comptroller audits it. I coded Philanthropy for both the awarding body and the funder because the money is a private family endowment and the statutory role is governance/oversight, not payment of the purse."
+}

@@ -1,0 +1,31 @@
+{
+  "prize_name": "Benjamin Franklin Medal in Life Science",
+  "awarding_org": "The Franklin Institute",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Historic named benefactor endowment funds of The Franklin Institute (Elliott Cresson Fund 1848, Boyden Premium Fund 1859, Edward Longstreth Fund 1890, Howard N. Potts Fund 1906, The Franklin Fund 1914, John Price Wetherill Fund 1925 and 15 further named funds)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Benjamin Franklin Medalists' Fund, established 2017 by The Morel Family Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "Purse is a flat USD 10,000 honorarium plus a 14-karat gold medal, identical across all Benjamin Franklin Medal fields. The Franklin Institute's 2026 Awards Convocation Book, in its 'Awards Endowments' section, attributes the honoraria to one specific fund: 'The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.' The same section then separately thanks the donors of 21 legacy named funds (Elliott Cresson 1848, Boyden Premium 1859, Edward Longstreth 1890, Howard N. Potts 1906, The Franklin Fund 1914, Louis E. Levy 1923, George R. Henderson 1924, John Price Wetherill 1925, Walton Clark 1926, The Vermilye 1937, Frank P. Brown 1938, Francis J. Clamer 1943, Stuart Ballantine 1946, George S. Crampton 1964, Philip H. Ward Jr. 1965, Albert A. Michelson 1967, Bolton L. Corson 1975, Delmer S. Fahrney 1975, The Bower Fund 1988, C. Raymond Kraus 1995, Jonathan R. Lax 1997) as funds that 'support the Bower Awards and the Benjamin Franklin Medals' generally - i.e. the program, not the medalists' honoraria. Origin: the Life Science medal dates from the 1998 reorganization that folded the Institute's 25 historic endowed medals into seven Benjamin Franklin Medal categories, so from 1998 to 2016 the purse was carried by those pooled 19th- and 20th-century benefactor endowments (Philanthropy, United States). Today the money paying the winner is attributed to the 2017 Morel gift, a different donor's money, so more than half of today's purse is new money and funder_changed is true even though the funder type (Philanthropy) and country (United States) are unchanged. The Institute does not publish the fund's size or a dollar split between it and the legacy funds. Excluded as operations rather than purse: the Awards Ceremony and Dinner sponsors (Bank of America presenting sponsor, KPMG Awards Week sponsor, Marsha and Jeffrey Perelman, and the listed Awards Benefactors), and the 'Laureate Sponsors' named in the convocation book, who are Committee on Science and the Arts members presenting each nomination, not funders.",
+  "money_note": "USD 10,000 honorarium and a 14-karat gold medal, paid since 2017 from the Benjamin Franklin Medalists' Fund endowed that year by The Morel Family Foundation (Doylestown, Pennsylvania; founded 2016 by Donald E. Morel Jr., former West Pharmaceutical Services CEO and Franklin Institute board chair); from 1998 to 2016 the honoraria were carried by the Institute's pooled historic benefactor medal endowments.",
+  "status_note": "The Franklin Institute does not award every medal category every year. The Benjamin Franklin Medal in Life Science was awarded in 2025 (Steven M. Block, Stanford University), but the 2026 class contains no Life Science, Electrical Engineering, or Mechanical Engineering medal - the 2026 categories are Chemistry, Civil Engineering, Computer and Cognitive Science, Earth and Environmental Science, and Physics. Last awarded under this exact name: 2025. The award is continuing, not discontinued.",
+  "sources": [
+    "https://fi.edu/sites/default/files/2026-04/2026_Awards_Convocation_Book_Interactive.pdf",
+    "https://fi.edu/en/awards/about",
+    "https://fi.edu/en/awards",
+    "https://fi.edu/en/awards/nominations/benjamin-franklin-medals",
+    "https://fi.edu/en/awards/ceremony-and-dinner",
+    "https://fi.edu/en/press-room/press-releases/2025/franklin-institute-announces-2025-franklin-institute-laureates",
+    "https://www.morelfoundation.org/about",
+    "https://projects.propublica.org/nonprofits/organizations/475521535",
+    "https://en.wikipedia.org/wiki/Franklin_Institute_Awards"
+  ],
+  "evidence_quote": "The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The Institute publishes no dollar figures, so the >50% test rests on its own attribution language: the Morel-endowed Benjamin Franklin Medalists' Fund 'provides honoraria', while the 21 legacy funds 'support' the medals program generally. A coder could instead read the legacy endowments as still paying most of the purse and set funder_changed=false. The Franklin Institute is coded Society (an 1824 learned institution with a Committee on Science and the Arts that selects laureates, now also a nonprofit science museum), though Philanthropy is defensible."
+}

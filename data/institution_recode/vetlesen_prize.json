@@ -1,0 +1,26 @@
+{
+  "prize_name": "Vetlesen Prize",
+  "awarding_org": "Lamont-Doherty Earth Observatory, Columbia University",
+  "awarding_org_type": "University",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "G. Unger Vetlesen Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "G. Unger Vetlesen Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a USD 250,000 cash award plus a gold medal, endowed in full by the New York-based G. Unger Vetlesen Foundation, a private foundation created by shipping magnate Georg Unger Vetlesen shortly before his death in 1955; Lamont-Doherty (Columbia University) administers selection and the jury but is not identified as a purse contributor, so the foundation supplies 100% (>50%) in both the origin and current state. No other funder was found.",
+  "money_note": "Current prize is USD 250,000 plus a gold medal and travel to the Vetlesen Lecture; endowed by the G. Unger Vetlesen Foundation since the prize's establishment in 1959.",
+  "status_note": "Awarded on average once every two to three years; most recent laureate is David Kohlstedt (2023), and as of August 2026 the official page says only that the next call for nominations is pending.",
+  "sources": [
+    "https://lamont.columbia.edu/about/vetlesen-prize",
+    "https://lamont.columbia.edu/news/explorer-deep-earth-wins-vetlesen-prize",
+    "https://lamont.columbia.edu/g-unger-vetlesen-foundation",
+    "https://en.wikipedia.org/wiki/Vetlesen_Prize"
+  ],
+  "evidence_quote": "Endowed by the New York-based G. Unger Vetlesen Foundation and administered by the Columbia Climate School's Lamont-Doherty Earth Observatory, the award is bestowed 'for scientific achievement resulting in a clearer understanding of the Earth...'",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Wikipedia describes the prize as awarded 'jointly' by Lamont-Doherty and the G. Unger Vetlesen Foundation, so a coder could set awarding_org_type to Philanthropy. I coded University because the official prize page states the prize 'is administered by Lamont-Doherty Earth Observatory' and that selection is made by a five-member jury appointed by the president of Columbia University; the foundation supplies the money and co-hosts the banquet."
+}

@@ -1,0 +1,29 @@
+{
+  "prize_name": "Breakthrough Prize in Mathematics",
+  "awarding_org": "Breakthrough Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Foundations co-founded by Yuri and Julia Milner (Milner Foundation / Breakthrough Prize Foundation)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Foundations co-founded by Yuri and Julia Milner (Milner Foundation / Breakthrough Prize Foundation)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is USD 3M for the main prize plus up to three New Horizons in Mathematics Prizes at USD 100,000 and Maryam Mirzakhani New Frontiers Prizes at USD 50,000; the official prize page states the mathematics prizes are funded by grants from the foundations co-founded by Yuri and Julia Milner, i.e. a single funder at ~100% (>50%) in both the origin and the current state. Mark Zuckerberg co-announced the mathematics prize with Milner at the December 2013 ceremony and the site-wide Breakthrough boilerplate names five sponsor couples (Brin, Chan/Zuckerberg, Milner, Wojcicki, and formerly Ma/Zhang), but that pooled sponsorship applies to the Breakthrough Prizes generally (chiefly Life Sciences); the mathematics-specific funding attribution names only the Milner foundations, so Mixed is not triggered.",
+  "money_note": "USD 3 million per year for the main prize (unchanged since the inaugural 2015 prize; 2026 laureate Frank Merle), paid from grants by the personal foundations co-founded by Yuri and Julia Milner via the US-based Breakthrough Prize Foundation.",
+  "status_note": "",
+  "sources": [
+    "https://breakthroughprize.org/Prize/3",
+    "https://breakthroughprize.org/Prizes/3",
+    "https://breakthroughprize.org/About",
+    "https://breakthroughprize.org/News/18",
+    "https://breakthroughprize.org/News/98",
+    "https://breakthroughprize.org/Laureates/3",
+    "https://en.wikipedia.org/wiki/Breakthrough_Prize_in_Mathematics"
+  ],
+  "evidence_quote": "The mathematics prizes were founded by Yuri Milner ... funded by grants from the foundations co-founded by Yuri and Julia Milner.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could set both states to Mixed, since Mark Zuckerberg jointly launched the mathematics prize in December 2013 and the Breakthrough boilerplate lists five sponsoring couples' foundations; we follow the mathematics-prize page, which attributes this purse solely to the Milner foundations. A coder could also code Corporate, because the Milner, Brin, Chan-Zuckerberg and Wojcicki wealth comes from DST Global, Google, Meta and 23andMe, but these are legally independent personal philanthropic vehicles rather than company foundations, so Philanthropy is chosen. Country is United States because the Breakthrough Prize Foundation is a US 501(c)(3) administering the prize from California, although Yuri Milner is Russian-born/Israeli and the prize is global in scope."
+}

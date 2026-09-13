@@ -1,0 +1,31 @@
+{
+  "prize_name": "Heineken Prize for Biochemistry and Biophysics",
+  "awarding_org": "Stichting Alfred Heineken Fondsen (Alfred Heineken Fondsen Foundation)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Netherlands",
+  "funder_origin_name": "Alfred Heineken / Stichting Alfred Heineken Fondsen (Heineken family foundation)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Netherlands",
+  "funder_current_name": "Stichting Alfred Heineken Fondsen (Alfred Heineken Fondsen Foundation)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Netherlands",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse (USD 250,000 plus a sculpture) is paid by the Stichting Alfred Heineken Fondsen, an Amsterdam ANBI foundation of the Heineken family (RSIN 8160.046.980), so >50% comes from a single Philanthropy source. Alfred Heineken personally endowed the prize in 1964 in honour of his father Henry Pierre Heineken and the money has come from the Heineken family via its foundations ever since; no other funder contributes to the purse. What changed is the awarding side, not the money: KNAW ran nomination and selection from 1964 until it severed ties in July 2023 over Heineken N.V.'s continued operations in Russia, and since the 2024 cycle the Foundation itself administers the prize through independent juries and a Scientific Advisory Council (chaired by Robbert Dijkgraaf, established March 2026).",
+  "money_note": "Current purse USD 250,000 plus a sculpture (up from USD 200,000 in earlier cycles), paid by the Stichting Alfred Heineken Fondsen; unchanged funder since the 1964 endowment by Alfred Heineken.",
+  "status_note": "Biennial, awarded in even years: 2008 Szostak, 2010 Hartl, 2012 de Lange, 2014 Dobson, 2016 Doudna, 2018 Zhuang, 2020 Stillman, 2022 Bertozzi, 2024 Aebersold and Mann (first time split between two laureates). KNAW withdrew from the Heineken Prizes in July 2023 and the awards entered a 'transition phase' — only the biochemistry prize and the Young Scientists Awards were given in 2024; the Foundation now alternates the two award series annually, so the next Heineken Prizes ceremony (and next biochemistry award) is scheduled for 30 September 2027 rather than 2026. Officially styled 'Dr H.P. Heineken Prize for Biochemistry and Biophysics'.",
+  "sources": [
+    "https://www.heinekenprizes.org/heineken-prizes/dr-a-h-heineken-prize-for-biochemistry/",
+    "https://www.heinekenprizes.org/anbis-foundations/",
+    "https://www.heinekenprizes.org/portfolio_category/lol-hp-bio/",
+    "https://www.heinekenprizes.org/2025/06/04/updates-to-the-alfred-heineken-fondsen-foundation/",
+    "https://www.heinekenprizes.org/",
+    "https://nltimes.nl/2023/07/20/dutch-academy-science-art-splits-heineken-continued-activities-russia",
+    "https://dub.uu.nl/en/news/controversy-surrounding-heineken-prize",
+    "https://www.knaw.nl/en/awards/awards/heinekenprizes/heinekenprijs-voor-biochemie-en-biofysica",
+    "https://en.wikipedia.org/wiki/Heineken_Prizes"
+  ],
+  "evidence_quote": "The prize consists of an unrestricted cash prize of 250,000 USD and a trophy, funded by the Alfred Heineken Fondsen Foundation.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Two calls. (1) Awarding org: KNAW selected and conferred the prize from 1964 to the 2022 cycle, but cut ties in July 2023, so the current administrator is the Alfred Heineken Fondsen Foundation itself (independent juries, own Scientific Advisory Council); coding the awarding org as KNAW (Society, Netherlands) would be defensible for the historical majority of the prize's life. (2) Funder type: coded Philanthropy because the Stichting Alfred Heineken Fondsen is a private family ANBI foundation legally distinct from Heineken N.V.; a coder could call it Corporate since its wealth, name, and reputational purpose derive from the brewery — the 2023 KNAW split turned precisely on that identification."
+}

@@ -43,6 +43,9 @@ results$density <- results$yearlyRE / results$phds * 1000
 # Prepare for make_density_plot
 results$size <- results$phds
 
-p <- make_density_plot(results, "1,000 new PhDs", 1000, total_phds)
+p <- make_density_plot(results, "1,000 new PhDs", 1000, total_phds,
+                       ylab = "Award density (yearly recognitions/1000 PhDs)",
+                       xlab = "Field size (% of PhDs in field)",
+                       bracket_y = c(-0.15, -0.25, -0.5), ylim_low = -0.7)
 
-ggsave(file.path(figure_dir, "prizesDensityByPhD_finest.pdf"), p, width = 10, height = 5)
+save_figure("prizesDensityByPhD_finest.pdf", p, width = 10, height = 5)

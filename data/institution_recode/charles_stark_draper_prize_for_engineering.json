@@ -1,0 +1,29 @@
+{
+  "prize_name": "Charles Stark Draper Prize for Engineering",
+  "awarding_org": "National Academy of Engineering",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "The Charles Stark Draper Laboratory, Inc. (Draper)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Charles Stark Draper Laboratory, Inc. (Draper)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "Draper Laboratory supplies 100% of the purse in both states: it requested the prize's creation in 1988 and provided the endowment for it (NAE: \"Endowment for the Draper Prize was provided by the Charles Stark Draper Laboratory, Inc.\"), and NAE's 2026 award announcement still describes the prize as \"presented by the NAE with support from Draper.\" No other funder appears in NAE or Draper materials; the endowment/support vehicle is the same donor throughout, so this is not a handover.",
+  "money_note": "USD 500,000 cash award plus gold medallion and certificate, awarded biennially; funded throughout by Draper Laboratory via the endowment it gave the NAE in 1988-89 and continuing support, most recently for the 2026 prize to Eric R. Fossum.",
+  "status_note": "Continuously awarded, but on a biennial cycle since 2016 (annual 2001-2009, biennial 1989-1999 and again 2016-2026), so odd years have no laureate - expect gaps in 2017, 2019, 2021, 2023, 2025. The NAE now styles it \"Charles Stark Draper Prize for Engineering\"; older announcements and reference works use the shorter \"Charles Stark Draper Prize\" for the same award.",
+  "sources": [
+    "https://www.nae.edu/20681/DraperPrize",
+    "https://www.nae.edu/8876/DocDraper",
+    "https://www.nae.edu/343291/Eric-R-Fossum-Named-Recipient-of-2026-NAE-Charles-Stark-Draper-Prize-for-Engineering-",
+    "https://www.draper.com/about",
+    "https://www.naeawardsonline.com/docs/nae/NAE_Awards_Guide_2024-2025.pdf",
+    "https://www.britannica.com/science/Draper-Prize",
+    "https://en.wikipedia.org/wiki/Charles_Stark_Draper_Prize"
+  ],
+  "evidence_quote": "Endowment for the Draper Prize was provided by the Charles Stark Draper Laboratory, Inc. ... The Draper Prize, presented by the NAE with support from Draper, is awarded biennially and includes a $500,000 cash award.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Draper self-describes as an \"independent nonprofit engineering innovation company\" (spun out of MIT in 1973) that sells engineering services to government and industry, so a coder could call it Philanthropy on nonprofit status alone; we code Corporate in both states because the funder is a single operating enterprise financed by contract revenue, not a grant-making foundation, trust, or personal bequest. The awarding body, the NAE, is coded Society per the protocol's national-academy rule."
+}

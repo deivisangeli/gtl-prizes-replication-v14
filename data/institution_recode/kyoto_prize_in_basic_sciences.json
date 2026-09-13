@@ -1,0 +1,30 @@
+{
+  "prize_name": "Kyoto Prize in Basic Sciences",
+  "awarding_org": "Inamori Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Japan",
+  "funder_origin_name": "Inamori Foundation (endowed by Kazuo Inamori)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Japan",
+  "funder_current_name": "Inamori Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Japan",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse has always come from the Inamori Foundation's own endowment. The foundation was created in April 1984 with approximately 20 billion yen of Kazuo Inamori's personal funds (cash plus his personally held Kyocera stock) - not Kyocera corporate money; the Inamori Foundation's own history page states he 'endowed it with approximately 20 billion yen of his personal funds.' Kyocera Corporation is not a purse funder: it publicizes the prize through its news channels and hosts an Inamori biography site, but no company money pays the award. This is the point of contrast with the Japan Prize, whose founding fund was raised from corporate donations.",
+  "money_note": "Each Kyoto Prize category, Basic Sciences included, currently carries 100 million yen (about USD 650,000-930,000 depending on the exchange rate), paid by the Inamori Foundation from its endowment; the purse was doubled from 50 million yen with the 34th Kyoto Prize awarded in 2018 (announced April 2018), not 2019.",
+  "status_note": "The Basic Sciences category rotates among four fields on a 4-year cycle: Mathematical Sciences; Earth and Planetary Sciences / Astronomy and Astrophysics; Life Sciences (Medicine); Biological Sciences (Evolution, Behavior, Ecology, Environment). Observed years: Math 2010, 2014, 2018, 2023; Earth/Astro 2011, 2015, 2019, 2024; Life Sciences 2012, 2016, 2021, 2025; Biological Sciences 2013, 2017, 2022, 2026. No Kyoto Prize was awarded in 2020 (COVID-19: 2019 was the 35th prize, 2021 the 36th), which shifted the rotation one year later from 2021 onward. The prize is continuous otherwise and still awarded under this name (most recent: 2026). Analysts comparing Basic Sciences winners across fields must account for the rotation - only one of the four subfields is eligible in any given year.",
+  "sources": [
+    "https://www.inamori-f.or.jp/en/about/story/",
+    "https://www.inamori-f.or.jp/en/about/",
+    "https://www.kyotoprize.org/en/about",
+    "https://www.kyotoprize.org/en/about/philosophy",
+    "https://www.inamori-f.or.jp/en/kyotoprize/",
+    "https://www.businesswire.com/news/home/20180416005481/en/Inamori-Foundation-Doubles-Monetary-Awards-Bestowed-Annual",
+    "https://en.wikipedia.org/wiki/Kyoto_Prize_in_Basic_Sciences",
+    "https://en.wikipedia.org/wiki/Inamori_Foundation"
+  ],
+  "evidence_quote": "he founded the Inamori Foundation and endowed it with approximately 20 billion yen of his personal funds.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Philanthropy at both origin and today. The alternative is Corporate, on the grounds that the endowment consists largely of Kyocera shares, the founder is Kyocera's founder, and Kyocera's global press channels promote the prize. We reject it under the >50% rule: the founding gift was Inamori's personal wealth, the foundation is a legally independent public-interest foundation that both selects and pays, and no Kyocera corporate funds contribute to the purse - unlike the Japan Prize, whose founding fund came from corporate donations."
+}

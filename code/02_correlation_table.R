@@ -6,7 +6,7 @@ source("_helpers.R")
 
 df <- readxl::read_excel(file.path(data_dir, "mainPrizeList_pre-imputation.xlsx"))
 
-varsofinteres <- df[, c("Rating", "pageViewsNorm", "lnAgeNorm", "lnMoneyNorm", "lnNewsMentionsNorm")]
+varsofinteres <- df[, c("Rating", "lnPageViews", "lnAge", "lnMoneyPerPrize", "lnNewsMentions")]
 
 data <- varsofinteres
 
@@ -19,7 +19,9 @@ n <- corr_res$n
 
 calc_se <- function(r, n) sqrt((1 - r^2) / (n - 2))
 
-se_mat <- apply(cor_mat, c(1, 2), function(x) calc_se(x, n[1, 1]))
+# Each pair's own sample size: rcorr()$n is the matrix of pairwise complete
+# observations (76 for pairs involving the survey rating, 99 otherwise).
+se_mat <- calc_se(cor_mat, n)
 
 add_stars <- function(p) {
   if (p < 0.001) return("***")
@@ -58,8 +60,10 @@ corr_table <- gsub("\\\\begin\\{table\\}\\[ht\\]",
 
 corr_table <- gsub("\\{r[lrc]+\\}", "{lccccc}", corr_table)
 
-corr_table <- gsub("\\begin{tabular}", "{\\begin{tabular}",
+# Scaled to \textwidth as in the paper (analysis/correlation between prestige indicators.R).
+corr_table <- gsub("\\begin{tabular}", "\\resizebox{\\textwidth}{!}{\\begin{tabular}",
                    corr_table, fixed = TRUE)
+corr_table <- gsub("\\end{tabular}", "\\end{tabular}}", corr_table, fixed = TRUE)
 
 note <- "\\noindent \\justify \\footnotesize \\textit{Note}: The table shows estimates of the Pearson correlation coefficients between each pair of the five prestige indicators, after normalization. Standard errors between parenthesis. * p<0.05, ** p<0.01, *** p<0.001."
 
@@ -71,4 +75,4 @@ corr_table_lines <- c(corr_table_lines[1:(end_table_pos - 1)],
 
 corr_table <- paste(corr_table_lines, collapse = "\n")
 
-writeLines(corr_table, file.path(table_dir, "corr.tex"))
+write_tex(corr_table, file.path(table_dir, "corr.tex"))

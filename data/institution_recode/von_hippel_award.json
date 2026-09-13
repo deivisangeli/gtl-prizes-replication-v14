@@ -1,0 +1,26 @@
+{
+  "prize_name": "Von Hippel Award",
+  "awarding_org": "Materials Research Society (MRS)",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Materials Research Society (MRS)",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Materials Research Society (MRS)",
+  "funder_current_type": "Society",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a USD 10,000 cash prize plus honorary MRS membership, a ruby-laser-crystal trophy, and paid registration/travel to the MRS Fall Meeting. MRS created the award itself in 1976 in honor of Arthur von Hippel (it was not endowed by an outside donor or bequest), and the official award page names no sponsor, so MRS supplies 100% of the purse in both states. This contrasts with sibling MRS fall awards that do name external funders (The Kavli Foundation Early Career Lectureship; the Nelson 'Buck' Robinson award), reinforcing that the Von Hippel Award carries no external sponsor.",
+  "money_note": "Current purse is a USD 10,000 cash prize paid by the Materials Research Society, awarded annually at the MRS Fall Meeting; no external sponsor is named.",
+  "status_note": "",
+  "sources": [
+    "https://www.mrs.org/advancing-careers/award-central/fall-awards/von-hippel-award",
+    "https://www.mrs.org/advancing-careers/award-central/fall-awards",
+    "https://www.mrs.org/publications-digital-content/news/press-room/press-release/2025/09/30/omar-m.-yaghi-to-receive-2025-von-hippel-award--the-materials-research-society-s-highest-honor",
+    "https://en.wikipedia.org/wiki/Von_Hippel_Award"
+  ],
+  "evidence_quote": "The Von Hippel Award includes a $10,000 cash prize, honorary membership in MRS, and a unique trophy - a mounted ruby laser crystal symbolizing the many-faceted nature of materials research.",
+  "confidence": "high",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

@@ -1,0 +1,27 @@
+{
+  "prize_name": "World Food Prize",
+  "awarding_org": "The World Food Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "General Foods Corporation",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The World Food Prize Foundation (Ruan family endowment)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "The purse today is USD 500,000. ORIGIN: General Foods Corporation was the sole founding sponsor, putting up a USD 200,000 purse (pitched to match the then value of a Nobel Prize) for the first awards from 1987. TODAY, applying the >50% test to the money: none of today's purse is General Foods money. That sponsorship ended in 1990 when the company withdrew and the prize nearly lapsed; John Ruan Sr. then endowed it with a reported USD 10 million, moved it to Des Moines and created the World Food Prize Foundation, which has paid every purse since. The founding corporate money was spent on the 1987-1989 purses, not endowed, so 100% of what a laureate receives today comes from the Ruan endowment and the Foundation's private donor base (80+ companies, foundations and individuals) - a different funder entirely, hence funder_changed true. Excluded as operations money: the USD 1.0 million annual Iowa appropriation and USDA contributions, since the Iowa Legislative Services Agency budget brief states explicitly that 'None of the money received from governmental sources is used to fund the World Food Prize award given to the recipient.'",
+  "money_note": "Current purse is USD 500,000 plus a diploma and a Saul Bass-designed sculpture, paid by the World Food Prize Foundation from the Ruan endowment and private donations; General Foods paid the original USD 200,000 purse from 1987 until it withdrew in 1990.",
+  "status_note": "",
+  "sources": [
+    "https://www.worldfoodprize.org/en/about_the_foundation/",
+    "https://www.worldfoodprize.org/en/nominations/world_food_prize/",
+    "https://www.worldfoodprize.org/en/about_the_foundation/donors/",
+    "https://www.legis.iowa.gov/docs/publications/FT/14412.pdf",
+    "https://en.wikipedia.org/wiki/World_Food_Prize"
+  ],
+  "evidence_quote": "Mr. Ruan endowed the Prize and relocated it to Des Moines in 1990 when its first sponsor withdrew. ... None of the money received from governmental sources is used to fund the World Food Prize award given to the recipient.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the current funding Mixed, since the Foundation runs on a large diversified donor base (80+ companies, foundations and individuals) alongside the Ruan endowment, and Iowa appropriates USD 1.0m a year. We code the current funder as the Foundation itself (Philanthropy) because the Iowa budget brief states that no governmental money pays the award, leaving the purse to the Foundation's own endowed and privately donated funds. funder_changed is not in doubt under the money test: the General Foods sponsorship was spent as it was given and ended in 1990, so no part of today's purse traces to it."
+}

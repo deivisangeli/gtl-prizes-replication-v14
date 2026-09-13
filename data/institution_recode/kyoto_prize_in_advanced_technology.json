@@ -1,0 +1,29 @@
+{
+  "prize_name": "Kyoto Prize in Advanced Technology",
+  "awarding_org": "Inamori Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Japan",
+  "funder_origin_name": "Inamori Foundation (endowed by Kazuo Inamori)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Japan",
+  "funder_current_name": "Inamori Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Japan",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse has always come from the Inamori Foundation's own endowment; there is no co-funder. The 1984 endowment of about JPY 20 billion was Kazuo Inamori's personal wealth (cash plus Kyocera shares he owned personally), not a transfer of company assets by Kyocera Corporation, so this is unlike the Japan Prize case where a company transferred 75% of the founding capital. The foundation today still funds the prize from that endowment, whose income includes dividends on its Kyocera holding (~2.7% of Kyocera shares); the shares are foundation assets, so Kyocera is not a funder of the purse.",
+  "money_note": "Current purse is JPY 100 million per category (raised from JPY 50 million with the 2019 award year), plus a diploma and 20-karat gold medal, paid entirely by the Inamori Foundation from its endowment.",
+  "status_note": "Continuously awarded since 1985 under the same name, except 2020: the Inamori Foundation cancelled the 2020 Kyoto Prize entirely (COVID-19), so no Advanced Technology laureate exists for that year and the four-field rotation shifted by one year. The Advanced Technology category rotates among four subfields on a 4-year cycle: Information Science (2016, 2021, 2025), Electronics (2017, 2022, 2026), Biotechnology and Medical Technology (2018, 2023), Materials Science and Engineering (2019, 2024).",
+  "sources": [
+    "https://www.kyotoprize.org/en/about/",
+    "https://www.kyotoprize.org/en/laureates-yearly/",
+    "https://www.inamori-f.or.jp/en/about/story/",
+    "https://www.inamori-f.or.jp/en/about/outline/",
+    "https://global.kyocera.com/inamori/about/contribution/kyotosho/",
+    "https://en.wikipedia.org/wiki/Kyoto_Prize_in_Advanced_Technology",
+    "https://en.wikipedia.org/wiki/Inamori_Foundation"
+  ],
+  "evidence_quote": "he founded the Inamori Foundation and endowed it with approximately 20 billion yen of his personal funds.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Philanthropy at both origin and today: the founding capital was Kazuo Inamori's personal fortune given to a legally independent public interest incorporated foundation, not a corporate appropriation by Kyocera. A coder could code Corporate because the endowment's value and income derive substantially from Kyocera stock and Kyocera hosts Inamori's Kyoto Prize pages; we follow the >50% rule on who supplies the purse, which is the foundation's own endowment throughout."
+}

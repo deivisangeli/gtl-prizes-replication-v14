@@ -1,0 +1,29 @@
+{
+  "prize_name": "Frontiers of Knowledge Award in Ecology and Conservation Biology",
+  "awarding_org": "BBVA Foundation (Fundacion BBVA)",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Spain",
+  "funder_origin_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Spain",
+  "funder_current_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Spain",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is EUR 400,000 per category, paid 100% by the BBVA Foundation, the corporate foundation of the Banco Bilbao Vizcaya Argentaria banking group, from the first edition (2008) through the last Ecology and Conservation Biology award (16th edition, announced January 2024). The Spanish National Research Council (CSIC) is a partner but contributes only jury expertise and nominating committees, no prize money; the Foundation does not publish a split between endowment income and bank contributions, so the >50% call rests on its consistent statement that it funds the awards in full.",
+  "money_note": "EUR 400,000 per category (split equally when shared), plus diploma and commemorative artwork, paid entirely by the BBVA Foundation since the awards began in 2008; unchanged through the category's final edition.",
+  "status_note": "The Ecology and Conservation Biology category was discontinued after the 16th edition (announced January 2024, to Gerardo Ceballos and Rodolfo Dirzo). From the 17th edition (2024-25 cycle, announced 2025) it was merged with the Climate Change category into a single 'Climate Change and Environmental Sciences' award; the BBVA Foundation's current category list no longer includes Ecology and Conservation Biology. Last year awarded under the name we use: 2024 (16th edition).",
+  "sources": [
+    "https://www.frontiersofknowledgeawards-fbbva.es/",
+    "https://www.frontiersofknowledgeawards-fbbva.es/about-these-awards/",
+    "https://www.frontiersofknowledgeawards-fbbva.es/noticias/frontiers-of-knowledge-award-16th-edition-ecology-conservation-biology/",
+    "https://www.fbbva.es/en/about-these-awards/",
+    "https://www.fbbva.es/en/publicaciones/17th-edition-frontiers-of-knowledge-awards/",
+    "https://www.fbbva.es/en/about-the-foundation/",
+    "https://en.wikipedia.org/wiki/BBVA_Foundation_Frontiers_of_Knowledge_Award"
+  ],
+  "evidence_quote": "The BBVA Foundation Frontiers of Knowledge Awards, funded with 400,000 euros in each of their eight categories",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "CSIC co-appoints the juries and proposes each category's committee chair, so a coder could record the awarding body as a BBVA Foundation-CSIC partnership and type it Government or Mixed; I code Corporate/Spain because the BBVA Foundation alone confers the award and supplies the entire purse, with CSIC contributing expertise only. Confidence is medium rather than high because the Foundation publishes no endowment-versus-bank-contribution breakdown behind its funding."
+}

@@ -1,21 +1,84 @@
 # ==============================================================================
 # Shared configuration for "The Missing Nobels" replication package
+# Sourced by every script in code/. Run everything from the repository root.
 # ==============================================================================
 
-# Packages
-pacman::p_load(
-  tidyverse, readxl, ggplot2, dplyr, tidyr, scales,
-  ggrepel, ggforce, ggbreak,
-  stargazer, openxlsx, estimatr,
-  sandwich, lmtest, Hmisc, xtable, psych,
-  LaplacesDemon
-)
+suppressPackageStartupMessages({
+  library(dplyr); library(tidyr); library(readxl); library(ggplot2); library(scales)
+  library(ggrepel); library(stargazer); library(Hmisc); library(xtable)
+  library(LaplacesDemon); library(jsonlite)
+})
 
-# Paths (relative to repo root)
-data_dir   <- "data"
-output_dir <- "output"
-table_dir  <- file.path(output_dir, "tables")
-figure_dir <- file.path(output_dir, "figures")
+# Paths (relative to the repository root)
+data_dir         <- "data"
+output_dir       <- "output"
+table_dir        <- file.path(output_dir, "tables")        # .tex tables and macro files the paper inputs
+figure_dir       <- file.path(output_dir, "figures")       # figure files the paper includes
+plotdata_dir     <- file.path(output_dir, "plotdata")      # the data behind every figure (see tests/plotdata.R)
+intermediate_dir <- file.path(output_dir, "intermediate")  # CSVs passed between scripts
+for (d in c(table_dir, figure_dir, plotdata_dir, intermediate_dir))
+  dir.create(d, recursive = TRUE, showWarnings = FALSE)
+
+# Never let R open its default Rplots.pdf device (a printed ggplot would create it)
+pdf(NULL)
+
+source("tests/plotdata.R")
+
+# Write a .tex file with LF line endings on every platform, so the generated
+# tables are byte-identical to the paper's copies.
+write_tex <- function(lines, path) {
+  con <- file(path, open = "wb"); on.exit(close(con))
+  writeLines(lines, con, sep = "\n", useBytes = TRUE)
+}
+
+# Save a ggplot to figure_dir and its plot data to plotdata_dir.
+save_figure <- function(filename, plot = ggplot2::last_plot(), ...) {
+  ggplot2::ggsave(file.path(figure_dir, filename), plot, ...)
+  write_plot_data(plot, file.path(plotdata_dir, paste0(tools::file_path_sans_ext(filename), ".csv")))
+  invisible(plot)
+}
+
+# House format for the generated supplementary tables: a short title on top, the
+# tabular scaled, and the notes below in a smaller font.
+tex_table <- function(title, label, tabular_lines, notes = "", scale = 0.8) {
+  c("\\begin{table}[H]", "\\centering \\small",
+    paste0("\\caption{", title, "}"),
+    paste0("\\label{", label, "}"),
+    paste0("\\scalebox{", scale, "}{%"),
+    tabular_lines,
+    "}",
+    if (nzchar(notes)) c("\\par\\vspace{3pt}",
+                         paste0("\\begin{minipage}{", scale, "\\linewidth}\\footnotesize"),
+                         paste0("\\emph{Notes:} ", notes),
+                         "\\end{minipage}"),
+    "\\end{table}")
+}
+
+# A LaTeX \newcommand line
+mac <- function(name, value) sprintf("\\newcommand{\\%s}{%s}", name, value)
+
+# Prize tiers: cumulative share of yearly recognition events along the ranking,
+# Tier 1 up to 10%, Tier 2 up to 30%, Tier 3 the rest.
+add_tiers <- function(df, rank_col = "pcaRank") {
+  df <- df[order(df[[rank_col]]), ]
+  df$cumWinners <- cumsum(df$`Yearly Winners`)
+  total <- sum(df$`Yearly Winners`)
+  df$Tier <- dplyr::case_when(df$cumWinners <= 0.1 * total ~ 1,
+                              df$cumWinners <= 0.3 * total ~ 2,
+                              TRUE ~ 3)
+  df
+}
+
+# Winners matched to the paper's 26 field groups through the winner's OpenAlex
+# subfield (every row of the winner file is one recognition)
+winners_by_group <- function() {
+  sf_map <- read.csv(file.path(data_dir, "subfield_to_finest_group.csv"), stringsAsFactors = FALSE)
+  winners <- read.csv(file.path(data_dir, "all_winners_with_plotFinestField.csv"),
+                      stringsAsFactors = FALSE, encoding = "UTF-8")
+  winners %>%
+    inner_join(sf_map %>% select(subfield_name, finest_group) %>% distinct(),
+               by = c("Best_Subfield" = "subfield_name"))
+}
 
 # Broad-area color mapping (used across all density plots)
 color_map <- c(
@@ -53,8 +116,14 @@ assign_broad_area <- function(field) {
 # Default transparency for density plots
 alpha <- 0.4
 
-# Shared density plotting function (used by scripts 07-11)
-make_density_plot <- function(results, denom_label, denom_unit, total_size) {
+# Shared density plotting function (scripts 07-09 and 11). `results` needs the
+# columns field, size, density. ref_label names the reference square
+# ("1,000 new PhDs"); denom_unit / total_size give its width. bracket_y are the
+# y positions of the field-size brackets (tick top, tick bottom and bracket line,
+# percentage label) and ylim_low the lower axis limit; both default to fractions
+# of the tallest bar.
+make_density_plot <- function(results, ref_label, denom_unit, total_size, ylab, xlab,
+                              bracket_y = NULL, ylim_low = NULL) {
   results <- results[order(-results$density), ]
   results$fieldSize_pct <- results$size / sum(results$size) * 100
   results$AccFieldSize <- cumsum(results$fieldSize_pct)
@@ -78,6 +147,8 @@ make_density_plot <- function(results, denom_label, denom_unit, total_size) {
   refBase <- legBase - legStep * 2
 
   ref_width <- 100 * denom_unit / total_size
+  if (is.null(bracket_y)) bracket_y <- c(-yMax * 0.01, -yMax * 0.02, -yMax * 0.04)
+  if (is.null(ylim_low)) ylim_low <- -yMax * 0.06
 
   ggplot() +
     geom_rect(data = results,
@@ -103,18 +174,18 @@ make_density_plot <- function(results, denom_label, denom_unit, total_size) {
       size = 2.3, angle = 90, hjust = 1, color = "black") +
     geom_segment(data = results,
       aes(x = lagAccFieldSize, xend = lagAccFieldSize,
-          y = -yMax*0.01, yend = -yMax*0.02),
+          y = bracket_y[1], yend = bracket_y[2]),
       color = "black", linewidth = 0.1) +
     geom_segment(data = results,
       aes(x = AccFieldSize, xend = AccFieldSize,
-          y = -yMax*0.01, yend = -yMax*0.02),
+          y = bracket_y[1], yend = bracket_y[2]),
       color = "black", linewidth = 0.1) +
     geom_segment(data = results,
       aes(x = lagAccFieldSize, xend = AccFieldSize,
-          y = -yMax*0.02, yend = -yMax*0.02),
+          y = bracket_y[2], yend = bracket_y[2]),
       color = "black", linewidth = 0.3) +
     geom_text(data = results,
-      aes(x = midX, y = -yMax*0.04,
+      aes(x = midX, y = bracket_y[3],
           label = paste0(round(fieldSize_pct, 0), "%")),
       size = 2.3, angle = 90) +
     geom_hline(yintercept = avgDensity, linetype = "dashed",
@@ -126,11 +197,11 @@ make_density_plot <- function(results, denom_label, denom_unit, total_size) {
       fill = "black", alpha = 0.1, color = "grey") +
     geom_text(aes(x = 60 + ref_width + 1,
                   y = refBase + legStep / 2,
-                  label = paste0("= 1 recognition per ", denom_label)),
+                  label = paste0("= 1 recognition per ", ref_label)),
       color = "black", size = 2.5, hjust = 0, vjust = 0.5) +
     theme_minimal() +
-    ylab(paste0("Award density (yearly recognitions/", denom_label, ")")) +
-    xlab(paste0("Field size (% of ", denom_label, ")")) +
+    ylab(ylab) +
+    xlab(xlab) +
     scale_x_continuous(breaks = c(0, 100), labels = c("0%", "100%")) +
     scale_y_continuous(labels = scales::label_number(decimal.mark = ".")) +
     theme(
@@ -177,6 +248,6 @@ make_density_plot <- function(results, denom_label, denom_unit, total_size) {
       label = "Social sci", hjust = 0, size = 2.5) +
     annotate("text", x = 85, y = legBase + legStep * 4.3,
       label = "Broad fields", hjust = 0, size = 2.8, fontface = "bold") +
-    coord_cartesian(ylim = c(-yMax*0.06, yMax)) +
+    coord_cartesian(ylim = c(ylim_low, yMax)) +
     theme(legend.position = "none")
 }

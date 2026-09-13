@@ -1,0 +1,26 @@
+{
+  "prize_name": "Maryam Mirzakhani Prize in Mathematics",
+  "awarding_org": "National Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "American Mathematical Society",
+  "funder_origin_type": "Society",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Simons Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "Purse today is USD 20,000 biennially. NAS's own award page states the current prize is \"made possible through generous gifts from the Simons Foundation and other benefactors\" - i.e. the money paying today's winner is the post-2018 gift money, with the Simons Foundation the only named donor and treated as supplying more than half (unnamed \"other benefactors\" below 50%). The original money was the American Mathematical Society's 1988 centennial gift, which endowed a USD 5,000 award given every four years (USD 1,250/year annualized); today's award runs at USD 10,000/year annualized, eight times that nominally and roughly three times in inflation-adjusted terms, so the 1988 AMS fund cannot supply more than half of today's purse even if it is still in the pool. Applying the >50% test to the money: most of what the winner receives today is new Simons-era money, hence funder_changed = true. No published dollar split of the 2018 gifts was found, so the share is inferred from NAS's attribution plus the purse arithmetic.",
+  "money_note": "USD 20,000 awarded biennially, paid from the Simons Foundation gifts (plus unnamed other benefactors) raised at the 2018 renaming; previously USD 5,000 every four years off the American Mathematical Society's 1988 centennial endowment.",
+  "status_note": "Formerly the NAS Award in Mathematics (established 1988 for the AMS centennial, awarded every four years, last conferred under that name in 2012); lapsed 2012-2018, then renamed the Maryam Mirzakhani Prize in Mathematics in 2018 and restructured to a biennial USD 20,000 award. This is the NAS prize, distinct from the Breakthrough Prize's Maryam Mirzakhani New Frontiers Prize.",
+  "sources": [
+    "https://www.nasonline.org/award/maryam-mirzakhani-prize-in-mathematics/",
+    "https://www.eurekalert.org/news-releases/483864",
+    "https://en.wikipedia.org/wiki/Maryam_Mirzakhani_Prize_in_Mathematics",
+    "https://www.ams.org/prizes-awards/paview.cgi?parent_id=32"
+  ],
+  "evidence_quote": "Made possible through generous gifts from the Simons Foundation and other benefactors, this $20,000 prize will be awarded biennially for exceptional contributions to the mathematical sciences by a mid-career mathematician.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "No source gives the dollar split between the Simons Foundation, the unnamed \"other benefactors,\" and any surviving 1988 AMS fund, so funder_changed = true rests on NAS attributing today's purse to the 2018 gifts plus the arithmetic that the old AMS endowment supported a purse one-eighth the current annualized size; a coder who assumed the AMS fund was rolled forward and still anchors the award could read it as false. Likewise the current funder could be coded Mixed given the unnamed co-benefactors; the Simons Foundation is the only identified donor and is named first, so we treat it as the >50% source."
+}

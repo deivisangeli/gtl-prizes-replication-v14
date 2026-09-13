@@ -1,0 +1,29 @@
+{
+  "prize_name": "Nobel Prize in Physiology or Medicine",
+  "awarding_org": "Nobel Assembly at Karolinska Institutet",
+  "awarding_org_type": "University",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Nobel Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Nobel Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse comes from the Nobel Foundation, the private Swedish foundation established in 1900 to administer Alfred Nobel's 1895 bequest; it has paid the full prize amount every year since 1901 and no other body contributes to the purse. Karolinska Institutet and the Nobel Assembly receive an administrative amount from the Foundation for the selection work, which is operations money and does not count toward the purse.",
+  "money_note": "Purse is 11 million SEK per prize, shared equally among up to three laureates, paid entirely by the Nobel Foundation from Nobel's endowment; raised from 10 to 11 million SEK for the 2023 cycle and unchanged through the 2025 award.",
+  "status_note": "Continuously awarded under the same name since 1901, but withheld (prize money reserved) in nine years: 1915, 1916, 1917, 1918, 1921, 1925, and 1940-1942. Awarded every year since 1943; most recent award 2025.",
+  "sources": [
+    "https://www.nobelprize.org/about/the-nobel-assembly-at-karolinska-institutet",
+    "https://www.nobelprize.org/about/statutes-of-the-nobel-assembly-at-karolinska-institutet",
+    "https://www.nobelprizemedicine.org/wp-content/uploads/2025/10/2025_PR_eng.pdf",
+    "https://nobelprizemedicine.org/",
+    "https://ki.se/en/about-ki/prizes-and-ceremonies/prizes-and-awards/the-nobel-prize-in-physiology-or-medicine",
+    "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physiology_or_Medicine",
+    "https://en.wikipedia.org/wiki/Nobel_Assembly_at_the_Karolinska_Institute"
+  ],
+  "evidence_quote": "By the terms of Alfred Nobel's will the Nobel Prize in Physiology or Medicine has been awarded by the Nobel Assembly at Karolinska Institutet since 1901. The Nobel Assembly has 50 voting members and is composed of professors in medical subjects at Karolinska Institutet.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The Nobel Assembly has been a legally independent private body since 1977, so it could be coded Society as a self-governing membership organization of scholars, which would also match the sibling physics and chemistry prizes coded to the Royal Swedish Academy of Sciences. We chose University because both its membership (50 professors) and its seat are defined entirely by a single university, Karolinska Institutet, unlike the Academy whose members are drawn from across Sweden and abroad."
+}

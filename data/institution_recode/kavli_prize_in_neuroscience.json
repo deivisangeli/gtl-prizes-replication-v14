@@ -1,0 +1,25 @@
+{
+  "prize_name": "Kavli Prize in Neuroscience",
+  "awarding_org": "Norwegian Academy of Science and Letters",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Norway",
+  "funder_origin_name": "The Kavli Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "The Kavli Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is USD 1,000,000 per field (shared among co-laureates), plus a gold medal and scroll. The Kavli Foundation (Los Angeles, US) has supplied 100% of the purse and medals from the first award in 2008 through the most recent cycle, so it clears the >50% rule in both states. The Norwegian Ministry of Education and Research is a founding partner but pays only the Norwegian Academy's administrative costs and hosts the banquet; that is operations money and is excluded from the purse test. Neither the Ministry nor the Foundation takes part in nomination or selection.",
+  "money_note": "USD 1,000,000 per field since inception in 2008, paid in full by the Kavli Foundation; no change in funder or amount to date.",
+  "status_note": "No discontinuity: awarded continuously under this name since 2008. Biennial, even years only (2008, 2010, 2012, 2014, 2016, 2018, 2020, 2022, 2024, 2026), so odd-year gaps in the winner list are expected rather than missing data.",
+  "sources": [
+    "https://www.kavliprize.org/about",
+    "https://www.kavlifoundation.org/the-kavli-prize",
+    "https://en.wikipedia.org/wiki/Kavli_Prize"
+  ],
+  "evidence_quote": "The Norwegian Ministry of Education and Research ... hosts The Kavli Prize Banquet and provides funding to The Norwegian Academy of Science and Letters for the administration of The Kavli Prize.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Funding is split by function: the US-based Kavli Foundation (Philanthropy) pays the entire purse and medals, while the Norwegian Ministry of Education and Research (Government) subsidizes the Academy's administration. Applying the >50%-of-purse rule gives the Kavli Foundation in both states; a coder counting total cash into the prize, including operations, could code the funder as Mixed or Government/Norway. The awarding body is the Norwegian Academy of Science and Letters (Oslo), which appoints the committees and confers the prize, coded Society under the national-academy rule despite its state support."
+}

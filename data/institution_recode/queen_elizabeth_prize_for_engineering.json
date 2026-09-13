@@ -1,0 +1,29 @@
+{
+  "prize_name": "Queen Elizabeth Prize for Engineering",
+  "awarding_org": "Queen Elizabeth Prize for Engineering Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United Kingdom",
+  "funder_origin_name": "Founding corporate donor consortium (BAE Systems, BG Group, BP, GlaxoSmithKline, Jaguar Land Rover, National Grid, Royal Dutch Shell, Siemens, Sony, Tata Consultancy Services, Tata Steel Europe, Toshiba)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "United Kingdom",
+  "funder_current_name": "Corporate donor consortium (BAE Systems plc, BP plc, GlaxoSmithKline, Hitachi Ltd., Jaguar Land Rover, National Grid plc, Nissan Motor Corporation, Shell UK Ltd, Siemens UK, Sony, Tata Steel Europe, Tata Consultancy Services, Toshiba)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "United Kingdom",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is paid from an endowment plus continuing donations built by a consortium of corporate donors — twelve at founding (BAE Systems, BG Group, BP, GlaxoSmithKline, Jaguar Land Rover, National Grid, Royal Dutch Shell, Siemens, Sony, Tata Consultancy Services, Tata Steel Europe, Toshiba) and thirteen today (BG Group dropped after its Shell takeover; Hitachi and Nissan added). Neither the Foundation nor its charity accounts disclose per-donor amounts — the organisers explicitly declined to say how much each company gave — but with twelve to thirteen roughly comparable industrial donors no single one plausibly supplies more than 50% of the purse, so both states are coded Mixed under the >50% rule; every named component is nonetheless a Corporate donor, and no government money funds the purse despite the 2011 cross-party political launch.",
+  "money_note": "Purse is GBP 500,000 awarded annually since 2021; from the 2013 first award through 2019 it was GBP 1 million awarded biennially. Paid throughout by the corporate donor consortium via the Foundation's endowment.",
+  "status_note": "Prize continuity is intact — same name and awarding body since 2013 — but its cadence and purse changed: biennial GBP 1 million (2013-2019) became annual GBP 500,000 from 2021, so per-year winner counts are not comparable across that break. The Royal Academy of Engineering's prize page still describes the award as biennial and worth GBP 1 million, which is stale relative to the QEPrize Foundation's own pages.",
+  "sources": [
+    "https://qeprize.org/about-us",
+    "https://qeprize.org/about-us/donors",
+    "https://qeprize.org/news/ten-qeprize",
+    "https://raeng.org.uk/programmes-and-prizes/prizes/queen-elizabeth-prize-for-engineering/",
+    "https://register-of-charities.charitycommission.gov.uk/charity-details/?regid=1147743&subid=0",
+    "https://www.gov.uk/government/news/winners-of-first-queen-elizabeth-prize-for-engineering-announced",
+    "https://en.wikipedia.org/wiki/Queen_Elizabeth_Prize_for_Engineering"
+  ],
+  "evidence_quote": "The QEPrize is administered by the Queen Elizabeth Prize for Engineering Foundation and funded by generous support from the following corporate donors: BAE Systems plc, BP plc, GlaxoSmithKline, Hitachi, Ltd., Jaguar Land Rover, National Grid plc, Nissan Motor Corporation, Shell UK Ltd, Siemens UK, Sony, Tata Steel Europe, Tata Consultancy Services, and Toshiba.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Two calls. (1) Funder type: pass 1 coded Corporate; applying the >50% rule literally gives Mixed, since no single donor among the twelve/thirteen is documented to supply a majority (shares are undisclosed, so this is an inference from donor count rather than from figures). A coder could reasonably code Corporate instead, because all components are operating companies and the mixture is within one type, not across types — if the analysis wants funder type rather than funder identity, Corporate is the substantively right label. (2) Country: the consortium is multinational (Japanese, Indian, German and Anglo-Dutch parents), but the Foundation is UK-seated and most donor entities are UK companies or UK arms, so both states are coded United Kingdom rather than International. 2026-09-09: both states recoded Mixed -> Corporate; the >50% rule is applied to the type of source, and every donor in the consortium is a company (fix_mixed_by_type.py)."
+}

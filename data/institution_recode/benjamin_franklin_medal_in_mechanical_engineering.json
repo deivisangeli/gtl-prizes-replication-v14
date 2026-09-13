@@ -1,0 +1,31 @@
+{
+  "prize_name": "Benjamin Franklin Medal in Mechanical Engineering",
+  "awarding_org": "The Franklin Institute",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Pre-1998 benefactor bequests endowing The Franklin Institute's medals (Elliott Cresson Fund 1848, Edward Longstreth Fund 1890, Howard N. Potts Fund 1906, The Franklin Fund 1914, Louis E. Levy Fund 1923, George R. Henderson Fund 1924, John Price Wetherill Fund 1925, and others)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Benjamin Franklin Medalists' Fund, established in 2017 by The Morel Family Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": true,
+  "funding_share_basis": "Purse is a USD 10,000 honorarium plus a gold medal, uniform across the Benjamin Franklin Medal disciplines. The Franklin Institute's 2026 Awards Convocation Book, under the heading 'Awards Endowments', attributes the honoraria to one specific fund: 'The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.' The same section separately thanks the donors of 21 legacy named funds (Cresson 1848, Boyden 1859, Longstreth 1890, Potts 1906, The Franklin Fund 1914, Levy 1923, Henderson 1924, Wetherill 1925, Clamer 1943, Bower 1988, Lax 1997, etc.) as funds that 'support the Bower Awards and the Benjamin Franklin Medals' generally, i.e. the program rather than the honoraria line. Applying the >50% test to the money, the purse paid today is 2017 money from the Morel Family Foundation (a private family foundation, Doylestown PA, EIN 47-5521535, founded by Franklin Institute chair emeritus Donald E. Morel Jr.), not the pre-1998 benefactor bequests that funded the medals this award was consolidated from in 1998, so the funder of the purse has changed. Excluded as non-purse money: the ceremony sponsors (Bank of America presenting sponsor for 24 consecutive years, KPMG and Marsha and Jeffrey Perelman as Awards Week sponsors, and the associate sponsors including the Morel Family Foundation's separate event gift), whose proceeds the Institute states underwrite its STEM learning programs; and the 'Laureate Sponsors' named in the programme, who are Committee on Science and the Arts members presenting nomination cases, not funders. The Institute's FY2024 Form 990 does not contradict this: Schedule D reports a USD 66.2M endowment (77.6% permanent) whose funds support the awards program 'based upon original donor intent', which is aggregate language covering every donor-restricted awards fund the Institute holds, the 2017 Medalists' Fund included - the Convocation Book identifies which component within that pool pays the honoraria line, so the two sources are complementary, not in conflict, and the more specific attribution governs. Schedule I reports USD 300,000 of 'laureate honorarium' cash grants to 6 individuals, which reconciles as the USD 250,000 Bower science purse plus five USD 10,000 medal honoraria falling in that tax year (the Bower purse accounts for 83% of it); it shows the Institute as disbursing agent, not the source of the money. Exact dollar shares between the Medalists' Fund and the legacy funds are not published, so the split cannot be quantified; the coding follows the Institute's own attribution of the honoraria.",
+  "money_note": "Current purse is a USD 10,000 honorarium plus a 14-karat gold medal, identical across the Benjamin Franklin Medal disciplines, paid by The Franklin Institute out of the Benjamin Franklin Medalists' Fund established in 2017 by The Morel Family Foundation.",
+  "status_note": "The standalone 'Mechanical Engineering' category ran from the 1998 reorganization through 2025 (last laureate under this exact name: John W. Hutchinson, 2025; Mary C. Boyce, 2024), but the label is unstable - the 2023 medal was announced as 'Civil and Mechanical Engineering' (Deb Niemeier) and the Institute's current nominations page and its Committee on Science and the Arts list a single combined 'Civil and Mechanical Engineering' discipline. No Mechanical Engineering medal appears in the 2026 class; the engineering medal that year was the Benjamin Franklin Medal in Civil Engineering (Pedro J.J. Alvarez).",
+  "sources": [
+    "https://fi.edu/sites/default/files/2026-04/2026_Awards_Convocation_Book_Interactive.pdf",
+    "https://fi.edu/en/awards/about",
+    "https://fi.edu/en/awards",
+    "https://fi.edu/en/awards/nominations/benjamin-franklin-medals",
+    "https://fi.edu/en/press-room/press-releases/2025/franklin-institute-announces-2025-franklin-institute-laureates",
+    "https://www.prnewswire.com/news-releases/announcing-the-2026-franklin-institute-award-laureates-302611715.html",
+    "https://projects.propublica.org/nonprofits/organizations/231370501/202523109349301972/full",
+    "https://projects.propublica.org/nonprofits/organizations/475521535",
+    "https://en.wikipedia.org/wiki/Franklin_Institute_Awards"
+  ],
+  "evidence_quote": "The Benjamin Franklin Medalists' Fund was established in 2017 by The Morel Family Foundation and provides honoraria for Benjamin Franklin Medalists and NextGen Awardees.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The alternative is funder_changed false, on the reading that the 21 legacy benefactor funds listed alongside the Medalists' Fund still supply most of the cash and the 2017 Morel gift only tops it up; the Institute publishes no dollar split, and its Form 990 shows a large donor-restricted endowment supporting the awards program per original donor intent. I code true because the Institute's own Awards Endowments statement assigns the honoraria specifically to the 2017 Morel-funded Benjamin Franklin Medalists' Fund and describes the legacy funds as supporting the medals and Bower Awards generally. I also type the current funder Philanthropy rather than Society: the fund is named and ring-fenced to the medalists' honoraria, even though The Franklin Institute holds it and issues the payment. This coding applies identically to all five Benjamin Franklin Medal categories, which share one institution and one endowment structure."
+}

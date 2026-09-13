@@ -1,0 +1,28 @@
+{
+  "prize_name": "Russ Prize",
+  "awarding_org": "National Academy of Engineering",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Fritz J. and Dolores H. Russ",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Ohio University Foundation (Russ endowment)",
+  "funder_current_type": "University",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The whole USD 500,000 purse is paid from the ring-fenced Russ endowment, not from Ohio University's own operating funds: Fritz and Dolores Russ endowed the prize with the Ohio University Foundation in 1999 (later folded into their USD 124 million estate gift, completed 2008), Ohio University's prize page states it is 'funded by the Ohio University Foundation through a gift from the Russ family', the 2025 award announcement describes the cash award as 'funded through Ohio University as part of the Russ's $124 million endowment', and reporting on the Russ Gift shows the prize drawing roughly USD 400,000 a year from that endowment's annual distributions under a dedicated oversight committee. The NAE administers, selects and confers the award but contributes none of the purse, and no other funder was found. Under the >50% money test, 100% of today's purse is still the Russes' original money, so funder_changed is false; only the holding vehicle (donors' gift to a university foundation endowment) differs from 1999.",
+  "money_note": "USD 500,000 cash award plus gold medallion and hand-scribed certificate, awarded biennially in odd-numbered years; paid since the first award in 2001 out of the Russ family endowment held by the Ohio University Foundation.",
+  "status_note": "",
+  "sources": [
+    "https://www.nae.edu/20683/RussPrize",
+    "https://www.ohio.edu/russ-prize",
+    "https://www.ohio.edu/news/2025/01/groundbreaking-diabetes-management-tool-wins-national-russ-prize",
+    "https://give.ohio.edu/advancement/ohio-university-foundation/awards",
+    "http://projects.thepostathens.com/SpecialProjects/the-gift-that-keeps-on-giving-russ-gift-donation/index.html",
+    "https://en.wikipedia.org/wiki/Russ_Prize"
+  ],
+  "evidence_quote": "The global $500,000 prize is awarded biannually by the National Academy of Engineering and funded by the Ohio University Foundation through a gift from the Russ family.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "funder_current_type could equally be Philanthropy, since the purse comes from a named, ring-fenced gift by two individual donors; we keep University because Ohio University's official pages state the prize is funded by the Ohio University Foundation, which holds and disburses the endowment. funder_changed is not in doubt: the endowment demonstrably still pays the whole purse, so the money has not changed source."
+}

@@ -1,0 +1,29 @@
+{
+  "prize_name": "Erwin Plein Nemmers Prize in Economics",
+  "awarding_org": "Northwestern University",
+  "awarding_org_type": "University",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Bequests of Erwin Esser Nemmers and Frederic Esser Nemmers (Nemmers endowment at Northwestern University)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Nemmers endowment at Northwestern University (Erwin Esser Nemmers and Frederic Esser Nemmers bequests)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse (100%) comes from the ring-fenced Nemmers endowment created by the 1994 bequests of Erwin Esser Nemmers and his brother Frederic Esser Nemmers, totaling USD 14 million and designated by the donors for the Nemmers prizes plus four Kellogg professorships. Northwestern still treats it as a named restricted fund rather than general university money: the Provost attributed the 2016 addition of a fifth (earth sciences) prize to 'the growth of the Nemmers endowment,' and Northwestern's 2026 announcement still describes the prizes as coming from the donors' designated gifts, so the >50% rule points to Philanthropy in both states with no contribution from any other funder.",
+  "money_note": "The economics purse is currently USD 300,000 per biennial award (USD 200,000 as of 2014), paid from the Nemmers endowment and administered by Northwestern's Office of the Provost with the Department of Economics.",
+  "status_note": "Continuous and biennial (even years); recent economics awards: 2016 Richard Blundell, 2018 David Kreps, 2020 Claudia Goldin, 2022 Ariel Pakes, 2024 Michael Woodford, 2026 Whitney Newey. No gap years beyond the normal off-year of the two-year cycle.",
+  "sources": [
+    "https://nemmers.northwestern.edu/economics/",
+    "https://www.northwestern.edu/provost/initiatives/nemmers-prizes.html",
+    "https://economics.northwestern.edu/events/nemmers/",
+    "https://news.northwestern.edu/stories/2026/05/five-top-scholars-receive-the-2026-nemmers-prize",
+    "https://news.northwestern.edu/stories/2016/12/northwestern-creates-200000-nemmers-prize-in-earth-sciences",
+    "https://news.northwestern.edu/stories/2014/02/nemmers-economics-prize-announced/",
+    "https://en.wikipedia.org/wiki/Erwin_Plein_Nemmers_Prize_in_Economics"
+  ],
+  "evidence_quote": "Their gifts, totaling $14 million, were designated to establish four endowed professorships at Kellogg and the Nemmers Prizes... 'the growth of the Nemmers endowment allows us to add a fifth prize.'",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The money is a private family bequest held inside Northwestern's own endowment with no separate donor foundation, so a coder could record the funder as University for both states. We chose Philanthropy because the fund is a named, donor-restricted endowment that Northwestern itself tracks and reports on separately (its growth financed two additional Nemmers prizes), which satisfies the protocol's 'named, ring-fenced endowment demonstrably pays it' test."
+}

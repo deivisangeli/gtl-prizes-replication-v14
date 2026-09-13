@@ -1,0 +1,29 @@
+{
+  "prize_name": "Nobel Prize in Physics",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Alfred Nobel bequest (1895 will), administered from 1900 by the Nobel Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Nobel Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse comes from investment income on Alfred Nobel's 1895 bequest (over SEK 31 million, converted into a fund in 1900), held and invested by the private Nobel Foundation, which sets the prize amount each year; the Royal Swedish Academy of Sciences selects laureates but pays nothing. No other body contributes to the physics purse, so the >50% rule resolves to the Nobel Foundation in both states. Only the payment vehicle was formalised in 1900 (bequest to foundation), not the source of the money.",
+  "money_note": "SEK 11.0 million per full prize in 2025 (unchanged since the Nobel Foundation raised it from SEK 10 million for 2023; nominal history SEK 8m in 2012, 9m in 2017, 10m in 2020, 11m in 2023), paid from the Nobel Foundation's investment income; the 2025 physics press release states 'Prize amount: 11 million Swedish kronor, to be shared equally between the laureates.'",
+  "status_note": "Continuous under the same name since 1901, but the Nobel Prize in Physics was not awarded in six years: 1916, 1931, 1934, 1940, 1941 and 1942 (reserved or returned to the Foundation's restricted funds under its statutes). Awarded every year since 1943; 119 physics prizes through 2025.",
+  "sources": [
+    "https://www.nobelprize.org/the-nobel-prize-organisation/prize-awarding-institutions/",
+    "https://www.nobelprize.org/the-nobel-prize-organisation/the-nobel-foundation/",
+    "https://www.nobelprize.org/about/financial-management/",
+    "https://www.nobelprize.org/prizes/facts/facts-on-the-nobel-prize-in-physics/",
+    "https://www.nobelprize.org/prizes/physics/2025/press-release/",
+    "https://www.kva.se/en/prizes/nobel-prizes/",
+    "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics"
+  ],
+  "evidence_quote": "Nobel stipulated in his will that most of his estate should be converted into a fund and invested in 'safe securities.' The income from the investments was to be 'distributed annually in the form of prizes'.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could instead name the Nobel Foundation as the awarding organization, since it owns the prize, sets the purse and stages the 10 December ceremony. I code the Royal Swedish Academy of Sciences because Nobel's will designates it as the body that selects the physics laureates ('The Royal Swedish Academy of Sciences for the Nobel Prize in Physics and Chemistry'), with the Foundation as funder. The Academy is a royal-chartered national academy, coded Society per the protocol rather than Government."
+}

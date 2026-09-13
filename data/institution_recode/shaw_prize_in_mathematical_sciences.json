@@ -1,0 +1,29 @@
+{
+  "prize_name": "Shaw Prize in Mathematical Sciences",
+  "awarding_org": "The Shaw Prize Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Hong Kong",
+  "funder_origin_name": "Run Run Shaw (endowment to The Shaw Prize Foundation)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Hong Kong",
+  "funder_current_name": "The Shaw Prize Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Hong Kong",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse (100%) is paid by The Shaw Prize Foundation Limited, the private charitable vehicle incorporated in Hong Kong in November 2002 under the auspices of the film and television magnate Run Run Shaw and granted charitable status by the Hong Kong Inland Revenue Department in May 2003; it is financed from the endowment Shaw settled on it, part of the same family philanthropy that includes The Shaw Foundation Hong Kong and The Sir Run Run Shaw Charitable Trust. No government, corporate, or society co-funder was found; the money has come from the Shaw philanthropic endowment since the first award in 2004 and did not change hands after Shaw's death in 2014.",
+  "money_note": "Each prize carries US$1.2 million, raised from US$1 million in 2016, paid by The Shaw Prize Foundation out of the Shaw endowment; the 2026 Mathematical Sciences award to Emmanuel Candes and Camillo De Lellis again carried US$1.2 million.",
+  "status_note": "",
+  "sources": [
+    "https://www.shawprize.org/en/about/about-the-shaw-prize",
+    "https://web.archive.org/web/20231204003335/https://www.shawprize.org/about/about-the-prize/",
+    "https://web.archive.org/web/2023/https://www.shawprize.org/about/organisation/",
+    "https://web.archive.org/web/2023/https://www.shawprize.org/about/the-founder/",
+    "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences",
+    "https://www.prnewswire.com/news-releases/announcement-of-the-shaw-laureates-2026-302782937.html",
+    "https://en.wikipedia.org/wiki/Shaw_Prize"
+  ],
+  "evidence_quote": "The Shaw Prize Foundation Limited was incorporated in November 2002 with the object of awarding prizes to those persons who have achieved distinguished contributions in academic and scientific research or applications... It was granted charitable status by the Hong Kong Inland Revenue Department in May 2003.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Country is coded as Hong Kong, the jurisdiction where the Foundation is incorporated and seated (Shaw House, Tseung Kwan O); a coder treating Hong Kong as part of the People's Republic of China would code it China. Funder and awarding org are the same body, so the Foundation is named for both the current purse and (through Run Run Shaw's founding endowment) the origin."
+}

@@ -1,0 +1,29 @@
+{
+  "prize_name": "Robert Koch Award",
+  "awarding_org": "Robert Koch Foundation (Robert-Koch-Stiftung e.V.)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Germany",
+  "funder_origin_name": "Robert Koch Foundation (Robert-Koch-Stiftung e.V.)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Germany",
+  "funder_current_name": "German Federal Ministry of Health (Bundesministerium fuer Gesundheit) and Robert Koch Foundation, 50/50",
+  "funder_current_type": "Mixed",
+  "funder_current_country": "Germany",
+  "funder_changed": false,
+  "funding_share_basis": "Purse is EUR 120,000. The official prize page states the Federal Ministry of Health 'finances half of the prize money'; the Robert Koch Foundation - the prize's original and continuing funder since 1960 - pays the other half from its member and donor contributions (members and supporters include Bayer, Boehringer Ingelheim, Novartis, GSK, Roche, Sanofi, Fresenius, Pfizer, BARMER, VFA). Because no single source exceeds 50%, funder_current_type is Mixed (Government 50% / Philanthropy 50%). Applying the >50% test to the MONEY for funder_changed: the new money (the ministry's share, added at some point after founding and described only as 'seit Jahren') is exactly half of today's purse, so it is NOT more than half; the original funder still supplies the other half from its own funds, so funder_changed is false. This is a borderline 50/50 case - a single euro either way would flip it - and is flagged as a judgment call. The Foundation's half is its own institutional money rather than a literal draw on the 1907 Carnegie endowment, but it is the same funder, which under the protocol's 'same funder, new vehicle' rule does not count as new money.",
+  "money_note": "Purse is EUR 120,000, raised from EUR 100,000 in 2017; half is paid by the German Federal Ministry of Health and half by the Robert Koch Foundation, whose money comes from its corporate and institutional members.",
+  "status_note": "",
+  "sources": [
+    "https://www.robert-koch-stiftung.de/en/awards/robert-koch-award",
+    "https://www.robert-koch-stiftung.de/preise/robert-koch-preis",
+    "https://www.robert-koch-stiftung.de/en/about-the-foundation",
+    "https://www.robert-koch-stiftung.de/en/about-the-foundation/history",
+    "https://de.wikipedia.org/wiki/Robert-Koch-Preis",
+    "https://de.wikipedia.org/wiki/Robert-Koch-Stiftung",
+    "https://en.wikipedia.org/wiki/Robert_Koch_Medal_and_Award"
+  ],
+  "evidence_quote": "Das Bundesministerium fuer Gesundheit unterstuetzt den Preis seit Jahren und finanziert das Preisgeld, das 2017 von 100.000 auf 120.000 Euro erhoeht wurde, zur Haelfte.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "funder_changed is a borderline 50/50 call: the ministry's new money is exactly half of today's purse, so it fails the 'more than half' test and I coded false, but a coder reading the split as ministry-dominant (or treating the Foundation's present-day member contributions as themselves new money rather than the original endowment) could code true. Separately, current funding is an exact 50/50 split with no source above 50%, so I coded funder_current_type Mixed; alternatives are Government (ministry as largest named single payer) or Philanthropy (the Foundation as the prize's owner). The Foundation is coded Philanthropy although its board and 21-member Kuratorium are dominated by pharmaceutical and insurance companies; it is not tied to one company, so Philanthropy fits better than Corporate. Origin funder is inferred from the prize's 1960 start predating the Federal Health Ministry (1961) and the ministry's support being described only as 'seit Jahren', with no dated founding-endowment document found."
+}

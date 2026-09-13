@@ -1,0 +1,30 @@
+{
+  "prize_name": "King Faisal International Prize in Science",
+  "awarding_org": "King Faisal Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Saudi Arabia",
+  "funder_origin_name": "King Faisal Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Saudi Arabia",
+  "funder_current_name": "King Faisal Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Saudi Arabia",
+  "funder_changed": false,
+  "funding_share_basis": "The King Faisal Foundation, a private philanthropy established in Riyadh in 1976 by King Faisal's sons, has paid 100% of the purse since the Science prize was first awarded in 1984; no other funder was found. KFF states it is self-financing, meeting its philanthropic budget from returns on its own investment portfolio (including commercial ventures such as the Al Faisaliah Centre) plus private contributions, so no Saudi state appropriation enters the purse under the >50% rule, despite the ceremony being held under royal patronage.",
+  "money_note": "Each of the five King Faisal Prize categories, including Science, carries SAR 750,000 (about USD 200,000), a 200-gram 24-carat gold medal and a Diwani certificate, paid by the King Faisal Foundation from its own endowment/investment income; unchanged funder throughout.",
+  "status_note": "The Science prize rotates its topic annually among four subfields — physics, chemistry, biology and mathematics (2020 biology, 2021 physics, 2022 mathematics, 2023 chemistry, 2024 biology, 2025 physics, 2026 mathematics) — so any single subfield is eligible only about once every four years. The prize itself is continuous and was awarded in 2026.",
+  "sources": [
+    "https://kingfaisalprize.org/",
+    "https://kingfaisalprize.org/science/",
+    "https://www.kff.com/about-us/",
+    "https://www.kff.com/king-faisal-prize/",
+    "https://en.wikipedia.org/wiki/King_Faisal_Prize",
+    "https://en.wikipedia.org/wiki/King_Faisal_Foundation",
+    "https://www.paintingandpatronage.com/hrh-prince-khalid-al-faisal-and-the-king-faisal-foundation/",
+    "https://mathematics.uchicago.edu/news/article/carlos-kenig-has-been-awarded-the-2026-king-faisal-prize-in-science-mathematics/"
+  ],
+  "evidence_quote": "With its wide portfolio of investments, KFF is able to retain its financial autonomy, which allows this vast operation to keep creating and developing programs that serve its purpose.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Coded Philanthropy for both origin and current funding rather than Government: KFF was created in 1976 as a private family foundation by King Faisal's sons and states it is financially autonomous, funding its programs from its own investment returns and private donations, with no evidence of a state budget line paying the purse. A coder emphasizing the royal founders, the Riyadh seat and the award ceremony held under the patronage of the King of Saudi Arabia could defensibly code it Government."
+}

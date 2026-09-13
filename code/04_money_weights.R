@@ -23,7 +23,7 @@ ggplot(prizeList, aes(x = moneyPerWinner)) +
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 
-ggsave(file.path(figure_dir, "moneyPerWinner_prizeLevel.png"), width = 9, height = 6, dpi = 300)
+save_figure("moneyPerWinner_prizeLevel.png", width = 9, height = 6, dpi = 300)
 
 # Figure S2: Distribution at winner level (weighted by Yearly Winners)
 ggplot(prizeList, aes(x = moneyPerWinner, weight = `Yearly Winners`)) +
@@ -37,4 +37,4 @@ ggplot(prizeList, aes(x = moneyPerWinner, weight = `Yearly Winners`)) +
     axis.text.x = element_text(angle = 45, hjust = 1)
   )
 
-ggsave(file.path(figure_dir, "moneyPerWinner_winnerLevel.png"), width = 9, height = 6, dpi = 300)
+save_figure("moneyPerWinner_winnerLevel.png", width = 9, height = 6, dpi = 300)

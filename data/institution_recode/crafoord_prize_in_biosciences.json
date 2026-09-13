@@ -1,0 +1,30 @@
+{
+  "prize_name": "Crafoord Prize in Biosciences",
+  "awarding_org": "Royal Swedish Academy of Sciences",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Sweden",
+  "funder_origin_name": "Anna-Greta and Holger Crafoord Fund (1980 Crafoord donation to the Royal Swedish Academy of Sciences)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Sweden",
+  "funder_current_name": "Anna-Greta and Holger Crafoord Fund, held by the Royal Swedish Academy of Sciences (supplemented by grants from Crafoordska stiftelsen, Lund)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Sweden",
+  "funder_changed": false,
+  "funding_share_basis": "The purse comes from the Anna-Greta and Holger Crafoord Fund, a named, ring-fenced endowment created by the Crafoords' 1980 donation to the Royal Swedish Academy of Sciences and now worth about SEK 180 million; the Crafoord Foundation (Crafoordska stiftelsen) in Lund contributes additional money for the prize sum and the accompanying research grants ('dels genom donationer av Anna-Greta och Holger Crafoord, dels genom bidrag fran Crafoordska stiftelsen'). No published split exists, but the Fund is named as the primary financing vehicle and is large enough to carry an SEK 6-8 million purse on its own, so we assign >50% to the Fund; the Academy selects laureates and administers, but the money is donor money, not Academy general funds. Both components are Crafoord family philanthropy, so the type is Philanthropy under either split.",
+  "money_note": "Purse is SEK 8 million from the 2026 cycle (SEK 6 million through 2025, including the 2023 Biosciences award), paid from the Anna-Greta and Holger Crafoord Fund at the Royal Swedish Academy of Sciences with contributions from Crafoordska stiftelsen in Lund; in the prize year the Fund also finances research grants in the same field.",
+  "status_note": "Continuously awarded since 1982, but the disciplines rotate, so Biosciences is awarded only about once every three to four years: 1984, 1987, 1990, 1993, 1996, 1999, 2003, 2007, 2011, 2015, 2019, 2023. Last Biosciences award 2023 (Dolph Schluter); next expected 2027 (2024 mathematics/astronomy, 2025 polyarthritis, 2026 geosciences). Gap years are not suspensions.",
+  "sources": [
+    "https://www.crafoordprize.se/about-the-prize/the-crafoord-prize/",
+    "https://www.kva.se/en/prizes/crafoord-prize/about-the-crafoord-prize/",
+    "https://www.crafoordprize.se/biosciences/",
+    "https://www.crafoordprize.se/app/uploads/2024/04/CrafoordPrizeFolder2024.pdf",
+    "https://www.crafoord.se/crafoordpriset/om-crafoordpriset/",
+    "https://www.crafoord.se/crafoordpriset-2026/",
+    "https://www.crafoord.se/crafoordpriset-2025/",
+    "https://en.wikipedia.org/wiki/Crafoord_Prize"
+  ],
+  "evidence_quote": "The Fund was established in 1980 by a donation to the Royal Swedish Academy of Sciences from Anna-Greta and Holger Crafoord. [...] Prissumman och forskningsanslagen finansieras dels genom donationer av Anna-Greta och Holger Crafoord, dels genom bidrag fran Crafoordska stiftelsen.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "Two defensible alternatives: coding the funder as the Crafoord Foundation in Lund (the official 'partnership' partner, as pass-1 did) or as the Royal Swedish Academy of Sciences (Society, since the endowment was donated to and is held by the Academy). We code the Crafoord donors' ring-fenced Anna-Greta and Holger Crafoord Fund as funder (Philanthropy) because the official Swedish page names that donated fund first as the source of the prize sum and the protocol keeps a named, ring-fenced donor endowment as Philanthropy; the unpublished split with Crafoordska stiftelsen's contributions is the reason for the medium confidence, though every candidate coding except the Academy option is Philanthropy/Sweden."
+}

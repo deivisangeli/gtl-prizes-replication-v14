@@ -1,0 +1,28 @@
+{
+  "prize_name": "Copley Medal",
+  "awarding_org": "Royal Society",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "United Kingdom",
+  "funder_origin_name": "Sir Godfrey Copley bequest (1709), augmented by Sir Joseph William Copley's donation (1881)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United Kingdom",
+  "funder_current_name": "Royal Society",
+  "funder_current_type": "Society",
+  "funder_current_country": "United Kingdom",
+  "funder_changed": true,
+  "funding_share_basis": "Today's purse is a silver-gilt medal plus a gift of GBP 25,000. The original Copley money cannot supply half of it: the 1709 bequest was GBP 100 (yielding GBP 5 a year) and Sir Joseph William Copley's 1881 gift of GBP 1,666 13s 4d was explicitly sized to yield GBP 50 a year to cover the cost of striking the medal. Even valuing the 1881 capital at an inflation-indexed roughly GBP 240,000 in 2025 money, a standard 4% distribution gives on the order of GBP 10,000 a year, under half of the GBP 25,000 cash gift; the historic funds realistically cover only the medal itself. The Royal Society's 2024/25 Trustees' Report lists no Copley endowment among its named restricted or endowment funds (Life Sciences Trust, Maths and Physical Sciences Trust, RW Paul Instrument Fund, Theo Murphy UK/Australia, General Trust Fund, Enterprise Fund, Nutrition in Old Age Fund, Faraday Discovery Fellowship Fund), so the majority of today's money is the Society's own, paid from general funds through its Medals and awards programme. Applying the >50% money test, most of what a winner receives today is new money.",
+  "money_note": "Silver-gilt medal plus a gift of GBP 25,000, paid by the Royal Society from its own general funds via its Medals and awards programme; income from the 1709 and 1881 Copley bequests now covers little more than the cost of the medal.",
+  "status_note": "",
+  "sources": [
+    "https://royalsociety.org/medals-and-prizes/copley-medal/",
+    "https://royalsociety.org/medals-and-prizes/premier-awards/",
+    "https://royalsociety.org/-/media/about-us/governance/trustees-report-financial-statements-2024-2025.pdf",
+    "https://royalsociety.org/about-us/how-we-are-governed/funding-finances/",
+    "https://en.wikipedia.org/wiki/Copley_Medal",
+    "https://www.britannica.com/science/Copley-Medal"
+  ],
+  "evidence_quote": "A second donation of \u00a31666 13s. 4d. was made by Sir Joseph William Copley in 1881, and the interest from that amount is used to pay for the medal.",
+  "confidence": "medium",
+  "judgment_call": true,
+  "judgment_reason": "The Royal Society publishes no funding note for the Copley Medal, so the split is established by arithmetic and by the absence of any Copley fund in the 2024/25 accounts rather than a positive statement. A reasonable coder could read Wikipedia's 'the interest from that amount is used to pay for the medal' as meaning the Copley money still funds the award and code funder_changed false; we read 'the medal' as the struck object, not the GBP 25,000 cash gift, which the historic capital cannot cover."
+}

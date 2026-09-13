@@ -1,0 +1,30 @@
+{
+  "prize_name": "Frontiers of Knowledge Award in Climate Change",
+  "awarding_org": "BBVA Foundation (Fundacion BBVA)",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Spain",
+  "funder_origin_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Spain",
+  "funder_current_name": "BBVA Foundation (Fundacion BBVA)",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Spain",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is 400,000 euros per category, paid in full (100%, well above the >50% threshold) by the BBVA Foundation, the corporate foundation of the BBVA banking group, from the awards' launch in 2008 through the current (18th, 2026) edition. The BBVA Foundation describes itself as the vehicle expressing the corporate social responsibility of the BBVA Group; neither the Foundation's own pages nor the awards' official pages disclose a ring-fenced endowment for the prize, and no separate BBVA Foundation Spain financial statement distinguishing an endowment from annual bank contributions is public, so the endowment-vs-annual-transfer question cannot be resolved from primary sources. Either way the money originates with the BBVA Group's foundation, so the coding is Corporate in both states. The Spanish National Research Council (CSIC) is the awards' only named partner and contributes jury expertise, not money: it proposes each committee chair, is consulted on the remaining members, and coordinates the evaluation support panels (0% of the purse).",
+  "money_note": "Current purse is 400,000 euros per category plus a diploma and commemorative artwork, paid by the BBVA Foundation since the awards began in 2008; no change of funder or of the stated amount has been announced.",
+  "status_note": "The category is now named 'Climate Change and Environmental Sciences'. Through the 16th edition (2023/24) the award was announced as the Frontiers of Knowledge Award in Climate Change, alongside a separate Ecology and Conservation Biology category; from the 17th edition (2024/25, laureate Camille Parmesan) the official category name is Climate Change and Environmental Sciences and Ecology and Conservation Biology no longer appears among the current eight categories, so the two appear to have been consolidated in the same reorganization that split the former Humanities and Social Sciences category in two. Last year awarded under the plain 'Climate Change' name: 16th edition (announced 2024).",
+  "sources": [
+    "https://www.frontiersofknowledgeawards-fbbva.es/about-these-awards/",
+    "https://www.frontiersofknowledgeawards-fbbva.es/conditions/",
+    "https://www.frontiersofknowledgeawards-fbbva.es/noticias/frontiers-knowledge-award-climate-change-environmental-sciences-camille-parmesan/",
+    "https://www.frontiersofknowledgeawards-fbbva.es/noticias/frontiers-knowledge-award-16th-edition-climate-change/",
+    "https://www.fbbva.es/en/about-the-foundation/",
+    "https://www.bbva.com/en/science-technology/frontiers-of-knowledge-disciplines/",
+    "https://www.premiosfronterasdelconocimiento.es/version/edicion_2024/",
+    "https://en.wikipedia.org/wiki/BBVA_Foundation_Frontiers_of_Knowledge_Award"
+  ],
+  "evidence_quote": "The BBVA Foundation expresses the corporate social responsibility of the BBVA Group... Their members are appointed by the BBVA Foundation together with the Spanish National Research Council (CSIC), which proposes the committee chair and is consulted by the Foundation on the designation of remaining members.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the BBVA Foundation Philanthropy (it is a legally separate Spanish foundation) or call the award a public-private venture because CSIC co-designs the juries; I code Corporate in both funding states because the Foundation is the BBVA Group's declared CSR vehicle and pays the entire purse, while CSIC supplies only jury expertise. The unresolved endowment-vs-annual-bank-transfer question does not change the type. The Foundation has seats in Bilbao and Madrid, both in Spain, so the country coding is unaffected."
+}

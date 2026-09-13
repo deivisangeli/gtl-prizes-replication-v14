@@ -1,0 +1,33 @@
+{
+  "prize_name": "Canada Gairdner Global Health Award",
+  "awarding_org": "Gairdner Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Canada",
+  "funder_origin_name": "Government of Canada (CAD 20 million endowment granted through the Canadian Institutes of Health Research in 2008)",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Canada",
+  "funder_current_name": "Government of Canada (income from the same 2008 CIHR endowment, administered by the Gairdner Foundation)",
+  "funder_current_type": "Government",
+  "funder_current_country": "Canada",
+  "funder_changed": false,
+  "funding_share_basis": "Purse is CAD 100,000 a year, unchanged from the award's creation to the 2026 cycle. ORIGIN: this award did not exist before the federal money. A funding agreement executed 23 March 2008 between CIHR and the Gairdner Foundation created a CAD 20 million twenty-year endowment whose stated outcomes include 'the new individual Canada Gairdner Global Health Award'; the award was created in 2008 and first given in 2009, so ~100% of the origin purse is federal money. The 1957 James A. Gairdner gift of CAD 500,000 financed only the older International awards and did not fund this one. TODAY (money test, not the name test): the same 2008 federal endowment still pays the whole purse. CIHR's 2017 evaluation of the Awards documents that under the funding agreement the Foundation charges the Award amounts to the annual investment income of the GOC endowment and 'has only charged the Award amounts, adjudication committee expenses, event planning for the annual gala, and audit, evaluation and reporting costs' to it — roughly CAD 782,000-978,000 a year drawn against total award payments of about CAD 700,000 (seven purses of CAD 100,000). No later source has replaced or topped up this purse: Budget 2024's further CAD 10 million, announced by CIHR in March 2025, was directed solely at raising the Canada Gairdner International Award from CAD 100,000 to CAD 250,000 and left the Global Health Award at CAD 100,000. So >50% (in fact all) of today's purse is the same money that funded the award at origin, hence funder_changed = false. Other named funders are excluded under the purse-only rule because they finance Gairdner Week, outreach and operations rather than this purse: the Alberta government's separate CAD 2 million outreach endowment (2008), the Gairdner family endowment, Ontario government grants, the Krembil Foundation as presenting sponsor, gala table sales and corporate/hospital/university sponsors (Princess Margaret Cancer Foundation, University Health Network, Telus Health, Moderna, Roche and others), and the Peter Gilgan Foundation, which names the separate Momentum Award.",
+  "money_note": "CAD 100,000 to one laureate (shared if more than one is named, as in 2026), unchanged since the award's creation, paid by the Gairdner Foundation out of investment income on the Government of Canada's 2008 CAD 20 million CIHR endowment; the 2024-25 federal CAD 10 million top-up raised only the International Award.",
+  "status_note": "Renamed the John Dirks Canada Gairdner Global Health Award in 2016, honouring long-serving Gairdner president and scientific director John Dirks on his retirement; Gairdner applies the Dirks name retroactively on its winner pages. Same award, continuous annual series since 2009 and still active (2026 laureates announced 31 March 2026), so winner lists under either name refer to the same prize.",
+  "sources": [
+    "https://www.gairdner.org/award/john-dirks-canada-gairdner-global-health-award",
+    "https://www.gairdner.org/who-we-are/our-history",
+    "https://gairdner.org/awards/about-the-awards/",
+    "https://www.gairdner.org/docs/default-source/annual-reports/performance-evaluations/gairdner-foundation-performance-evaluation-october-2017.pdf?sfvrsn=e25e76da_1",
+    "https://www.gairdner.org/who-we-are/our-sponsors",
+    "https://www.gairdner.org/resource-hub/government-of-canada-commits--10-million-in-support-for-canada-gairdner-awards",
+    "https://www.canada.ca/en/institutes-health-research/news/2025/03/government-of-canada-commits-10-million-in-support-for-canada-gairdner-awards.html",
+    "https://www.gairdner.org/resource-hub/2026-canada-gairdner-award-winners",
+    "https://www.uwo.ca/research/support/awards/gairdner-global-health.html",
+    "https://www.cmaj.ca/content/178/9/1124",
+    "https://en.wikipedia.org/wiki/Canada_Gairdner_Global_Health_Award"
+  ],
+  "evidence_quote": "Income from the $20 million twenty-year endowment grant provided by the Government of Canada (GOC) in 2008... To date, the Foundation has only charged the Award amounts, adjudication committee expenses, event planning for the annual gala, and audit, evaluation and reporting costs.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The alternative coding is Philanthropy for both states: the Gairdner Foundation is an independent Canadian charity that legally holds the endowment, selects the laureate and issues the cheque. We code Government because the skill's tie-breaker attributes a ring-fenced endowment to its donor and codes a state agency financing the purse as Government even when a private foundation administers the award, and because a CIHR-commissioned evaluation shows the purse is charged directly against the federal endowment's income. Note that funder_changed here (false) differs from what the sibling Canada Gairdner International Award may warrant (true), and this is not an inconsistency: the International Award was founded on the 1957 Gairdner family gift and later had its purse taken over by federal money, whereas this award was created by the 2008 federal endowment and is still paid by it."
+}

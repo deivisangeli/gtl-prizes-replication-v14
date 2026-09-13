@@ -1,0 +1,261 @@
+field,year,n_authors
+"Agricultural and Biological Sciences",2015,1025955
+"Agricultural and Biological Sciences",2016,1084998
+"Agricultural and Biological Sciences",2017,1147885
+"Agricultural and Biological Sciences",2018,1211524
+"Agricultural and Biological Sciences",2019,1276875
+"Agricultural and Biological Sciences",2020,1345273
+"Agricultural and Biological Sciences",2021,1405233
+"Agricultural and Biological Sciences",2022,1464016
+"Agricultural and Biological Sciences",2023,1506360
+"Agricultural and Biological Sciences",2024,1533840
+"Arts and Humanities",2015,255550
+"Arts and Humanities",2016,265928
+"Arts and Humanities",2017,276251
+"Arts and Humanities",2018,285875
+"Arts and Humanities",2019,294972
+"Arts and Humanities",2020,303737
+"Arts and Humanities",2021,310656
+"Arts and Humanities",2022,316009
+"Arts and Humanities",2023,319782
+"Arts and Humanities",2024,322155
+"Biochemistry, Genetics and Molecular Biology",2015,1535771
+"Biochemistry, Genetics and Molecular Biology",2016,1604679
+"Biochemistry, Genetics and Molecular Biology",2017,1674991
+"Biochemistry, Genetics and Molecular Biology",2018,1747629
+"Biochemistry, Genetics and Molecular Biology",2019,1822007
+"Biochemistry, Genetics and Molecular Biology",2020,1899626
+"Biochemistry, Genetics and Molecular Biology",2021,1970090
+"Biochemistry, Genetics and Molecular Biology",2022,2048567
+"Biochemistry, Genetics and Molecular Biology",2023,2103222
+"Biochemistry, Genetics and Molecular Biology",2024,2138924
+"Business, Management and Accounting",2015,225096
+"Business, Management and Accounting",2016,242342
+"Business, Management and Accounting",2017,261164
+"Business, Management and Accounting",2018,281005
+"Business, Management and Accounting",2019,302042
+"Business, Management and Accounting",2020,323923
+"Business, Management and Accounting",2021,343485
+"Business, Management and Accounting",2022,360889
+"Business, Management and Accounting",2023,373783
+"Business, Management and Accounting",2024,382129
+"Chemical Engineering",2015,57376
+"Chemical Engineering",2016,59830
+"Chemical Engineering",2017,62266
+"Chemical Engineering",2018,64775
+"Chemical Engineering",2019,67345
+"Chemical Engineering",2020,70130
+"Chemical Engineering",2021,72621
+"Chemical Engineering",2022,75614
+"Chemical Engineering",2023,78072
+"Chemical Engineering",2024,79949
+"Chemistry",2015,514571
+"Chemistry",2016,529444
+"Chemistry",2017,544541
+"Chemistry",2018,559960
+"Chemistry",2019,575712
+"Chemistry",2020,591331
+"Chemistry",2021,605875
+"Chemistry",2022,621955
+"Chemistry",2023,634423
+"Chemistry",2024,643473
+"Computer Science",2015,767244
+"Computer Science",2016,813310
+"Computer Science",2017,863902
+"Computer Science",2018,919427
+"Computer Science",2019,979540
+"Computer Science",2020,1039045
+"Computer Science",2021,1096458
+"Computer Science",2022,1154331
+"Computer Science",2023,1198292
+"Computer Science",2024,1225888
+"Decision Sciences",2015,56942
+"Decision Sciences",2016,60312
+"Decision Sciences",2017,63793
+"Decision Sciences",2018,67435
+"Decision Sciences",2019,71196
+"Decision Sciences",2020,74915
+"Decision Sciences",2021,78290
+"Decision Sciences",2022,81386
+"Decision Sciences",2023,83594
+"Decision Sciences",2024,85026
+"Dentistry",2015,115926
+"Dentistry",2016,123772
+"Dentistry",2017,131582
+"Dentistry",2018,139593
+"Dentistry",2019,147588
+"Dentistry",2020,156305
+"Dentistry",2021,163813
+"Dentistry",2022,170620
+"Dentistry",2023,175098
+"Dentistry",2024,177517
+"Earth and Planetary Sciences",2015,335394
+"Earth and Planetary Sciences",2016,348943
+"Earth and Planetary Sciences",2017,362913
+"Earth and Planetary Sciences",2018,377180
+"Earth and Planetary Sciences",2019,391654
+"Earth and Planetary Sciences",2020,406194
+"Earth and Planetary Sciences",2021,419154
+"Earth and Planetary Sciences",2022,430732
+"Earth and Planetary Sciences",2023,438426
+"Earth and Planetary Sciences",2024,442708
+"Economics, Econometrics and Finance",2015,177246
+"Economics, Econometrics and Finance",2016,186578
+"Economics, Econometrics and Finance",2017,197141
+"Economics, Econometrics and Finance",2018,208210
+"Economics, Econometrics and Finance",2019,219893
+"Economics, Econometrics and Finance",2020,232919
+"Economics, Econometrics and Finance",2021,244293
+"Economics, Econometrics and Finance",2022,254963
+"Economics, Econometrics and Finance",2023,262085
+"Economics, Econometrics and Finance",2024,266470
+"Energy",2015,71122
+"Energy",2016,77036
+"Energy",2017,83364
+"Energy",2018,90337
+"Energy",2019,97814
+"Energy",2020,105648
+"Energy",2021,113518
+"Energy",2022,123555
+"Energy",2023,131898
+"Energy",2024,137974
+"Engineering",2015,2164698
+"Engineering",2016,2275937
+"Engineering",2017,2391331
+"Engineering",2018,2514046
+"Engineering",2019,2638403
+"Engineering",2020,2759864
+"Engineering",2021,2876745
+"Engineering",2022,3008650
+"Engineering",2023,3103631
+"Engineering",2024,3166328
+"Environmental Science",2015,700762
+"Environmental Science",2016,741767
+"Environmental Science",2017,783481
+"Environmental Science",2018,827675
+"Environmental Science",2019,873587
+"Environmental Science",2020,923685
+"Environmental Science",2021,971148
+"Environmental Science",2022,1019389
+"Environmental Science",2023,1053874
+"Environmental Science",2024,1076446
+"Health Professions",2015,234923
+"Health Professions",2016,250867
+"Health Professions",2017,267416
+"Health Professions",2018,284136
+"Health Professions",2019,301002
+"Health Professions",2020,319882
+"Health Professions",2021,336044
+"Health Professions",2022,349661
+"Health Professions",2023,358444
+"Health Professions",2024,363206
+"Immunology and Microbiology",2015,211266
+"Immunology and Microbiology",2016,219711
+"Immunology and Microbiology",2017,228100
+"Immunology and Microbiology",2018,236341
+"Immunology and Microbiology",2019,244839
+"Immunology and Microbiology",2020,253703
+"Immunology and Microbiology",2021,261555
+"Immunology and Microbiology",2022,270363
+"Immunology and Microbiology",2023,276459
+"Immunology and Microbiology",2024,280265
+"Materials Science",2015,598532
+"Materials Science",2016,628663
+"Materials Science",2017,659636
+"Materials Science",2018,690819
+"Materials Science",2019,722767
+"Materials Science",2020,753846
+"Materials Science",2021,783178
+"Materials Science",2022,817445
+"Materials Science",2023,843813
+"Materials Science",2024,860805
+"Mathematics",2015,122190
+"Mathematics",2016,126597
+"Mathematics",2017,130905
+"Mathematics",2018,135179
+"Mathematics",2019,139476
+"Mathematics",2020,144541
+"Mathematics",2021,148681
+"Mathematics",2022,152117
+"Mathematics",2023,154025
+"Mathematics",2024,154969
+"Medicine",2015,4734546
+"Medicine",2016,4962253
+"Medicine",2017,5192561
+"Medicine",2018,5424392
+"Medicine",2019,5658056
+"Medicine",2020,5926797
+"Medicine",2021,6166883
+"Medicine",2022,6407732
+"Medicine",2023,6559450
+"Medicine",2024,6650685
+"Neuroscience",2015,303811
+"Neuroscience",2016,317033
+"Neuroscience",2017,331118
+"Neuroscience",2018,345191
+"Neuroscience",2019,359775
+"Neuroscience",2020,374287
+"Neuroscience",2021,387329
+"Neuroscience",2022,400667
+"Neuroscience",2023,409846
+"Neuroscience",2024,415024
+"Nursing",2015,35455
+"Nursing",2016,37100
+"Nursing",2017,38848
+"Nursing",2018,40627
+"Nursing",2019,42406
+"Nursing",2020,44271
+"Nursing",2021,45888
+"Nursing",2022,47529
+"Nursing",2023,48688
+"Nursing",2024,49421
+"Pharmacology, Toxicology and Pharmaceutics",2015,33625
+"Pharmacology, Toxicology and Pharmaceutics",2016,35364
+"Pharmacology, Toxicology and Pharmaceutics",2017,37183
+"Pharmacology, Toxicology and Pharmaceutics",2018,38959
+"Pharmacology, Toxicology and Pharmaceutics",2019,40755
+"Pharmacology, Toxicology and Pharmaceutics",2020,42667
+"Pharmacology, Toxicology and Pharmaceutics",2021,44356
+"Pharmacology, Toxicology and Pharmaceutics",2022,46122
+"Pharmacology, Toxicology and Pharmaceutics",2023,47373
+"Pharmacology, Toxicology and Pharmaceutics",2024,48251
+"Physics and Astronomy",2015,742296
+"Physics and Astronomy",2016,771418
+"Physics and Astronomy",2017,807287
+"Physics and Astronomy",2018,848584
+"Physics and Astronomy",2019,879544
+"Physics and Astronomy",2020,910666
+"Physics and Astronomy",2021,946516
+"Physics and Astronomy",2022,981783
+"Physics and Astronomy",2023,1010066
+"Physics and Astronomy",2024,1025558
+"Psychology",2015,306548
+"Psychology",2016,323864
+"Psychology",2017,341658
+"Psychology",2018,359797
+"Psychology",2019,378234
+"Psychology",2020,400229
+"Psychology",2021,420754
+"Psychology",2022,438790
+"Psychology",2023,450289
+"Psychology",2024,456258
+"Social Sciences",2015,799728
+"Social Sciences",2016,850815
+"Social Sciences",2017,906007
+"Social Sciences",2018,962510
+"Social Sciences",2019,1018674
+"Social Sciences",2020,1075345
+"Social Sciences",2021,1123526
+"Social Sciences",2022,1159846
+"Social Sciences",2023,1182892
+"Social Sciences",2024,1195392
+"Veterinary",2015,16881
+"Veterinary",2016,17533
+"Veterinary",2017,18166
+"Veterinary",2018,18839
+"Veterinary",2019,19474
+"Veterinary",2020,20105
+"Veterinary",2021,20600
+"Veterinary",2022,21006
+"Veterinary",2023,21231
+"Veterinary",2024,21363

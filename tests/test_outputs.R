@@ -1,117 +1,80 @@
 # ==============================================================================
-# tests/test_outputs.R — Verify all replication outputs exist and pass sanity checks
+# tests/test_outputs.R -- does the package reproduce the paper, and nothing else?
 #
-# Usage: Rscript tests/test_outputs.R   (from repo root)
+#   Rscript run_all.R && Rscript tests/test_outputs.R      (from the repo root)
+#
+# Three checks, all against expected/ (see tests/refresh_expected.R):
+#   1. every table and macro file the paper \input{}s is regenerated identically
+#      (line by line, ignoring comment lines and line endings);
+#   2. every figure the paper includes is regenerated with the same plot data as
+#      the original scripts that produced the paper's figures (character
+#      columns exact, numbers to 1e-6 relative);
+#   3. the run creates exactly the files listed in tests/generated_files.txt:
+#      any other untracked file in the repository -- a stray Rplots.pdf, a table
+#      the paper does not use, a cache -- fails the test, as does a missing one.
+# Exit status 1 on any failure.
 # ==============================================================================
+source("tests/plotdata.R")
+pass <- 0; fail <- 0
+check <- function(desc, ok, detail = NULL) {
+  if (isTRUE(ok)) { pass <<- pass + 1; cat("  PASS:", desc, "\n") }
+  else { fail <<- fail + 1; cat("  FAIL:", desc, "\n"); for (d in detail) cat("        ", d, "\n") }
+}
+read_lines <- function(path) sub("\r$", "", readLines(path, warn = FALSE, encoding = "UTF-8"))
+strip_comments <- function(x) x[!grepl("^\\s*%", x)]
 
-cat("=== Running output verification tests ===\n\n")
+exhibits <- read.csv("expected/paper_exhibits.csv", stringsAsFactors = FALSE)
+cat(sprintf("=== %d exhibits in the paper: %d tex inputs, %d figures ===\n",
+            nrow(exhibits), sum(exhibits$kind == "tex"), sum(exhibits$kind == "figure")))
 
-pass <- 0
-fail <- 0
-
-check <- function(desc, condition) {
-  if (condition) {
-    cat(sprintf("  PASS: %s\n", desc))
-    pass <<- pass + 1
-  } else {
-    cat(sprintf("  FAIL: %s\n", desc))
-    fail <<- fail + 1
+# ---------- 1. tables and macro files ----------
+cat("\n--- Tables and macro files vs the paper's copies ---\n")
+for (i in which(exhibits$kind == "tex")) {
+  out <- exhibits$output_path[i]; ref <- file.path("expected/tables", basename(out))
+  if (!file.exists(out)) { check(paste(basename(out), "generated"), FALSE); next }
+  e <- strip_comments(read_lines(ref)); g <- strip_comments(read_lines(out))
+  same <- identical(e, g)
+  detail <- if (!same) {
+    d <- which(e != g)[1]
+    if (length(e) != length(g)) sprintf("%d lines expected, %d generated", length(e), length(g))
+    else sprintf("first difference at content line %d:\n          expected:  %s\n          generated: %s", d, e[d], g[d])
   }
+  check(paste(basename(out), "matches the paper"), same, detail)
 }
 
-# ---------- 1. Existence checks ----------
-cat("--- File existence checks ---\n")
-
-expected_tables <- c(
-  "output/tables/selectedPrizes.tex",
-  "output/tables/summaryStats.tex",
-  "output/tables/selectedECPrizes.tex",
-  "output/tables/corr.tex",
-  "output/tables/prizesByField.tex",
-  "output/tables/prizeRankRobustnessTable.tex"
-)
-
-expected_figures <- c(
-  "output/figures/cum_prize_time.png",
-  "output/figures/scatter_time_views.png",
-  "output/figures/scatter_moneyprize_time_linear_fit.png",
-  "output/figures/scatter_money_views.png",
-  "output/figures/moneyPerWinner_prizeLevel.png",
-  "output/figures/moneyPerWinner_winnerLevel.png",
-  "output/figures/prizesDensityByPhD_finest.pdf",
-  "output/figures/prizesDensityByVSacademics_finest.pdf",
-  "output/figures/prizesDensityByVS_finest_T1.pdf",
-  "output/figures/prizesDensityByVS_finest_T12.pdf",
-  "output/figures/prizesDensityFunding.pdf"
-)
-
-for (f in c(expected_tables, expected_figures)) {
-  check(sprintf("File exists: %s", f), file.exists(f))
+# ---------- 2. figures ----------
+cat("\n--- Figures vs the originals' plot data ---\n")
+for (i in which(exhibits$kind == "figure")) {
+  out <- exhibits$output_path[i]
+  name <- tools::file_path_sans_ext(basename(out))
+  gen <- file.path("output/plotdata", paste0(name, ".csv"))
+  ref <- file.path("expected/plotdata", paste0(name, ".csv"))
+  if (!file.exists(out) || file.size(out) == 0) { check(paste(basename(out), "generated"), FALSE); next }
+  if (!file.exists(gen)) { check(paste(basename(out), "plot data written"), FALSE); next }
+  problems <- compare_plot_data(ref, gen)
+  # extra/missing columns are informational (a ggplot2 update can add an aesthetic)
+  hard <- problems[!grepl("^columns only in", problems)]
+  check(paste(basename(out), "has the paper's plot data"), length(hard) == 0, problems)
 }
 
-# ---------- 2. Content sanity checks ----------
-cat("\n--- Content sanity checks ---\n")
-
-# selectedPrizes.tex should contain 99 data rows
-if (file.exists("output/tables/selectedPrizes.tex")) {
-  lines <- readLines("output/tables/selectedPrizes.tex")
-  # Count lines that contain "&" (data rows in a LaTeX table)
-  data_lines <- grep("&.*&.*&.*&", lines, value = TRUE)
-  # Exclude header lines
-  data_lines <- data_lines[!grepl("Award Name|Rank|Rating|Field|Tier", data_lines)]
-  check("selectedPrizes.tex has ~99 data rows", length(data_lines) >= 95 && length(data_lines) <= 105)
-}
-
-# selectedECPrizes.tex should contain 68 data rows
-if (file.exists("output/tables/selectedECPrizes.tex")) {
-  lines <- readLines("output/tables/selectedECPrizes.tex")
-  data_lines <- grep("&.*&", lines, value = TRUE)
-  data_lines <- data_lines[!grepl("Award Name|Tier|Field", data_lines)]
-  check("selectedECPrizes.tex has ~68 data rows", length(data_lines) >= 64 && length(data_lines) <= 72)
-}
-
-# summaryStats.tex should have 8 variables
-if (file.exists("output/tables/summaryStats.tex")) {
-  lines <- readLines("output/tables/summaryStats.tex")
-  data_lines <- grep("&.*&.*&.*&", lines, value = TRUE)
-  data_lines <- data_lines[!grepl("Variable|Median|Mean", data_lines)]
-  check("summaryStats.tex has 8 variable rows", length(data_lines) >= 7 && length(data_lines) <= 9)
-}
-
-# corr.tex should be a 5x5 correlation table
-if (file.exists("output/tables/corr.tex")) {
-  content <- paste(readLines("output/tables/corr.tex"), collapse = "\n")
-  check("corr.tex mentions Survey Rating", grepl("Survey Rating", content))
-  check("corr.tex mentions News Mentions", grepl("News Mentions", content))
-}
-
-# ---------- 3. Diff tests against expected/ ----------
-cat("\n--- Diff tests against expected/ ---\n")
-
-expected_dir <- "expected"
-if (dir.exists(expected_dir)) {
-  ref_files <- list.files(expected_dir, pattern = "\\.tex$", full.names = TRUE)
-  for (ref in ref_files) {
-    fname <- basename(ref)
-    generated <- file.path("output/tables", fname)
-    if (file.exists(generated)) {
-      # Filter out comment/timestamp lines before comparing
-      strip_comments <- function(x) x[!grepl("^\\s*%", x)]
-      ref_content <- strip_comments(readLines(ref))
-      gen_content <- strip_comments(readLines(generated))
-      matches <- identical(ref_content, gen_content)
-      check(sprintf("Diff test: %s matches expected", fname), matches)
-    } else {
-      check(sprintf("Diff test: %s (generated file missing)", fname), FALSE)
-    }
-  }
+# ---------- 3. no extraneous files ----------
+cat("\n--- Generated files: exactly the declared set ---\n")
+declared <- read_lines("tests/generated_files.txt")
+declared <- declared[nzchar(declared)]
+present <- list.files(".", recursive = TRUE, all.files = TRUE, include.dirs = FALSE, no.. = TRUE)
+present <- present[!grepl("^\\.git/|^renv/(library|staging|sandbox|local|cellar|python)/", present)]
+tracked <- tryCatch(system2("git", c("ls-files"), stdout = TRUE, stderr = FALSE), error = function(e) NULL)
+if (is.null(tracked) || length(tracked) == 0) {
+  cat("  (git not available: checking output/ only)\n")
+  untracked <- present[grepl("^output/", present)]
 } else {
-  cat("  SKIP: expected/ directory not found (run once to populate)\n")
+  untracked <- setdiff(present, tracked)
 }
+extra <- setdiff(untracked, declared)
+missing <- setdiff(declared, present)
+check(sprintf("no undeclared files (%d files generated)", length(untracked)), length(extra) == 0,
+      paste("undeclared:", extra))
+check("every declared file present", length(missing) == 0, paste("missing:", missing))
 
-# ---------- Summary ----------
 cat(sprintf("\n=== Results: %d passed, %d failed ===\n", pass, fail))
-
-if (fail > 0) {
-  quit(status = 1)
-}
+if (fail > 0) quit(status = 1)

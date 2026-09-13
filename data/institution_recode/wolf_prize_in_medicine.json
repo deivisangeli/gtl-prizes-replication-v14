@@ -1,0 +1,27 @@
+{
+  "prize_name": "Wolf Prize in Medicine",
+  "awarding_org": "Wolf Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Israel",
+  "funder_origin_name": "Wolf Foundation (endowment donated by Ricardo Subirana y Lobo Wolf and Francisca Wolf)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Israel",
+  "funder_current_name": "Wolf Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Israel",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is paid entirely (100%, well above the >50% threshold) out of investment income on the Wolf Foundation's own endowment, which the Wolf family donated: the Foundation began operating in 1976 with an initial endowment of USD 10 million from Ricardo and Francisca Wolf, and 'annual income from investments is used for prizes, scholarships and Foundation operating expenses.' No corporate sponsor or government appropriation contributes to the prize money; the Israeli state's role is statutory oversight only (the Foundation is chartered under the Wolf Foundation Law-1975, the Minister of Education chairs its Council, and the State Comptroller audits it), and the ceremony is held at the Knesset.",
+  "money_note": "Each Wolf Prize, including Medicine, carries a diploma, a Medal of Honor and USD 100,000, paid from the Wolf Foundation's endowment income since the prize's first award in 1978.",
+  "status_note": "",
+  "sources": [
+    "https://wolffund.org.il/about-wolf-foundation/",
+    "https://wolffund.org.il/the-wolf-prize/",
+    "https://en.wikipedia.org/wiki/Wolf_Foundation",
+    "https://en.wikipedia.org/wiki/Wolf_Prize_in_Medicine",
+    "https://en.wikipedia.org/wiki/Wolf_Prize"
+  ],
+  "evidence_quote": "The Foundation began its activities in 1976, with an initial endowment fund of ten million dollar... Annual income from investments is used for prizes, scholarships and Foundation operating expenses.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the Wolf Foundation 'Government' because it was created by an act of the Knesset (Wolf Foundation Law-1975), the Minister of Education and Culture chairs its Council, the State Comptroller audits it, and the ceremony takes place at the Knesset. I coded it Philanthropy because the money is a private family bequest, the Foundation is legally a private not-for-profit, and no public budget funds the purse; the state's role is governance and oversight, not financing."
+}

@@ -1,0 +1,28 @@
+{
+  "prize_name": "Balzan Prize",
+  "awarding_org": "International Balzan Prize Foundation (Fondazione Internazionale Premio Balzan \"Premio\", Milan)",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Italy",
+  "funder_origin_name": "Eugenio Balzan estate, bequeathed by Angela Lina Balzan (International Balzan Prize Foundation \"Fund\", Zurich)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Switzerland",
+  "funder_current_name": "International Balzan Prize Foundation \"Fund\" (Fondazione Internazionale Premio Balzan \"Fondo\", Zurich)",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Switzerland",
+  "funder_changed": false,
+  "funding_share_basis": "The entire purse comes from one source in both states: the estate of newspaper magnate Eugenio Balzan (1874-1953), which his daughter Angela Lina Balzan directed into a foundation created in Lugano in 1956-57. That endowment, invested in Switzerland and administered by the Balzan \"Fund\" foundation in Zurich, has paid every prize since 1961; no government, society, or corporate co-funder appears in the foundation's own materials. The Swiss Academies host a laureates' forum and Switzerland's federal department appoints one board member, but neither contributes to the purse, so the >50% test is met by the Balzan endowment alone (100%).",
+  "money_note": "Each of the four annual prizes is CHF 750,000 (raised to CHF 1 million in 2001, reduced to CHF 750,000 from 2017), paid from the Balzan endowment administered by the Zurich \"Fund\" foundation; since 2001 winners must destine half of the award to research projects carried out by young scholars.",
+  "status_note": "Continuously awarded and unchanged in name since 1978-79, but the prize had a 16-year suspension after 1962: the first prizes were given in 1961-62 and awarding resumed only in 1978 (CHF 500,000 to Mother Teresa). No gap affects recent decades.",
+  "sources": [
+    "https://www.balzan.org/en/about-us",
+    "https://www.balzan.org/en/about-us/history",
+    "https://www.balzan.org/en/updates/news/the-2025-balzan-prizewinners",
+    "https://www.balzan.org/en/prizewinners",
+    "https://swiss-academies.ch/issues-and-tasks/prizes-and-grants/balzan-prize",
+    "https://en.wikipedia.org/wiki/Balzan_Prize"
+  ],
+  "evidence_quote": "The Balzan Foundation acts jointly through two Foundations: one with headquarters in Milan and the other with headquarters in Zurich [which] administers Eugenio Balzan's estate.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Dual-seat organization: the Balzan \"Prize\" foundation in Milan runs the General Prize Committee, selects subject areas and confers the awards, while the Balzan \"Fund\" foundation in Zurich holds and pays out Eugenio Balzan's estate. I coded the awarding seat as Italy (where selection and administration happen) and the funder seat as Switzerland (where the endowment sits and was created, Lugano 1956-57); a reasonable coder could place both in Switzerland, since the money, the original incorporation, and the biennial Bern ceremony are Swiss."
+}

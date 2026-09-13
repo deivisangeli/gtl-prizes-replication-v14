@@ -1,0 +1,29 @@
+{
+  "prize_name": "Albert Lasker Basic Medical Research Award",
+  "awarding_org": "Albert and Mary Lasker Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "United States",
+  "funder_origin_name": "Albert and Mary Lasker Foundation",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "United States",
+  "funder_current_name": "Albert and Mary Lasker Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "United States",
+  "funder_changed": false,
+  "funding_share_basis": "The purse is a USD 250,000 honorarium per award category, paid in full (100%, well above the >50% threshold) by the Albert and Mary Lasker Foundation, the private foundation Albert and Mary Lasker endowed in 1942 and which created the awards program in 1945. No co-sponsor, corporate partner, government agency, or society contributes to the purse in either the origin or current state; the same private foundation has financed it throughout, so origin and current funders are identical.",
+  "money_note": "Current purse is USD 250,000 per category (in place since at least 2015 and confirmed in the 2025 announcement), paid by the Albert and Mary Lasker Foundation, which has funded the awards since their creation in 1945.",
+  "status_note": "Continuously awarded under this name, with one gap: no Lasker Awards were given in 2020 because of the COVID-19 pandemic (2020 nominations were rolled over to the 2021 jury). Awarded again 2021-2025; most recent Basic Medical Research Award: Dirk Gorlich and Steven L. McKnight, announced September 2025.",
+  "sources": [
+    "https://laskerfoundation.org/awards/about-the-awards/",
+    "https://laskerfoundation.org/about/",
+    "https://laskerfoundation.org/winners/2025-winners/",
+    "https://laskerfoundation.org/wp-content/uploads/2025/09/2025-lasker-award-press-release-f.pdf",
+    "https://laskerfoundation.org/the-2020-lasker-awards/",
+    "https://www.eurekalert.org/news-releases/1098016",
+    "https://en.wikipedia.org/wiki/Lasker_Award"
+  ],
+  "evidence_quote": "The Lasker Awards program was created in 1945 by Albert and Mary Lasker... The awards carry an honorarium of $250,000 for each category.",
+  "confidence": "high",
+  "judgment_call": false,
+  "judgment_reason": ""
+}

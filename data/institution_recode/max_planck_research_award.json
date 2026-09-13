@@ -1,0 +1,26 @@
+{
+  "prize_name": "Max Planck Research Award",
+  "awarding_org": "Max Planck Society (Max-Planck-Gesellschaft) jointly with the Alexander von Humboldt Foundation",
+  "awarding_org_type": "Society",
+  "awarding_org_country": "Germany",
+  "funder_origin_name": "German Federal Ministry for Research and Technology (BMFT; from 1994 the Federal Ministry of Education and Research, BMBF)",
+  "funder_origin_type": "Government",
+  "funder_origin_country": "Germany",
+  "funder_current_name": "German Federal Ministry of Education and Research (BMBF)",
+  "funder_current_type": "Government",
+  "funder_current_country": "Germany",
+  "funder_changed": false,
+  "funding_share_basis": "The German federal research ministry supplied 100% of the purse throughout the prize's life (1990-2016): as the BMFT at founding in 1990 and as its renamed successor the BMBF from 1994 onward. The Max Planck Society and the Alexander von Humboldt Foundation ran nominations and selection but did not put up the purse; both are themselves overwhelmingly publicly financed. No other funder contributed, so the >50% rule resolves to Government in both states; the only change was the ministry's rename, not a handover, so funder_changed is false. The same BMBF money now funds the successor Max Planck-Humboldt Research Award.",
+  "money_note": "Purse was EUR 750,000 per laureate for two laureates a year (one based in Germany, one abroad) in the 2004-2016 phase, after EUR 125,000 (DM 250,000) each for up to twelve laureates a year in 1995-2003; paid by the German federal research ministry (BMFT/BMBF) from the 1990 founding to the final 2016 award.",
+  "status_note": "DISCONTINUED AND SUPERSEDED. Founded 1990 as the Max-Planck-Forschungspreis; last awarded in 2016 (to Bonnie Bassler and Martin Wikelski). It was redesigned and replaced by the differently-named Max Planck-Humboldt Research Award, announced in 2017 and first conferred in 2018 (EUR 1.5m research funding plus EUR 80,000 personal award, same BMBF funding, same two awarding bodies). Our prize list carries both as separate entries, so any winner data for this prize should stop at 2016 and 2018-onward winners belong to the successor award.",
+  "sources": [
+    "https://www.mpg.de/188595/max-planck-research-award",
+    "https://www.mpg.de/11417525/max-planck-society-and-humboldt-foundation-to-present-new-joint-research-award",
+    "https://www.humboldt-foundation.de/en/apply/sponsorship-programmes/max-planck-humboldt-research-award",
+    "https://de.wikipedia.org/wiki/Max-Planck-Forschungspreis"
+  ],
+  "evidence_quote": "The award, which is funded by the German Federal Ministry of Education and Research, replaces the Max Planck Research Award, which was previously bestowed annually to two researchers by the Humboldt Foundation and the MPG.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Awarding is joint between the Max Planck Society (a registered non-profit association of research institutes, coded Society as the name-bearing anchor) and the Alexander von Humboldt Foundation (a non-profit foundation financed almost entirely from federal budgets). A reasonable coder could code the awarding side Government, since both bodies are overwhelmingly publicly financed and the purse comes straight from the BMBF; the funder is Government and the country Germany under either choice. Also a judgment call on the origin state: 1990 is the true founding, but the 2004 restructuring (two laureates, EUR 750,000) reset the prize's design without changing its financier, so both origin readings give the same Government/Germany coding."
+}

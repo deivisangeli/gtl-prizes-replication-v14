@@ -1,0 +1,30 @@
+{
+  "prize_name": "Paul Ehrlich and Ludwig Darmstaedter Prize",
+  "awarding_org": "Paul Ehrlich Foundation (Paul Ehrlich-Stiftung), administered in trust by the Association of Friends and Supporters of Goethe University Frankfurt",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Germany",
+  "funder_origin_name": "Hedwig Ehrlich's 1929 bequest of 90,000 Mark to the Paul Ehrlich Fund (converted into the Paul Ehrlich-Stiftung on 13 July 1929), merged at the 1952 refounding with the privately endowed Ludwig Darmstaedter Prize fund",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Germany",
+  "funder_current_name": "German Federal Ministry of Health (Bundesministerium fuer Gesundheit) and the State of Hesse, plus the Association of Research-Based Pharmaceutical Manufacturers (vfa) and earmarked donations from Goethe University Frankfurt, Bayer, Biotest, Boehringer Ingelheim, Christa Verhein-Stiftung, Else Kroener-Fresenius-Stiftung, Frankfurter Allgemeine Zeitung, Fresenius, GlaxoSmithKline, Gruenenthal, Hans und Wolfgang Schleussner Stiftung, Holtzbrinck, Janssen-Cilag, Lilly Deutschland, Merck, Bankhaus Metzler, Roche, Sanofi and private donors",
+  "funder_current_type": "Mixed",
+  "funder_current_country": "Germany",
+  "funder_changed": true,
+  "funding_share_basis": "Purse is EUR 120,000 (EUR 100,000 as of 2014). TYPE: the Foundation and German Wikipedia state the prize is financed in equal halves -- 'Finanziert wird dieser Preis je zur Haelfte durch zweckgebundene Spenden von Unternehmen und durch das Bundesministerium fuer Gesundheit' -- and the brochure fixes the federal share at EUR 50,000 of the then EUR 100,000 purse (March 2014), i.e. exactly half; the 2025 award programme adds the State of Hesse and the vfa as payers alongside ~18 companies, foundations and private donors, so no single source clears 50% and the current type is Mixed (government ~50%, industry/philanthropic ~50% split many ways). COUNTRY: every payer on the government side is German and the private side is dominated by German-seated entities, with only minority contributions from foreign-parented firms giving through German subsidiaries (Roche, Sanofi, GlaxoSmithKline, Lilly Deutschland, Janssen-Cilag), so well over half the money is German -- not Mixed. MONEY (field 11): the origin money was private endowment capital -- Hedwig Ehrlich's 90,000 Mark of 1929 plus the merged Darmstaedter fund -- which was destroyed by inflation and the 1948 currency reform and is nowhere cited as a source of today's purse. Every source describing current financing names only current-year appropriations and earmarked current-year donations ('Finanziert wird der seit 1952 verliehene Preis vom Bundesministerium fuer Gesundheit, Land Hessen, Verband Forschender Arzneimittelhersteller und durch Spenden folgender Unternehmen...'), with the federal contribution starting only in 1960. Effectively 100% of the purse paid today is new money from sources other than the founding donors, so funder_changed is true.",
+  "money_note": "Current purse EUR 120,000 (EUR 100,000 until the mid-2010s), financed roughly half by the German Federal Ministry of Health (annual contribution since 1960; EUR 50,000 as of March 2014) together with the State of Hesse, and half by the vfa and earmarked corporate, foundation and private donations; the Foundation separately awards a EUR 60,000 early-career prize since 2006.",
+  "status_note": "Continuity break and rename: a Paul Ehrlich Prize was awarded 1930-1934 from Hedwig Ehrlich's 1929 foundation, then discontinued under National Socialism; when the foundation resumed work in 1952 the Paul Ehrlich Prize and the Ludwig Darmstaedter Prize were merged and the award has been conferred under the combined name since, without gaps (2026 award to Davor Solter and Azim Surani).",
+  "sources": [
+    "https://www.uni-frankfurt.de/34854380/Paul_Ehrlich_Stiftung",
+    "https://www.uni-frankfurt.de/169129895.pdf",
+    "https://www.uni-frankfurt.de/49897697/PE-Broschuere-260214-dt-A-Web.pdf",
+    "https://www.paul-ehrlich-stiftung.de/",
+    "https://www.bundesgesundheitsministerium.de/ministerium/meldungen/paul-ehrlich-und-ludwig-darmstaedter-preis-2025.html",
+    "https://aktuelles.uni-frankfurt.de/en/forschung/davor-solter-und-azim-surani-werden-mit-dem-paul-ehrlich-und-ludwig-darmstaedter-preis-2026-ausgezeichnet/",
+    "https://de.wikipedia.org/wiki/Paul-Ehrlich-Stiftung",
+    "https://de.wikipedia.org/wiki/Paul-Ehrlich-und-Ludwig-Darmstaedter-Preis"
+  ],
+  "evidence_quote": "Finanziert wird der seit 1952 verliehene Preis vom Bundesministerium fuer Gesundheit, Land Hessen, Verband Forschender Arzneimittelhersteller und durch Spenden folgender Unternehmen, Stiftungen und Einrichtungen sowie privater Spender.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "Government is a defensible alternative to Mixed for the current type: the published split is an even 50/50 between the health ministry and corporate donations, and adding the State of Hesse (named as a payer in the 2025 programme, share unpublished) could push the public share past half; we keep Mixed because the only quantified statement puts the ministry at exactly half. The awarding body could also be coded University -- the Paul Ehrlich-Stiftung is legally dependent (rechtlich unselbststaendig), administered in trust by the Association of Friends and Supporters of Goethe University Frankfurt and seated on its campus -- but it originates in Hedwig Ehrlich's 1929 bequest, has its own Stiftungsrat that selects laureates, and operates as a donor-funded prize foundation, so we coded Philanthropy."
+}

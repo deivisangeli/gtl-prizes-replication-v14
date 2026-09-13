@@ -1,0 +1,27 @@
+{
+  "prize_name": "Wolf Prize in Mathematics",
+  "awarding_org": "Wolf Foundation",
+  "awarding_org_type": "Philanthropy",
+  "awarding_org_country": "Israel",
+  "funder_origin_name": "Wolf Foundation (endowment donated by Ricardo Subirana y Lobo Wolf and Francisca Subirana-Wolf)",
+  "funder_origin_type": "Philanthropy",
+  "funder_origin_country": "Israel",
+  "funder_current_name": "Wolf Foundation",
+  "funder_current_type": "Philanthropy",
+  "funder_current_country": "Israel",
+  "funder_changed": false,
+  "funding_share_basis": "100% of the purse comes from investment income on the Wolf Foundation's endowment, which was capitalized by a single private gift of about USD 10 million from Ricardo Wolf and his wife Francisca when the Foundation began operating in 1976; no other funder contributes to the prize money, so the >50% rule is satisfied by the Foundation alone in both the origin and current states. The Israeli state supplies no purse money: its role is statutory oversight only (the Foundation was constituted under the Wolf Foundation Law-1975, the Minister of Education chairs its Council, the State Comptroller audits it, and the ceremony is held at the Knesset).",
+  "money_note": "The prize is USD 100,000 per field, paid out of the Wolf Foundation's endowment income; the same private endowment has funded it since the first awards in 1978.",
+  "status_note": "",
+  "sources": [
+    "https://wolffund.org.il/the-wolf-prize/",
+    "https://wolffund.org.il/about-wolf-foundation/",
+    "https://wolffund.org.il/ricardo-wolf/",
+    "https://en.wikipedia.org/wiki/Wolf_Foundation",
+    "https://en.wikipedia.org/wiki/Wolf_Prize_in_Mathematics"
+  ],
+  "evidence_quote": "Founded in 1975 with an endowment from the Wolf family, the Foundation's major donors were Dr. Ricardo Subirana Y Lobo Wolf and his wife, Francisca.",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "A coder could call the Wolf Foundation Government, since it was created by an act of the Knesset (Wolf Foundation Law-1975), the Israeli Minister of Education chairs its Council, the State Comptroller audits it, and prizes are conferred at the Knesset. I code it Philanthropy because it is legally a private not-for-profit whose entire capital and prize money come from the Wolf family's donation, with no public appropriation."
+}

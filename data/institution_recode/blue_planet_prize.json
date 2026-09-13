@@ -1,0 +1,32 @@
+{
+  "prize_name": "Blue Planet Prize",
+  "awarding_org": "Asahi Glass Foundation",
+  "awarding_org_type": "Corporate",
+  "awarding_org_country": "Japan",
+  "funder_origin_name": "Asahi Glass Foundation",
+  "funder_origin_type": "Corporate",
+  "funder_origin_country": "Japan",
+  "funder_current_name": "Asahi Glass Foundation",
+  "funder_current_type": "Corporate",
+  "funder_current_country": "Japan",
+  "funder_changed": false,
+  "funding_share_basis": "The purse (US$500,000 per laureate, usually two per year) has been paid 100% by the Asahi Glass Foundation since the prize was founded in 1992; no co-sponsor or external donor appears in the foundation's disclosures. The foundation is financed by returns on its own endowment (FY2025 balance sheet: basic endowment fund about 47.2 billion yen, total assets about 53.7 billion yen; FY2025 ordinary revenue about 1.404 billion yen), and its asset-management note states it invests so that investment returns cover a substantial part of its operating resources; its FY2025 business report shows no purse contribution or donation from AGC Inc., which appears only as a supplier of volunteer researchers to the outreach program. The endowment itself originated as Asahi Glass Co., Ltd. money (the foundation was created in 1933 for the company's 25th anniversary and re-scoped in 1990 when the prize was conceived), so the payment vehicle is the same corporate-derived fund at origin and today.",
+  "money_note": "Each of the (usually two) annual recipients receives a certificate, a trophy, and a supplementary award of US$500,000, paid by the Asahi Glass Foundation out of its own endowment income; the purse was long stated as 50 million yen and is now denominated in US dollars (English and Japanese pages both give US$500,000 / 50万米ドル), a redenomination rather than a change of funder.",
+  "status_note": "",
+  "sources": [
+    "https://www.af-info.or.jp/en/blueplanet/about.html",
+    "https://af-info.or.jp/blueplanet/about.html",
+    "https://www.af-info.or.jp/en/about/",
+    "https://www.af-info.or.jp/about/disclosure.html",
+    "https://www.af-info.or.jp/about/assets/pdf/disclosure/report2025-all.pdf",
+    "https://www.af-info.or.jp/en/about/assets/pdf/publication/pamphlet_E.pdf",
+    "https://www.blueplanetprize.org/about.html",
+    "https://www.agc.com/en/news/detail/1201757_2814.html",
+    "https://ja.wikipedia.org/wiki/%E6%97%AD%E7%A1%9D%E5%AD%90%E8%B2%A1%E5%9B%A3",
+    "https://en.wikipedia.org/wiki/Blue_Planet_Prize"
+  ],
+  "evidence_quote": "当法人は、法人運営の財源の相当部分を運用益によって賄うため、債券、株式、デリバティブを組み込んだ複合金融商品により資産運用する。 (FY2025 business report: the Foundation invests in composite financial products so that investment returns cover a substantial part of its operating resources.)",
+  "confidence": "high",
+  "judgment_call": true,
+  "judgment_reason": "The Asahi Glass Foundation has been a legally independent Public Interest Incorporated Foundation since December 2009 and now pays the purse entirely from its own diversified endowment, so a coder could call both the awarding org and the funder Philanthropy for the current state. We keep Corporate for both states because the protocol's tie-breaker leaves a corporate-founded foundation as Corporate absent explicit evidence of independence, and the ties remain live: the endowment is Asahi Glass Co. money, the name is the company's former name, and AGC Inc.'s Senior Fellow chairs the board while AGC's President/CEO, CTO and CFO sit as representative directors/councillors."
+}
