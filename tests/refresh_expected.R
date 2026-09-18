@@ -65,7 +65,8 @@ ORIGINALS <- list(
   "analysis/densityByField_funding.R" = "prizesDensityFunding",
   "analysis/densityByField_finest_works.R" = "prizesDensityByWorks_finest",
   "analysis/r2_figures.R" = c("r2_2_home_bias_scatter", "r2_2_home_share_by_country", "r2_3_field_measures_scatter"),
-  "analysis/r2_3_pay_grouped.R" = "r2_3_pay_grouped_scatter")
+  "analysis/r2_3_pay_grouped.R" = "r2_3_pay_grouped_scatter",
+  "analysis/r2_5_funder_types.R" = "r2_5_funder_share_by_year")
 wanted <- tools::file_path_sans_ext(basename(exhibits$paper_path[exhibits$kind == "figure"]))
 covered <- unlist(ORIGINALS, use.names = FALSE)
 stopifnot(setequal(wanted, covered))

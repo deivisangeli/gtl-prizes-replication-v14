@@ -36,7 +36,7 @@ interpreter named by the `PYTHON` environment variable (default `python3`, or
    and 13 macro files, listed in `expected/paper_exhibits.csv`) is regenerated
    identically to the paper's own copy in `expected/tables/` (line by line,
    ignoring comment lines and line endings).
-2. **Figures.** Every figure the paper includes (16 files) is regenerated with
+2. **Figures.** Every figure the paper includes (17 files) is regenerated with
    the same plot data as the original analysis scripts that produced the
    paper's figures. Figure files themselves are not byte-comparable across
    machines (fonts, graphics devices, timestamps), so each script also writes
@@ -158,6 +158,13 @@ the scanning code that produced them is in the authors' project repository:
 - Python 3.11; packages pinned in `requirements.txt` (pandas, numpy, scipy, openpyxl)
 - Script 06 uses `set.seed(42)`; results are identical across runs.
 - All paths are relative to the repository root; no external service is called.
+
+## Archive
+
+This package is archived on Zenodo (DOI 10.5281/zenodo.22721355) and
+mirrored at github.com/deivisangeli/gtl-prizes-replication-v14. The Zenodo
+record is the citable, versioned copy; the GitHub copy is the one that runs
+the tests on every push.
 
 ## License
 

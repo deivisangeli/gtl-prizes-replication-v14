@@ -11,6 +11,7 @@ output/figures/r2_2_home_bias_scatter.pdf
 output/figures/r2_2_home_share_by_country.pdf
 output/figures/r2_3_field_measures_scatter.pdf
 output/figures/r2_3_pay_grouped_scatter.pdf
+output/figures/r2_5_funder_share_by_year.pdf
 output/figures/scatter_money_views.png
 output/figures/scatter_moneyprize_time_linear_fit.png
 output/figures/scatter_time_rating.png
@@ -42,6 +43,7 @@ output/plotdata/r2_2_home_bias_scatter.csv
 output/plotdata/r2_2_home_share_by_country.csv
 output/plotdata/r2_3_field_measures_scatter.csv
 output/plotdata/r2_3_pay_grouped_scatter.csv
+output/plotdata/r2_5_funder_share_by_year.csv
 output/plotdata/scatter_money_views.csv
 output/plotdata/scatter_moneyprize_time_linear_fit.csv
 output/plotdata/scatter_time_rating.csv

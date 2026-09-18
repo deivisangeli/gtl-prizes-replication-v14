@@ -3,7 +3,10 @@
 # Generates: r2_5_macros.tex -- who finances the 99 prizes (funder type at
 #            founding and today, by founding era), whether privately funded
 #            prizes tilt toward applied fields, and the size of the purse
-#            against federal R&D; plus two intermediate files read later:
+#            against federal R&D;
+#            r2_5_funder_share_by_year.pdf (Fig S11) -- the prizes existing in
+#            each year split by funder type at founding;
+#            plus two intermediate files read later:
 #   output/intermediate/r2_5_funder_by_prize.csv   funder types per prize
 #   output/intermediate/prize_awarding_countries.csv awarding body and country
 #
@@ -135,6 +138,27 @@ paid_now <- series |> filter(basis == "Funder today", year == 2025, type %in% PR
 cat(sprintf("private share of yearly money by FOUNDING funder: 1950 %.0f%%, 2000 %.0f%%, 2025 %.0f%%; paid by private funders TODAY: %.0f%%\n",
             100 * priv_share$s[priv_share$year == 1950], 100 * priv_share$s[priv_share$year == 2000],
             100 * priv_share$s[priv_share$year == 2025], 100 * paid_now))
+
+# ---- figure: the prizes existing in each year by funder type at founding ----
+# Count-weighted (each prize once): the money-weighted series tracks a handful
+# of large purses valued at current prices in every past year, so it stays in
+# the CSV and the fMoney* macros only. Philanthropy and Corporate are adjacent
+# at the top of the stack (geom_area stacks the first factor level on top), so
+# the private share reads as one band.
+pal <- c(Philanthropy = "#377eb8", Corporate = "#e41a1c", Society = "#4daf4a",
+         Government = "#ff7f00", University = "#984ea3", Mixed = "#999999")
+plot_df <- series |> filter(basis == "Funder at founding") |>
+  select(year, type, value = share_n) |>
+  # legend only for types that actually founded a prize (no University founders)
+  filter(type %in% unique(type[value > 0])) |> mutate(type = droplevels(type))
+p <- ggplot(plot_df, aes(year, value, fill = type)) +
+  geom_area(position = "stack", alpha = .95, colour = "white", linewidth = .15) +
+  scale_fill_manual(values = pal, name = NULL) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+  labs(x = NULL, y = "Share of the top prizes existing in each year,\nby funder at founding") +
+  guides(fill = guide_legend(nrow = 1)) +
+  theme_minimal(base_size = 11) + theme(legend.position = "bottom", plot.caption = element_text(hjust = 0))
+save_figure("r2_5_funder_share_by_year.pdf", p, width = 7, height = 4.4)
 
 # ---- macros ----
 pct <- function(v) sprintf("%.0f", 100 * v)
