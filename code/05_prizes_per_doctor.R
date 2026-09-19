@@ -17,15 +17,14 @@ nsf2023 <- readxl::read_excel(file.path(data_dir, "nsf2023.xlsx")) %>%
 
 prize_list_doc <- merge(nsf2023, prizeList, by = "plotFinestField", all = TRUE)
 
-# Avg. Rank: mean prize rank weighted by yearly recognitions
+# Avg. Rank: mean prize rank of the field's prizes
 prizesPerDoc <- prize_list_doc %>%
   group_by(plotFinestField) %>%
   summarise(
     `Prizes` = n(),
-    `Average Award Rank` = weighted.mean(pcaRank, `Yearly Winners`, na.rm = TRUE),
-    `Yearly Winners` = sum(`Yearly Winners`, na.rm = TRUE)
-  ) %>%
-  relocate(`Average Award Rank`, .after = `Yearly Winners`)
+    `Yearly Winners` = sum(`Yearly Winners`, na.rm = TRUE),
+    `Average Award Rank` = mean(pcaRank, na.rm = TRUE)
+  )
 
 prizesPerDoc <- prizesPerDoc %>%
   mutate(
@@ -54,9 +53,8 @@ prizesPerDoc$`Broad Field` <- case_when(
 
 prizesPerDocBroad <- prizesPerDoc %>% group_by(`Broad Field`) %>%
   summarise(Prizes = sum(`Prizes`, na.rm = TRUE),
-            `Average Award Rank` = weighted.mean(`Average Award Rank`, `Yearly Winners`, na.rm = TRUE),
-            `Yearly Winners` = sum(`Yearly Winners`, na.rm = TRUE)) %>%
-  relocate(`Average Award Rank`, .after = `Yearly Winners`)
+            `Yearly Winners` = sum(`Yearly Winners`, na.rm = TRUE),
+            `Average Award Rank` = mean(`Average Award Rank`, na.rm = TRUE))
 
 colnames(prizesPerDocBroad)[1] <- "plotFinestField"
 prizesPerDoc <- prizesPerDoc %>% select(-`Broad Field`)
@@ -66,7 +64,7 @@ prizesPerDoc <- prizesPerDoc %>% add_row(
   plotFinestField = "Total",
   `Prizes` = nrow(prizeList),
   `Yearly Winners` = totalWinners,
-  `Average Award Rank` = weighted.mean(prizeList$pcaRank, prizeList$`Yearly Winners`, na.rm = TRUE))
+  `Average Award Rank` = mean(prizeList$pcaRank, na.rm = TRUE))
 
 prizesPerDoc <- prizesPerDoc %>%
   filter(!(plotFinestField %in% c("Environment", "Multidisciplinary", "Life Sciences and Medicine")))

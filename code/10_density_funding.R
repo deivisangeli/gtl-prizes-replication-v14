@@ -92,7 +92,7 @@ custom_colors_funding <- c(
   "Math"                    = "#1A237E",
   "Other Social Sciences"   = "#E7298A",
   "Physical Sciences"       = "#1A237E",
-  "Psychology"              = "#E0E0E2"
+  "Psychology"              = "#E7298A"
 )
 
 maxHeight <- round(max(fundingFieldStats$winnersPerBillionUSD), 0)

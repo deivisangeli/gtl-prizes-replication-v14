@@ -144,9 +144,7 @@ ECList <- ECList[order(ECList$Tier, ECList$`Award Name`), ]
 forTable <- ECList %>% select("Award Name", "Tier", "Field")
 
 # The asterisk marks research fellowships (cohort programs that fund a period of
-# research rather than a single award); the workbook's trailing "*" on some names
-# is not that marker and is removed first
-forTable$`Award Name` <- sub("\\*$", "", forTable$`Award Name`)
+# research rather than a single award)
 fellowships <- c("Sloan Research Fellowship", "Amelia Earhart Fellowship")
 stopifnot(all(fellowships %in% forTable$`Award Name`))
 forTable$`Award Name`[forTable$`Award Name` %in% fellowships] <-

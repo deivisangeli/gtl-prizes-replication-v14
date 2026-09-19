@@ -90,14 +90,19 @@ labels <- c("Agriculture & Environmental Sci." = "Agriculture &\nEnvironmental S
             "Chemistry & Chemical Eng." = "Chemistry &\nChemical Eng.",
             "Biomedical & Other Eng." = "Biomedical &\nOther Eng.")
 fm$plot_label <- ifelse(fm$pay_group %in% names(labels), labels[fm$pay_group], fm$pay_group)
+social <- c("Economics", "Psychology", "Political Science & Sociology",
+            "Anthropology & Other Social Sci.")
+stopifnot(all(social %in% fm$pay_group))
+fm$social <- fm$pay_group %in% social
 p <- ggplot(fm, aes(ind_k, density)) +
   geom_smooth(method = "lm", se = FALSE, color = "#CBC3E3", linewidth = 0.5) +
-  geom_point(shape = 21, size = 2, fill = "blue", alpha = 0.6) +
+  geom_point(aes(fill = social), shape = 21, size = 2, alpha = 0.6) +
   geom_label_repel(aes(label = plot_label), box.padding = 0.2, point.padding = 0.3,
                    min.segment.length = 0, force = 15, max.overlaps = Inf,
                    segment.color = "grey50", segment.size = 0.4, segment.alpha = 0.6,
                    fill = alpha("white", 0.7), label.size = NA, size = 2.3,
                    lineheight = 0.9, seed = 1, max.time = 5, max.iter = 1e5) +
+  scale_fill_manual(values = c("FALSE" = "blue", "TRUE" = "red"), guide = "none") +
   scale_x_continuous(labels = function(x) paste0("$", x, "k"), expand = expansion(mult = c(.12, .12))) +
   scale_y_continuous(expand = expansion(mult = c(.08, .1))) +
   labs(x = "Median Annual Private-Sector Salary",
