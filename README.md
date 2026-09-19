@@ -46,12 +46,17 @@ interpreter named by the `PYTHON` environment variable (default `python3`, or
 3. **No extraneous files.** The run must create exactly the files listed in
    `tests/generated_files.txt`. Any other untracked file in the repository — a
    stray `Rplots.pdf`, a table the paper does not use, a cache — fails the test.
+4. **Nothing beyond the paper.** Every macro the paper invokes (listed with its
+   defining file in `expected/paper_usage.csv`) is generated; no generated
+   macro is unused by the paper; every generated table and figure is a paper
+   exhibit; every intermediate file is read by a later script.
 
 `expected/` is rebuilt by the authors with `tests/refresh_expected.R`, which
 reads the exhibit list from the paper's LaTeX source, copies the paper's table
 files, and runs the original scripts with `ggsave()` replaced by a plot-data
-capture (`tests/capture_original.R`). It needs the authors' project repository
-and is not part of the replication run.
+capture (`tests/capture_original.R`); `tests/paper_usage.py` lists the macros
+the paper invokes. Both need the authors' project repository and are not part
+of the replication run.
 
 ## Repository structure
 
@@ -74,19 +79,18 @@ and is not part of the replication run.
 │   ├── 09_density_tiers.R         prizesDensityByVS_finest_T1 / _T12
 │   ├── 10_density_funding.R       prizesDensityFunding
 │   ├── 11_density_works.R         prizesDensityByWorks_finest
-│   ├── 12_views_robustness.R      r1_4_macros (index without Wikipedia page views)
-│   ├── 13_field_measures.R        Field measures: density, patent-cited share, SDR shares and pay
-│   ├── 14_field_tables.R          r2_3_macros
-│   ├── 15_pay_grouped.R           r2_3_pay_grouped_macros; r2_3_pay_grouped_scatter
-│   ├── 16_funder_types.R          r2_5_macros; funder types and awarding bodies per prize
-│   ├── 17_criteria_overlap.R      r2_1_criteria_table; r2_1_macros
-│   ├── 18_home_bias.R             Home bias of every prize against its field's benchmark pool
-│   ├── 19_home_bias_tables.R      r2_2_macros (+ _share01, _share005); r2_2_prize_table
-│   ├── 20_awarding_countries.py   r2_2_awarding_country_table; r2_2_desc_macros
-│   ├── 21_teams.R                 r2_6_macros (laureates per award)
-│   ├── 22_recipients_by_prestige.py  r2_6_prestige_macros
-│   ├── 23_ec_summary.py           r2_9_ec_macros (the early-career list)
-│   └── 24_home_bias_figures.R     r2_3_field_measures_scatter,
+│   ├── 12_field_measures.R        Field measures: recognition density and patent-cited share
+│   ├── 13_field_tables.R          r2_3_macros
+│   ├── 14_pay_grouped.R           r2_3_pay_grouped_macros; r2_3_pay_grouped_scatter
+│   ├── 15_funder_types.R          r2_5_macros; r2_5_funder_share_by_year; awarding countries per prize
+│   ├── 16_criteria_overlap.R      r2_1_criteria_table; r2_1_macros
+│   ├── 17_home_bias.R             Home bias of every prize against its field's benchmark pool
+│   ├── 18_home_bias_tables.R      r2_2_macros (+ _share01, _share005); r2_2_prize_table
+│   ├── 19_awarding_countries.py   r2_2_awarding_country_table; r2_2_desc_macros
+│   ├── 20_teams.R                 r2_6_macros (laureates per award)
+│   ├── 21_recipients_by_prestige.py  r2_6_prestige_macros
+│   ├── 22_ec_summary.py           r2_9_ec_macros, r2_9_ec_stage_macros (the early-career list)
+│   └── 23_home_bias_figures.R     r2_3_field_measures_scatter,
 │                                  r2_2_home_share_by_country, r2_2_home_bias_scatter
 ├── output/                      Created by run_all.R (not committed)
 │   ├── tables/                    .tex tables and macro files, as the paper inputs them
@@ -95,6 +99,7 @@ and is not part of the replication run.
 │   └── intermediate/              CSVs passed between scripts
 ├── expected/                    What the package must reproduce
 │   ├── paper_exhibits.csv         every \input and \includegraphics of the paper
+│   ├── paper_usage.csv            every macro the paper invokes, with its defining file
 │   ├── tables/                    the paper's copies of the .tex files
 │   └── plotdata/                  plot data of the paper's figures, from the original scripts
 └── tests/
@@ -102,6 +107,8 @@ and is not part of the replication run.
     ├── generated_files.txt        the files run_all.R is allowed to create
     ├── plotdata.R                 plot-data writer and comparison
     ├── refresh_expected.R         rebuilds expected/ (authors only)
+    ├── paper_usage.py             lists what the paper uses (authors only)
+    ├── zenodo_upload.py           uploads the package to its Zenodo record (authors only)
     └── capture_original.R         runs an original script with ggsave() capturing plot data
 ```
 
@@ -114,11 +121,9 @@ All inputs are in `data/`. Prize-level files:
 | `cleanPrizeList.xlsx` | The 99 prizes with all indicators, the prestige index and rank | Authors' compilation |
 | `mainPrizeList_pre-imputation.xlsx` | The same list before the imputation of missing survey ratings | Authors' compilation |
 | `cleanEC.xlsx` | The 68 early-career prizes | Authors' compilation |
-| `r2_9_ec_stage_by_prize.csv` | Yearly recognition counts of the early-career prizes, with the observed counts of the 14 prizes whose 2020-2024 recipients were collected | Authors' collection from prize websites |
+| `r2_9_ec_stage_by_prize.csv` | Yearly recognition counts and the career stage targeted by each early-career prize, with the observed 2015-2024 counts of the 14 prizes whose recipients were collected | Authors' collection from prize websites |
 | `all_winners_with_plotFinestField.csv` | Every 2015-2024 recognition of the 99 prizes: winner, OpenAlex author id, OpenAlex subfield/field | Authors' collection from prize websites; fields from OpenAlex |
 | `institution_recode/` | One JSON record per prize: awarding organization, its type and country, funder at founding and today, sources, confidence | Authors' coding from prize and funder websites |
-| `laureate_birth_years.csv` | Birth years of laureates | Wikidata |
-| `nobel_api_cache.json` | All Nobel Prizes in physics, chemistry, medicine and economics with their laureates | Nobel Foundation API (api.nobelprize.org), cached 29 Aug 2026 |
 
 Field-level files:
 
@@ -127,13 +132,10 @@ Field-level files:
 | `subfield_to_finest_group.csv` | OpenAlex subfields mapped to the paper's 26 field groups | Authors |
 | `nsf_field_to_finest_group.csv` | NSF doctorate fields mapped to the 26 field groups | Authors |
 | `finest_group_to_funding_field.csv` | The 26 field groups mapped to the categories of the federal funding table | Authors |
-| `comte_rungs.csv` | The 26 field groups on the rungs of Comte's hierarchy of the sciences | Authors |
 | `nsf2023.xlsx` | US doctorates awarded by field, 2023 | NSF Survey of Earned Doctorates |
 | `2022budgetByField.xlsx` | US federal research obligations by field, FY2022 | NSF NCSES Federal Funds for R&D |
 | `vs_academics_by_finest_group.csv` | Count of senior research academics by field group | OpenAlex |
 | `works_by_subfield.csv` | Count of well-cited works by OpenAlex subfield | OpenAlex |
-| `ncses/sdr25321_tab012-003.xlsx` | Employed doctorate holders by field and sector, 2023 (NSF 25-321, Table 12-3) | NCSES Survey of Doctorate Recipients |
-| `ncses/sdr25321_tab054.xlsx` | Median salaries of doctorate holders by field and sector, 2023 (NSF 25-321, Table 54) | NCSES Survey of Doctorate Recipients |
 | `ncses/doctorate_recipients_2023.zip` | SDR 2023 public-use microdata | NCSES (public-use file) |
 | `ncses/pay_paper_groups.csv`, `pay_sdr_groups.csv` | Crosswalk of the field groups and the SDR salary fields to 16 common groups | Authors |
 
@@ -146,10 +148,8 @@ the scanning code that produced them is in the authors' project repository:
 |------|-------------|
 | `author_affiliations_smallteam.jsonl` | For every laureate: institutions on their small-team papers (at most 20 authors), with years and work counts |
 | `pool_v2_top1000/top_pool_field_year.csv`, `top_pool_field_country_year.csv` | The benchmark pool: per OpenAlex field and year, the 1,000 researchers with the most citations to small-team papers, and how many of them were affiliated with each country (institutions on at least 2 years and 5% of works) |
-| `pool_v2_share0.05/`, `pool_v2_share0.1/` | The same pool under the alternative affiliation rules quoted as robustness checks |
-| `pop_field_year.csv`, `pop_field_country_year.csv` | The wide reference pool: everyone with 10+ citations |
-| `patent_citation_counts.csv` | Per OpenAlex subfield and publication year: articles, and articles cited by at least one US patent at each confidence level |
-| `patent_citation_topk.csv` | The most-cited articles of each field group, 2000-2015, with their patent-citation status |
+| `pool_v2_share0.05/`, `pool_v2_share0.1/` | The same pool with the top 0.05% and 0.1% of each field's cited researchers instead of the top 1,000 (the benchmark-size robustness quoted in the prize table's note) |
+| `patent_citation_counts.csv` | Per OpenAlex subfield and publication year: articles, and articles cited by at least one US patent |
 
 ## Software
 

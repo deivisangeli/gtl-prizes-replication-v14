@@ -1,6 +1,7 @@
 # ==============================================================================
 # 02_correlation_table.R
-# Generates: Table S2 (corr.tex)
+# Generates: corr.tex (Table~\ref{corrTable}: correlations between the five prestige indicators)
+# Inputs: data/mainPrizeList_pre-imputation.xlsx
 # ==============================================================================
 source("_helpers.R")
 
@@ -8,10 +9,8 @@ df <- readxl::read_excel(file.path(data_dir, "mainPrizeList_pre-imputation.xlsx"
 
 varsofinteres <- df[, c("Rating", "lnPageViews", "lnAge", "lnMoneyPerPrize", "lnNewsMentions")]
 
-data <- varsofinteres
-
 # Correlation matrix with p-values and standard errors
-corr_res <- rcorr(as.matrix(data))
+corr_res <- rcorr(as.matrix(varsofinteres))
 
 cor_mat <- corr_res$r
 p_mat <- corr_res$P
@@ -30,20 +29,15 @@ add_stars <- function(p) {
   else return("")
 }
 
-output_mat <- matrix(nrow = nrow(cor_mat), ncol = ncol(cor_mat))
-for (i in 1:nrow(cor_mat)) {
-  for (j in 1:ncol(cor_mat)) {
-    if (i != j) {
-      output_mat[i, j] <- paste0(formatC(cor_mat[i, j], format = "f", digits = 2),
-                                  " (", formatC(se_mat[i, j], format = "f", digits = 2), ")",
-                                  add_stars(p_mat[i, j]))
-    } else {
-      output_mat[i, j] <- ""
-    }
+# Lower triangle: correlation (standard error) with significance stars
+output_mat <- matrix("", nrow = nrow(cor_mat), ncol = ncol(cor_mat))
+for (i in 2:nrow(cor_mat)) {
+  for (j in 1:(i - 1)) {
+    output_mat[i, j] <- paste0(formatC(cor_mat[i, j], format = "f", digits = 2),
+                               " (", formatC(se_mat[i, j], format = "f", digits = 2), ")",
+                               add_stars(p_mat[i, j]))
   }
 }
-
-output_mat[upper.tri(output_mat, diag = TRUE)] <- ""
 diag(output_mat) <- 1
 
 rownames(output_mat) <- c("Survey Rating", "Daily Page Views", "Prize Age", "Money per Prize", "News Mentions")
@@ -51,8 +45,7 @@ colnames(output_mat) <- rownames(output_mat)
 
 output_df <- as.data.frame(output_mat)
 
-corr_table <- print(xtable(output_df, digits = 3),
-                    type = "latex", file = NULL, print.results = FALSE)
+corr_table <- print(xtable(output_df), print.results = FALSE)
 
 corr_table <- gsub("\\\\begin\\{table\\}\\[ht\\]",
                    "\\\\begin{table}[ht]\n\\\\caption{Correlation Between Normalized Prestige Indicators} \\\\label{corrTable}",
@@ -60,12 +53,12 @@ corr_table <- gsub("\\\\begin\\{table\\}\\[ht\\]",
 
 corr_table <- gsub("\\{r[lrc]+\\}", "{lccccc}", corr_table)
 
-# Scaled to \textwidth as in the paper (analysis/correlation between prestige indicators.R).
+# Scale the tabular to \textwidth.
 corr_table <- gsub("\\begin{tabular}", "\\resizebox{\\textwidth}{!}{\\begin{tabular}",
                    corr_table, fixed = TRUE)
 corr_table <- gsub("\\end{tabular}", "\\end{tabular}}", corr_table, fixed = TRUE)
 
-note <- "\\noindent \\justify \\footnotesize \\textit{Note}: The table shows estimates of the Pearson correlation coefficients between each pair of the five prestige indicators, after normalization. Standard errors between parenthesis. * p<0.05, ** p<0.01, *** p<0.001."
+note <- "\\noindent \\justify \\footnotesize \\textit{Note}: The table shows estimates of the Pearson correlation coefficients between each pair of the five prestige indicators, after normalization. Standard errors in parentheses. * p<0.05, ** p<0.01, *** p<0.001."
 
 corr_table_lines <- strsplit(corr_table, "\n")[[1]]
 end_table_pos <- grep("\\\\end\\{table\\}", corr_table_lines)

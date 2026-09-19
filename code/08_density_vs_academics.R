@@ -1,37 +1,24 @@
 # ==============================================================================
 # 08_density_vs_academics.R
-# Generates: Figure 4 (prizesDensityByVSacademics_finest.pdf)
+# Generates: prizesDensityByVSacademics_finest.pdf (award density by field, research-academics denominator)
+# Inputs: data/vs_academics_by_finest_group.csv; via winners_by_group(): data/all_winners_with_plotFinestField.csv, data/subfield_to_finest_group.csv
 # ==============================================================================
 source("_helpers.R")
-
-sf_map <- read.csv(file.path(data_dir, "subfield_to_finest_group.csv"), stringsAsFactors = FALSE)
 
 vs_raw <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE)
 vs_raw <- vs_raw[vs_raw$academic_count > 0 & vs_raw$group_name != "Humanities", ]
 total_vs <- sum(vs_raw$academic_count)
 
-winners <- read.csv(file.path(data_dir, "all_winners_with_plotFinestField.csv"), stringsAsFactors = FALSE)
-
-winners_with_group <- winners %>%
-  inner_join(sf_map %>% select(subfield_name, finest_group) %>% distinct(),
-             by = c("Best_Subfield" = "subfield_name"))
-
-re_by_group <- winners_with_group %>%
+# Yearly recognitions per field group: recognitions over 2015-2024 divided by 10
+re_by_group <- winners_by_group() %>%
   group_by(finest_group) %>%
   summarise(yearlyRE = n() / 10, .groups = "drop")
 
 results <- vs_raw %>%
-  select(field = group_name, vs_academics = academic_count) %>%
-  full_join(re_by_group, by = c("field" = "finest_group")) %>%
-  mutate(vs_academics = ifelse(is.na(vs_academics), 0, vs_academics),
-         yearlyRE = ifelse(is.na(yearlyRE), 0, yearlyRE))
-
-results <- results[results$vs_academics > 0, ]
-results$fieldSize <- results$vs_academics / sum(results$vs_academics) * 100
-results$density <- results$yearlyRE / results$vs_academics * 1000
-
-# Prepare for make_density_plot
-results$size <- results$vs_academics
+  select(field = group_name, size = academic_count) %>%
+  left_join(re_by_group, by = c("field" = "finest_group")) %>%
+  mutate(yearlyRE = coalesce(yearlyRE, 0),
+         density = yearlyRE / size * 1000)
 
 p <- make_density_plot(results, "1,000 research academics", 1000, total_vs,
                        ylab = "Award density (yearly recognitions per 1,000 research academics)",

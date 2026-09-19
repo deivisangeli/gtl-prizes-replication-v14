@@ -12,6 +12,7 @@
 #                                captured from the ORIGINAL scripts that made the
 #                                paper's figures (tests/capture_original.R)
 #   expected/paper_exhibits.csv  the list of exhibits, read from the paper's .tex
+#   expected/paper_usage.csv    the macros the paper invokes (tests/paper_usage.py, run separately)
 #
 # Environment variables (defaults are the authors' machine):
 #   GTL_PRIZES_REPO  the project repository with analysis/*.R   (needs db_path set)

@@ -38,36 +38,22 @@ save_figure <- function(filename, plot = ggplot2::last_plot(), ...) {
   invisible(plot)
 }
 
-# House format for the generated supplementary tables: a short title on top, the
-# tabular scaled, and the notes below in a smaller font.
-tex_table <- function(title, label, tabular_lines, notes = "", scale = 0.8) {
-  c("\\begin{table}[H]", "\\centering \\small",
-    paste0("\\caption{", title, "}"),
-    paste0("\\label{", label, "}"),
-    paste0("\\scalebox{", scale, "}{%"),
-    tabular_lines,
-    "}",
-    if (nzchar(notes)) c("\\par\\vspace{3pt}",
-                         paste0("\\begin{minipage}{", scale, "\\linewidth}\\footnotesize"),
-                         paste0("\\emph{Notes:} ", notes),
-                         "\\end{minipage}"),
-    "\\end{table}")
+# Repeat the column header on every continuation page of a longtable: the
+# first-page head carries the caption, later pages a "(Table X continued)" line.
+longtable_heads <- function(tab, label, ncol) {
+  header <- grep("^Award Name &", tab)[1]
+  rule <- header + 1  # the "\hline \\[-1.8ex]" line under the header row
+  c(tab[1:rule],
+    "\\endfirsthead",
+    sprintf("\\multicolumn{%d}{l}{\\small\\textit{(Table~\\ref{%s} continued)}} \\\\[2pt]", ncol, label),
+    "\\hline \\hline \\\\[-1.8ex]",
+    tab[header], tab[rule],
+    "\\endhead",
+    tab[(rule + 1):length(tab)])
 }
 
 # A LaTeX \newcommand line
 mac <- function(name, value) sprintf("\\newcommand{\\%s}{%s}", name, value)
-
-# Prize tiers: cumulative share of yearly recognition events along the ranking,
-# Tier 1 up to 10%, Tier 2 up to 30%, Tier 3 the rest.
-add_tiers <- function(df, rank_col = "pcaRank") {
-  df <- df[order(df[[rank_col]]), ]
-  df$cumWinners <- cumsum(df$`Yearly Winners`)
-  total <- sum(df$`Yearly Winners`)
-  df$Tier <- dplyr::case_when(df$cumWinners <= 0.1 * total ~ 1,
-                              df$cumWinners <= 0.3 * total ~ 2,
-                              TRUE ~ 3)
-  df
-}
 
 # Winners matched to the paper's 26 field groups through the winner's OpenAlex
 # subfield (every row of the winner file is one recognition)
@@ -80,7 +66,7 @@ winners_by_group <- function() {
                by = c("Best_Subfield" = "subfield_name"))
 }
 
-# Broad-area color mapping (used across all density plots)
+# Broad-area colors of the density figures by field group
 color_map <- c(
   "Math & Phys. sci" = "#1A237E",
   "Applied sci"      = "#8B4577",

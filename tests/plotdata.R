@@ -8,7 +8,7 @@
 # those tables, stacked with a `layer` column, so a figure produced by the
 # package can be checked against the same figure produced by the original code.
 #
-# Sourced by _helpers.R (the package) and by tests/refresh_expected.R (the
+# Sourced by _helpers.R (the package) and by tests/capture_original.R (the
 # original analysis scripts), so both sides write the identical format.
 # ==============================================================================
 

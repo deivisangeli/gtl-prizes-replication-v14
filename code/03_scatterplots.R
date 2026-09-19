@@ -1,18 +1,15 @@
 # ==============================================================================
 # 03_scatterplots.R
-# Generates: Figures 2a-c and S1 (cum_prize_time.png, scatter_time_rating.png,
-#            scatter_moneyprize_time_linear_fit.png, scatter_money_views.png)
+# Generates: cum_prize_time.png, scatter_time_rating.png,
+#            scatter_moneyprize_time_linear_fit.png, scatter_money_views.png
+# Inputs:    data/cleanPrizeList.xlsx
 # ==============================================================================
 source("_helpers.R")
 
 prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
   filter(!is.na(`Award Name`), `Award Name` != "Max Planck Research Award")
-prizeList <- prizeList[order(prizeList$pcaRank), ]
 prizeList$first_awarded <- 2025 - prizeList$age
-
-prizeList <- prizeList %>%
-  arrange(first_awarded) %>%
-  mutate(cumMoneyYear = cumsum(moneyPerYear))
+prizeList <- prizeList %>% arrange(first_awarded)
 
 prizes_to_label <- c("Nobel Prize in Physics", "Nobel Prize in Chemistry",
                      "Copley Medal", "A. M. Turing Award",
@@ -28,15 +25,12 @@ prizes_to_label_view <- c("Nobel Prize in Physics", "Nobel Prize in Chemistry",
                           "Fields Medal")
 
 prizeList$ln10PageViews <- log(prizeList$`Daily Page Views` + 1, base = 10)
-prizeList$ln10MoneyPerPeriod <- log(prizeList$moneyPerPeriod + 1, base = 10)
-prizeList$ln10MoneyPerWinner <- log(prizeList$moneyPerWinner + 1, base = 10)
-prizeList$ln10MoneyPerPrize <- log(prizeList$moneyPerPrize + 1, base = 10)
 
 labels_data <- prizeList %>% filter(`Award Name` %in% prizes_to_label)
-labels_without_zero_views <- prizeList %>% filter(`Award Name` %in% prizes_to_label_view)
 
 ################################################################################
-# Figure 1a: Cumulative Prize money and number of prizes
+# cum_prize_time.png: cumulative number of prizes and cumulative yearly prize
+# money by year first awarded, both indexed to 100 in 1925
 ################################################################################
 
 base_prizes <- prizeList %>%
@@ -108,7 +102,8 @@ plot2 <- ggplot(prize_adj, aes(x = first_awarded)) +
 save_figure("cum_prize_time.png", plot2, width = 6, height = 3.5, dpi = 1080)
 
 ################################################################################
-# Figure 2b: Prize Age vs Survey Rating
+# scatter_time_rating.png: year first awarded vs expert survey rating, the 75
+# prizes with observed ratings
 ################################################################################
 
 rated <- prizeList %>% filter(!is.na(Rating))
@@ -157,7 +152,8 @@ p_time_rating <- ggplot(rated, aes(x = first_awarded, y = Rating)) +
 save_figure("scatter_time_rating.png", p_time_rating, width = 6, height = 3.5, dpi = 1080)
 
 ################################################################################
-# Figure 1c: Prize money per winner over time
+# scatter_moneyprize_time_linear_fit.png: year first awarded vs prize money per
+# award, 98 prizes
 ################################################################################
 
 plot_linear <- ggplot(prizeList, aes(x = first_awarded)) +
@@ -194,15 +190,15 @@ plot_linear <- ggplot(prizeList, aes(x = first_awarded)) +
 save_figure("scatter_moneyprize_time_linear_fit.png", plot_linear, width = 6, height = 3.5, dpi = 1080)
 
 ################################################################################
-# Figure 1d: Money vs Online Visibility
+# scatter_money_views.png: prize money per award vs daily Wikipedia page views
+# (log10 of 1 + views), 98 prizes
 ################################################################################
 
-p_money_views <- ggplot(prizeList %>% filter(ln10PageViews > 0),
-                        aes(x = moneyPerPrize, y = ln10PageViews)) +
+p_money_views <- ggplot(prizeList, aes(x = moneyPerPrize, y = ln10PageViews)) +
   geom_point(shape = 21, size = 2, fill = "blue", alpha = 0.3) +
   geom_smooth(method = "lm", se = FALSE, color = "#CBC3E3", size = 1, alpha = 0.8) +
   geom_label_repel(
-    data = labels_data %>% filter(ln10PageViews > 0),
+    data = labels_data,
     aes(label = `Award Name`),
     box.padding = 1, point.padding = 0.2, min.segment.length = 0,
     force = 20, force_pull = 0.5, max.overlaps = Inf, direction = "both",

@@ -1,15 +1,14 @@
 # ==============================================================================
 # 07_density_phd.R
-# Generates: Figure 5 (prizesDensityByPhD_finest.pdf)
+# Produces: figures/prizesDensityByPhD_finest.pdf (award density per 1,000 new PhDs)
+# Inputs: data/nsf2023.xlsx, data/nsf_field_to_finest_group.csv,
+#         data/all_winners_with_plotFinestField.csv, data/subfield_to_finest_group.csv
 # ==============================================================================
 source("_helpers.R")
 
-sf_map <- read.csv(file.path(data_dir, "subfield_to_finest_group.csv"), stringsAsFactors = FALSE)
 nsf_map <- read.csv(file.path(data_dir, "nsf_field_to_finest_group.csv"), stringsAsFactors = FALSE)
 
 nsf_raw <- readxl::read_excel(file.path(data_dir, "nsf2023.xlsx"))
-nsf_raw <- nsf_raw %>%
-  filter(!(plotFinestField %in% c("Humanities", "Education", "Other non-science")))
 
 nsf_with_group <- nsf_raw %>%
   inner_join(nsf_map, by = c("Field of doctorate" = "nsf_field"))
@@ -20,11 +19,7 @@ phd_by_group <- nsf_with_group %>%
 
 total_phds <- sum(phd_by_group$phds)
 
-winners <- read.csv(file.path(data_dir, "all_winners_with_plotFinestField.csv"), stringsAsFactors = FALSE)
-
-winners_with_group <- winners %>%
-  inner_join(sf_map %>% select(subfield_name, finest_group) %>% distinct(),
-             by = c("Best_Subfield" = "subfield_name"))
+winners_with_group <- winners_by_group()
 
 re_by_group <- winners_with_group %>%
   group_by(finest_group) %>%
@@ -36,11 +31,11 @@ results <- phd_by_group %>%
   mutate(phds = ifelse(is.na(phds), 0, phds),
          yearlyRE = ifelse(is.na(yearlyRE), 0, yearlyRE))
 
+# Field groups with no NSF doctorate field are not shown
 results <- results[results$phds > 0, ]
-results$fieldSize <- results$phds / sum(results$phds) * 100
 results$density <- results$yearlyRE / results$phds * 1000
 
-# Prepare for make_density_plot
+# make_density_plot reads the denominator from column size
 results$size <- results$phds
 
 p <- make_density_plot(results, "1,000 new PhDs", 1000, total_phds,

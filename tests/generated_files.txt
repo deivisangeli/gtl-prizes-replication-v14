@@ -15,21 +15,14 @@ output/figures/r2_5_funder_share_by_year.pdf
 output/figures/scatter_money_views.png
 output/figures/scatter_moneyprize_time_linear_fit.png
 output/figures/scatter_time_rating.png
-output/intermediate/funding_density.csv
 output/intermediate/prize_awarding_countries.csv
 output/intermediate/r2_2_home_awards_by_country.csv
 output/intermediate/r2_2_home_awards_by_country_share005.csv
 output/intermediate/r2_2_home_awards_by_country_share01.csv
 output/intermediate/r2_2_prize_home_bias.csv
-output/intermediate/r2_2_prize_home_bias_share005.csv
-output/intermediate/r2_2_prize_home_bias_share01.csv
 output/intermediate/r2_2_winner_countries.csv
 output/intermediate/r2_3_correlations.csv
 output/intermediate/r2_3_field_measures.csv
-output/intermediate/r2_3_pay_grouped_sample.csv
-output/intermediate/r2_3_proxy_agreement.csv
-output/intermediate/r2_3_ros_windows.csv
-output/intermediate/r2_5_funder_by_prize.csv
 output/plotdata/cum_prize_time.csv
 output/plotdata/moneyPerWinner_prizeLevel.csv
 output/plotdata/moneyPerWinner_winnerLevel.csv
@@ -50,7 +43,6 @@ output/plotdata/scatter_time_rating.csv
 output/tables/corr.tex
 output/tables/prizeRankRobustnessTable.tex
 output/tables/prizesByField.tex
-output/tables/r1_4_macros.tex
 output/tables/r2_1_criteria_table.tex
 output/tables/r2_1_macros.tex
 output/tables/r2_2_awarding_country_table.tex
@@ -65,6 +57,7 @@ output/tables/r2_5_macros.tex
 output/tables/r2_6_macros.tex
 output/tables/r2_6_prestige_macros.tex
 output/tables/r2_9_ec_macros.tex
+output/tables/r2_9_ec_stage_macros.tex
 output/tables/robustness_macros.tex
 output/tables/selectedECPrizes.tex
 output/tables/selectedPrizes.tex

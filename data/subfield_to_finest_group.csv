@@ -102,21 +102,21 @@ subfields/2309,Nature and Landscape Conservation,Environmental Science,Other
 subfields/2310,Pollution,Environmental Science,Other
 subfields/2311,Industrial and Manufacturing Engineering,Environmental Science,Other
 subfields/2312,Water Science and Technology,Environmental Science,Other
-subfields/1302,Aging,"Molecular Bio & Genetics",Life & Health
-subfields/1303,Biochemistry,"Molecular Bio & Genetics",Life & Health
-subfields/1304,Biophysics,"Molecular Bio & Genetics",Life & Health
-subfields/1305,Biotechnology,"Molecular Bio & Genetics",Life & Health
-subfields/1306,Cancer Research,"Molecular Bio & Genetics",Life & Health
-subfields/1307,Cell Biology,"Molecular Bio & Genetics",Life & Health
-subfields/1308,Clinical Biochemistry,"Molecular Bio & Genetics",Life & Health
-subfields/1309,Developmental Biology,"Molecular Bio & Genetics",Life & Health
-subfields/1310,Endocrinology,"Molecular Bio & Genetics",Life & Health
-subfields/1311,Genetics,"Molecular Bio & Genetics",Life & Health
-subfields/1312,Molecular Biology,"Molecular Bio & Genetics",Life & Health
-subfields/1313,Molecular Medicine,"Molecular Bio & Genetics",Life & Health
-subfields/1315,Structural Biology,"Molecular Bio & Genetics",Life & Health
-subfields/2704,Biochemistry,"Molecular Bio & Genetics",Life & Health
-subfields/2716,Genetics,"Molecular Bio & Genetics",Life & Health
+subfields/1302,Aging,Molecular Bio & Genetics,Life & Health
+subfields/1303,Biochemistry,Molecular Bio & Genetics,Life & Health
+subfields/1304,Biophysics,Molecular Bio & Genetics,Life & Health
+subfields/1305,Biotechnology,Molecular Bio & Genetics,Life & Health
+subfields/1306,Cancer Research,Molecular Bio & Genetics,Life & Health
+subfields/1307,Cell Biology,Molecular Bio & Genetics,Life & Health
+subfields/1308,Clinical Biochemistry,Molecular Bio & Genetics,Life & Health
+subfields/1309,Developmental Biology,Molecular Bio & Genetics,Life & Health
+subfields/1310,Endocrinology,Molecular Bio & Genetics,Life & Health
+subfields/1311,Genetics,Molecular Bio & Genetics,Life & Health
+subfields/1312,Molecular Biology,Molecular Bio & Genetics,Life & Health
+subfields/1313,Molecular Medicine,Molecular Bio & Genetics,Life & Health
+subfields/1315,Structural Biology,Molecular Bio & Genetics,Life & Health
+subfields/2704,Biochemistry,Molecular Bio & Genetics,Life & Health
+subfields/2716,Genetics,Molecular Bio & Genetics,Life & Health
 subfields/2400,General Immunology and Microbiology,Microbiology & Immunology,Life & Health
 subfields/2402,Applied Microbiology and Biotechnology,Microbiology & Immunology,Life & Health
 subfields/2403,Immunology,Microbiology & Immunology,Life & Health
@@ -249,3 +249,13 @@ subfields/1213,Visual Arts and Performing Arts,Humanities,Humanities
 subfields/2216,Architecture,Humanities,Humanities
 subfields/3304,Education,Humanities,Humanities
 subfields/3315,Communication,Humanities,Humanities
+subfields/2719,Health Policy,Public Health,Life & Health
+subfields/2702,Anatomy,Medicine,Life & Health
+subfields/2726,Microbiology,Microbiology & Immunology,Life & Health
+subfields/3002,Drug Discovery,Medicine,Life & Health
+subfields/3607,Medical Laboratory Technology,Dentistry & Allied Health,Life & Health
+subfields/3608,Medical Terminology,Dentistry & Allied Health,Life & Health
+subfields/3319,Life-span and Life-course Studies,Other Social Sci.,Social sci
+subfields/2200,General Engineering,Other Engineering,Applied sci
+subfields/2104,Nuclear Energy and Engineering,Other Engineering,Applied sci
+subfields/2103,Fuel Technology,Chemistry & Chemical Eng.,Math & Phys. sci

@@ -1,6 +1,9 @@
 # ==============================================================================
 # 06_robustness.R
-# Generates: Table S4 (prizeRankRobustnessTable.tex)
+# Generates: prizeRankRobustnessTable.tex (Table \ref{mainRankingRobustness}:
+#   simulated rank and tier of each prize under 1,000 random weightings) and
+#   robustness_macros.tex (\robustStableFifty, \robustStableNinety)
+# Inputs: data/cleanPrizeList.xlsx
 # ==============================================================================
 source("_helpers.R")
 
@@ -12,8 +15,7 @@ totalWinners <- sum(prizeList$`Yearly Winners`)
 prizeList <- prizeList %>%
   mutate(Tier = case_when(cumWinners <= 0.1 * totalWinners ~ 1,
                           cumWinners <= 0.3 * totalWinners ~ 2,
-                          TRUE ~ 3),
-         pcaRatingNormRound = round(pcaRatingNorm, 1))
+                          TRUE ~ 3))
 
 # Put the survey rating on the same scale as the other four indicators. The *Std
 # columns of cleanPrizeList.xlsx are centered and scaled with the mean and
@@ -45,7 +47,6 @@ calculateNewRanking <- function(df, w) {
 set.seed(42)  # For reproducibility
 newRankings <- data.frame()
 newTiers <- data.frame()
-weights <- data.frame()
 reps <- 1000
 
 for (i in 1:reps) {
@@ -58,34 +59,25 @@ for (i in 1:reps) {
 
   newRankings <- rbind(newRankings, newRank[1, ])
   newTiers <- rbind(newTiers, newRank[2, ])
-  weights <- rbind(weights, w)
 }
 
 # Quantiles for each prize
-quantiles <- data.frame(q025 = numeric(), q5 = numeric(), q975 = numeric(), `Award Name` = character())
+quantiles <- data.frame()
 for (prize in colnames(newRankings)) {
-  q <- data.frame(q025 = NA, q05 = NA, q975 = NA, prize = "")
-  q$q025 <- quantile(newRankings[, prize], 0.025)[[1]]
+  q <- data.frame(q05 = NA, q5 = NA, q95 = NA)
   q$q05 <- quantile(newRankings[, prize], 0.05)[[1]]
   q$q5 <- quantile(newRankings[, prize], 0.5)[[1]]
   q$q95 <- quantile(newRankings[, prize], 0.95)[[1]]
-  q$q975 <- quantile(newRankings[, prize], 0.975)[[1]]
   q$`Award Name` <- prize
   quantiles <- rbind(quantiles, q)
 }
-
-quantiles <- quantiles[order(quantiles$q5), ]
-quantiles$qRank <- 1:nrow(quantiles)
-quantiles <- quantiles %>%
-  group_by(q5) %>%
-  mutate(qRank = mean(qRank))
 
 prizeList <- left_join(prizeList, quantiles, by = "Award Name")
 
 # Tier frequency table
 tierTable <- data.frame()
 for (prize in colnames(newTiers)) {
-  t <- data.frame(tier1 = NA, tier2 = NA, tier3 = NA, prize = "")
+  t <- data.frame(tier1 = NA, tier2 = NA, tier3 = NA)
   t$tier1 <- sum(newTiers[, prize] == 1) / reps
   t$tier2 <- sum(newTiers[, prize] == 2) / reps
   t$tier3 <- sum(newTiers[, prize] == 3) / reps
@@ -94,7 +86,6 @@ for (prize in colnames(newTiers)) {
 }
 
 prizeList <- left_join(prizeList, tierTable, by = "Award Name")
-prizeList$CI <- paste0("[", round(prizeList$q025, 0), ",", round(prizeList$q975, 0), "]")
 
 prizeList$`Freq. in right Tier` <- NA
 prizeList$`Freq. in right Tier`[prizeList$Tier == 1] <- round(prizeList$tier1[prizeList$Tier == 1] * 100, 1)
@@ -113,18 +104,16 @@ table <- stargazer(forTable, type = "latex",
                    title = "List of Selected Prizes")
 
 table <- gsub("\\textbackslash &", "\\&", table, fixed = TRUE)
-# Until 2026-09-03 the longtable was wrapped in a "{ ... }" group whose closing brace was
-# never written, leaving an unbalanced "{" that made the paper fail with "Missing } inserted".
-# \small stays scoped to the table; \begingroup/\endgroup sit on the same lines as the delimiters.
+# Rewrite the tabular as a longtable inside a \begingroup\small ... \endgroup group.
 table <- gsub("\\begin{tabular}", "\\begingroup\\small \\begin{longtable}", table, fixed = TRUE)
 table <- gsub("\\end{tabular}", "\\end{longtable}\\endgroup", table, fixed = TRUE)
 table <- gsub("ccc}",
               "ccc} \\caption{Robustness Exercise -- Distribution of Prize Ranking under Random Weighting} \\label{mainRankingRobustness}",
               table, fixed = TRUE)
-table <- gsub("{@{\\extracolsep{5pt}} ccccc}", "{lcccc}", table, fixed = TRUE)
 table <- table[-c(1, 2, 3, 4, 5, 6, length(table))]
+table <- longtable_heads(table, "mainRankingRobustness", 7)
 
-# Blank line, then the note (writing straight to length + 2 left a literal "NA" line).
+# Blank line, then the table note.
 table[length(table) + 1] <- ""
 table[length(table) + 1] <-
   paste("\\noindent \\footnotesize \\textit{Note}: This table shows statistics about the distribution of rank and tier for our list of 99 most prestigious prizes in 1,000 simulations using random weights over the five indicators, each centered and scaled with the PCA fitting sample.",

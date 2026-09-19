@@ -1,13 +1,14 @@
 # ==============================================================================
 # 09_density_tiers.R
-# Generates: Figures S3-S4 (prizesDensityByVS_finest_T1.pdf,
-#            prizesDensityByVS_finest_T12.pdf)
+# Generates: prizesDensityByVS_finest_T1.pdf and prizesDensityByVS_finest_T12.pdf
+#            (award density by field, Tier 1 and Tier 1-2 prizes, research-academics denominator)
+# Inputs: data/cleanPrizeList.xlsx, data/vs_academics_by_finest_group.csv; via winners_by_group():
+#         data/all_winners_with_plotFinestField.csv, data/subfield_to_finest_group.csv
 # ==============================================================================
 source("_helpers.R")
 
-sf_map <- read.csv(file.path(data_dir, "subfield_to_finest_group.csv"), stringsAsFactors = FALSE)
-
-# Load prize list and compute tiers
+# Prize tiers: Tier 1 = prizes making up the top 10% of yearly recognitions by
+# prestige rank, Tier 2 = the next 20%, Tier 3 = the rest
 prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
   filter(!is.na(`Award Name`))
 
@@ -19,17 +20,16 @@ prizeList$Tier <- ifelse(prizeList$cumWinners <= 0.1 * totalWinners, 1,
 
 prize_tier <- prizeList %>% select(`Award Name`, Tier)
 
-# Load winners and match to tiers
-winners <- read.csv(file.path(data_dir, "all_winners_with_plotFinestField.csv"), stringsAsFactors = FALSE)
+# Winners by field group, matched to their prize's tier
+winners_with_group <- winners_by_group()
 
 normalize_name <- function(x) {
   x <- gsub("\u2013", "-", x)
-  x <- gsub("\u2014", "-", x)
   x <- gsub("\u00f6", "o", x)
   trimws(x)
 }
 
-winners$prize_norm <- normalize_name(winners$Prize)
+winners_with_group$prize_norm <- normalize_name(winners_with_group$Prize)
 prize_tier$prize_norm <- normalize_name(prize_tier$`Award Name`)
 
 prize_tier$prize_norm[prize_tier$prize_norm == "Balzan Prizes"] <- "Balzan Prize"
@@ -38,39 +38,35 @@ prize_tier$prize_norm[prize_tier$prize_norm == "Gold Medal for Astronomy"] <-
 prize_tier$prize_norm[prize_tier$prize_norm == "Crafoord prize in Polyarthritis"] <-
   "Crafoord Prize in Polyarthritis"
 
-winners <- winners %>%
+n_winners <- nrow(winners_with_group)
+winners_with_group <- winners_with_group %>%
   inner_join(prize_tier %>% select(prize_norm, Tier), by = "prize_norm")
+stopifnot(nrow(winners_with_group) == n_winners)  # every winner's prize has a tier
 
-winners_with_group <- winners %>%
-  inner_join(sf_map %>% select(subfield_name, finest_group) %>% distinct(),
-             by = c("Best_Subfield" = "subfield_name"))
-
-# Load field-size denominator (VS academics)
+# Field size: research academics at the top 150 US universities
 vs_raw <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE)
 vs_raw <- vs_raw[vs_raw$academic_count > 0 & vs_raw$group_name != "Humanities", ]
 vs_by_group <- vs_raw %>%
   select(finest_group = group_name, size = academic_count)
 total_vs <- sum(vs_by_group$size)
 
-# Generate tier figures
+# One density figure per tier cut-off
 tier_configs <- list(
-  list(max_tier = 1, suffix = "T1",  label = "Tier 1 Only"),
-  list(max_tier = 2, suffix = "T12", label = "Tier 1+2")
+  list(max_tier = 1, suffix = "T1"),
+  list(max_tier = 2, suffix = "T12")
 )
 
 for (tc in tier_configs) {
-  w_tier <- winners_with_group %>% filter(Tier <= tc$max_tier)
-  re_tier <- w_tier %>%
+  re_tier <- winners_with_group %>%
+    filter(Tier <= tc$max_tier) %>%
     group_by(finest_group) %>%
     summarise(yearlyRE = n() / 10, .groups = "drop")
 
   results <- vs_by_group %>%
     rename(field = finest_group) %>%
-    full_join(re_tier, by = c("field" = "finest_group")) %>%
-    mutate(size = ifelse(is.na(size), 0, size),
-           yearlyRE = ifelse(is.na(yearlyRE), 0, yearlyRE))
-  results <- results[results$size > 0, ]
-  results$density <- results$yearlyRE / results$size * 1000
+    left_join(re_tier, by = c("field" = "finest_group")) %>%
+    mutate(yearlyRE = coalesce(yearlyRE, 0),
+           density = yearlyRE / size * 1000)
 
   p <- make_density_plot(results, "1,000 research academics", 1000, total_vs,
                          ylab = "Award density (yearly recognitions/1,000 research academics)",

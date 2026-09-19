@@ -1,14 +1,16 @@
 # ==============================================================================
 # 10_density_funding.R
-# Generates: Figure S5 (prizesDensityFunding.pdf)
+# Produces: figures/prizesDensityFunding.pdf (award density by funding)
+# Inputs: data/finest_group_to_funding_field.csv, data/2022budgetByField.xlsx,
+#         and through winners_by_group() data/all_winners_with_plotFinestField.csv,
+#         data/subfield_to_finest_group.csv
 #
 # Recognition density with US federal research funding as the field-size
-# denominator. Numerator: the observed 2015-2024 recognitions, assigned to the
-# paper's 26 field groups through the winner's OpenAlex subfield (as in scripts
-# 07-09, 11) and aggregated to the eight categories of the NSF federal-funding
-# table through data/finest_group_to_funding_field.csv. Denominator: FY2022
-# federal research obligations by field (data/2022budgetByField.xlsx), Humanities
-# and "Other non-science" excluded.
+# denominator. Numerator: 2015-2024 recognitions, assigned to the paper's 26 field
+# groups through the winner's OpenAlex subfield and aggregated to the eight
+# categories of the NSF federal-funding table (data/finest_group_to_funding_field.csv).
+# Denominator: FY2022 federal research obligations by field
+# (data/2022budgetByField.xlsx), Humanities and "Other non-science" excluded.
 # ==============================================================================
 source("_helpers.R")
 
@@ -21,20 +23,15 @@ fund_map <- read.csv(file.path(data_dir, "finest_group_to_funding_field.csv"), s
 stopifnot(!anyDuplicated(fund_map$finest_group),
           setequal(fund_map$finest_group, setdiff(unique(sf_map$finest_group), "Humanities")))
 
-winners <- read.csv(file.path(data_dir, "all_winners_with_plotFinestField.csv"), stringsAsFactors = FALSE)
-# every row is one recognition, the two collaboration rows included
-
-winners_with_group <- winners %>%
-  inner_join(sf_map %>% select(subfield_name, finest_group) %>% distinct(),
-             by = c("Best_Subfield" = "subfield_name")) %>%
+# The figure's 98-prize sample excludes the discontinued Max Planck Research Award
+winners_with_group <- winners_by_group() %>%
+  filter(Prize != "Max Planck Research Award") %>%
   filter(finest_group != "Humanities") %>%
   inner_join(fund_map, by = "finest_group")
 
 re_by_funding <- winners_with_group %>%
   group_by(funding_field) %>%
   summarise(recognitions = n(), yearlyWinners = n() / 10, .groups = "drop")  # 2015-2024
-
-cat("Recognitions assigned to a funding field:", nrow(winners_with_group), "of", nrow(winners), "\n")
 
 ################################################################################
 # Federal research funding by field
@@ -44,8 +41,7 @@ federalRnD <- read_excel(file.path(data_dir, "2022budgetByField.xlsx")) %>%
   filter(!is.na(plotFundingField), plotFundingField != "NA",
          !(plotFundingField %in% c("Humanities", "Other non-science"))) %>%
   group_by(plotFundingField) %>%
-  summarise(researchBudget2022 = sum(researchBudget2022, na.rm = TRUE),
-            fundingPlotOrder = first(fundingPlotOrder), .groups = "drop")
+  summarise(researchBudget2022 = sum(researchBudget2022, na.rm = TRUE), .groups = "drop")
 stopifnot(setequal(federalRnD$plotFundingField, unique(fund_map$funding_field)))
 
 fundingFieldStats <- federalRnD %>%
@@ -53,15 +49,10 @@ fundingFieldStats <- federalRnD %>%
   mutate(recognitions = coalesce(recognitions, 0L),
          yearlyWinners = coalesce(yearlyWinners, 0),
          fieldSize = 100 * researchBudget2022 / sum(researchBudget2022),
-         winnersPerBillionUSD = yearlyWinners / (researchBudget2022 / 1e6),  # budget in thousands USD
-         plotPosition = fundingPlotOrder) %>%
-  arrange(desc(winnersPerBillionUSD), plotPosition) %>%
+         winnersPerBillionUSD = yearlyWinners / (researchBudget2022 / 1e6)) %>%  # budget in thousands USD
+  arrange(desc(winnersPerBillionUSD)) %>%
   as.data.frame()
 stopifnot(sum(fundingFieldStats$recognitions) == nrow(winners_with_group))
-
-write.csv(fundingFieldStats %>% select(plotFundingField, researchBudget2022, fieldSize, recognitions,
-                                       yearlyWinners, winnersPerBillionUSD),
-          file.path(intermediate_dir, "funding_density.csv"), row.names = FALSE)
 
 ################################################################################
 # Figure
@@ -94,7 +85,7 @@ create_ribbon_data_funding <- function(data, var) {
 
 funding_ribbon_data <- create_ribbon_data_funding(fundingFieldStats, "winnersPerBillionUSD")
 
-# Broad-area colors as in the other density figures
+# Fill and outline colors by broad field
 custom_colors_funding <- c(
   "Ag. & natural resources" = "#8B4577",
   "Business & Econ"         = "#E7298A",
@@ -114,12 +105,9 @@ labelBuffer <- yMax * 0.04
 
 fundingFieldStats$labelInside <- fundingFieldStats$winnersPerBillionUSD > tallThreshold
 fundingFieldStats$manualOffset <- ifelse(fundingFieldStats$labelInside, -labelBuffer, labelBuffer)
-# Field labels. With only eight fields the vertical-label scheme of the other
-# density figures collides: the four narrow fields (under 3% of funding) sit on top
-# of each other at the left edge. So: narrow fields get a horizontal label running
-# from the bar's right edge just above the bar top; wide fields (15% or more) get a
-# horizontal label centered inside the bar (above it when the bar is too low);
-# anything in between keeps the vertical label.
+# Field labels: fields under 3% of funding get a horizontal label from the bar's
+# right edge; fields at 15% or more get a horizontal label inside the bar (above
+# it when the bar is low); the rest get a vertical label.
 fundingFieldStats$labelStyle <- with(fundingFieldStats, case_when(
   fieldSize < 3 ~ "narrow",
   fieldSize >= 15 & winnersPerBillionUSD > 1.2 ~ "wide-inside",
