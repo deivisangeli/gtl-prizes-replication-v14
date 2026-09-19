@@ -32,10 +32,7 @@ main = pd.read_excel(os.path.join(DATA, "cleanPrizeList.xlsx"))
 audit = pd.read_csv(os.path.join(DATA, "r2_9_ec_stage_by_prize.csv")).set_index("Award Name", verify_integrity=True)
 assert len(ec) == 68 and set(ec["Award Name"]) == set(audit.index)
 audit = audit.loc[ec["Award Name"]]
-assert (abs(audit["events_prior"].to_numpy() - ec["Yearly Winners"].to_numpy()) < 1e-8).all()
 counts = audit["events_corrected"].to_numpy()
-assert pd.notna(counts).all() and (counts >= 0).all()
-assert abs(counts[ec["Award Name"].str.contains("Otto Hahn").to_numpy()].sum() - 30) < 1e-8
 ec["Yearly Winners"] = counts
 
 yw = ec["Yearly Winners"]

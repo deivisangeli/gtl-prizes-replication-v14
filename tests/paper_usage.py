@@ -1,14 +1,15 @@
 """List what the paper uses: every \\input, every \\includegraphics and every
 macro it invokes, with the macro file that defines each macro.
 
-    python tests/paper_usage.py [--overleaf DIR] [--paper prizes/v14.tex]
-                                [--letter prizes/response_plosone_r1.tex]
+    python tests/paper_usage.py --overleaf DIR [--paper prizes/v14.tex]
                                 [--out expected/paper_usage.csv]
+                                [--also NAME=PATH ...]
 
-Not part of the replication run: it reads the authors' Overleaf clone. The
-output is the specification the package is held to. Columns:
+Not part of the replication run: it reads the paper's LaTeX source in the
+authors' Overleaf clone (--overleaf, or the OVERLEAF_REPO environment
+variable). The output is the specification the package is held to. Columns:
 
-    document   paper | letter
+    document   paper (or the NAME of a document passed with --also)
     kind       input | figure | macro
     name       the \\input path, the figure path, or the macro name
     defined_in for a macro, the .tex file (relative to the Overleaf clone)
@@ -16,8 +17,7 @@ output is the specification the package is held to. Columns:
 
 Comment lines (starting with %) and text after an unescaped % are ignored.
 The scan covers the document and every file it \\input{}s, so a macro used in a
-table's notes counts. A macro used in the letter but not in the paper appears
-only under document = letter.
+table's notes counts.
 """
 
 import argparse
@@ -77,14 +77,17 @@ def scan(overleaf, doc_path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--overleaf", default=os.environ.get("OVERLEAF_REPO", "C:/Users/deivi/github/gtl-prizes-overleaf"))
+    ap.add_argument("--overleaf", default=os.environ.get("OVERLEAF_REPO"),
+                    required="OVERLEAF_REPO" not in os.environ)
     ap.add_argument("--paper", default="prizes/v14.tex")
-    ap.add_argument("--letter", default="prizes/response_plosone_r1.tex")
     ap.add_argument("--out", default="expected/paper_usage.csv")
+    ap.add_argument("--also", action="append", default=[], metavar="NAME=PATH",
+                    help="another document to scan, listed under its own name")
     a = ap.parse_args()
 
+    docs = [("paper", a.paper)] + [tuple(x.split("=", 1)) for x in a.also]
     rows = []
-    for document, doc_path in (("paper", a.paper), ("letter", a.letter)):
+    for document, doc_path in docs:
         inputs, figures, macros, defined = scan(a.overleaf, doc_path)
         rows += [(document, "input", i, "") for i in inputs]
         rows += [(document, "figure", f, "") for f in figures]

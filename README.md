@@ -55,8 +55,8 @@ interpreter named by the `PYTHON` environment variable (default `python3`, or
 reads the exhibit list from the paper's LaTeX source, copies the paper's table
 files, and runs the original scripts with `ggsave()` replaced by a plot-data
 capture (`tests/capture_original.R`); `tests/paper_usage.py` lists the macros
-the paper invokes. Both need the authors' project repository and are not part
-of the replication run.
+the paper invokes. They need the authors' project repository and the paper's
+LaTeX source and are not part of the replication run.
 
 ## Repository structure
 
@@ -79,12 +79,15 @@ of the replication run.
 │   ├── 09_density_tiers.R         prizesDensityByVS_finest_T1 / _T12
 │   ├── 10_density_funding.R       prizesDensityFunding
 │   ├── 11_density_works.R         prizesDensityByWorks_finest
-│   ├── 12_field_measures.R        Field measures: recognition density and patent-cited share
+│   ├── 12_field_measures.R        r2_3_field_measures.csv, r2_3_correlations.csv (intermediate:
+│   │                              recognition density and patent-cited share by field group)
 │   ├── 13_field_tables.R          r2_3_macros
 │   ├── 14_pay_grouped.R           r2_3_pay_grouped_macros; r2_3_pay_grouped_scatter
 │   ├── 15_funder_types.R          r2_5_macros; r2_5_funder_share_by_year; awarding countries per prize
 │   ├── 16_criteria_overlap.R      r2_1_criteria_table; r2_1_macros
-│   ├── 17_home_bias.R             Home bias of every prize against its field's benchmark pool
+│   ├── 17_home_bias.R             r2_2_winner_countries.csv, r2_2_prize_home_bias.csv,
+│   │                              r2_2_home_awards_by_country*.csv (intermediate: home bias of
+│   │                              every prize against its field's benchmark pool)
 │   ├── 18_home_bias_tables.R      r2_2_macros (+ _share01, _share005); r2_2_prize_table
 │   ├── 19_awarding_countries.py   r2_2_awarding_country_table; r2_2_desc_macros
 │   ├── 20_teams.R                 r2_6_macros (laureates per award)
@@ -120,10 +123,10 @@ All inputs are in `data/`. Prize-level files:
 |------|-------------|--------|
 | `cleanPrizeList.xlsx` | The 99 prizes with all indicators, the prestige index and rank | Authors' compilation |
 | `mainPrizeList_pre-imputation.xlsx` | The same list before the imputation of missing survey ratings | Authors' compilation |
-| `cleanEC.xlsx` | The 68 early-career prizes | Authors' compilation |
+| `cleanEC.xlsx` | The early-career prizes (72 rows; the four humanities prizes are dropped, leaving the paper's 68) | Authors' compilation |
 | `r2_9_ec_stage_by_prize.csv` | Yearly recognition counts and the career stage targeted by each early-career prize, with the observed 2015-2024 counts of the 14 prizes whose recipients were collected | Authors' collection from prize websites |
 | `all_winners_with_plotFinestField.csv` | Every 2015-2024 recognition of the 99 prizes: winner, OpenAlex author id, OpenAlex subfield/field | Authors' collection from prize websites; fields from OpenAlex |
-| `institution_recode/` | One JSON record per prize: awarding organization, its type and country, funder at founding and today, sources, confidence | Authors' coding from prize and funder websites |
+| `institution_recode/` | One JSON record per prize (`roster.json` lists them): awarding organization, its type and country, funder at founding and today, sources, confidence | Authors' coding from prize and funder websites |
 
 Field-level files:
 
@@ -161,10 +164,9 @@ the scanning code that produced them is in the authors' project repository:
 
 ## Archive
 
-This package is archived on Zenodo (DOI 10.5281/zenodo.22721355) and
-mirrored at github.com/deivisangeli/gtl-prizes-replication-v14. The Zenodo
-record is the citable, versioned copy; the GitHub copy is the one that runs
-the tests on every push.
+This package is published at github.com/deivisangeli/gtl-prizes-replication-v14,
+where the tests run on every push, and archived on Zenodo under the reserved
+DOI 10.5281/zenodo.22721355, the citable, versioned copy.
 
 ## License
 

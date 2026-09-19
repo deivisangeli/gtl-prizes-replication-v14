@@ -13,7 +13,6 @@ source("_helpers.R")
 
 ## ---- Prize list, tiers, criteria flags --------------------------------------
 prizeList <- read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
-  filter(!is.na(`Award Name`)) %>%
   arrange(pcaRank)
 stopifnot(nrow(prizeList) == 99)
 totW <- sum(prizeList$`Yearly Winners`)
@@ -48,12 +47,11 @@ stopifnot(nrow(w) == nrow(winners),                        # every recognition m
           all(prize_key$prize_norm %in% w$prize_norm))     # every prize has winners
 
 nsf_map <- read.csv(file.path(data_dir, "nsf_field_to_finest_group.csv"), stringsAsFactors = FALSE)
-nsf_raw <- read_excel(file.path(data_dir, "nsf2023.xlsx")) %>%
-  filter(!(plotFinestField %in% c("Humanities", "Education", "Other non-science")))
+nsf_raw <- read_excel(file.path(data_dir, "nsf2023.xlsx"))
 phd_by_group <- nsf_raw %>% inner_join(nsf_map, by = c("Field of doctorate" = "nsf_field")) %>%
   group_by(finest_group) %>% summarise(size = sum(DoctoratesIn2023), .groups = "drop")
 vs_raw <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE)
-vs_by_group <- vs_raw[vs_raw$academic_count > 0 & vs_raw$group_name != "Humanities", ] %>%
+vs_by_group <- vs_raw[vs_raw$group_name != "Humanities", ] %>%
   select(finest_group = group_name, size = academic_count)
 
 density_by <- function(wdf, denom) {

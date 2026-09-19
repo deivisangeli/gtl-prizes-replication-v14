@@ -7,7 +7,7 @@
 source("_helpers.R")
 
 prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
-  filter(!is.na(`Award Name`), `Award Name` != "Max Planck Research Award")
+  filter(`Award Name` != "Max Planck Research Award")
 prizeList$first_awarded <- 2025 - prizeList$age
 prizeList <- prizeList %>% arrange(first_awarded)
 

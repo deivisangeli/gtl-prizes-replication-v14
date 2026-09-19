@@ -32,8 +32,7 @@ for (run in RUNS) {
   # ---- main benchmark: prize-level extremes and every headline number ----
   if (run$sfx == "") {
     ps <- read.csv(file.path(intermediate_dir, "r2_2_prize_home_bias.csv"),
-                   stringsAsFactors = FALSE, encoding = "UTF-8") |>
-      filter(!is.na(excess_pop))
+                   stringsAsFactors = FALSE, encoding = "UTF-8")
     prow <- function(r) sprintf("%s & %s & %d & %.2f & %.2f & %s \\\\",
                                 esc(r$Prize), esc(r$AwardingCountry), r$n_winners,
                                 r$home_share, r$benchmark_pop, sgn(r$excess_pop, 2))
@@ -73,7 +72,7 @@ for (run in RUNS) {
       ratio_mac,
       m("hbRatioPct", sprintf("%.0f", 100 * (actual / expected - 1))),
       m("hbNPrizes", nrow(ps)),
-      m("hbShareAbove", sprintf("%.1f", 100 * mean(ps$excess_pop > 0, na.rm = TRUE))),
+      m("hbShareAbove", sprintf("%.1f", 100 * mean(ps$excess_pop > 0))),
       # per-country ratios quoted in the text (actual / expected recognitions to locals)
       unlist(lapply(c(JP = "Japan", US = "United States"), function(cn) {
         r <- cty[cty$AwardingCountry == cn, ]

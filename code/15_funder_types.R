@@ -68,7 +68,7 @@ x$private_origin <- x$origin %in% PRIV
 x$private_now <- x$current %in% PRIV
 x$era <- cut(x$year1, c(-Inf, 1979, 1999, Inf), labels = c("pre-1980", "1980-1999", "2000+"))
 
-era <- x |> group_by(era) |> summarise(n = n(), private = mean(private_origin), .groups = "drop")
+era <- x |> group_by(era) |> summarise(private = mean(private_origin), .groups = "drop")
 
 # ---- patent-cited share of the winners' fields (script 12), recognition-
 # weighted, for prizes privately funded in the latest award cycle vs the rest ----
@@ -77,7 +77,7 @@ w <- winners_by_group() |>
   inner_join(bs, by = c("finest_group" = "field"))
 w$PrizeKey <- ifelse(w$Prize == "Frontiers of Knowledge Award in Economics, Finance and Management",
                      "Frontiers of Knowledge Award in Economics Finance and Management", w$Prize)
-w <- inner_join(w, x |> select(Prize, current, private_now), by = c("PrizeKey" = "Prize"))
+w <- inner_join(w, x |> select(Prize, private_now), by = c("PrizeKey" = "Prize"))
 w$grp <- ifelse(w$private_now, "private", "other")
 # the patent-cited share is reported in percent
 tiltp <- w |> group_by(grp) |>

@@ -13,7 +13,7 @@ works_raw <- read.csv(file.path(data_dir, "works_by_subfield.csv"), stringsAsFac
 # works_by_subfield uses full URLs ("https://openalex.org/subfields/NNNN");
 # sf_map uses short IDs ("subfields/NNNN") -- strip base URL before joining
 works_raw$subfield_short <- sub("https://openalex.org/", "", works_raw$subfield_id)
-works_raw <- works_raw[works_raw$min_citations == "cit5" & works_raw$window == "2018_2020", ]
+stopifnot(all(works_raw$min_citations == "cit5"), all(works_raw$window == "2018_2020"))
 
 works_by_group <- works_raw %>%
   left_join(sf_map %>% select(subfield_id, finest_group) %>% distinct(),

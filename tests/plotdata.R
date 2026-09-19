@@ -6,10 +6,10 @@
 # data ggplot2 draws from: ggplot_build() returns, for every layer, the table of
 # computed aesthetics (positions, labels, colours, sizes). write_plot_data() writes
 # those tables, stacked with a `layer` column, so a figure produced by the
-# package can be checked against the same figure produced by the original code.
+# package can be checked against the same figure produced by the authors' analysis scripts.
 #
 # Sourced by _helpers.R (the package) and by tests/capture_original.R (the
-# original analysis scripts), so both sides write the identical format.
+# authors' analysis scripts), so both sides write the identical format.
 # ==============================================================================
 
 write_plot_data <- function(plot, path) {

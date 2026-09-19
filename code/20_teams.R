@@ -9,8 +9,8 @@ source("_helpers.R")
 
 w <- read.csv(file.path(data_dir, "all_winners_with_plotFinestField.csv"),
               check.names = FALSE, stringsAsFactors = FALSE, encoding = "UTF-8")
-# One row per laureate; a collaboration award (EHT 2020, Oxford-AstraZeneca 2022)
-# is one row, the person who accepted it.
+# One row per laureate; a collaboration award (laureate_type == "collaboration")
+# is one row and counts as one laureate.
 ev <- w |> group_by(Prize, Year) |> summarise(n = n(), .groups = "drop")
 per_prize <- ev |> group_by(Prize) |> summarise(max_n = max(n), .groups = "drop")
 

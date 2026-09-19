@@ -6,7 +6,7 @@
 source("_helpers.R")
 
 vs_raw <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE)
-vs_raw <- vs_raw[vs_raw$academic_count > 0 & vs_raw$group_name != "Humanities", ]
+vs_raw <- vs_raw[vs_raw$group_name != "Humanities", ]
 total_vs <- sum(vs_raw$academic_count)
 
 # Yearly recognitions per field group: recognitions over 2015-2024 divided by 10

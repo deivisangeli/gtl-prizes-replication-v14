@@ -38,17 +38,15 @@ re_by_funding <- winners_with_group %>%
 ################################################################################
 
 federalRnD <- read_excel(file.path(data_dir, "2022budgetByField.xlsx")) %>%
-  filter(!is.na(plotFundingField), plotFundingField != "NA",
+  filter(plotFundingField != "NA",
          !(plotFundingField %in% c("Humanities", "Other non-science"))) %>%
   group_by(plotFundingField) %>%
   summarise(researchBudget2022 = sum(researchBudget2022, na.rm = TRUE), .groups = "drop")
 stopifnot(setequal(federalRnD$plotFundingField, unique(fund_map$funding_field)))
 
 fundingFieldStats <- federalRnD %>%
-  left_join(re_by_funding, by = c("plotFundingField" = "funding_field")) %>%
-  mutate(recognitions = coalesce(recognitions, 0L),
-         yearlyWinners = coalesce(yearlyWinners, 0),
-         fieldSize = 100 * researchBudget2022 / sum(researchBudget2022),
+  inner_join(re_by_funding, by = c("plotFundingField" = "funding_field")) %>%
+  mutate(fieldSize = 100 * researchBudget2022 / sum(researchBudget2022),
          winnersPerBillionUSD = yearlyWinners / (researchBudget2022 / 1e6)) %>%  # budget in thousands USD
   arrange(desc(winnersPerBillionUSD)) %>%
   as.data.frame()

@@ -10,7 +10,7 @@
 # The paper's 26 field groups are coarsened to 16 groups that share a
 # classification with the Survey of Doctorate Recipients' salary fields
 # (data/ncses/pay_paper_groups.csv, pay_sdr_groups.csv). Business has no SDR
-# counterpart; Dentistry & Allied Health lacks an adequate doctorate match.
+# counterpart and Dentistry & Allied Health has no survey counterpart; both are omitted.
 #
 # Salary is a survey-weighted median of individual public-use records (SDR 2023,
 # data/ncses/doctorate_recipients_2023.zip): US residents, employed, private
@@ -28,7 +28,7 @@ stopifnot(!anyDuplicated(paper_map$field), !anyDuplicated(sdr_map$NSDRMENTOD),
 
 # Recognitions and faculty denominators from their source files
 faculty <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE) |>
-  filter(academic_count > 0, group_name != "Humanities") |>
+  filter(group_name != "Humanities") |>
   transmute(field = group_name, academic_count)
 winners <- winners_by_group()
 raw_density <- winners |> count(finest_group, name = "recognitions") |>

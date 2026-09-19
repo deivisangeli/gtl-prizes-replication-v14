@@ -9,8 +9,7 @@ source("_helpers.R")
 
 # Prize tiers: Tier 1 = prizes making up the top 10% of yearly recognitions by
 # prestige rank, Tier 2 = the next 20%, Tier 3 = the rest
-prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
-  filter(!is.na(`Award Name`))
+prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx"))
 
 prizeList <- prizeList[order(prizeList$pcaRank), ]
 prizeList$cumWinners <- cumsum(prizeList$`Yearly Winners`)
@@ -45,7 +44,7 @@ stopifnot(nrow(winners_with_group) == n_winners)  # every winner's prize has a t
 
 # Field size: research academics at the top 150 US universities
 vs_raw <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE)
-vs_raw <- vs_raw[vs_raw$academic_count > 0 & vs_raw$group_name != "Humanities", ]
+vs_raw <- vs_raw[vs_raw$group_name != "Humanities", ]
 vs_by_group <- vs_raw %>%
   select(finest_group = group_name, size = academic_count)
 total_vs <- sum(vs_by_group$size)

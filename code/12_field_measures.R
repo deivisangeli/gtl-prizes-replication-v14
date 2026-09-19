@@ -16,7 +16,7 @@ source("_helpers.R")
 # ---------------------------------------------------------------- prize density
 sf_map <- read.csv(file.path(data_dir, "subfield_to_finest_group.csv"), stringsAsFactors = FALSE)
 vs <- read.csv(file.path(data_dir, "vs_academics_by_finest_group.csv"), stringsAsFactors = FALSE) |>
-  filter(academic_count > 0, group_name != "Humanities")
+  filter(group_name != "Humanities")
 winners <- winners_by_group()
 dens <- winners |> count(finest_group, name = "re10") |>
   right_join(vs, by = c("finest_group" = "group_name")) |>
@@ -68,7 +68,7 @@ stopifnot(all(social %in% res$field))
 cor_block <- function(d, label) {
   s <- suppressWarnings(cor.test(d$density, d$ros_cited_share, method = "spearman",
                                  exact = FALSE))
-  data.frame(sample = label, measure = "ros_cited_share",
+  data.frame(sample = label,
              spearman = unname(s$estimate), p_spearman = s$p.value)
 }
 cors <- bind_rows(cor_block(res, "all"),

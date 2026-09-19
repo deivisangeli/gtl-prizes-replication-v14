@@ -74,9 +74,8 @@ reg["rec_pct"] = 100 * reg.recognitions / n_rec_all
 n_countries = pc.loc[pc.AwardingCountry != "International", "AwardingCountry"].nunique()
 
 # ---- 2. laureates vs the benchmark pool, by country ---------------------------
-ps = (w.groupby("Prize").Best_Field.agg(lambda x: x.value_counts().index[0])
-        .rename("main_field").reset_index())
-placed = w[w.countries_prior.notna() & (w.countries_prior != "")].merge(ps, on="Prize", how="left")
+# main_field: each prize's field, as 17_home_bias.R defines it
+placed = w[w.countries_prior.notna() & (w.countries_prior != "")]
 assert placed.main_field.notna().all()
 n_placed = len(placed)
 mix = placed.groupby(["main_field", "Year"]).size()

@@ -103,7 +103,6 @@ table <- stargazer(forTable, type = "latex",
                    summary = FALSE, digits = 1, rownames = FALSE,
                    title = "List of Selected Prizes")
 
-table <- gsub("\\textbackslash &", "\\&", table, fixed = TRUE)
 # Rewrite the tabular as a longtable inside a \begingroup\small ... \endgroup group.
 table <- gsub("\\begin{tabular}", "\\begingroup\\small \\begin{longtable}", table, fixed = TRUE)
 table <- gsub("\\end{tabular}", "\\end{longtable}\\endgroup", table, fixed = TRUE)

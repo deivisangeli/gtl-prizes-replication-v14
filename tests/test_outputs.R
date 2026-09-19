@@ -3,7 +3,7 @@
 #
 #   Rscript run_all.R && Rscript tests/test_outputs.R      (from the repo root)
 #
-# Three checks, all against expected/ (see tests/refresh_expected.R):
+# Four checks, all against expected/ (see tests/refresh_expected.R):
 #   1. every table and macro file the paper \input{}s is regenerated identically
 #      (line by line, ignoring comment lines and line endings);
 #   2. every figure the paper includes is regenerated with the same plot data as

@@ -7,8 +7,8 @@
 # For each 2015-2024 recognition, the laureate counts as "home" if the awarding
 # country appears among the countries of the institutions on their small-team
 # papers (at most 20 authors) up to and including the award year, an institution
-# counting if it appears in at least two distinct years and on at least 5% of
-# the author's small-team works by then. Hong Kong, Macau and Taiwan are folded
+# counting if it appears in at least two distinct years up to the award year
+# and on at least 5% of the author's small-team works. Hong Kong, Macau and Taiwan are folded
 # into China on both sides. The benchmark is the share of the field's reference
 # pool -- the 1,000 researchers in the prize's modal OpenAlex field with the most
 # citations to small-team papers as of the award year -- affiliated with the
@@ -30,7 +30,7 @@ POOLS <- list(list(dir = "pool_v2_top1000",    sfx = ""),
               list(dir = "pool_v2_share0.1",  sfx = "_share01"),
               list(dir = "pool_v2_share0.05", sfx = "_share005"))
 COUNTRY_MIN_YEARS <- 2      # a country counts if an affiliation there appears in >= this many distinct years by the award year
-AFF_MIN_SHARE <- 0.05       # ... and on at least this share of the author's small-team works by then
+AFF_MIN_SHARE <- 0.05       # ... and on at least this share of the author's small-team works
 
 # The two collaboration rows (EHT 2020, Oxford-AstraZeneca 2022) carry a team
 # leader's OpenAlex id for field allocation only; person-level analyses use
@@ -91,12 +91,11 @@ name_fix <- c("Frontiers of Knowledge Award in Economics, Finance and Management
                 "Frontiers of Knowledge Award in Economics Finance and Management")
 winners$PrizeKey <- ifelse(winners$Prize %in% names(name_fix), name_fix[winners$Prize], winners$Prize)
 stopifnot(all(winners$PrizeKey %in% pc$Prize))
-iso2 <- c("United States" = "US", "Norway" = "NO", "Mexico" = "MX", "Japan" = "JP",
+iso2 <- c("United States" = "US", "Norway" = "NO", "Japan" = "JP",
           "Denmark" = "DK", "Canada" = "CA", "United Kingdom" = "GB", "Sweden" = "SE",
           "Italy" = "IT", "Spain" = "ES", "Israel" = "IL", "Netherlands" = "NL",
           "Belgium" = "BE", "Germany" = "DE", "Finland" = "FI", "Saudi Arabia" = "SA",
-          "Hong Kong" = "HK", "Taiwan" = "TW", "Switzerland" = "CH", "France" = "FR",
-          "Austria" = "AT", "China" = "CN", "Australia" = "AU", "International" = NA)
+          "Hong Kong" = "HK", "Taiwan" = "TW", "Switzerland" = "CH", "International" = NA)
 unmapped <- setdiff(unique(pc$AwardingCountry), names(iso2))
 if (length(unmapped) > 0) stop("awarding countries with no ISO-2 mapping: ", paste(unmapped, collapse = ", "))
 pc$home_cc <- fold_cn(iso2[pc$AwardingCountry])
@@ -105,7 +104,15 @@ winners <- left_join(winners, pc, by = c("PrizeKey" = "Prize"))
 hit_of <- function(cs, hc) { if (is.na(hc) || cs == "") return(NA); hc %in% strsplit(cs, ";")[[1]] }
 winners$home_hit_prior <- mapply(hit_of, winners$countries_prior, winners$home_cc)
 
-write.csv(winners |> select(Prize, Year, AwardingCountry, Best_Field, countries_prior, countries_prior_raw),
+# each prize's field: the modal OpenAlex field of its placeable laureates (ties
+# broken alphabetically), defined once here for every prize
+main_field_of <- winners |>
+  filter(countries_prior != "") |>
+  group_by(Prize) |>
+  summarise(main_field = names(sort(table(Best_Field), decreasing = TRUE))[1], .groups = "drop")
+winners <- left_join(winners, main_field_of, by = "Prize")
+
+write.csv(winners |> select(Prize, Year, AwardingCountry, main_field, countries_prior, countries_prior_raw),
           file.path(intermediate_dir, "r2_2_winner_countries.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 
 # ---- per-prize home share vs the pool benchmark ----
@@ -115,9 +122,8 @@ prize_stats <- w |>
   group_by(Prize, AwardingCountry, home_cc) |>
   summarise(n_winners = n(),
             home_share = mean(home_hit_prior),
-            main_field = names(sort(table(Best_Field), decreasing = TRUE))[1],
+            main_field = first(main_field),
             .groups = "drop")
-w <- w |> left_join(prize_stats |> select(Prize, main_field), by = "Prize")
 
 # pool benchmark: a pool is a (field, year) denominator table plus a
 # (field, country, year) numerator table; the snapshot emits the Greater-China

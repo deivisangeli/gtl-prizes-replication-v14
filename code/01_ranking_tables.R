@@ -6,8 +6,7 @@
 source("_helpers.R")
 
 # Load data
-prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx")) %>%
-  filter(!is.na(`Award Name`))
+prizeList <- readxl::read_excel(file.path(data_dir, "cleanPrizeList.xlsx"))
 
 ################################################################################
 # selectedPrizes.tex: the 99 prizes ranked by the prestige index, with tiers
@@ -23,7 +22,7 @@ prizeList <- prizeList %>%
                           cumWinners <= 0.3 * totalWinners ~ 2,
                           TRUE ~ 3),
          # formatted as text so that 100, 20 or -41 print with one decimal like the rest
-         pcaRatingNormRound = sprintf("%.1f", round(pcaRatingNorm, 1) + 0))  # + 0 turns -0 into 0
+         pcaRatingNormRound = sprintf("%.1f", pcaRatingNorm))
 
 forTable <- prizeList %>% select("Award Name", "Tier", "pcaRank", "pcaRatingNormRound", "plotFinestField")
 
