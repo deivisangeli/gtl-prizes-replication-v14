@@ -1,9 +1,15 @@
-\begin{longtable}{lcccc} \caption{Most Prestigious Prizes, by Field} \label{listOfPrizes} 
+\begin{longtable}{lcccc} \caption{Most Prestigious Prizes, Ranked} \label{listOfPrizes} 
 \\[-1.8ex]\hline 
 \hline \\[-1.8ex] 
 Award Name & Tier & Rank & Rating & Field \\ 
 \hline \\[-1.8ex] 
-Nobel Prize in Physics & 1 & 1 & 100 & Physics and Astronomy \\ 
+\endfirsthead
+\multicolumn{5}{l}{\small\textit{(Table~\ref{listOfPrizes} continued)}} \\[2pt]
+\hline \hline \\[-1.8ex]
+Award Name & Tier & Rank & Rating & Field \\ 
+\hline \\[-1.8ex] 
+\endhead
+Nobel Prize in Physics & 1 & 1 & 100.0 & Physics and Astronomy \\ 
 Nobel Prize in Physiology or Medicine & 1 & 2 & 94.2 & Life and Health Sciences \\ 
 Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel & 1 & 3 & 93.1 & Business and Economics \\ 
 Nobel Prize in Chemistry & 1 & 4 & 92.2 & Chemistry \\ 
@@ -11,13 +17,13 @@ Fields Medal & 1 & 5 & 77.8 & Mathematics \\
 A. M. Turing Award & 1 & 6 & 74.4 & Computing, Electrical \\ 
 Abel Prize & 1 & 7 & 69.1 & Mathematics \\ 
 Tyler Prize for Environmental Achievement & 1 & 8 & 33.5 & Environment \\ 
-Japan Prize & 2 & 9 & 29 & Multidisciplinary \\ 
+Japan Prize & 2 & 9 & 29.0 & Multidisciplinary \\ 
 Breakthrough Prize in Fundamental Physics & 2 & 10 & 25.6 & Physics and Astronomy \\ 
 Wolf Prize in Mathematics & 2 & 11 & 24.7 & Mathematics \\ 
 Wolf Prize in Physics & 2 & 12 & 23.5 & Physics and Astronomy \\ 
 World Food Prize & 2 & 13 & 22.7 & Ag. and Natural Resources \\ 
 Templeton Prize & 2 & 14 & 20.1 & Multidisciplinary \\ 
-Wolf Prize in Chemistry & 2 & 15 & 20 & Chemistry \\ 
+Wolf Prize in Chemistry & 2 & 15 & 20.0 & Chemistry \\ 
 Albert Lasker Basic Medical Research Award & 2 & 16 & 18.9 & Life and Health Sciences \\ 
 IEEE Medal of Honor & 2 & 17 & 17.3 & Computing, Electrical \\ 
 Lasker–DeBakey Clinical Medical Research Award & 2 & 18 & 17.2 & Life and Health Sciences \\ 
@@ -25,12 +31,12 @@ Shaw Prize in Mathematical Sciences & 2 & 19 & 17.1 & Mathematics \\
 Stockholm Water Prize & 2 & 20 & 16.4 & Environment \\ 
 Canada Gairdner International Award & 3 & 21 & 13.2 & Life and Health Sciences \\ 
 Shaw Prize in Astronomy & 3 & 22 & 12.3 & Physics and Astronomy \\ 
-Millennium Technology Prize & 3 & 23 & 12 & Multidisciplinary \\ 
+Millennium Technology Prize & 3 & 23 & 12.0 & Multidisciplinary \\ 
 Eni Award & 3 & 24 & 11.9 & Environment \\ 
 Breakthrough Prize in Life Sciences & 3 & 25 & 11.5 & Life and Health Sciences \\ 
 Queen Elizabeth Prize for Engineering & 3 & 26 & 10.5 & Multidisciplinary \\ 
 Kyoto Prize in Basic Sciences & 3 & 27 & 9.7 & Multidisciplinary \\ 
-Copley Medal & 3 & 28 & 9 & Multidisciplinary \\ 
+Copley Medal & 3 & 28 & 9.0 & Multidisciplinary \\ 
 Blue Planet Prize & 3 & 29 & 7.9 & Environment \\ 
 Breakthrough Prize in Mathematics & 3 & 30 & 7.7 & Mathematics \\ 
 Balzan Prizes & 3 & 31 & 6.4 & Multidisciplinary \\ 
@@ -90,7 +96,7 @@ Lorentz Medal & 3 & 84 & -39.9 & Physics and Astronomy \\
 Heineken Prize for Medicine & 3 & 84 & -39.9 & Life and Health Sciences \\ 
 InBev-Baillet Latour Health Prize & 3 & 86 & -40.1 & Life and Health Sciences \\ 
 Russ Prize & 3 & 87 & -40.5 & Bio. and Biomedical Eng. \\ 
-Wollaston Medal & 3 & 88 & -41 & Earth Sciences \\ 
+Wollaston Medal & 3 & 88 & -41.0 & Earth Sciences \\ 
 Arthur L. Day Prize and Lectureship & 3 & 89 & -41.6 & Earth Sciences \\ 
 Frontiers of Knowledge Award in Biology and Biomedicine & 3 & 90 & -42.1 & Life and Health Sciences \\ 
 Benjamin Franklin Medal in Materials Science and Engineering & 3 & 91 & -42.4 & Materials and Mining Eng. \\ 
@@ -105,4 +111,4 @@ Gruber Prize in Neuroscience & 3 & 99 & -51.4 & Life and Health Sciences \\
 \hline \\[-1.8ex] 
 \end{longtable} 
 
-\noindent \footnotesize \textit{Note}: This table lists the 99 prizes that our methodology has identified as ``most prestigious,'' ranked. Prizes are sorted by Rating, which is the sum of the prestige indicators weighted by the first principal component loadings. Prizes with the same Rating up to the first decimal are shown under the same Rank. Tiers are defined according to the cumulative sum of the yearly most prestigious recognition events (1 event = 1 personbeing recognized with 1 prize): Tier 1 includes the top 10\% recognition events, Tier 2 the next 20\%, and Tier 3 the remaining.
+\noindent \footnotesize \textit{Note}: This table lists the 99 prizes that our methodology has identified as ``most prestigious,'' ranked. Prizes are sorted by Rating, which is the sum of the prestige indicators weighted by the first principal component loadings, rescaled so that the Nobel Prize in Physics equals 100 and the mean of the 76 prizes with observed survey ratings (the PCA fitting sample) equals 0. Prizes with the same Rating up to the first decimal are shown under the same Rank. Tiers are defined according to the cumulative sum of the yearly most prestigious recognition events (1 event = 1 person being recognized with 1 prize): Tier 1 includes the top 10\% recognition events, Tier 2 the next 20\%, and Tier 3 the remaining.
