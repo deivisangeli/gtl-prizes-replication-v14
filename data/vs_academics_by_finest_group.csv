@@ -1,28 +1,28 @@
-"group_name","academic_count"
-"Political Science & Sociology",9794
-"Molecular Bio & Genetics",9789
-"Humanities",9531
-"Medicine",7209
-"Computer Science",5353
-"Physics & Astronomy",4807
-"Economics",4473
-"Psychology",4353
-"Neuroscience",3922
-"Chemistry & Chemical Eng.",3339
-"Environmental Science",3118
-"Agriculture & Food Sci.",3098
-"Mathematics",3044
-"Business",2886
-"Mechanical & Aerospace Eng.",2692
-"Anthropology",2652
-"Computer & Electrical Eng.",2551
-"Dentistry & Allied Health",2318
-"Public Health",2063
-"Biomedical Eng.",1594
-"Ecology & Evolution",1564
-"Civil & Env. Eng.",1521
-"Climate & Ocean Sci.",1296
-"Geosciences",1088
-"Microbiology & Immunology",1068
-"Other Engineering",804
-"Other Social Sci.",474
+group_name,academic_count
+Political Science & Sociology,9794
+Molecular Bio & Genetics,9789
+Humanities,9531
+Medicine,7209
+Computer Science,5353
+Physics & Astronomy,4807
+Economics,4473
+Psychology,4353
+Neuroscience,3922
+Chemistry & Chemical Eng.,3339
+Agriculture & Food Sci.,3098
+Environmental Science,3073
+Mathematics,3044
+Business,2886
+Mechanical & Aerospace Eng.,2692
+Anthropology,2652
+Computer & Electrical Eng.,2551
+Dentistry & Allied Health,2318
+Public Health,2063
+Biomedical Eng.,1594
+Ecology & Evolution,1564
+Civil & Env. Eng.,1521
+Climate & Ocean Sci.,1296
+Geosciences,1088
+Microbiology & Immunology,1068
+Other Engineering,849
+Other Social Sci.,474
