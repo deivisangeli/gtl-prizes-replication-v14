@@ -208,9 +208,9 @@ T = [GEN,
      f"The last three columns cover all {thousands(n_placed)} placeable recognitions: the share received by laureates "
      "based in the country and the country's share of the benchmark pool, weighted by the recognitions' field-year "
      "mix; a researcher based in two countries counts in both. Ratios divide actual by expected or pool shares. "
-     "Hong Kong, Macau and Taiwan are folded into Greater China in the home-bias columns "
-     f"({fmt(GREATER_CN['laureate_pct'])}\\% of laureates against {fmt(GREATER_CN['pool_pct'])}\\% of the pool) but not in "
-     f"the received-share columns. The last block lists the {N_TOP_OTHER} non-awarding countries with the largest pool "
+     "In the home-bias columns of the Hong Kong and Taiwan rows, mainland China, Hong Kong and Taiwan count as one "
+     "home country on both sides; the received-share columns keep them apart. "
+     f"The last block lists the {N_TOP_OTHER} non-awarding countries with the largest pool "
      "shares; the remaining countries are pooled in one row.\\end{minipage}",
      "\\end{table}"]
 with open(os.path.join(TABLES, "r2_2_awarding_country_table.tex"), "w", encoding="utf-8", newline="\n") as f:
