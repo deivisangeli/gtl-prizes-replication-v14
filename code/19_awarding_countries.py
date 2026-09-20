@@ -199,24 +199,19 @@ T = [GEN,
      "\\cmidrule(lr){3-4}\\cmidrule(lr){5-7}\\cmidrule(lr){8-10}",
      " & & N & \\% of all & Actual & " + stack("Expected", "from pool") + " & Ratio & Actual & " + stack("Share", "of pool") + " & Ratio \\\\",
      "\\midrule"] + rows + ["\\bottomrule", "\\end{tabular}",
-     "\\par\\smallskip\\begin{minipage}{\\textwidth}\\footnotesize\\textit{Note}: Prizes and recognitions (2015--2024 award events) "
-     "are counted by the country of the awarding organization; the three international prizes (Fields Medal, "
-     "ICTP Ramanujan Prize, IABSE Award of Merit) have no national home. Home shares are computed over the "
-     f"{thousands(n_placed_national)} recognitions of national prizes with a placeable laureate: actual is the share going "
-     "to a laureate who had been based in the awarding country by the award year, expected is the share of the "
-     "field's benchmark pool (the 1{,}000 researchers with the most citations to small-team papers, per field and "
-     f"award year) based there. The last three columns take all {thousands(n_placed)} placeable recognitions of the 99 "
-     "prizes: the share received by laureates based in the country, and the country's share of the benchmark pool "
-     "weighted by the recognitions' field-year mix; a researcher based in two countries counts in both. Each ratio "
-     "divides the actual share by the expected or pool share. Hong Kong and Taiwan award prizes of their own and "
-     "appear as awarding jurisdictions; mainland China awards none of the 99 and appears in the last block. The "
-     "home-bias test folds Hong Kong, Macau and Taiwan into Greater China on both sides, so the home columns of "
-     "the Hong Kong and Taiwan rows are measured against a pool that includes the mainland: a laureate based in "
-     "Beijing counts as local for a prize awarded from Hong Kong. The received-share columns fold nothing; taken "
-     f"together, Greater China hosts {fmt(GREATER_CN['laureate_pct'])}\\% of laureates against "
-     f"{fmt(GREATER_CN['pool_pct'])}\\% of the pool. The last block lists the {N_TOP_OTHER} non-awarding countries with the largest "
-     "pool shares and pools every other country in one row (the count is the number of countries with any pool "
-     "member).\\end{minipage}",
+     "\\par\\smallskip\\begin{minipage}{\\textwidth}\\footnotesize\\textit{Note}: This table counts prizes and 2015--2024 "
+     "recognitions by the country of the awarding organization; the three international prizes (Fields Medal, "
+     "ICTP Ramanujan Prize, IABSE Award of Merit) have no national home. Home shares cover the "
+     f"{thousands(n_placed_national)} recognitions of national prizes with a placeable laureate: actual is the share of "
+     "laureates based in the awarding country by the award year; expected is the share of the field's benchmark pool "
+     "(the 1{,}000 researchers with the most citations to small-team papers, per field and award year) based there. "
+     f"The last three columns cover all {thousands(n_placed)} placeable recognitions: the share received by laureates "
+     "based in the country and the country's share of the benchmark pool, weighted by the recognitions' field-year "
+     "mix; a researcher based in two countries counts in both. Ratios divide actual by expected or pool shares. "
+     "Hong Kong, Macau and Taiwan are folded into Greater China in the home-bias columns "
+     f"({fmt(GREATER_CN['laureate_pct'])}\\% of laureates against {fmt(GREATER_CN['pool_pct'])}\\% of the pool) but not in "
+     f"the received-share columns. The last block lists the {N_TOP_OTHER} non-awarding countries with the largest pool "
+     "shares; the remaining countries are pooled in one row.\\end{minipage}",
      "\\end{table}"]
 with open(os.path.join(TABLES, "r2_2_awarding_country_table.tex"), "w", encoding="utf-8", newline="\n") as f:
     f.write("\n".join(T) + "\n")

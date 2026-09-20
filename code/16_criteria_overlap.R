@@ -77,7 +77,6 @@ m <- c(
   mac("rTwoOneCOne",   nC["C1"]), mac("rTwoOneCTwo", nC["C2"]),
   mac("rTwoOneCThree", nC["C3"]), mac("rTwoOneCFour", nC["C4"]),
   mac("rTwoOneCThreeOnly", only["C3"]),
-  mac("rTwoOneMultiCriteria", sum(prizeList$Cs >= 2)),
   mac("rTwoOneGiniFullVS", fmt(summ$gini_full[summ$denominator == "VS"])), mac("rTwoOneGiniNoCThreeVS", fmt(summ$gini_noC3[summ$denominator == "VS"])),
   mac("rTwoOneGiniFullPhD", fmt(summ$gini_full[summ$denominator == "PhD"])), mac("rTwoOneGiniNoCThreePhD", fmt(summ$gini_noC3[summ$denominator == "PhD"]))
 )

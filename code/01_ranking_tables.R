@@ -60,16 +60,13 @@ table <- gsub("{@{\\extracolsep{5pt}} ccccc}", "{lcccc}", table, fixed = TRUE)
 table <- table[-c(seq(1, 6), length(table))]
 
 table[length(table) + 2] <-
-  paste("\\noindent \\footnotesize \\textit{Note}: This table lists the 99 prizes that our methodology has identified as",
-        "``most prestigious,'' ranked. Prizes are sorted by Rating, which is the",
-        "sum of the prestige indicators weighted by the first principal component",
-        "loadings, rescaled so that the Nobel Prize in Physics equals 100 and the mean",
-        sprintf("of the %d prizes with observed survey ratings (the PCA fitting sample) equals 0.", sum(!is.na(prizeList$Rating))),
-        "Prizes with the same Rating up to the first decimal are shown",
-        "under the same Rank. Tiers are defined according to the cumulative sum",
-        "of the yearly most prestigious recognition events",
-        "(1 event = 1 person being recognized with 1 prize): Tier 1 includes the top",
-        "10\\% recognition events, Tier 2 the next 20\\%, and Tier 3 the remaining.",
+  paste("\\noindent \\footnotesize \\textit{Note}: This table lists the 99 most prestigious prizes, ranked by Rating: the",
+        "sum of the prestige indicators weighted by their first-principal-component",
+        "loadings, rescaled so that the Nobel Prize in Physics equals 100.",
+        "Prizes with the same Rating to one decimal share a Rank.",
+        "Tiers follow the cumulative share of yearly recognition events",
+        "(one person recognized with one prize): Tier 1 holds the top",
+        "10\\%, Tier 2 the next 20\\%, Tier 3 the rest.",
         sep = " ")
 table[length(table) - 1] <- ""
 table <- longtable_heads(table, "listOfPrizes", 5)
@@ -109,19 +106,16 @@ summaryStatsTable <- stargazer(summaryStats, summary = FALSE, digits = 1, type =
 summaryStatsTable <- gsub("{@{\\extracolsep{5pt}} ccccccc}", "{lcccccc}", summaryStatsTable, fixed = TRUE)
 
 summaryStatsTable[length(summaryStatsTable)] <-
-  paste("\\noindent \\justify \\footnotesize \\textit{Note}: This table provides summary statistics for the 99 recognition",
-        "prizes that our methodology identifies as ``most prestigious.'' Survey Rating",
-        "stands for the expert ratings of prize importance in relation to the Nobel by",
-        "\\cite{zheng2015mapping, jiang2018hierarchical}. Daily Page Views is the average number of daily",
-        "Wikipedia page views, 2020--2025. News Mentions is the number of unique news articles mentioning",
-        "the prize in the Media Cloud archive, January 2020 to December 2025.",
-        "Prize Age is the number of years since the prize was first given, as of 2025.",
-        "Period refers to the periodicity of the prize (e.g., yearly = 1, given once",
-        "every two years = 2, and so on). Yearly Winners is the number of recipients per award period",
-        "divided by the period. Money per Year is the prize money paid out per award period divided by the period;",
-        "Money per Prize is the money per award period divided by the number of prizes given per period",
-        "(some awards give several prizes per period); Money per Winner is the money per award period divided",
-        "by the number of recipients per period. Money values are in thousands of USD.")
+  paste("\\noindent \\justify \\footnotesize \\textit{Note}: This table shows summary statistics for the 99 most prestigious recognition prizes.",
+        "Survey Rating: expert ratings of prize importance relative to the Nobel",
+        "\\cite{zheng2015mapping, jiang2018hierarchical}. Daily Page Views: average daily",
+        "Wikipedia page views, 2020--2025. News Mentions: unique news articles mentioning",
+        "the prize in the Media Cloud archive, 2020--2025.",
+        "Prize Age: years since first awarded, as of 2025.",
+        "Period: years between award rounds (1 = yearly). Yearly Winners: recipients per round",
+        "divided by the period. Money per Year, per Prize and per Winner: prize money per round divided by the period,",
+        "by the number of prizes per round, and by the number of recipients per round.",
+        "Money in thousands of USD.")
 
 summaryStatsTable <- c(summaryStatsTable, "\\end{table}")
 
@@ -163,11 +157,10 @@ ECtable <- gsub("{@{\\extracolsep{5pt}} ccc}", "{lcc}", ECtable, fixed = TRUE)
 ECtable <- ECtable[-c(seq(1, 6), length(ECtable))]
 
 ECtable[length(ECtable) + 2] <- paste(
-  "\\noindent \\footnotesize \\textit{Note}: This table lists the 68 most prestigious early",
-  "career prizes. We construct prize Tiers by calculating a prestige index that puts 80\\% weight on daily page views and",
-  "20\\% on prize age. Tier 1 contains the top 10 prizes, Tier 2",
-  "the next 20. Within Tiers, prizes are listed alphabetically.",
-  "\\textasteriskcentered{} Research fellowship: a cohort program that funds a period of research rather than a single award.",
+  "\\noindent \\footnotesize \\textit{Note}: This table lists the 68 most prestigious early-career prizes,",
+  "selected and tiered as described in Appendix~\\ref{sec:ec_method}: Tier 1 is the top 10 prizes, Tier 2",
+  "the next 20. Within tiers, prizes are alphabetical.",
+  "\\textasteriskcentered{} Research fellowship: a cohort program funding a period of research rather than a single award.",
   sep = " ")
 ECtable[length(ECtable) - 1] <- ""
 ECtable <- longtable_heads(ECtable, "listOfECPrizes", 3)
