@@ -197,7 +197,7 @@ T = [GEN,
      "\\begin{tabular}{lrrrrrrrrr}", "\\toprule",
      "Country & " + stack("Prizes", "given by", "country") + " & \\multicolumn{2}{c}{" + stack("Recognitions awarded", "by the country's", "organizations") + "} & \\multicolumn{3}{c}{" + stack("Share of the country's", "recognitions given to", "scientists based there (\\%)") + "} & \\multicolumn{3}{c}{" + stack("Share of all recognitions", "received by scientists", "based in the country (\\%)") + "} \\\\",
      "\\cmidrule(lr){3-4}\\cmidrule(lr){5-7}\\cmidrule(lr){8-10}",
-     " & & N & \\% of all & Actual & " + stack("Expected", "from pool") + " & Ratio & Actual & " + stack("Share", "of pool") + " & Ratio \\\\",
+     " & & N & \\% of all & Actual & " + "Expected & Ratio & Actual & Expected & Ratio \\\\",
      "\\midrule"] + rows + ["\\bottomrule", "\\end{tabular}",
      "\\par\\smallskip\\begin{minipage}{\\textwidth}\\footnotesize\\textit{Note}: This table counts prizes and 2015--2024 "
      "recognitions by the country of the awarding organization; the three international prizes (Fields Medal, "
@@ -206,8 +206,8 @@ T = [GEN,
      "laureates based in the awarding country by the award year; expected is the share of the field's benchmark pool "
      "(the 1{,}000 researchers with the most citations to small-team papers, per field and award year) based there. "
      f"The last three columns cover all {thousands(n_placed)} placeable recognitions: the share received by laureates "
-     "based in the country and the country's share of the benchmark pool, weighted by the recognitions' field-year "
-     "mix; a researcher based in two countries counts in both. Ratios divide actual by expected or pool shares. "
+     "based in the country (actual) and the country's share of the benchmark pool, weighted by the recognitions' field-year "
+     "mix (expected); a researcher based in two countries counts in both. Ratios divide actual by expected. "
      "In the home-bias columns of the Hong Kong and Taiwan rows, mainland China, Hong Kong and Taiwan count as one "
      "home country on both sides; the received-share columns keep them apart. "
      f"The last block lists the {N_TOP_OTHER} non-awarding countries with the largest pool "

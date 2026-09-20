@@ -26,7 +26,6 @@
 "figure","prizes/figures/scatter_moneyprize_time_linear_fit.png","output/figures/scatter_moneyprize_time_linear_fit.png"
 "figure","prizes/figures/prizesDensityByVSacademics_finest.pdf","output/figures/prizesDensityByVSacademics_finest.pdf"
 "figure","prizes/figures/prizesDensityByPhD_finest.pdf","output/figures/prizesDensityByPhD_finest.pdf"
-"figure","prizes/figures/exploratory/r2_5_funder_share_by_year.pdf","output/figures/r2_5_funder_share_by_year.pdf"
 "figure","prizes/figures/prizesDensityFunding.pdf","output/figures/prizesDensityFunding.pdf"
 "figure","prizes/figures/scatter_money_views.png","output/figures/scatter_money_views.png"
 "figure","prizes/figures/prizesDensityByVS_finest_T1.pdf","output/figures/prizesDensityByVS_finest_T1.pdf"
@@ -38,3 +37,4 @@
 "figure","prizes/figures/moneyPerWinner_winnerLevel.png","output/figures/moneyPerWinner_winnerLevel.png"
 "figure","prizes/figures/exploratory/r2_2_home_share_by_country.pdf","output/figures/r2_2_home_share_by_country.pdf"
 "figure","prizes/figures/exploratory/r2_2_home_bias_scatter.pdf","output/figures/r2_2_home_bias_scatter.pdf"
+"figure","prizes/figures/exploratory/r2_5_funder_share_by_year.pdf","output/figures/r2_5_funder_share_by_year.pdf"
