@@ -56,9 +56,11 @@ compare_plot_data <- function(expected_file, generated_file, tol = 1e-6) {
       both_na <- is.na(x) & is.na(y)
       if (any(is.na(x) != is.na(y))) { problems <- c(problems, sprintf("column %s: NA pattern differs", col)); next }
       x <- x[!both_na]; y <- y[!both_na]
-      bad <- abs(x - y) > tol * pmax(1, abs(x))
+      # an infinite position (e.g. an annotation at x = Inf) matches only the same infinity
+      same_inf <- is.infinite(x) & is.infinite(y) & x == y
+      bad <- !same_inf & (abs(x - y) > tol * pmax(1, abs(x)) | is.na(x - y))
       if (any(bad)) problems <- c(problems, sprintf("column %s: %d of %d values differ (max abs diff %.3g)",
-                                                   col, sum(bad), length(x), max(abs(x - y))))
+                                                   col, sum(bad), length(x), max(abs(x - y)[bad])))
     } else {
       x <- ifelse(is.na(x), "", as.character(x)); y <- ifelse(is.na(y), "", as.character(y))
       # a character column whose non-empty values all parse as numbers (a column

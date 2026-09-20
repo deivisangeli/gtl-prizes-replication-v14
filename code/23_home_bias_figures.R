@@ -16,19 +16,21 @@ source("_helpers.R")
 # Points above the 45-degree line award locals more often than the pool predicts.
 hb <- read.csv(file.path(intermediate_dir, "r2_2_prize_home_bias.csv"), stringsAsFactors = FALSE, encoding = "UTF-8")
 hb <- hb[!is.na(hb$excess_pop), ]
+lab <- subset(hb, excess_pop > .30 | excess_pop < -.15)
 p1 <- ggplot(hb, aes(benchmark_pop, home_share)) +
   geom_abline(slope = 1, intercept = 0, linetype = 2, color = "grey50") +
   geom_point(aes(size = n_winners), shape = 21, fill = "steelblue4",
              colour = "white", stroke = .3, alpha = .75) +
-  geom_text_repel(data = subset(hb, excess_pop > .30 | excess_pop < -.15),
-                  aes(label = Prize), size = 2.4, max.overlaps = Inf,
-                  min.segment.length = 0, box.padding = .35, seed = 1,
+  geom_text_repel(data = lab, aes(label = Prize), size = 2.4, max.overlaps = Inf,
+                  min.segment.length = 0, box.padding = .6, force = 3, seed = 1,
+                  nudge_y = ifelse(lab$home_share == 1, .06, 0),
                   segment.colour = "grey60", segment.size = .25) +
   # Area-proportional sizing, so a prize awarded twice in the decade reads as a
   # tenth of one awarded twenty times
   scale_size_area(max_size = 11, breaks = c(2, 5, 10, 20, 30),
                   name = "Recognitions\n2015-24") +
-  scale_x_continuous(limits = c(0, 1)) + scale_y_continuous(limits = c(0, 1)) +
+  scale_x_continuous(limits = c(0, 1.05), breaks = seq(0, 1, .25)) +
+  scale_y_continuous(limits = c(0, 1.12), breaks = seq(0, 1, .25)) +
   labs(x = "Benchmark: share of the field's 1,000 most-cited researchers (small-team citations) based in the awarding country",
        y = "Share of the prize's own laureates based in the awarding country") +
   theme_minimal(base_size = 11)

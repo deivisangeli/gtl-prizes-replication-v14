@@ -52,11 +52,11 @@ table <- stargazer(forTable,
                    summary = FALSE, digits = 1, type = "latex", rownames = FALSE,
                    title = "List of Selected Prizes")
 
-table <- gsub("\\begin{tabular}", "\\begin{longtable}", table, fixed = TRUE)
+table <- gsub("\\begin{tabular}", "\\setlength{\\tabcolsep}{4pt}\\begin{longtable}", table, fixed = TRUE)
 table <- gsub("\\end{tabular}", "\\end{longtable}", table, fixed = TRUE)
 table <- gsub("ccc}",
               "ccc} \\caption{Most Prestigious Prizes, Ranked} \\label{listOfPrizes}", table, fixed = TRUE)
-table <- gsub("{@{\\extracolsep{5pt}} ccccc}", "{lcccc}", table, fixed = TRUE)
+table <- gsub("{@{\\extracolsep{5pt}} ccccc}", "{>{\\raggedright\\arraybackslash}p{7.2cm}cccc}", table, fixed = TRUE)
 table <- table[-c(seq(1, 6), length(table))]
 
 table[length(table) + 2] <-
@@ -89,14 +89,19 @@ vars <- c("Rating", "Daily Page Views", "article_count", "age", "Period", "Yearl
 labels <- c("Survey Rating", "Daily Page Views", "News Mentions", "Prize Age", "Period (Years)",
             "Yearly Winners", "Money per Year", "Money per Prize", "Money per Winner")
 
+# decimals per row: every cell of a row gets the row's precision; thousands separated by "{,}"
+digits <- c(2, 1, 0, 0, 1, 2, 0, 0, 0)
+fmt <- function(x, d) formatC(x, format = "f", digits = d, big.mark = "{,}")
+
 i <- 1
 for (var in vars) {
-  median_val <- round(median(prizeList[[var]], na.rm = TRUE), 2)
-  mean_val <- round(mean(prizeList[[var]], na.rm = TRUE), 2)
-  sd_val <- round(sd(prizeList[[var]], na.rm = TRUE), 2)
-  min_val <- round(min(prizeList[[var]], na.rm = TRUE), 2)
-  max_val <- round(max(prizeList[[var]], na.rm = TRUE), 2)
-  n <- sum(!is.na(prizeList[[var]]))
+  x <- prizeList[[var]]
+  median_val <- fmt(median(x, na.rm = TRUE), digits[i])
+  mean_val <- fmt(mean(x, na.rm = TRUE), digits[i])
+  sd_val <- fmt(sd(x, na.rm = TRUE), digits[i])
+  min_val <- fmt(min(x, na.rm = TRUE), digits[i])
+  max_val <- fmt(max(x, na.rm = TRUE), digits[i])
+  n <- sum(!is.na(x))
   summaryStats[i, ] <- c(labels[i], median_val, mean_val, sd_val, min_val, max_val, n)
   i <- i + 1
 }
@@ -104,6 +109,8 @@ for (var in vars) {
 summaryStatsTable <- stargazer(summaryStats, summary = FALSE, digits = 1, type = "latex", rownames = FALSE,
                                title = "Summary Statistics", label = "summaryStats")
 summaryStatsTable <- gsub("{@{\\extracolsep{5pt}} ccccccc}", "{lcccccc}", summaryStatsTable, fixed = TRUE)
+# stargazer escapes the braces of the "{,}" thousands separator; restore them
+summaryStatsTable <- gsub("\\{,\\}", "{,}", summaryStatsTable, fixed = TRUE)
 
 summaryStatsTable[length(summaryStatsTable)] <-
   paste("\\noindent \\justify \\footnotesize \\textit{Note}: This table shows summary statistics for the 99 most prestigious recognition prizes.",

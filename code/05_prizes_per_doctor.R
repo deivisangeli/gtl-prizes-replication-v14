@@ -1,6 +1,6 @@
 # ==============================================================================
 # 05_prizes_per_doctor.R
-# Generates: prizesByField.tex (supplementary table "Awards By Field", label byField)
+# Generates: prizesByField.tex (supplementary table "Awards by Field", label byField)
 # Inputs: data/cleanPrizeList.xlsx, data/nsf2023.xlsx (field list only)
 # ==============================================================================
 source("_helpers.R")
@@ -99,8 +99,12 @@ prizesPerDoc <- prizesPerDoc %>%
 
 prizesPerDoc <- prizesPerDoc[!duplicated(prizesPerDoc$plotFinestField), ]
 
+fmt1 <- function(x) ifelse(is.na(x), "--", sprintf("%.1f", x))
+prizesPerDoc$`Recognitions/year` <- fmt1(prizesPerDoc$`Recognitions/year`)
+prizesPerDoc$`Avg. Rank` <- fmt1(prizesPerDoc$`Avg. Rank`)
+
 prizesPerDocTable <- stargazer(prizesPerDoc, summary = FALSE, digits = 1, type = "latex", rownames = FALSE,
-                               title = "Awards By Field", label = "byField")
+                               title = "Awards by Field", label = "byField")
 
 prizesPerDocTable <- gsub("\\textbackslash hspace\\{3mm\\}", "\\hspace{3mm}", prizesPerDocTable, fixed = TRUE)
 prizesPerDocTable <- gsub("ccc", "lcc", prizesPerDocTable, fixed = TRUE)

@@ -45,13 +45,15 @@ colnames(output_mat) <- rownames(output_mat)
 
 output_df <- as.data.frame(output_mat)
 
-corr_table <- print(xtable(output_df), print.results = FALSE)
+corr_table <- print(xtable(output_df), booktabs = TRUE, print.results = FALSE)
 
 corr_table <- gsub("\\\\begin\\{table\\}\\[ht\\]",
                    "\\\\begin{table}[ht]\n\\\\caption{Correlation Between Normalized Prestige Indicators} \\\\label{corrTable}",
                    corr_table)
 
 corr_table <- gsub("\\{r[lrc]+\\}", "{lccccc}", corr_table)
+
+corr_table <- gsub("\\centering\n", "\\centering\n\\vspace{3pt}\n", corr_table, fixed = TRUE)
 
 # Scale the tabular to \textwidth.
 corr_table <- gsub("\\begin{tabular}", "\\resizebox{\\textwidth}{!}{\\begin{tabular}",

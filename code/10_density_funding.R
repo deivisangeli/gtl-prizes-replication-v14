@@ -96,21 +96,17 @@ custom_colors_funding <- c(
 )
 
 maxHeight <- round(max(fundingFieldStats$winnersPerBillionUSD), 0)
-yMax <- max(fundingFieldStats$winnersPerBillionUSD) * 1.08
+yMax <- max(fundingFieldStats$winnersPerBillionUSD) * 1.12
 avgDensity <- weighted.mean(fundingFieldStats$winnersPerBillionUSD, fundingFieldStats$fieldSize)
-tallThreshold <- avgDensity * 2
 labelBuffer <- yMax * 0.04
 
-fundingFieldStats$labelInside <- fundingFieldStats$winnersPerBillionUSD > tallThreshold
-fundingFieldStats$manualOffset <- ifelse(fundingFieldStats$labelInside, -labelBuffer, labelBuffer)
 # Field labels: fields under 3% of funding get a horizontal label from the bar's
 # right edge; fields at 15% or more get a horizontal label inside the bar (above
-# it when the bar is low); the rest get a vertical label.
+# it when the bar is low); the rest get a horizontal label above the bar.
 fundingFieldStats$labelStyle <- with(fundingFieldStats, case_when(
   fieldSize < 3 ~ "narrow",
   fieldSize >= 15 & winnersPerBillionUSD > 1.2 ~ "wide-inside",
-  fieldSize >= 15 ~ "wide-above",
-  TRUE ~ "vertical"))
+  TRUE ~ "wide-above"))
 
 legStep <- yMax * 0.05
 legBase <- yMax * 0.70
@@ -125,11 +121,6 @@ p <- ggplot() +
                aes(x = AccFieldSize, xend = AccFieldSize,
                    y = 0, yend = winnersPerBillionUSD),
                linetype = "dashed", color = "gray80", linewidth = 0.3) +
-  geom_text(data = fundingFieldStats[fundingFieldStats$labelStyle == "vertical", ],
-    aes(x = (lagAccFieldSize + AccFieldSize) / 2,
-        y = winnersPerBillionUSD + manualOffset,
-        label = plotFundingField, hjust = ifelse(labelInside, 1, 0)),
-    size = 3.5, angle = 90, color = "black") +
   geom_text(data = fundingFieldStats[fundingFieldStats$labelStyle == "narrow", ],
     aes(x = AccFieldSize + 0.6,
         y = winnersPerBillionUSD + labelBuffer * 0.6,
@@ -154,7 +145,7 @@ p <- ggplot() +
   geom_segment(data = fundingFieldStats,
                aes(x = lagAccFieldSize, xend = AccFieldSize,
                    y = -0.3, yend = -0.3), color = "black", linewidth = 0.3) +
-  geom_text(data = fundingFieldStats,
+  geom_text(data = fundingFieldStats[fundingFieldStats$fieldSize >= 3, ],
             aes(x = (lagAccFieldSize + AccFieldSize) / 2,
                 y = -0.13 * maxHeight, angle = 90,
                 label = paste0(round(fieldSize, 0), "%")),
@@ -163,7 +154,7 @@ p <- ggplot() +
   ylab("Award density (yearly recognitions/billion USD R&D)") +
   xlab("Field size (% of federal research budget)") +
   scale_x_continuous(breaks = c(0, 100), labels = c("0%", "100%")) +
-  scale_y_continuous(breaks = c(0, 2.5, 5, 7.5, 10, 12.5)) +
+  scale_y_continuous(breaks = seq(0, yMax, by = 2.5)) +
   coord_cartesian(ylim = c(-yMax * 0.14, yMax)) +
   theme(panel.grid.major.x = element_blank(),
         panel.grid.minor.x = element_blank(),
@@ -207,8 +198,8 @@ p <- ggplot() +
   annotate("text", x = 86, y = legBase + legStep * 4.3,
            label = "Broad fields", hjust = 0, size = 3.3, fontface = "bold") +
   geom_hline(yintercept = avgDensity, linetype = "dashed", color = "gray50", linewidth = 0.3) +
-  annotate("text", x = 97, y = avgDensity, label = "Avg.",
-           hjust = 1, vjust = -0.5, size = 3, color = "gray50") +
+  annotate("text", x = Inf, y = avgDensity, label = "Avg.",
+           hjust = 1.1, vjust = -0.5, size = 3, color = "gray50") +
   theme(legend.position = "none")
 
 save_figure("prizesDensityFunding.pdf", p, width = 9, height = 4.7)

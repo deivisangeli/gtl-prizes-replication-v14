@@ -57,7 +57,7 @@ for (run in RUNS) {
       "\\midrule", "\\multicolumn{6}{l}{\\emph{Largest negative excess:}} \\\\",
       vapply(seq_len(nrow(bot)), function(i) prow(bot[i, ]), character(1)),
       "\\bottomrule", "\\end{tabular}", "}",
-      "\\par\\vspace{3pt}", "\\begin{minipage}{0.8\\linewidth}\\footnotesize",
+      "\\par\\vspace{3pt}", "\\begin{minipage}{\\linewidth}\\footnotesize",
       paste0("\\textit{Note}: ", prize_notes),
       "\\end{minipage}", "\\end{table}"),
       file.path(table_dir, "r2_2_prize_table.tex"))

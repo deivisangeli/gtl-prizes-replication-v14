@@ -26,7 +26,6 @@ paper,figure,prizes/figures/scatter_time_rating.png,
 paper,figure,prizes/figures/scatter_moneyprize_time_linear_fit.png,
 paper,figure,prizes/figures/prizesDensityByVSacademics_finest.pdf,
 paper,figure,prizes/figures/prizesDensityByPhD_finest.pdf,
-paper,figure,prizes/figures/exploratory/r2_5_funder_share_by_year.pdf,
 paper,figure,prizes/figures/prizesDensityFunding.pdf,
 paper,figure,prizes/figures/scatter_money_views.png,
 paper,figure,prizes/figures/prizesDensityByVS_finest_T1.pdf,
@@ -38,6 +37,7 @@ paper,figure,prizes/figures/moneyPerWinner_prizeLevel.png,
 paper,figure,prizes/figures/moneyPerWinner_winnerLevel.png,
 paper,figure,prizes/figures/exploratory/r2_2_home_share_by_country.pdf,
 paper,figure,prizes/figures/exploratory/r2_2_home_bias_scatter.pdf,
+paper,figure,prizes/figures/exploratory/r2_5_funder_share_by_year.pdf,
 paper,macro,fPrivEighties,prizes/tables/exploratory/r2_5_macros.tex
 paper,macro,fPrivPostTwoK,prizes/tables/exploratory/r2_5_macros.tex
 paper,macro,fPrivPreEighty,prizes/tables/exploratory/r2_5_macros.tex

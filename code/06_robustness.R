@@ -97,6 +97,7 @@ prizeList$P50 <- round(prizeList$q5, 0)
 prizeList$P95 <- round(prizeList$q95, 0)
 
 forTable <- prizeList %>% select(`Award Name`, pcaRank, P5, P50, P95, Tier, `Freq. in right Tier`)
+forTable$`Freq. in right Tier` <- sprintf("%.1f", forTable$`Freq. in right Tier`)
 colnames(forTable) <- c("Award Name", "PCA Rank", "P5", "P50", "P95", "PCA Tier", "% in right Tier")
 
 table <- stargazer(forTable, type = "latex",
@@ -104,11 +105,13 @@ table <- stargazer(forTable, type = "latex",
                    title = "List of Selected Prizes")
 
 # Rewrite the tabular as a longtable inside a \begingroup\small ... \endgroup group.
-table <- gsub("\\begin{tabular}", "\\begingroup\\small \\begin{longtable}", table, fixed = TRUE)
+table <- gsub("\\begin{tabular}", "\\begingroup\\small\\setlength{\\tabcolsep}{4pt} \\begin{longtable}", table, fixed = TRUE)
 table <- gsub("\\end{tabular}", "\\end{longtable}\\endgroup", table, fixed = TRUE)
 table <- gsub("ccc}",
               "ccc} \\caption{Robustness Exercise -- Distribution of Prize Ranking under Random Weighting} \\label{mainRankingRobustness}",
               table, fixed = TRUE)
+table <- gsub("{@{\\extracolsep{5pt}} ccccccc}",
+              "{>{\\raggedright\\arraybackslash}p{6.6cm}cccccc}", table, fixed = TRUE)
 table <- table[-c(1, 2, 3, 4, 5, 6, length(table))]
 table <- longtable_heads(table, "mainRankingRobustness", 7)
 
